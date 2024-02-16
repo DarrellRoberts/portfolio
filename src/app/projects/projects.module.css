@@ -1,0 +1,9 @@
+.heroCon {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.heroTitle {
+    font-size: 5rem;
+}
