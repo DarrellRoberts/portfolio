@@ -1,14 +1,14 @@
 import Navbar from "@/components/navbar/Navbar"
-import styles from "./about.module.css"
+import styles from "./contact.module.css"
 
-export default function About() {
+export default function Contact() {
     return (
         <>
     <Navbar />
     <section className={styles.homepageCon}>
         <div className={styles.titleCon}>
           <div className={styles.darrellCon}>
-            <h1 className="heroTitle">About</h1>
+            <h1 className="heroTitle">Contact</h1>
             <ol>
                 <li>Email</li>
                 <li>Github</li>
