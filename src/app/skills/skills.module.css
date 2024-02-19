@@ -65,9 +65,8 @@
     position: absolute;
     right: 15%;
     top: 15%;
-    filter: brightness(2);
     animation: 
-    /* rotateCog 10s linear 0s infinite,  */
+    rotateCog 20s linear 0s infinite, 
     fadeIn 0.5s linear 0s 1; ;
   }
 
