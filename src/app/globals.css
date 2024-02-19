@@ -27,7 +27,7 @@ h1, h2, h3, p, a, ul, li {
 
 .heroTitle {
   font-size: 8rem;
-  text-align: center;
+  /* text-align: center; */
   line-height: 7rem;
 }
 
