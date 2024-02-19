@@ -8,15 +8,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 8rem;
     margin-left: 2rem;
     animation: fadeIn 0.5s linear 0s 1;
   }
 
   .skillsCon {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-right: 1rem;
   }
 
   .skillsCon h2 {
@@ -24,8 +24,12 @@
     text-decoration: underline;
     font-size: 1.5rem;
     cursor: pointer;
+    width: 100px;
   }
 
+  .skillsCon h2:active {
+    color: white;
+  }
 
   .skillsList {
     display: grid;
@@ -50,7 +54,7 @@
     border-width: 2px;
     border-radius: 20px;
     border-style: solid;
-    margin: 0px 1rem;
+    /* margin: 0px 1.5rem; */
     padding: 10px;
     font-weight: bold;
     transition: all 0.15s ease-in;
@@ -110,19 +114,15 @@
       width: 200px;
     }
   }
-
-  @media  screen and (max-width: 900px) {
-    .titleCon img {
-      width: 200px;
-    }
-  }
   @media  screen and (max-width: 550px) {
     .titleCon {
       flex-direction: column;
       justify-content: space-evenly;
     }
     .skillsCon {
-      margin-left: 0rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
     }
     .skillsList, .skillsListOut {
       grid-template-columns: 125px 125px;

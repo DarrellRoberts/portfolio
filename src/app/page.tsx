@@ -10,7 +10,7 @@ export default function Home() {
         <div className={styles.titleCon}>
           <Image src="/outline.svg" alt="profile_outline" width="400" height="400"></Image>
           <div className={styles.darrellCon}>
-            <h1 className="heroTitle">Darrell <br/> Roberts</h1>
+            <h1 className={styles.heroTitleHome}>Darrell <br/> Roberts</h1>
             <h2 className="text-4xl">Fullstack Developer</h2>
           </div>
         </div>

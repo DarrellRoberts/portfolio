@@ -26,7 +26,7 @@ const reducer = (state: StateType, action) => {
     }
 }
 
-export default function About() {
+export default function Skills() {
 const [state, dispatch] = useReducer(reducer, {
     showFrontend: false,
     showBackend: false,
@@ -41,9 +41,9 @@ const [state, dispatch] = useReducer(reducer, {
           <div className={styles.darrellCon}>
             <h1 className="heroTitle">Skills</h1>
             <div className={styles.skillsCon}>
-
+                <div className="flex flex-col">
                 <h2 onClick={() => dispatch({type: "toggleShowFrontend"})}> 
-                Frontend 
+                Frontend
                 </h2>
                 {state.showFrontend ? (
                 <ul className={styles.skillsList}>
@@ -72,7 +72,9 @@ const [state, dispatch] = useReducer(reducer, {
                     <li>Netlify</li>
                     <li>Three.js</li>
                 </ul>)}
+                </div>
 
+                <div className="flex flex-col">
                 <h2 onClick={() => dispatch({type: "toggleShowBackend"})}> 
                 Backend 
                 </h2>
@@ -87,7 +89,9 @@ const [state, dispatch] = useReducer(reducer, {
                     <li>Express.js</li>
                     <li>Render</li>
                 </ul>)}
+                </div>
 
+                <div className="flex flex-col">
                 <h2 onClick={() => dispatch({type: "toggleShowDatabase"})}> 
                 Database 
                 </h2>
@@ -102,7 +106,9 @@ const [state, dispatch] = useReducer(reducer, {
                     <li>MySQL</li>
                     <li>PostgreSQL</li>
                 </ul>)}
+                </div>
 
+                <div className="flex flex-col">
                 <h2 onClick={() => dispatch({type: "toggleShowTools"})}> 
                 Tools 
                 </h2>
@@ -119,11 +125,12 @@ const [state, dispatch] = useReducer(reducer, {
                     <li>Gimp</li>
                     <li>Figma</li>
                 </ul>)}
+                </div>
             </div>
           </div>
         </div>
       </section>
-      <Image className={styles.cog} src="/cog.svg" alt="cog" width="400" height="400" />
+      <Image className={styles.cog} src="/cog.svg" alt="cog" width="250" height="250" />
         </>
     )
 }

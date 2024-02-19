@@ -29,6 +29,7 @@ h1, h2, h3, p, a, ul, li {
   font-size: 8rem;
   /* text-align: center; */
   line-height: 7rem;
+  color: white;
 }
 
 @media  screen and (max-width: 900px) {
