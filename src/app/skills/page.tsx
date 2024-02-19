@@ -128,9 +128,9 @@ const [state, dispatch] = useReducer(reducer, {
                 </div>
             </div>
           </div>
+          <Image className={styles.cog} src="/cog.svg" alt="cog" width="250" height="250" />
         </div>
       </section>
-      <Image className={styles.cog} src="/cog.svg" alt="cog" width="250" height="250" />
         </>
     )
 }

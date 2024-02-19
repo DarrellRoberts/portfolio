@@ -43,6 +43,10 @@
   .titleCon img {
     width: 200px;
   }
+  .heroTitleHome {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
 }
 @media  screen and (max-width: 550px) {
   .titleCon {
@@ -54,5 +58,9 @@
   }
   .homepageCon h2 {
     font-size: 1.25rem;
+  }
+  .heroTitleHome {
+    font-size: 4rem;
+    line-height: 4rem;
   }
 }

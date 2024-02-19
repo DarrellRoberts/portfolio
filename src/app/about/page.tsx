@@ -104,9 +104,10 @@ const [state, dispatch] = useReducer(reducer, {
                 </div>
             </div>
           </div>
+          <Loader />
         </div>
       </section>
-      <Loader />
+      {/* <Loader /> */}
         </>
     )
 }

@@ -2,6 +2,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    animation: fadeIn 0.5s linear 0s 1;
   }
   
   .titleCon {
@@ -10,7 +11,7 @@
     align-items: center;
     margin-top: 8rem;
     margin-left: 2rem;
-    animation: fadeIn 0.5s linear 0s 1;
+    /* animation: fadeIn 0.5s linear 0s 1; */
   }
 
   .skillsCon {
@@ -47,7 +48,7 @@
     grid-gap: 1rem;
     animation: fadeOut 0.5s linear 0s 1;
     opacity: 0;
-    height: 5px;
+    height: 50px;
   }
 
   .skillsList li, .skillsListOut li {
@@ -66,12 +67,9 @@
   }
 
   .cog {
-    position: absolute;
-    right: 15%;
-    top: 15%;
-    animation: 
-    rotateCog 20s linear 0s infinite, 
-    fadeIn 0.5s linear 0s 1; ;
+    /* margin-right: 15rem; */
+    align-self: flex-start;
+    animation: rotateCog 20s linear 0s infinite;
   }
 
   @keyframes fadeIn {
@@ -116,7 +114,7 @@
   }
   @media  screen and (max-width: 550px) {
     .titleCon {
-      flex-direction: column;
+      flex-direction: column-reverse;
       justify-content: space-evenly;
     }
     .skillsCon {
