@@ -1,15 +1,23 @@
 import NavBar from "@/components/navbar/Navbar"
-import Carousel from "@/components/carousel/Carousel"
 import styles from "./projects.module.css"
 import dynamic from "next/dynamic"
 
-const NoSSRCarousel = dynamic(() => import("../../components/carousel/Carousel"), { ssr: false})
+const NoSSRCarousel = dynamic(() => import("../../components/carousel/CarouselTwo"), { ssr: false})
 
 export default function Projects() {
 return (
 <>
 <NavBar />
-<NoSSRCarousel />
+<section className={styles.homepageCon}>
+    <div className={styles.titleCon}>
+        <div className={styles.darrellCon}>
+            <h1 className="heroTitle">Portfolio</h1>
+            <div className={styles.skillsCon}>
+                <NoSSRCarousel />
+            </div>
+        </div>
+    </div>
+</section>
 </>
     )
 }

@@ -7,9 +7,8 @@
   
   .titleCon {
     display: flex;
-    justify-content: center;
+    flex-direction: column-reverse;
     align-items: center;
-    margin-top: 8rem;
     margin-left: 2rem;
     /* animation: fadeIn 0.5s linear 0s 1; */
   }
@@ -55,7 +54,6 @@
     border-width: 2px;
     border-radius: 20px;
     border-style: solid;
-    /* margin: 0px 1.5rem; */
     padding: 10px;
     font-weight: bold;
     transition: all 0.15s ease-in;
@@ -67,8 +65,6 @@
   }
 
   .cog {
-    /* margin-right: 15rem; */
-    align-self: flex-start;
     animation: rotateCog 20s linear 0s infinite;
   }
 
@@ -116,6 +112,7 @@
     .titleCon {
       flex-direction: column-reverse;
       justify-content: space-evenly;
+      margin-top: 0px;
     }
     .skillsCon {
       display: flex;
@@ -136,9 +133,7 @@
       font-size: 1.25rem;
     }
     .cog {
-      position: absolute;
       width: 100px;
-      left: 45%;
-      top: 30%;
+      margin: 2rem 0px;
     }
   }
