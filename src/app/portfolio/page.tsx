@@ -1,6 +1,7 @@
 import NavBar from "@/components/navbar/Navbar"
 import styles from "./projects.module.css"
 import dynamic from "next/dynamic"
+import Loader2 from "@/components/loader2/Loader2"
 
 const NoSSRCarousel = dynamic(() => import("../../components/carousel/CarouselTwo"), { ssr: false})
 
@@ -11,7 +12,7 @@ return (
 <section className={styles.homepageCon}>
     <div className={styles.titleCon}>
         <div className={styles.darrellCon}>
-            <h1 className="heroTitle">Portfolio</h1>
+            <Loader2 />
             <div className={styles.skillsCon}>
                 <NoSSRCarousel />
             </div>

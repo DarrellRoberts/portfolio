@@ -1,10 +1,16 @@
 .homepageCon {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     animation: fadeIn 0.5s linear 0s 1;
   }
-  
+
+  .heroHomepageTitle {
+    font-size: 8rem;
+    line-height: 7rem;
+    color: white;
+  }
+
   .titleCon {
     display: flex;
     flex-direction: column-reverse;

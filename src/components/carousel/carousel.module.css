@@ -1,3 +1,9 @@
+.heroHomepageTitle {
+  font-size: 8rem;
+  line-height: 7rem;
+  color: white;
+}
+
 .portfolioCon {
   margin: 5rem 2rem;
 }
@@ -8,37 +14,33 @@
   text-decoration: underline;
 }
 
-.imageCon {
-  height: 500px;
-  background-size:"cover";
-  background-repeat:"no-repeat";
-}
-
 .portfolioCon p {
   font-size: 1.25rem;
   text-align: center;
-} 
+}
 
 .portfolioList {
   display: flex;
   flex-direction: column;
-  margin-left: 3rem;
   list-style: decimal;
 }
 
 .queueCon {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  /* grid-template-columns: 1000px 800px;
+  grid-template-rows: 1fr; */
   border-width: 5px;
   border-color: white;
   border-radius: 20px;
 }
 
-.imageCon {
-  border-right-width: 5px;
-  border-right-color: var(--secondaryColor);
-
+.imageCon img {
+  border-radius: 10px;
+  height: 500px;
+  border-bottom-color: var(--secondaryColor);
+  border-bottom-width: 5px;
 }
 
 .textCon {
@@ -49,9 +51,13 @@
   padding: 1rem;
 }
 
-.textCon a{
+.textCon a {
   color: white;
   font-weight: bold;
+}
+
+.textCon a:hover {
+  color: aqua;
 }
 
 .stackCon {
@@ -59,17 +65,24 @@
   padding: 1rem;
 }
 
-@media  screen and (max-width: 550px) {
+@media screen and (max-width: 550px) {
+  .heroHomepageTitle {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .portfolioCon {
+    width: 300px;
+  }
   .queueCon {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    /* width: 350px; */
+    margin: 3rem 0px;
+    width: 300px;
   }
-  .imageCon {
-    /* background-size: contain !important; */
-    background-position: center !important;
-    height: 300px;
-    border-right-color: transparent;
+  .imageCon img {
+    width: 300px;
+    height: 200px;
   }
   .portfolioList {
     margin: 0px;
