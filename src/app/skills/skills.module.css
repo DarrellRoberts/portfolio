@@ -1,31 +1,28 @@
 .homepageCon {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     animation: fadeIn 0.5s linear 0s 1;
-    
   }
   
   .titleCon {
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
     margin-left: 2rem;
     /* animation: fadeIn 0.5s linear 0s 1; */
   }
 
   .skillsCon {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .skillsCon h2 {
     margin: 1.5rem 0px;
-    text-decoration: underline;
-    font-size: 1.5rem;
+    /* text-decoration: underline; */
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: 3rem;
     cursor: pointer;
-    width: 100px;
+    width: 50%;
   }
 
   .skillsCon h2:active {
@@ -37,6 +34,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
     animation: fadeIn 0.5s cubic-bezier(0.9, 0.82, 0.165, 1) 0s 1;
+    height: auto;
   }
 
   .skillsListOut {
@@ -67,6 +65,7 @@
 
   .cog {
     animation: rotateCog 20s linear 0s infinite;
+    align-self: center;
   }
 
   @keyframes fadeIn {
