@@ -1,32 +1,31 @@
 .homepageCon {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    /* display: flex; */
     animation: fadeIn 0.5s linear 0s 1;
   }
   
   .titleCon {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column-reverse;
     margin-left: 2rem;
+    /* width: 100%; */
   }
 
   .skillsCon {
-    display: grid;
-    margin-right: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
   }
 
   .skillsCon h2 {
     margin: 1.5rem 0px;
-    text-decoration: underline;
-    font-size: 1.5rem;
+    /* text-decoration: underline; */
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    font-size: 3rem;
     cursor: pointer;
-    width: 100px;
   }
-
+  
   .skillsCon h2:active {
     color: white;
   }
@@ -35,10 +34,12 @@
     display: flex;
     flex-direction: column;
     animation: fadeIn 0.5s cubic-bezier(0.9, 0.82, 0.165, 1) 0s 1;
+    height: auto;
   }
 
   .skillsListOut {
     display: flex;
+    flex-direction: column;
     overflow: hidden;
     z-index: -100;
     animation: fadeOut 0.5s cubic-bezier(0.9, 0.82, 0.165, 1) 0s 1;
@@ -59,6 +60,10 @@
   .skillsList li:hover {
     background-color: var(--secondaryColor);
     color: var(--mainColor);
+  }
+
+  .mail {
+    align-self: center;
   }
 
   @keyframes fadeIn {

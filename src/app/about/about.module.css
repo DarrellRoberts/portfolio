@@ -1,7 +1,4 @@
 .homepageCon {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   animation: fadeIn 0.5s linear 0s 1;
 }
 
@@ -13,23 +10,20 @@
   margin-left: 2rem;
 }
 
-.darrellCon {
-  /* display: flex; */
-
-}
-
 .skillsCon {
-  display: grid;
-  margin-right: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
 }
 
 .skillsCon h2 {
   margin: 1.5rem 0px;
-  text-decoration: underline;
-  font-size: 1.5rem;
+  /* text-decoration: underline; */
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  font-size: 3rem;
   cursor: pointer;
-  width: 100px;
+  width: 50%;
 }
 
 .skillsCon h2:active {
@@ -40,7 +34,7 @@
   display: flex;
   flex-direction: column;
   animation: fadeIn 0.5s cubic-bezier(0.9, 0.82, 0.165, 1) 0s 1;
-  height: 500px;
+  height: auto;
 }
 
 .skillsListOut {
@@ -50,7 +44,7 @@
   z-index: -100;
   animation: fadeOut 0.5s cubic-bezier(0.9, 0.82, 0.165, 1) 0s 1;
   opacity: 0;
-  height: 500px;
+  height: 5px;
 }
 
 .skillsList p, .skillsListOut p {
