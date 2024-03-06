@@ -11,7 +11,8 @@
 .portfolioCon li {
   margin-bottom: 1rem;
   font-size: 2rem;
-  text-decoration: underline;
+  border-bottom-color: white;
+  border-bottom-width: 1px;
 }
 
 .portfolioCon p {
@@ -20,8 +21,8 @@
 }
 
 .portfolioList {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   list-style: decimal;
 }
 
@@ -92,5 +93,6 @@
   }
   .portfolioCon li {
     font-size: 1.5rem;
+    margin-top: 5rem;
   }
 }

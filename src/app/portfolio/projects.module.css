@@ -1,6 +1,6 @@
 .homepageCon {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     animation: fadeIn 0.5s linear 0s 1;
   }
