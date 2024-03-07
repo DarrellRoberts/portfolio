@@ -2,7 +2,7 @@ import { Popover } from "antd"
 
 const textData = [
 {
-    title: 'Shark Explorer (Solo Project - Current Project)',
+    title: 'Shark Explorer',
     content: "Shark Explorer is a 3D-interactive website where the user can explore and learn about different species of sharks. Since childhood I've had a fascination with sharks and in 2012 I participated in a project for the conservation of Great White Sharks. I made this website as a tool to educate all ages of why we need them. I made this with vanilla JavaScript, the Three.js library and Vite.js.",
     stack: (
         <>
@@ -22,7 +22,7 @@ const textData = [
 },
 {
     content: "The Book Club Brothers is a website I created that is dedicated to a bookclub I formed with my old school friends in 2020. We all live in different countries so formed the club as a way of keeping in touch, whilst also reading fantastic books. This is a Full Stack project and so far has the following capabilities: jwt account registration and login, Cloudinary photo upload, user statistics, submit and edit book ratings, new book suggestion and book randomiser. This is my current project so bear with me if it's not complete. Stay tuned!",
-    title: 'The Book Club Brothers (Solo Project - Current Project)',
+    title: 'The Book Club Brothers',
     stack: (
         <>
         <Popover title="React">
@@ -41,7 +41,7 @@ const textData = [
 },
 {
     content: "This is the API I created for the BookClub Brothers website.",
-    title: 'The Book Club Brothers API (Solo Project)',
+    title: 'The Book Club Brothers API',
     stack: (
         <>
         <Popover title="MongoDB">
@@ -60,7 +60,7 @@ const textData = [
 },
 {
     content: "The Book Club League is an extension of the Book Club Brothers. On this site the user can input the data from their book club and compare against others across the world. I felt like most book clubs lacked enthusiasm to finish their books, so realised being able to compare against other clubs would be a great incentive. For this project I am using Vue.js with TypeScript and Tailwind CSS. Similarly, it is a work in progress so stay tuned for more!",
-    title: 'The Book Club League (Solo Project - Current Project)',
+    title: 'The Book Club League',
     stack: (
         <>
         <Popover title="Vue">
