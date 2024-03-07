@@ -13,6 +13,7 @@
   font-size: 2rem;
   border-bottom-color: white;
   border-bottom-width: 1px;
+  width: 50%;
 }
 
 .portfolioCon p {
@@ -21,8 +22,6 @@
 }
 
 .portfolioList {
-  /* display: flex;
-  flex-direction: column; */
   list-style: decimal;
 }
 
@@ -30,11 +29,24 @@
   display: flex;
   flex-direction: column;
   width: 1000px;
-  /* grid-template-columns: 1000px 800px;
-  grid-template-rows: 1fr; */
   border-width: 5px;
   border-color: white;
   border-radius: 20px;
+  animation: fadeIn 0.5s cubic-bezier(0.9, 0.82, 0.165, 1) 0s 1;
+}
+
+.queueConOut {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  border-width: 5px;
+  border-color: white;
+  border-radius: 20px;
+  opacity: 0;
+  height: 50px;
+	overflow: hidden;
+  z-index: -100;
+	animation: fadeOut 0.5s cubic-bezier(0.9, 0.82, 0.165, 1) 0s 1;
 }
 
 .imageCon img {
@@ -66,6 +78,32 @@
   padding: 1rem;
 }
 
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+    filter: blur(5px);
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+    filter: blur(0px);
+}
+}
+
+@keyframes fadeOut {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+    filter: blur(0px);
+  }
+  100% {
+    transform: translateY(-50px);
+    opacity: 0;
+    filter: blur(5px);
+}
+}
+
 @media screen and (max-width: 550px) {
   .heroHomepageTitle {
     font-size: 4rem;
@@ -77,9 +115,15 @@
   .queueCon {
     display: flex;
     flex-direction: column;
-    /* width: 350px; */
     margin: 3rem 0px;
     width: 300px;
+  }
+  .queueConOut {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0px;
+    width: 300px;
+    height: 5px;
   }
   .imageCon img {
     width: 300px;
@@ -94,5 +138,6 @@
   .portfolioCon li {
     font-size: 1.5rem;
     margin-top: 5rem;
+    width: 100%;
   }
 }
