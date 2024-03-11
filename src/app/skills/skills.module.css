@@ -31,10 +31,18 @@
 
   .skillsList {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 300px);
     grid-gap: 1rem;
     animation: fadeIn 0.5s cubic-bezier(0.9, 0.82, 0.165, 1) 0s 1;
     height: auto;
+  }
+
+  .skillsList img, .skillsListOut img {
+    filter: grayscale(1);
+  }
+
+  .skillsList img:hover, .skillsListOut img:hover {
+    filter: grayscale(0);
   }
 
   .skillsListOut {
@@ -42,7 +50,7 @@
     /* position: absolute; */
     overflow: hidden;
     z-index: -100;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 300px);
     grid-gap: 1rem;
     animation: fadeOut 0.5s cubic-bezier(0.9, 0.82, 0.165, 1) 0s 1;
     opacity: 0;
