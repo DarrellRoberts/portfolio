@@ -46,61 +46,43 @@ const [state, dispatch] = useReducer(reducer, {
                 <h2 onClick={() => dispatch({type: "toggleShowSummary"})}> 
                 Summary
                 </h2>
-                {state.showSummary ? (
-                <div className={styles.skillsList}>
-                  <p>I'm a career changer who originally worked for four years in the digital marketing industry. However, I always had a passion for coding, ever since I won a 
-                  <a  className="underline"href="https://github.com/DarrellRoberts/microbit-competition" target="_blank"> Microbit coding competition in 2018 </a>. 
-                  My biggest regret was not changing careers then and there. </p>
-                  <p>Nevertheless, I finally made the change in July 2023 when I enrolled in a Fullstack Developer Bootcamp. Now I can't imagine a future without coding as it brings me such joy!</p>
-                </div>) : (                
-                <div className={styles.skillsListOut}>
-                  <p>I'm a career changer who originally worked for four years in the digital marketing industry. However, I always had a passion for coding, ever since I won a 
-                  <a  className="underline"href="https://github.com/DarrellRoberts/microbit-competition" target="_blank"> Microbit coding competition in 2018 </a>. 
-                  My biggest regret was not changing careers then and there. </p>
-                  <p>Nevertheless, I finally made the change in July 2023 when I enrolled in a Fullstack Developer Bootcamp. Now I can't imagine a future without coding as it brings me such joy!</p>
-                </div>)}
+                <ul className={state.showSummary ? styles.skillsList : styles.skillsListOut}>
+                  <li>Career changer with fours' background in digital marketing</li>
+                  <li>Had a passion for coding since <a  className="underline"href="https://github.com/DarrellRoberts/microbit-competition" target="_blank">winning Microbit competition in 2018</a></li>
+                  <li>Now a Freelance Fullstack Developer</li>
+                </ul>
                 </div>
 
                 <div className="flex flex-col">
                 <h2 onClick={() => dispatch({type: "toggleShowEducation"})}> 
                 Education 
                 </h2>
-                {state.showEducation ? (
-                <div className={styles.skillsList}>
-                  <p>I have a Master of Research in History from the University of Edinburgh. This equipped me with in-depth research skills that I am able to transfer to coding. From my perspective, everything is researchable and no subject is too eclectic.</p>
-                  <p>In November 2023 I finished a Fullstack Developer Bootcamp at WBS Coding school. Here I learnt a range of Frontend, Backend and Database technology, including (but not exclusive to): HTML5, CSS3, JavaScript, React.js, SQL, Node.js, Express.js and MongoDB</p>
-                  <p>Since the Bootcamp, I have been challenging myself every week to learn something new. For example, I taught myself TypeScript, Tailwind CSS, Docker and basic Java.</p>
-                  <p>I firmly believe that if the motivation is there, you can learn anything</p>
-                </div> ) : (                
-                <div className={styles.skillsListOut}>
-                  <p>I have a Master of Research in History from the University of Edinburgh. This equipped me with in-depth research skills that I am able to transfer to coding. From my perspective, everything is researchable and no subject is too eclectic.</p>
-                  <p>In November 2023 I finished a Fullstack Developer Bootcamp at WBS Coding school. Here I learnt a range of Frontend, Backend and Database technology, including (but not exclusive to): HTML5, CSS3, JavaScript, React.js, SQL, Node.js, Express.js and MongoDB</p>
-                  <p>Since the Bootcamp, I have been challenging myself every week to learn something new. For example, I taught myself TypeScript, Tailwind CSS, Docker and basic Java.</p>
-                  <p>I firmly believe that if the motivation is there, you can learn anything</p>
-                </div>)}
+                <ul className={state.showEducation ? styles.skillsList : styles.skillsListOut}>
+                  <li>Master of Research in History from University of Edinburgh. This equipped me with vital research skills and made me self-motivated to reach my goals.</li>
+                  <li>Graduated as a Fullstack Developer from WBS Coding School in November 2023. The bootcamp gave me a solid foundation for web developement </li>
+                  <li>Completed Udemy's Data Structures and Algorithms course in Januaray 2024. I learn from this course big O Notation, fundamental data structures such as Linked Lists, Binary Search Trees and Hash Tables, as well as common sorting, searching and recursive algorithms</li>
+                  <li>I focus on learning something new every week. My philosophy is: if the motivation is there, you can learn anything</li>
+                </ul>
                 </div>
 
                 <div className="flex flex-col">
                 <h2 onClick={() => dispatch({type: "toggleShowExperience"})}> 
                 Experience 
                 </h2>
-                {state.showExperience ? (
-                <div className={styles.skillsList}>
-                <p>With my four years' experience in digital marketing, I learnt to perfect project management and meet either the company's or clients' deadlines. I ran multi-million euro (annual) budgets for clients such as Easyjet, to overseeing far smaller expenditures from various Berlin startups. </p>
-                <p>The Fullstack Developer Bootcamp I completed in 2023 allowed me to accelerate my coding experience, with either solo or group projects. I routinely worked in a team, mostly for weekly projects but also for one-day Hackathons 
-                <a href="https://github.com/DarrellRoberts/flag-app" className="underline" target="_blank"> (one of which I won with my team). </a>
-                </p>
-                <p> Currently, I am working on not only my own projects but also contributing towards open source repositories.</p>
-                <p> If you are interested in some of my work, check out <a href="./portfolio">my porfolio </a></p>
-                </div> ) : (                
-                <div className={styles.skillsListOut}>
-                  <p>With my four years' experience in digital marketing, I learnt to perfect project management and meet either the company's or clients' deadlines. I ran multi-million euro (annual) budgets for clients such as Easyjet, to overseeing far smaller expenditures from various Berlin startups. </p>
-                  <p>The Fullstack Developer Bootcamp I completed in 2023 allowed me to accelerate my coding experience, with either solo or group projects. I routinely worked in a team, mostly for weekly projects but also for one-day Hackathons 
-                  <a href="https://github.com/DarrellRoberts/flag-app" className="underline" target="_blank"> (one of which I won with my team). </a>
-                  </p>
-                  <p> Currently, I am working on not only my own projects but also contributing towards open source repositories.</p>
-                  <p> If you are interested in some of my work, check out <a className="underline" href="./portfolio">my porfolio </a></p>
-                </div>)}
+                <ul className={state.showExperience ? styles.skillsList : styles.skillsListOut}>
+                  <li>I currently volunteer at two organisations as a Freelance Developer:</li>
+                  <ul className={styles.experienceList}>
+                    <li id={styles.experienceItem}><a  className="underline"href="https://openlibrary.org/" target="_blank">Internet Archive's Open Library</a>: open source digital library with over 5 million books. I help maintain their collection and respond to GitHub issues (Python, HTML, JavaScript)</li>
+                    <li id={styles.experienceItem}><a  className="underline"href="https://tactical.vote/" target="_blank">Tactical.vote</a>: tool to assist tactical voting tactics this coming General Election in the UK. I am creating a mobile app for them (React Native, Expo)</li>
+                  </ul>
+                  <li>I am also currently working on three main projects:</li>
+                  <ul className={styles.experienceList}>
+                    <li id={styles.experienceItem}>The Book Club Brothers</li>
+                    <li id={styles.experienceItem}>The Book Club League</li>
+                    <li id={styles.experienceItem}> Shark Explorer</li>
+                  </ul>
+                  <li>To view these projects and more, see my portfolio <a  className="underline"href="/portfolio" target="_blank">here </a></li>
+                </ul>
                 </div>
             </div>
           </div>
