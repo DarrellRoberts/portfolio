@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import ThemeContextProvider from "./context/ThemeContext";
 
 export const metadata: Metadata = {
   title: "Darrell Roberts",
@@ -12,6 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ThemeContextProvider>
     <html lang="en">
       <head>
         <link rel="icon" href="./logo.jpg" type="image/jpg"/>
@@ -20,5 +22,6 @@ export default function RootLayout({
         {children}
         </body>
     </html>
+    </ThemeContextProvider>
   );
 }
