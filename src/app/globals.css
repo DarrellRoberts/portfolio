@@ -21,13 +21,12 @@ body {
   background: var(--mainColor);
 }
 
-h1, h2, h3, p, a, ul, li {
+h2, h3, p, a, ul, li {
   color: var(--secondaryColor);
 }
 
 .heroTitle {
   font-size: 8rem;
-  /* text-align: center; */
   line-height: 7rem;
   color: white;
 }
