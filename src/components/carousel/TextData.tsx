@@ -40,22 +40,6 @@ const textData = [
     Githublink:"https://github.com/DarrellRoberts/BookClubBrothers_Backend-API",
 },
 {
-    content: "The Book Club League is an extension of the Book Club Brothers. On this site the user can input the data from their book club and compare against others across the world. I felt like most book clubs lacked enthusiasm to finish their books, so realised being able to compare against other clubs would be a great incentive. For this project I am using Vue.js with TypeScript. This is a work in progress so stay tuned for more!",
-    title: 'The Book Club League',
-    stack: (
-        <>
-        <Popover title="Vue">
-        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vuejs-colored.svg" width="50" height="50" alt="Vue" />
-        </Popover>
-        <Popover title="TypeScript"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="50" height="50" alt="TypeScript" />
-        </Popover>
-        </>
-    ),
-    link: "TBA",
-    Githublink:"https://github.com/DarrellRoberts/BookClubLeague_Frontend"
-    ,
-},
-{
     title: 'Shark Explorer',
     content: "Shark Explorer is a 3D-interactive website where the user can explore and learn about different species of sharks. Since childhood I've had a fascination with sharks and in 2012 I participated in a project for the conservation of Great White Sharks. I made this website as a tool to educate all ages of why we need them. I made this with vanilla JavaScript, the Three.js library and Vite.js.",
     stack: (
@@ -72,6 +56,22 @@ const textData = [
     ),
     link: "https://shark-explorer.netlify.app/",
     Githublink:"https://github.com/DarrellRoberts/shark_explorer"
+    ,
+},
+{
+    content: "The Book Club League is an extension of the Book Club Brothers. On this site the user can input the data from their book club and compare against others across the world. I felt like most book clubs lacked enthusiasm to finish their books, so realised being able to compare against other clubs would be a great incentive. For this project I am using Vue.js with TypeScript. This is a work in progress so stay tuned for more!",
+    title: 'The Book Club League',
+    stack: (
+        <>
+        <Popover title="Vue">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vuejs-colored.svg" width="50" height="50" alt="Vue" />
+        </Popover>
+        <Popover title="TypeScript"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="50" height="50" alt="TypeScript" />
+        </Popover>
+        </>
+    ),
+    link: "TBA",
+    Githublink:"https://github.com/DarrellRoberts/BookClubLeague_Frontend"
     ,
 },
 {
