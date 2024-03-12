@@ -1,8 +1,9 @@
 "use client"
 import {useReducer} from "react"
 import Navbar from "@/components/navbar/Navbar"
-import Image from "next/image"
 import Loader from "@/components/loader/Loader"
+import {useContext} from "react"
+import { ThemeContext } from "@/app/context/ThemeContext";
 import styles from "./about.module.css"
 
 type StateType = {
@@ -34,54 +35,65 @@ const [state, dispatch] = useReducer(reducer, {
     showExperience: false,
     showTools: false,
 })
+
+const { light, dark, isLightTheme, toggleTheme } = useContext(ThemeContext);
+
+const themeStyles = isLightTheme ? light : dark;
+
     return (
-        <>
+<div style={{backgroundColor: themeStyles.bg}} className="h-screen">
     <Navbar />
-    <section className={styles.homepageCon}>
+    <section style={{backgroundColor: themeStyles.bg}} className={styles.homepageCon}>
         <div className={styles.titleCon}>
           <div className={styles.darrellCon}>
-            <h1 className="heroTitle">About Me</h1>
-            <div className={styles.skillsCon}>
+            <h1 style={{color: themeStyles.secondaryText}} className="heroTitle">About Me</h1>
+            <div style={{backgroundColor: themeStyles.bg}} className={styles.skillsCon}>
                 <div className="flex flex-col">
-                <h2 onClick={() => dispatch({type: "toggleShowSummary"})}> 
+                <h2 
+                style={{color: themeStyles.mainText, borderBottomColor: themeStyles.secondaryText}}
+                onClick={() => dispatch({type: "toggleShowSummary"})}> 
                 Summary
                 </h2>
                 <ul className={state.showSummary ? styles.skillsList : styles.skillsListOut}>
-                  <li>Career changer with fours' background in digital marketing</li>
-                  <li>Had a passion for coding since <a  className="underline"href="https://github.com/DarrellRoberts/microbit-competition" target="_blank">winning Microbit competition in 2018</a></li>
-                  <li>Now a Freelance Fullstack Developer</li>
+                  <li style={{color: themeStyles.mainText}}>Career changer with fours' background in digital marketing</li>
+                  <li style={{color: themeStyles.mainText}}>Had a passion for coding since <a  className="underline"href="https://github.com/DarrellRoberts/microbit-competition" target="_blank">winning Microbit competition in 2018</a></li>
+                  <li style={{color: themeStyles.mainText}}>Now a Freelance Fullstack Developer</li>
                 </ul>
                 </div>
 
                 <div className="flex flex-col">
-                <h2 onClick={() => dispatch({type: "toggleShowEducation"})}> 
+                <h2 
+                style={{color: themeStyles.mainText, borderBottomColor: themeStyles.secondaryText}}
+                onClick={() => dispatch({type: "toggleShowEducation"})}> 
                 Education 
                 </h2>
                 <ul className={state.showEducation ? styles.skillsList : styles.skillsListOut}>
-                  <li>Master of Research in History from University of Edinburgh. This equipped me with vital research skills and made me self-motivated to reach my goals.</li>
-                  <li>Graduated as a Fullstack Developer from WBS Coding School in November 2023. The bootcamp gave me a solid foundation for web developement </li>
-                  <li>Completed Udemy's Data Structures and Algorithms course in Januaray 2024. I learn from this course big O Notation, fundamental data structures such as Linked Lists, Binary Search Trees and Hash Tables, as well as common sorting, searching and recursive algorithms</li>
-                  <li>I focus on learning something new every week. My philosophy is: if the motivation is there, you can learn anything</li>
+                  <li style={{color: themeStyles.mainText}}>Master of Research in History from University of Edinburgh. This equipped me with vital research skills and made me self-motivated to reach my goals.</li>
+                  <li style={{color: themeStyles.mainText}}>Graduated as a Fullstack Developer from WBS Coding School in November 2023. The bootcamp gave me a solid foundation for web developement </li>
+                  <li style={{color: themeStyles.mainText}}>Completed Udemy's Data Structures and Algorithms course in Januaray 2024. I learn from this course big O Notation, fundamental data structures such as Linked Lists, Binary Search Trees and Hash Tables, as well as common sorting, searching and recursive algorithms</li>
+                  <li style={{color: themeStyles.mainText}}>I focus on learning something new every week. My philosophy is: if the motivation is there, you can learn anything</li>
                 </ul>
                 </div>
 
                 <div className="flex flex-col">
-                <h2 onClick={() => dispatch({type: "toggleShowExperience"})}> 
+                <h2 
+                style={{color: themeStyles.mainText, borderBottomColor: themeStyles.secondaryText}}
+                onClick={() => dispatch({type: "toggleShowExperience"})}> 
                 Experience 
                 </h2>
                 <ul className={state.showExperience ? styles.skillsList : styles.skillsListOut}>
-                  <li>I currently volunteer at two organisations as a Freelance Developer:</li>
+                  <li style={{color: themeStyles.mainText}}>I currently volunteer at two organisations as a Freelance Developer:</li>
                   <ul className={styles.experienceList}>
-                    <li id={styles.experienceItem}><a  className="underline"href="https://openlibrary.org/" target="_blank">Internet Archive's Open Library</a>: open source digital library with over 5 million books. I help maintain their collection and respond to GitHub issues (Python, HTML, JavaScript)</li>
-                    <li id={styles.experienceItem}><a  className="underline"href="https://tactical.vote/" target="_blank">Tactical.vote</a>: tool to assist tactical voting tactics this coming General Election in the UK. I am creating a mobile app for them (React Native, Expo)</li>
+                    <li style={{color: themeStyles.mainText}} id={styles.experienceItem}><a  style={{color: themeStyles.mainText}} className="underline"href="https://openlibrary.org/" target="_blank">Internet Archive's Open Library</a>: open source digital library with over 5 million books. I help maintain their collection and respond to GitHub issues (Python, HTML, JavaScript)</li>
+                    <li style={{color: themeStyles.mainText}} id={styles.experienceItem}><a  style={{color: themeStyles.mainText}} className="underline"href="https://tactical.vote/" target="_blank">Tactical.vote</a>: tool to assist tactical voting tactics this coming General Election in the UK. I am creating a mobile app for them (React Native, Expo)</li>
                   </ul>
-                  <li>I am also currently working on three main projects:</li>
+                  <li style={{color: themeStyles.mainText}}>I am also currently working on three main projects:</li>
                   <ul className={styles.experienceList}>
-                    <li id={styles.experienceItem}>The Book Club Brothers</li>
-                    <li id={styles.experienceItem}>The Book Club League</li>
-                    <li id={styles.experienceItem}> Shark Explorer</li>
+                    <li style={{color: themeStyles.mainText}} id={styles.experienceItem}>The Book Club Brothers</li>
+                    <li style={{color: themeStyles.mainText}} id={styles.experienceItem}>The Book Club League</li>
+                    <li style={{color: themeStyles.mainText}} id={styles.experienceItem}> Shark Explorer</li>
                   </ul>
-                  <li>To view these projects and more, see my portfolio <a  className="underline"href="/portfolio" target="_blank">here </a></li>
+                  <li style={{color: themeStyles.mainText}}>To view these projects and more, see my portfolio <a  style={{color: themeStyles.mainText}} className="underline"href="/portfolio" target="_blank">here </a></li>
                 </ul>
                 </div>
             </div>
@@ -90,6 +102,6 @@ const [state, dispatch] = useReducer(reducer, {
         </div>
       </section>
       {/* <Loader /> */}
-        </>
+</div>
     )
 }
