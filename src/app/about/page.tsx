@@ -55,8 +55,8 @@ const themeStyles = isLightTheme ? light : dark;
                 Summary
                 </h2>
                 <ul className={state.showSummary ? styles.skillsList : styles.skillsListOut}>
-                  <li style={{color: themeStyles.mainText}}>Career changer with fours' background in digital marketing</li>
-                  <li style={{color: themeStyles.mainText}}>Had a passion for coding since <a  className="underline"href="https://github.com/DarrellRoberts/microbit-competition" target="_blank">winning Microbit competition in 2018</a></li>
+                  <li style={{color: themeStyles.mainText}}>Career changer with four years' background in digital marketing</li>
+                  <li style={{color: themeStyles.mainText}}>Had a passion for coding since <a  style={{color: themeStyles.secondaryText}} className="underline"href="https://github.com/DarrellRoberts/microbit-competition" target="_blank">winning a Microbit competition in 2018</a></li>
                   <li style={{color: themeStyles.mainText}}>Now a Freelance Fullstack Developer</li>
                 </ul>
                 </div>
@@ -84,8 +84,8 @@ const themeStyles = isLightTheme ? light : dark;
                 <ul className={state.showExperience ? styles.skillsList : styles.skillsListOut}>
                   <li style={{color: themeStyles.mainText}}>I currently volunteer at two organisations as a Freelance Developer:</li>
                   <ul className={styles.experienceList}>
-                    <li style={{color: themeStyles.mainText}} id={styles.experienceItem}><a  style={{color: themeStyles.mainText}} className="underline"href="https://openlibrary.org/" target="_blank">Internet Archive's Open Library</a>: open source digital library with over 5 million books. I help maintain their collection and respond to GitHub issues (Python, HTML, JavaScript)</li>
-                    <li style={{color: themeStyles.mainText}} id={styles.experienceItem}><a  style={{color: themeStyles.mainText}} className="underline"href="https://tactical.vote/" target="_blank">Tactical.vote</a>: tool to assist tactical voting tactics this coming General Election in the UK. I am creating a mobile app for them (React Native, Expo)</li>
+                    <li style={{color: themeStyles.mainText}} id={styles.experienceItem}><a  style={{color: themeStyles.secondaryText}} className="underline"href="https://openlibrary.org/" target="_blank">Internet Archive's Open Library</a>: open source digital library with over 5 million books. I help maintain their collection and respond to GitHub issues (Python, HTML, JavaScript)</li>
+                    <li style={{color: themeStyles.mainText}} id={styles.experienceItem}><a  style={{color: themeStyles.secondaryText}} className="underline"href="https://tactical.vote/" target="_blank">Tactical.vote</a>: tool to assist tactical voting tactics this coming General Election in the UK. I am creating a mobile app for them (React Native, Expo)</li>
                   </ul>
                   <li style={{color: themeStyles.mainText}}>I am also currently working on three main projects:</li>
                   <ul className={styles.experienceList}>
@@ -93,7 +93,7 @@ const themeStyles = isLightTheme ? light : dark;
                     <li style={{color: themeStyles.mainText}} id={styles.experienceItem}>The Book Club League</li>
                     <li style={{color: themeStyles.mainText}} id={styles.experienceItem}> Shark Explorer</li>
                   </ul>
-                  <li style={{color: themeStyles.mainText}}>To view these projects and more, see my portfolio <a  style={{color: themeStyles.mainText}} className="underline"href="/portfolio" target="_blank">here </a></li>
+                  <li style={{color: themeStyles.mainText}}>To view these projects and more, see my portfolio <a  style={{color: themeStyles.secondaryText}} className="underline"href="/portfolio" target="_blank">here </a></li>
                 </ul>
                 </div>
             </div>

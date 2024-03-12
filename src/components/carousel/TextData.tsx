@@ -2,31 +2,12 @@ import { Popover } from "antd"
 
 const textData = [
 {
-    title: 'Shark Explorer',
-    content: "Shark Explorer is a 3D-interactive website where the user can explore and learn about different species of sharks. Since childhood I've had a fascination with sharks and in 2012 I participated in a project for the conservation of Great White Sharks. I made this website as a tool to educate all ages of why we need them. I made this with vanilla JavaScript, the Three.js library and Vite.js.",
-    stack: (
-        <>
-        <Popover title="JavaScript">
-        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="50" height="50" alt="JavaScript" />
-        </Popover>
-        <Popover title="Three.js"><img src="https://seeklogo.com/images/T/three-js-logo-07A32307F1-seeklogo.com.png" width="50" height="50" alt="Three.js" />
-        </Popover>
-        <Popover title="Vite">
-        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg" width="50" height="50" alt="Vite" />
-        </Popover>
-        </>
-    ),
-    link: "https://shark-explorer.netlify.app/",
-    Githublink:"https://github.com/DarrellRoberts/shark_explorer"
-    ,
-},
-{
     content: "The Book Club Brothers is a website I created that is dedicated to a bookclub I formed with my old school friends in 2020. We all live in different countries so formed the club as a way of keeping in touch, whilst also reading fantastic books. This is a Full Stack project and so far has the following capabilities: jwt account registration and login, Cloudinary photo upload, user statistics, submit and edit book ratings, new book suggestion and book randomiser. This is my current project so bear with me if it's not complete. Stay tuned!",
     title: 'The Book Club Brothers',
     stack: (
         <>
-        <Popover title="React">
-        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
+        <Popover title="Next">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg" width="50" height="50" alt="Next" />
         </Popover>
         <Popover title="TypeScript"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="50" height="50" alt="TypeScript" />
         </Popover>
@@ -59,7 +40,7 @@ const textData = [
     Githublink:"https://github.com/DarrellRoberts/BookClubBrothers_Backend-API",
 },
 {
-    content: "The Book Club League is an extension of the Book Club Brothers. On this site the user can input the data from their book club and compare against others across the world. I felt like most book clubs lacked enthusiasm to finish their books, so realised being able to compare against other clubs would be a great incentive. For this project I am using Vue.js with TypeScript and Tailwind CSS. Similarly, it is a work in progress so stay tuned for more!",
+    content: "The Book Club League is an extension of the Book Club Brothers. On this site the user can input the data from their book club and compare against others across the world. I felt like most book clubs lacked enthusiasm to finish their books, so realised being able to compare against other clubs would be a great incentive. For this project I am using Vue.js with TypeScript. This is a work in progress so stay tuned for more!",
     title: 'The Book Club League',
     stack: (
         <>
@@ -68,13 +49,29 @@ const textData = [
         </Popover>
         <Popover title="TypeScript"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="50" height="50" alt="TypeScript" />
         </Popover>
-        <Popover title="Tailwind CSS">
-        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="50" height="50" alt="TailwindCSS" />
+        </>
+    ),
+    link: "TBA",
+    Githublink:"https://github.com/DarrellRoberts/BookClubLeague_Frontend"
+    ,
+},
+{
+    title: 'Shark Explorer',
+    content: "Shark Explorer is a 3D-interactive website where the user can explore and learn about different species of sharks. Since childhood I've had a fascination with sharks and in 2012 I participated in a project for the conservation of Great White Sharks. I made this website as a tool to educate all ages of why we need them. I made this with vanilla JavaScript, the Three.js library and Vite.js.",
+    stack: (
+        <>
+        <Popover title="JavaScript">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="50" height="50" alt="JavaScript" />
+        </Popover>
+        <Popover title="Three.js"><img src="https://seeklogo.com/images/T/three-js-logo-07A32307F1-seeklogo.com.png" width="50" height="50" alt="Three.js" />
+        </Popover>
+        <Popover title="Vite">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg" width="50" height="50" alt="Vite" />
         </Popover>
         </>
     ),
-    link: "https://bookclub-brothers.vercel.app/",
-    Githublink:"https://github.com/DarrellRoberts/BookClubLeague_Frontend"
+    link: "https://shark-explorer.netlify.app/",
+    Githublink:"https://github.com/DarrellRoberts/shark_explorer"
     ,
 },
 {

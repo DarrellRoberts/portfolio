@@ -7,12 +7,6 @@ interface data {
 
 const dataArray:data[] = [
 {
-  pic:'https://i.imgur.com/oSfGZm0.jpg',
-  map: "",
-  color: '#73c5ff',
-  background: '#0e90ed',
-},
-{
   pic:'https://i.imgur.com/lKSduux.jpg',
   map: "",
   color: '#808080',
@@ -25,10 +19,17 @@ const dataArray:data[] = [
   background: 'rgb(43, 88, 43)',
 },
 {
-  pic:'https://i.imgur.com/FQ8lPtR.jpg',
+  pic:"",
+  // 'https://i.imgur.com/FQ8lPtR.jpg'
   map: "",
   color: '#eb5b5b',
   background: '#d10606',
+},
+{
+  pic:'https://i.imgur.com/oSfGZm0.jpg',
+  map: "",
+  color: '#73c5ff',
+  background: '#0e90ed',
 },
 {
   pic:'https://i.imgur.com/FQ8lPtR.jpg',

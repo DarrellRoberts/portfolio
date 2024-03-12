@@ -27,7 +27,7 @@ export default function NavBar() {
                 <li><Link style={{color: themeStyles.mainText}} href="/contact">Contact</Link></li>
             </ul>
             <div className={styles.rightCon}>
-                <span><Link style={{color: themeStyles.mainText}} href="/de">DE</Link></span>
+                {/* <span><Link style={{color: themeStyles.mainText}} href="/de">DE</Link></span> */}
                 <div 
                 onClick={toggleTheme}
                 className={styles.lightCircle}

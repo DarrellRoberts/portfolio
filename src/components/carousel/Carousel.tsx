@@ -40,7 +40,7 @@ const textChildren = mapArray.map((item, i) => (
     </li>
     {value === i ? (
     <div 
-    style={{borderColor: themeStyles.secondaryText}} 
+    style={{boxShadow: "0px 0px 20px 5px" + themeStyles.secondaryText}} 
     className={state.showProject ? styles.queueCon : styles.queueConOut}>
         <div className={styles.imageCon}>
         <Image alt="project" src={item.pic} width={1000} height={500} />
