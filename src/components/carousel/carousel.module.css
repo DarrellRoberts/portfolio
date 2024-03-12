@@ -43,7 +43,7 @@
   border-color: white;
   border-radius: 20px;
   opacity: 0;
-  height: 50px;
+  height: 0px;
 	overflow: hidden;
   z-index: -100;
 	animation: fadeOut 0.5s cubic-bezier(0.9, 0.82, 0.165, 1) 0s 1;

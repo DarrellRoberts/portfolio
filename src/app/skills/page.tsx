@@ -4,6 +4,8 @@ import {useReducer} from "react"
 import Navbar from "@/components/navbar/Navbar"
 import Image from "next/image"
 import styles from "./skills.module.css"
+import {useContext} from "react"
+import { ThemeContext } from "@/app/context/ThemeContext";
 
 type StateType = {
     showFrontend: boolean;
@@ -34,54 +36,61 @@ const [state, dispatch] = useReducer(reducer, {
     showDatabase: false,
     showTools: false,
 })
+
+const { light, dark, isLightTheme, toggleTheme } = useContext(ThemeContext);
+
+const themeStyles = isLightTheme ? light : dark;
+
     return (
-        <>
+<div style={{backgroundColor: themeStyles.bg}} className="h-screen">
     <Navbar />
-    <section className={styles.homepageCon}>
+    <section style={{backgroundColor: themeStyles.bg}} className={styles.homepageCon}>
         <div className={styles.titleCon}>
           <div className={styles.darrellCon}>
-            <h1 className="heroTitle">Skills</h1>
+            <h1 style={{color: themeStyles.secondaryText}} className="heroTitle">Skills</h1>
             <div className={styles.skillsCon}>
                 <div className="flex flex-col">
-                <h2 onClick={() => dispatch({type: "toggleShowFrontend"})}> 
+                <h2 
+                style={{color: themeStyles.mainText, borderColor: themeStyles.secondaryText}}
+                onClick={() => dispatch({type: "toggleShowFrontend"})}> 
                 Frontend
                 </h2>
                 <ul className={state.showFrontend ? styles.skillsList : styles.skillsListOut}>
                     <Popover 
                     title="HTML5">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="65" height="65" alt="HTML5" />
+                    <img style={!isLightTheme ? {filter: "brightness(0)"} : null} src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="65" height="65" alt="HTML5" />
                     </div>
                     </Popover>
                     <Popover 
                     title="CSS3">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="65" height="65" alt="CSS3" />
+                    <img style={!isLightTheme ? {filter: "brightness(0)"} : null} src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="65" height="65" alt="CSS3" />
                     </div>
                     </Popover>
                     <Popover title="Tailwind CSS">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="65" height="65" alt="TailwindCSS" />
+                    <img style={!isLightTheme ? {filter: "brightness(0)"} : null} src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="65" height="65" alt="TailwindCSS" />
                     </div>
                     </Popover>
                     <Popover title="JavaScript">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="65" height="65" alt="JavaScript" />
+                    <img style={!isLightTheme ? {filter: "brightness(0)"} : null} src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="65" height="65" alt="JavaScript" />
                     </div>
                     </Popover>
                     <Popover title="TypeScript">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="65" height="65" alt="TypeScript" />
+                    <img style={!isLightTheme ? {filter: "brightness(0)"} : null} src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="65" height="65" alt="TypeScript" />
                     </div>
                     </Popover>
                     <Popover title="React">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="65" height="65" alt="React" />
+                    <img style={!isLightTheme ? {filter: "brightness(0)"} : null} src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="65" height="65" alt="React" />
                     </div>
                     </Popover>
                     <Popover title="Vite">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg" width="65" height="65" alt="Vite" />
+                    <img style={!isLightTheme ? {filter: "brightness(0.65) grayscale(1)"} : null} src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg" width="65" height="65" alt="Vite" />
                     </div>
                     </Popover>
                     <Popover title="Next">
@@ -101,25 +110,27 @@ const [state, dispatch] = useReducer(reducer, {
                     </Popover>
                     <Popover title="React Native">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://devtop.io/wp-content/uploads/2022/10/react-native-1.png" width="120" height="120" alt="React Native" />
+                    <img style={!isLightTheme ? {filter: "brightness(0)"} : null} src="https://devtop.io/wp-content/uploads/2022/10/react-native-1.png" width="120" height="120" alt="React Native" />
                     </div>
                     </Popover>
                     <Popover title="Vue">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png" width="65" height="65" alt="Vue" />
+                    <img style={!isLightTheme ? {filter: "brightness(0.65) grayscale(1)"} : null} src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png" width="65" height="65" alt="Vue" />
                     </div>
                     </Popover>
                 </ul>                
                 </div>
 
                 <div className="flex flex-col">
-                <h2 onClick={() => dispatch({type: "toggleShowBackend"})}> 
+                <h2 
+                style={{color: themeStyles.mainText, borderColor: themeStyles.secondaryText}}
+                onClick={() => dispatch({type: "toggleShowBackend"})}> 
                 Backend 
                 </h2>
                 <ul className={state.showBackend ? styles.skillsList : styles.skillsListOut}>
                     <Popover title="Node.js">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="65" height="65" alt="NodeJS" />
+                    <img style={!isLightTheme ? {filter: "brightness(0)"} : null} src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="65" height="65" alt="NodeJS" />
                     </div>
                     </Popover >
                     <Popover title="Express.js">
@@ -129,63 +140,67 @@ const [state, dispatch] = useReducer(reducer, {
                     </Popover>
                     <Popover title="Java">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" width="65" height="65" alt="Java" />
+                    <img style={!isLightTheme ? {filter: "brightness(0.65) grayscale(1)"} : null} src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" width="65" height="65" alt="Java" />
                     </div>
                     </Popover>
                 </ul>                
                 </div>
 
                 <div className="flex flex-col">
-                <h2 onClick={() => dispatch({type: "toggleShowDatabase"})}> 
+                <h2 
+                style={{color: themeStyles.mainText, borderColor: themeStyles.secondaryText}}
+                onClick={() => dispatch({type: "toggleShowDatabase"})}> 
                 Database 
                 </h2>
                 <ul className={state.showDatabase ? styles.skillsList : styles.skillsListOut}>
                     <Popover title="MongoDB">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="65" height="65" alt="MongoDB" />
+                    <img style={!isLightTheme ? {filter: "brightness(0.65) grayscale(1)"} : null} src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="65" height="65" alt="MongoDB" />
                     </div>
                     </Popover>
                     <Popover title="MySQL">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="65" height="65" alt="MySQL" />
+                    <img style={!isLightTheme ? {filter: "brightness(0.65) grayscale(1)"} : null} src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="65" height="65" alt="MySQL" />
                     </div>
                     </Popover>
                     <Popover title="PostgreSQL">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="65" height="65" alt="PostgreSQL" />
+                    <img style={!isLightTheme ? {filter: "brightness(0.65) grayscale(1)"} : null} src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="65" height="65" alt="PostgreSQL" />
                     </div>
                     </Popover>
                     <Popover title="Render">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/render-colored.svg" width="65" height="65" alt="Render" />
+                    <img style={!isLightTheme ? {filter: "brightness(0)"} : null} src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/render-colored.svg" width="65" height="65" alt="Render" />
                     </div>
                     </Popover>
                 </ul>               
                 </div>
 
                 <div className="flex flex-col">
-                <h2 onClick={() => dispatch({type: "toggleShowTools"})}> 
+                <h2 
+                style={{color: themeStyles.mainText, borderColor: themeStyles.secondaryText}}
+                onClick={() => dispatch({type: "toggleShowTools"})}> 
                 Tools 
                 </h2>
                 <ul className={state.showTools ? styles.skillsList : styles.skillsListOut}>
                     <Popover title="Git">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" width="65" height="65" alt="Git" />
+                    <img style={!isLightTheme ? {filter: "brightness(0)"} : null} src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" width="65" height="65" alt="Git" />
                     </div>
                     </Popover>
                     <Popover title="Docker">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/docker-colored.svg" width="65" height="65" alt="Docker" />
+                    <img style={!isLightTheme ? {filter: "brightness(0)"} : null} src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/docker-colored.svg" width="65" height="65" alt="Docker" />
                     </div>
                     </Popover>
                     <Popover title="Photoshop">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored.svg" width="65" height="65" alt="Photoshop" />
+                    <img style={!isLightTheme ? {filter: "brightness(0)"} : null} src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored.svg" width="65" height="65" alt="Photoshop" />
                     </div>
                     </Popover>
                     <Popover title="Figma">
                     <div className="flex flex-col items-center justify-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/512px-Figma-logo.svg.png" width="45" height="45" alt="Figma" />
+                    <img style={!isLightTheme ? {filter: "brightness(0.65) grayscale(1)"} : null} src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/512px-Figma-logo.svg.png" width="45" height="45" alt="Figma" />
                     </div>
                     </Popover>
                     <Popover title="Expo Go">
@@ -197,9 +212,9 @@ const [state, dispatch] = useReducer(reducer, {
                 </div>
             </div>
           </div>
-          <Image className={styles.cog} src="/cog.svg" alt="cog" width="250" height="250" />
+          <Image className={styles.cog} src={isLightTheme ? "/cog.svg" : "/cogD.svg"} alt="cog" width="250" height="250" />
         </div>
       </section>
-        </>
+        </div>
     )
 }
