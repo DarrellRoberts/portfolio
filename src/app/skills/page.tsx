@@ -212,7 +212,7 @@ const themeStyles = isLightTheme ? light : dark;
                 </div>
             </div>
           </div>
-          <Image className={styles.cog} src={isLightTheme ? "/cog.svg" : "/cogD.svg"} alt="cog" width="250" height="250" />
+          <Image className={styles.cog} src={isLightTheme ? "/assets/cog.svg" : "/assets/cogD.svg"} alt="cog" width="250" height="250" />
         </div>
       </section>
         </div>

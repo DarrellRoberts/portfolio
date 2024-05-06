@@ -91,7 +91,7 @@ const themeStyles = isLightTheme ? light : dark;
                 </div>
             </div>
           </div>
-          <Image className={styles.mail} src={isLightTheme ? "/mail.svg" : "/mailD.svg"} alt="cog" width="250" height="250" />
+          <Image className={styles.mail} src={isLightTheme ? "/assets/mail.svg" : "/assets/mailD.svg"} alt="cog" width="250" height="250" />
         </div>
       </section>
 </div>

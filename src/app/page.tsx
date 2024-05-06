@@ -17,9 +17,9 @@ export default function Home() {
       <section className={styles.homepageCon}>
         <div className={styles.titleCon}>
           {isLightTheme ? (
-          <Image src="/outline.svg" alt="profile_outline" width="400" height="400"></Image>
+          <Image src="/assets/outline.svg" alt="profile_outline" width="400" height="400"></Image>
           ) : (
-          <Image src="/outlineD.svg" alt="profile_outline" width="400" height="400"></Image>
+          <Image src="/assets/outlineD.svg" alt="profile_outline" width="400" height="400"></Image>
           )}
           <div className={styles.darrellCon}>
             <h1 

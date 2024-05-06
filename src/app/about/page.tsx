@@ -101,7 +101,6 @@ const themeStyles = isLightTheme ? light : dark;
           <Loader />
         </div>
       </section>
-      {/* <Loader /> */}
 </div>
     )
 }
