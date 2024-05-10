@@ -1,7 +1,6 @@
 "use client"
 import {Popover} from "antd";
 import {useReducer} from "react"
-import Navbar from "@/components/navbar/Navbar"
 import Image from "next/image"
 import styles from "./skills.module.css"
 import {useContext} from "react"
@@ -37,13 +36,12 @@ const [state, dispatch] = useReducer(reducer, {
     showTools: false,
 })
 
-const { light, dark, isLightTheme, toggleTheme } = useContext(ThemeContext);
+const { light, dark, isLightTheme} = useContext(ThemeContext);
 
 const themeStyles = isLightTheme ? light : dark;
 
     return (
-<div style={{backgroundColor: themeStyles.bg}} className="h-screen">
-    <Navbar />
+<div style={{backgroundColor: themeStyles.bg}}>
     <section style={{backgroundColor: themeStyles.bg}} className={styles.homepageCon}>
         <div className={styles.titleCon}>
           <div className={styles.darrellCon}>
@@ -116,6 +114,11 @@ const themeStyles = isLightTheme ? light : dark;
                     <Popover title="Vue">
                     <div className="flex flex-col items-center justify-center">
                     <img style={!isLightTheme ? {filter: "brightness(0.65) grayscale(1)"} : null} src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png" width="65" height="65" alt="Vue" />
+                    </div>
+                    </Popover>
+                    <Popover title="Nuxt">
+                    <div className="flex flex-col items-center justify-center">
+                    <img style={!isLightTheme ? {filter: "brightness(0.65) grayscale(1)"} : null} src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nuxtjs-colored.svg" width="65" height="65" alt="Nuxt" />
                     </div>
                     </Popover>
                 </ul>                

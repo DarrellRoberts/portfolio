@@ -25,7 +25,7 @@ const [state, dispatch] = useReducer(reducer, {
 })
 const [value, setValue] = useState(0);
 
-const { light, dark, isLightTheme, toggleTheme } = useContext(ThemeContext);
+const { light, dark, isLightTheme } = useContext(ThemeContext);
 
 const themeStyles = isLightTheme ? light : dark;
 
@@ -34,19 +34,23 @@ const textChildren = mapArray.map((item, i) => (
 <div className={styles.portfolioCon}>
     <li
     style={{color: themeStyles.mainText, borderBottomColor: themeStyles.secondaryText}}
-    className="cursor-pointer"
+    className={styles.project}
     onClick={() => {dispatch({type: "toggleShowProject"}); setValue(i)}}>
-        {item[i].title}
+    {item[i].title}
     </li>
     {value === i ? (
     <div 
     style={{boxShadow: "0px 0px 20px 5px" + themeStyles.secondaryText}} 
     className={state.showProject ? styles.queueCon : styles.queueConOut}>
         <div className={styles.imageCon}>
-        <Image alt="project" src={item.pic} width={1000} height={500} />
+            <Image alt="project" src={item.pic} width={1000} height={500} />
         </div>
         <div className={styles.textCon}>
-            <p style={{color: themeStyles.mainText}}>{item[i].content}</p>
+            <ul className={styles.textList}>
+            {item[i].content.map(text =>
+                <li style={{color: themeStyles.mainText}}>{text}</li>
+            )}
+            </ul>
             <span>
                 <a
                 style={{color: themeStyles.secondaryText}}
@@ -74,7 +78,9 @@ const textChildren = mapArray.map((item, i) => (
 
 return (
 <>
-<h1 style={{color: themeStyles.secondaryText}} className={styles.heroHomepageTitle}>Portfolio</h1>
+<h1 style={{color: themeStyles.secondaryText}} className={styles.heroHomepageTitle}>
+Portfolio
+</h1>
 <ol className={styles.portfolioList}>
 {textChildren}
 </ol>

@@ -1,5 +1,4 @@
 .homepageCon {
-    /* display: flex; */
     animation: fadeIn 0.5s linear 0s 1;
   }
   
@@ -8,7 +7,6 @@
     align-items: flex-start;
     flex-direction: column-reverse;
     margin-left: 2rem;
-    /* width: 100%; */
   }
 
   .skillsCon {
@@ -18,7 +16,6 @@
 
   .skillsCon h2 {
     margin: 1.5rem 0px;
-    /* text-decoration: underline; */
     border-bottom-color: white;
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -51,7 +48,6 @@
     border-width: 2px;
     border-radius: 20px;
     border-style: solid;
-    /* margin: 0px 1.5rem; */
     padding: 10px;
     font-weight: bold;
     transition: all 0.15s ease-in;
@@ -106,7 +102,7 @@
     }
     .skillsList li {
       margin: 0px;
-      text-align: center;
+      max-width: fit-content;
     }
     .homepageCon {
       align-items:flex-start;

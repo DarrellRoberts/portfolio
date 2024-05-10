@@ -1,6 +1,5 @@
 "use client"
 import {useReducer} from "react"
-import Navbar from "@/components/navbar/Navbar"
 import Loader from "@/components/loader/Loader"
 import {useContext} from "react"
 import { ThemeContext } from "@/app/context/ThemeContext";
@@ -41,8 +40,7 @@ const { light, dark, isLightTheme, toggleTheme } = useContext(ThemeContext);
 const themeStyles = isLightTheme ? light : dark;
 
     return (
-<div style={{backgroundColor: themeStyles.bg}} className="h-screen">
-    <Navbar />
+<div style={{backgroundColor: themeStyles.bg}} className={state.showSummary || state.showEducation || state.showExperience || state.showTools ? "" : "h-screen"}>
     <section style={{backgroundColor: themeStyles.bg}} className={styles.homepageCon}>
         <div className={styles.titleCon}>
           <div className={styles.darrellCon}>

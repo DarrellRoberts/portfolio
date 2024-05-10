@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import NavBar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer"
 import ThemeContextProvider from "./context/ThemeContext";
 
 export const metadata: Metadata = {
@@ -19,7 +21,9 @@ export default function RootLayout({
         <link rel="icon" href="./logo.jpg" type="image/jpg"/>
       </head>
       <body>
+        <NavBar />
         {children}
+        <Footer />
         </body>
     </html>
     </ThemeContextProvider>

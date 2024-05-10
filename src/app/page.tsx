@@ -1,6 +1,5 @@
 "use client";
 
-import Navbar from "@/components/navbar/Navbar";
 import styles from "./homepage.module.css"
 import Image from "next/image";
 import { useContext } from "react";
@@ -13,7 +12,6 @@ export default function Home() {
 
   return (
     <main className="" style={{backgroundColor: themeStyles.bg}}>
-      <Navbar />
       <section className={styles.homepageCon}>
         <div className={styles.titleCon}>
           {isLightTheme ? (
