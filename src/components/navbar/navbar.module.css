@@ -1,5 +1,5 @@
 .navbarCon {
-    background-color: transparent;
+    /* background-color: transparent; */
     display: flex;
     justify-content: space-between;
     padding: 1rem;
@@ -90,25 +90,23 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 550px) {
+.navbarList li, .navbarListDark li {
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 800px) {
     .navbarCon {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
     .navbarList, .navbarListDark {
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         justify-items: center;
         align-content: center;
     }
     #emptyList {
         display: none;
     }
-}
-
-.navbarList li, .navbarListDark li {
-    margin-top: 5px;
 }

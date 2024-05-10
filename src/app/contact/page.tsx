@@ -1,6 +1,5 @@
 "use client"
 import {useReducer} from "react"
-import Navbar from "@/components/navbar/Navbar"
 import Image from "next/image"
 import styles from "./contact.module.css"
 import Link from "next/link"
@@ -43,7 +42,6 @@ const themeStyles = isLightTheme ? light : dark;
 
     return (
 <div style={{backgroundColor: themeStyles.bg}} className="h-screen">
-    <Navbar />
     <section style={{backgroundColor: themeStyles.bg}} className={styles.homepageCon}>
         <div className={styles.titleCon}>
           <div className={styles.darrellCon}>
@@ -67,9 +65,9 @@ const themeStyles = isLightTheme ? light : dark;
                 LinkedIn 
                 </h2>
                 <ul className={state.showLinkedIn ? styles.skillsList : styles.skillsListOut}>
-                    <Link target="_blank" href="https://www.linkedin.com/in/droberts-developer/">
+                    <Link target="_blank" href="https://www.linkedin.com/in/d-j-roberts/">
                         <li style={{color: themeStyles.mainText, borderColor: themeStyles.secondaryText}}>
-                            https://www.linkedin.com/in/droberts-developer/
+                        https://www.linkedin.com/in/d-j-roberts/
                         </li>
                     </Link>
                 </ul>

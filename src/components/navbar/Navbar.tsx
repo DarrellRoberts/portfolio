@@ -5,15 +5,13 @@ import styles from "./navbar.module.css"
 import {useContext} from "react"
 import { ThemeContext } from "@/app/context/ThemeContext";
 
-
-
 export default function NavBar() {
     const { light, dark, isLightTheme, toggleTheme } = useContext(ThemeContext);
 
     const themeStyles = isLightTheme ? light : dark;
 
     return (
-        <nav className={styles.navbarCon}>
+        <nav className={styles.navbarCon} style={{backgroundColor: themeStyles.bg}}>
             <div style={{borderColor: themeStyles.secondaryText}} className={styles.leftCon}>
                 <span><Link style={{color: themeStyles.mainText}} href="/">DR</Link></span>
             </div>
@@ -23,6 +21,8 @@ export default function NavBar() {
                 <li><Link style={{color: themeStyles.mainText}} href="/skills">Skills</Link></li>
                 <li style={{color: themeStyles.secondaryText}} id={styles.emptyList}> | </li>
                 <li><Link style={{color: themeStyles.mainText}} href="/portfolio">Portfolio</Link></li>
+                <li style={{color: themeStyles.secondaryText}} id={styles.emptyList}> | </li>
+                <li><Link style={{color: themeStyles.mainText}} href="/blog">Blog</Link></li>
                 <li style={{color: themeStyles.secondaryText}} id={styles.emptyList}> | </li>
                 <li><Link style={{color: themeStyles.mainText}} href="/contact">Contact</Link></li>
             </ul>

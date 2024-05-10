@@ -1,0 +1,9 @@
+.footerCon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.footerCon span {
+    margin: 2rem;
+}

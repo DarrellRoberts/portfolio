@@ -1,0 +1,131 @@
+.homepageCon {
+    animation: fadeIn 0.5s linear 0s 1;
+}
+  
+.titleCon {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    margin-left: 2rem;
+}
+
+.articleCon {
+  display: flex;
+  font-size: 1.5rem;
+  width: 75ch;
+  margin: 2rem;
+}
+
+.postsCon {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.postsCon a {
+  margin: 1rem 3rem;
+}
+
+.rotateBorder {
+  position: absolute;
+  padding: 8rem;
+  border-color: white;
+  border-width: 5px;
+  border-style:ridge;
+  animation: borderRad 7s linear 0s infinite;
+}
+
+.posts {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 30%;
+}
+
+.mail {
+  align-self: center;
+}
+
+  @keyframes fadeIn {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+      filter: blur(5px);
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+      filter: blur(0px);
+  }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      transform: translateY(0px);
+      opacity: 1;
+      filter: blur(0px);
+    }
+    100% {
+      transform: translateY(-50px);
+      opacity: 0;
+      filter: blur(5px);
+  }
+  }
+
+  @keyframes borderRad {
+    0% {
+      border-bottom-right-radius: 30%;
+      border-bottom-left-radius: 45%;
+      border-top-right-radius: 75%;
+      border-top-left-radius: 90%;
+      transform: rotate(0deg);
+    }
+    50% {
+      border-bottom-right-radius: 80%;
+      border-bottom-left-radius: 90%;
+      border-top-right-radius: 25%;
+      border-top-left-radius: 30%;
+      transform: rotate(180deg);
+    }
+    100% {
+      border-bottom-right-radius: 30%;
+      border-bottom-left-radius: 45%;
+      border-top-right-radius: 75%;
+      border-top-left-radius: 90%;
+      transform: rotate(360deg);
+    }
+  }
+
+  @media  screen and (max-width: 1200px) {
+    .mail {
+      width: 100px;
+    }
+  }
+
+  @media  screen and (max-width: 800px) {
+    .titleCon {
+      flex-direction: column-reverse;
+      justify-content: space-evenly;
+      margin-top: 0px;
+    }
+    .homepageCon {
+      align-items:flex-start;
+    }
+    .homepageCon h2 {
+      font-size: 1.25rem;
+    }
+    .mail {
+      width: 100px;
+      margin: 2rem 0px;
+    }
+    .postsCon {
+      display: grid;
+      /* width: 100%; */
+      grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+      gap: 6rem;
+    }
+    .postsCon a {
+      margin: 0px;
+    }
+    .rotateBorder {
+      padding: 6rem;
+    }
+  }
