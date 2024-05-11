@@ -3,7 +3,7 @@
 import EntriesArray from "../../../components/blog-assets/EntriesArray";
 import styles from "./post.module.css";
 import { useContext } from "react";
-import { ThemeContext } from "@/app/context/ThemeContext";
+import { ThemeContext } from "@/components/context/ThemeContext";
 import { useParams } from "next/navigation";
 import Image from "next/image";
 
@@ -23,10 +23,15 @@ export default function BlogPost() {
         className={styles.homepageCon}
       >
         <div className={styles.titleCon}>
-          <span style={{color: themeStyles.mainText }}>
+          <span style={{ color: themeStyles.mainText }}>
             Posted: {EntriesArray[index]?.date}
           </span>
-          <h1 style={{color: themeStyles.secondaryText }} className="heroTitle">{EntriesArray[index]?.title}</h1>
+          <h1
+            style={{ color: themeStyles.secondaryText }}
+            className="heroTitle"
+          >
+            {EntriesArray[index]?.title}
+          </h1>
         </div>
         <div className={styles.imageCon}>
           <Image
