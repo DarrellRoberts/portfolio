@@ -5,11 +5,10 @@
 }
 
 .portfolioCon {
-  margin: 2rem 2rem;
+  margin: 1.5rem 0rem 1.5rem 2rem;
 }
 
 .portfolioCon li {
-  margin-bottom: 1rem;
   font-size: 2rem;
   border-bottom-color: white;
   border-bottom-width: 1px;
