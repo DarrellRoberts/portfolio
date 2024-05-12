@@ -179,8 +179,7 @@ export default function About() {
                         Internet Archive's Open Library
                       </a>
                       : open source digital library with over 5 million books. I
-                      help maintain their collection and respond to GitHub
-                      issues (Python, HTML, JavaScript)
+                      help implement frontend features, such as Dark Mode, participate in weekly calls and respond to GitHub issues (Web.py, Docker, Less CSS, JavaScript)
                     </li>
                     <li
                       style={{ color: themeStyles.mainText }}
