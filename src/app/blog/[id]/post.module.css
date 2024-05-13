@@ -1,19 +1,47 @@
 .homepageCon {
     animation: fadeIn 0.5s linear 0s 1;
+    padding-bottom: 1rem;
 }
   
 .titleCon {
     display: flex;
     align-items: flex-start;
     flex-direction: column-reverse;
-    margin-left: 2rem;
+    padding: 1rem 2rem;
+}
+
+.titleCon h1 {
+  font-size: clamp(2rem, 5vw, 5rem);;
 }
 
 .articleCon {
   display: flex;
+  flex-direction: column;
   font-size: clamp(1rem, 2vw, 1.5rem);
   width: 75ch;
   margin: 2rem;
+}
+
+.articleConDark {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  width: 75ch;
+  margin: 2rem;
+}
+
+.articleCon a {
+  color: white;
+  text-decoration: underline;
+}
+
+.articleConDark p {
+  color: var(--mainColor);
+}
+
+.articleConDark a {
+  color: black;
+  text-decoration: underline;
 }
 
 .listCon {
@@ -26,9 +54,21 @@
 
 .imageCon {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  /* align-items: center; */
   margin: 2rem;
+}
+
+.imageCon span {
+  font-size: clamp(0.9rem, 2vw, 1.25rem);
+  font-style: italic;
+  color: white;
+}
+
+.imageCon img {
+  filter: grayscale(1);
+  border-radius: 25px;
+  width: 65%;
 }
 
   @keyframes fadeIn {
@@ -75,10 +115,19 @@
       width: auto;
       margin: 1rem;
     }
+    .articleConDark {
+      font-size: 1rem;
+      width: auto;
+      margin: 1rem;
+    }
     .postsCon a {
       margin: 0px;
     }
     .rotateBorder {
       padding: 6rem;
+    }
+    .imageCon img {
+      aspect-ratio: 1/0.65;
+      width: 100%;
     }
   }
