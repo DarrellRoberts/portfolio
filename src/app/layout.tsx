@@ -19,7 +19,7 @@ export default function RootLayout({
     <ThemeContextProvider>
       <html lang="en">
         <head>
-          <link rel="icon" href="./logo.jpg" type="image/jpg" />
+          <link rel="icon" href="/assets/logo.jpg" type="image/jpg" />
         </head>
         <body>
           <NavBar />

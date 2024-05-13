@@ -34,9 +34,9 @@ export default function Blog() {
                     <h2 style={{ color: themeStyles.mainText }}>
                       {item.title}
                     </h2>
-                    <h2 style={{ color: themeStyles.mainText }}>
+                    <h3 style={{ color: themeStyles.secondaryText}}>
                       Posted: {item.date}
-                    </h2>
+                    </h3>
                   </div>
                 </Link>
               ))}
@@ -45,7 +45,7 @@ export default function Blog() {
           <Image
             className={styles.mail}
             src={isLightTheme ? "/assets/blog.svg" : "/assets/blogDM.svg"}
-            alt="cog"
+            alt="papers"
             width="250"
             height="250"
           />
