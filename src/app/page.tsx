@@ -11,7 +11,7 @@ export default function Home() {
   const themeStyles = isLightTheme ? light : dark;
 
   return (
-    <main className="" style={{ backgroundColor: themeStyles.bg }}>
+    <main style={{ backgroundColor: themeStyles.bg }}>
       <section className={styles.homepageCon}>
         <div className={styles.titleCon}>
           {isLightTheme ? (
