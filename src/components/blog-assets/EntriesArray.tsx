@@ -49,7 +49,7 @@ const entriesArray: EntryData[] = [
     <p>So for now, I'll remain a heretic.</p>
     </div>
     ),
-    date: date
+    date: "13/05/2024"
   },
 ]
 
