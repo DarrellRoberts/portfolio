@@ -32,5 +32,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: 'monthly',
         priority: 0.8,
     },
+    {
+        url: 'https://darrellroberts.com/blog',
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.8,
+    },
+    {
+        url: 'https://darrellroberts.com/blog/1',
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.8,
+    },
   ]
 }
