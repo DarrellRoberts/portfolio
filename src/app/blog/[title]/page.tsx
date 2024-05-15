@@ -9,14 +9,20 @@ import Image from "next/image";
 import Link from "next/link";
 
 type ParamObject = {
-  id?: number;
+  title?: string;
 };
 
 export default function BlogPost() {
   const params: ParamObject = useParams();
-  const index = EntriesArray.length - params?.id;
+  const post = EntriesArray?.find(heading => heading?.title === params?.title);
   const { light, dark, isLightTheme } = useContext(ThemeContext);
   const themeStyles = isLightTheme ? light : dark;
+
+  const postTitle = post?.title
+  .split('-')
+  .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+  .join(' ')
+
   return (
     <div style={{ backgroundColor: themeStyles.bg }}>
       <section
@@ -28,28 +34,28 @@ export default function BlogPost() {
             By Darrell Roberts
           </span>
           <span style={{ color: themeStyles.mainText }}>
-            Posted: {EntriesArray[index]?.date}
+            Posted: {post?.date}
           </span>
           <h1
             style={{ color: themeStyles.secondaryText }}
           >
-            {EntriesArray[index]?.title}
+            {`${postTitle}?`}
           </h1>
         </div>
         <div className={styles.imageCon} >
           <Image
             style={{ boxShadow: "0px 0px 20px 5px" + themeStyles.secondaryText }}
-            src={EntriesArray[index]?.images[index]}
-            alt={EntriesArray[index]?.imageAlt[index]}
+            src={post?.images[0]}
+            alt={post?.imageAlt[0]}
             width="850"
             height="850"
           />
           <span style={{ color: themeStyles.secondaryText }} className="mt-5">
-            {EntriesArray[index]?.imageCaption[index]}
+            {post?.imageCaption[0]}
           </span>
         </div>
         <div className={isLightTheme ? styles.articleCon : styles.articleConDark}>
-            {EntriesArray[index]?.article}
+            {post?.article}
         </div>
         <Link style={{ color: themeStyles.secondaryText }} href="/blog" className="ml-5">
           Back to Blog homepage</Link>
