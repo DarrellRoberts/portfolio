@@ -16,7 +16,7 @@ type EntryData = {
 const entriesArray: EntryData[] = [
   {
     id: 1,
-    title: "Should Web Developers learn WordPress?",
+    title: "should-web-developers-learn-wordpress",
     links: ["https://www.youtube.com/watch?v=2Q0mWH6g8Fo"],
     images: ["/assets/blogimages/wordpressScreenshot.jpg"],
     imageAlt: ["screenshot_of_wordpress_website"],

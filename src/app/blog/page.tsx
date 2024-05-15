@@ -9,6 +9,13 @@ import Image from "next/image";
 export default function Blog() {
   const { light, dark, isLightTheme } = useContext(ThemeContext);
   const themeStyles = isLightTheme ? light : dark;
+
+  const postTitle = (title: string): string => { 
+    const newString: string = title.split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ')
+    return newString;
+  }
   return (
     <div style={{ backgroundColor: themeStyles.bg }} className="h-screen">
       <section
@@ -25,14 +32,14 @@ export default function Blog() {
             </h1>
             <div className={styles.postsCon}>
               {EntriesArray.map((item, i) => (
-                <Link key={i} href={`/blog/${item.id}`}>
+                <Link key={i} href={`/blog/${item.title}`}>
                   <div
                     style={{ borderColor: themeStyles.secondaryText }}
                     className={styles.rotateBorder}
                   ></div>
                   <div className={styles.posts}>
                     <h2 style={{ color: themeStyles.mainText }}>
-                      {item.title}
+                      {`${postTitle(item.title)}?`}
                     </h2>
                     <h3 style={{ color: themeStyles.secondaryText}}>
                       Posted: {item.date}
