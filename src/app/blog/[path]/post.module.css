@@ -52,14 +52,14 @@
   list-style-type: disc;
 }
 
-.imageCon {
+.imageCon, .imageCon2 {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
   margin: 2rem;
 }
 
-.imageCon span {
+.imageCon span, .imageCon2 span {
   font-size: clamp(0.9rem, 2vw, 1.25rem);
   font-style: italic;
   color: white;
@@ -69,6 +69,11 @@
   filter: grayscale(1);
   border-radius: 25px;
   width: 65%;
+}
+
+.imageCon2 img {
+  filter: grayscale(0);
+  border-radius: 25px;
 }
 
   @keyframes fadeIn {
@@ -126,7 +131,7 @@
     .rotateBorder {
       padding: 6rem;
     }
-    .imageCon img {
+    .imageCon img, .imageCon2 img {
       aspect-ratio: 1/0.65;
       width: 100%;
     }
