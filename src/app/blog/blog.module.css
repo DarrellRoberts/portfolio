@@ -15,9 +15,6 @@
 }
 
 .postsCon a {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
   text-align: center;
   margin: 1rem 3rem;
 }
@@ -42,9 +39,9 @@
 }
 
 .posts {
-  text-align: center;
   font-size: 1.5rem;
-  margin-top: 30%;
+  margin-top: 10%;
+  width: 55%;
   z-index: 3;
 }
 
@@ -100,14 +97,15 @@
       width: 100px;
       margin: 2rem 0px;
     }
+    .posts {
+      width: 100%;
+    }
     .postsCon {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
-      gap: 6rem;
+      flex-direction: column;
     }
     .postsCon a {
-      /* width: 50%; */
-      align-items: center;
+      width: 50%;
+      margin: 5rem 0px;
     }
     .rotateBorder {
       padding: 6rem;

@@ -9,19 +9,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 type ParamObject = {
-  title?: string;
+  path?: string;
 };
 
 export default function BlogPost() {
   const params: ParamObject = useParams();
-  const post = EntriesArray?.find(heading => heading?.title === params?.title);
+  const post = EntriesArray?.find(heading => heading?.path === params?.path);
   const { light, dark, isLightTheme } = useContext(ThemeContext);
   const themeStyles = isLightTheme ? light : dark;
-
-  const postTitle = post?.title
-  .split('-')
-  .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-  .join(' ')
 
   return (
     <div style={{ backgroundColor: themeStyles.bg }}>
@@ -39,7 +34,7 @@ export default function BlogPost() {
           <h1
             style={{ color: themeStyles.secondaryText }}
           >
-            {`${postTitle}?`}
+            {post?.title}
           </h1>
         </div>
         <div className={styles.imageCon} >

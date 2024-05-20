@@ -10,12 +10,6 @@ export default function Blog() {
   const { light, dark, isLightTheme } = useContext(ThemeContext);
   const themeStyles = isLightTheme ? light : dark;
 
-  const postTitle = (title: string): string => { 
-    const newString: string = title.split('-')
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(' ')
-    return newString;
-  }
   return (
     <div style={{ backgroundColor: themeStyles.bg }} className="h-screen">
       <section
@@ -32,14 +26,21 @@ export default function Blog() {
             </h1>
             <div className={styles.postsCon}>
               {EntriesArray.map((item, i) => (
-                <Link key={i} href={`/blog/${item.title}`}>
+                <Link key={i} href={`/blog/${item.path}`}>
                   <div
-                    style={{ borderColor: themeStyles.secondaryText }}
+                    style={{ 
+                      borderColor: themeStyles.secondaryText, 
+                      backgroundImage: `url(${item.images})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                      backgroundRepeat: "no-repeat",
+                    
+                    }}
                     className={styles.rotateBorder}
                   ></div>
                   <div className={styles.posts}>
                     <h2 style={{ color: themeStyles.mainText }}>
-                      {`${postTitle(item.title)}?`}
+                      {item.title}
                     </h2>
                     <h3 style={{ color: themeStyles.secondaryText}}>
                       Posted: {item.date}
