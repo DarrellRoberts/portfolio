@@ -59,9 +59,9 @@ const entriesArray: EntryData[] = [
     title: "3D Websites, Three.js and Blender",
     path: "3d-websites-threejs-and-blender",
     links: [],
-    images: ["/assets/sharkexplorer.jpg"],
-    imageAlt: ["screenshot_of_my_threejs_website"],
-    imageCaption: ["A screenshot from my Three.js Shark Explorer project."],
+    images: ["/assets/blogimages/bruno.jpg"],
+    imageAlt: ["screenshot_of_bruno_simon_website"],
+    imageCaption: ["A screenshot from Bruno Simon's 3D portfolio. "],
     article:
     ( 
       <div>
