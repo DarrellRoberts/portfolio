@@ -112,6 +112,86 @@ const entriesArray: EntryData[] = [
       ),
       question: false,
       date: "20/05/2024"
+  },
+  {    
+    id: 3,
+    title: "Learn a New Skill or Strengthen my Current One?",
+    path: "learn-a-new-skill-or-strengthen-my-current-one",
+    links: [],
+    images: ["/assets/blogimages/jobRequirements.jpg"],
+    imageAlt: ["screenshot_fullstack_dev_job"],
+    imageCaption: ["A genuine job ad I saw for a Fullstack Developer position. Note how many frameworks and backend languages it expects the candidate to know"],
+    article:
+    ( 
+      <div>
+      <p>
+        We hear it all the time. The biggest mistake Junior Developers make, is to try to learn everything at once. Specifically, don't learn a new coding language, before becoming an expert in your own. But these days companies are becoming more demanding of skills, so is this really realistic?
+      </p>
+      <br/>
+      <p>
+        I couldn't have been more guilty of this myself. And to be honest, I may still be guilty. After I finished my Fullstack bootcamp, I was like the hyperactive, disobedient labrador at the crufts competition. I saw so many distractions, so many avenues, so many paths; I wanted to try it all. For instance, I said to myself I should learn PHP, considering that it makes up 70% of the web ( <a href="./should-web-developers-learn-wordpress" target="_blank">though I later realised this is partly because of WordPress </a>); but then I said, I should also learn a low-level language like C so that I can get a firm grasp on all languages; and if I'm learning C, why not also C++ or C# considering they're used in video games. And so on, and so on and so forth.
+      </p>
+      <br/>
+      <p>
+        Unfortunately, and luckily, I came to my senses and never started with either of them. However, I am learning Java but taking it slow. Also you'll see from my last article that <a href="./3d-websites-threejs-and-blender" target="_blank">I want to get more invested in Three.js and 3D modelling </a>. I have also dabbled a bit with mobile apps using React Native, just because I wanted to see how easy it was as a React Developer to transition to (conclusion: not super easy but not super hard). In addition, I have also become acquainted with other JavaScript frameworks that weren't React, such as Vue and then Nuxt (and of course Next - which is what this website is running on). But I think that's it...but can't say for sure.
+      </p>
+      <br/>
+      <p>
+        Nevertheless, you look at what is required for some developer roles and it tells a different story.
+      </p>
+      <br/>
+      <p>
+        Look, for example, <a href="#">at the screenshot at the top of the article </a>. This is a genuine job ad for a Fullstack Developer. It's unclear if this is for a junior, mid or senior role. However, even for a senior role, it seems very unrealistic.
+      </p>
+      <br/>
+      <p>
+        The majority of senior developers would have chosen a path in which they can narrow their expertise and become true experts of their field, whether it's a Frontend React/JavaScript Developer or Backend .NET/C# Developer. However, for this role, the applicant needs to have knowledge of three frontend frameworks: React, jQuery and Angular. They also need to know four backend languages: C#, Java, Python and Node.js. Be familiar with two different databases: MongoDB and MySQL, along with the Apache web server and have UI/UX expertise with the Figma design tool. To top it all off, they need to have experience in medical devices, whatever that means - maybe they want you to design a defibrillator software with a super colourful user interface, complete with animations.
+      </p>
+      <br/>
+      <p>
+        Admittedly, you are also told that the majority of job ads are really wishlists. In other words, they don't expect the candidate to possess all of the requirements. However, given the hellish environment of finding a job in the tech world at the moment (something I may write about in a future post, as a lot can be said, and I feel a lot of applicants are in much need of validation - which is severely lacking), companies can become extremely fussy.
+      </p>
+      <br/>
+      <p>
+        There is also the unspoken belief amongst some companies that AI will takeover developers' jobs. In reality <a href="https://medium.com/the-business-of-ai/ai-wont-replace-programmers-eddf52c1839b" target="_blank">this won't happen </a> and if a company replaced its developers with an AI tool, be sure to watch their immediate downfall with some popcorn.
+      </p>
+      <br/>
+      <p>
+        So what should you do? Put simply: a little from column A, a little from column B.
+      </p>
+      <br/>
+      <p>
+        One thing I noticed from learning another skill is that it can teach you some things about the other. Learning Java actually taught me a lot about JavaScript - a language I am more than familiar with - and exposed me more to the concept of compiling and Object Oriented Programming (OOP). I learnt that with JavaScript I took a lot for granted, such as in-built array methods, which you have to import if using Java; and one reason why JavaScript itself is used for websites, is because it doesn't need to compile, unlike Java. Finally, as an OOP language, Java has a lot of similarities with C# as well as some similarities with PHP and C++. So it's kinda like learning four for the price of one.
+      </p>
+      <br/>
+      <p>
+        This gave me, therefore, a more general understanding of coding languages in general. And at the same time, I know Java itself is a whole universe of learning, and it's far better to take time to understand its fundamentals than to speed-run it and move on to the next language.
+      </p>
+      <br/>
+      <p>
+        So like with everything, learning is effort and time-consuming. There are no shortcuts, despite what the snake-oil salespeople say.
+      </p>
+      <br/>
+      <p>
+        And if you see such a job ad, which requires a whole volume of skills, pay it no notice. It's a sign of unrealistic expectations which may extend when you join their company. Later you'd find yourself trapped in a hellish nightmare amongst colleagues who have no idea what they are doing.
+      </p>
+      <br/>
+      <p>
+        Besides, it's more than likely that if you did have all the skills they demanded, they would probably reject your application, for being overqualified.
+      </p>
+      <br/>
+      <p>
+        Something that genuinely happened to me.
+      </p>
+      <br/>
+      <p>
+        Hence, keep learning but at your own pace. Not for the unrealistic expectations of companies, but for your own personal development.
+      </p>
+      <br/>
+      </div>
+      ),
+      question: false,
+      date: "27/05/2024"
   }
 ]
 
