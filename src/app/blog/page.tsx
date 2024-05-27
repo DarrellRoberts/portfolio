@@ -11,7 +11,7 @@ export default function Blog() {
   const themeStyles = isLightTheme ? light : dark;
 
   return (
-    <div style={{ backgroundColor: themeStyles.bg }} className="h-screen">
+    <div style={{ backgroundColor: themeStyles.bg }} className="">
       <section
         style={{ backgroundColor: themeStyles.bg }}
         className={styles.homepageCon}
@@ -26,8 +26,19 @@ export default function Blog() {
             </h1>
             <div className={styles.postsCon}>
               {EntriesArray.map((item, i) => (
-                <Link key={i} href={`/blog/${item.path}`}>
-                  <div
+                <Link key={i} href={`/blog/${item.path}`} 
+                style={{
+                  borderBottomColor: themeStyles.secondaryText,
+                  borderBottomWidth: "1px"}}>
+                  <div className={styles.posts}>
+                    <h2 style={{ color: themeStyles.mainText }}>
+                      {item.title}
+                    </h2>
+                    <h3 style={{ color: themeStyles.secondaryText}}>
+                      Posted: {item.date}
+                    </h3>
+                  </div>
+                                      <div
                     style={{ 
                       borderColor: themeStyles.secondaryText, 
                       backgroundImage: `url(${item.images})`,
@@ -37,14 +48,7 @@ export default function Blog() {
                     
                     }}
                     className={styles.rotateBorder}
-                  ></div>
-                  <div className={styles.posts}>
-                    <h2 style={{ color: themeStyles.mainText }}>
-                      {item.title}
-                    </h2>
-                    <h3 style={{ color: themeStyles.secondaryText}}>
-                      Posted: {item.date}
-                    </h3>
+                  >
                   </div>
                 </Link>
               ))}
