@@ -233,7 +233,7 @@ const entriesArray: EntryData[] = [
       </p>
       <br/>
       <p>
-      What surprised me most of all, is that it has its own User Interface framework, named simply: <a href="https://design-system.service.gov.uk/" target="_blank">gov.uk Frontend</a>. I wasn't sure why at first, as is it encouraging others to make imitation UK government websites? But then I snapped out of my own stupidity and realised it's to lay the foundation for subsidiaries of the government, such as local services. Within this framework it points to a JavaScript templating language:<a href="https://mozilla.github.io/nunjucks/" target="_blank">Nunjucks</a>.
+      What surprised me most of all, is that it has its own User Interface framework, named simply: <a href="https://design-system.service.gov.uk/" target="_blank">gov.uk Frontend</a>. I'm not sure why to be honest this is in the public domain, and you can even access it through a GitHub repository, which includes instructions on how to get started. You can even contribute towards it as if it's an open-source project. Are they trying to encourage users to create their own imitation UK government website? But I digress. Within this framework it points to a JavaScript templating language:<a href="https://mozilla.github.io/nunjucks/" target="_blank"> Nunjucks</a>.
       </p>
       <br/>
       <p>
