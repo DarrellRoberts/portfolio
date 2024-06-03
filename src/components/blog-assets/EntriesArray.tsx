@@ -192,6 +192,70 @@ const entriesArray: EntryData[] = [
       ),
       question: false,
       date: "27/05/2024"
+  },
+  {    
+    id: 4,
+    title: "gov.uk - How to Build a Government Website",
+    path: "gov-uk-how-to-build-a-government-website",
+    links: [],
+    images: ["/assets/blogimages/govuk.jpg"],
+    imageAlt: ["screenshot_govuk"],
+    imageCaption: ["The gov.uk website has an impressive performance score for a website that receives millions of users per month"],
+    article:
+    ( 
+      <div>
+      <p>
+      First off, let it be said, as a British person, I am no great patriot of the United Kingdom. If I was, I wouldn't be living in Berlin, Germany. 
+      </p>
+      <br/>
+      <p>
+      Even so, credit where credit is due, and <a href="https://www.gov.uk/" target="_blank">gov.uk </a> - the UK government's website - is a masterclass of how to digitalise government services. And living in Germany, a country constantly grappling with digitalisation, the contrast is stark.
+      </p>
+      <br/>
+      <p>
+      As you can see above, its homepage scores an all-round 100 Lighthouse performance. If you are unaware of what Lighthouse is, it is a <a href="https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk" target="_blank">google chrome extension </a> that measures the performance of websites, based on: performance, accessibility, best practices and SEO.  I've only seen such a score on one other website, one that is quite "cough" familiar.
+      </p>
+      <br/>
+      <div className={styles.imageCon2}>
+        <Image 
+        src="/assets/blogimages/darrellperformance.jpg" 
+        alt="screenshot_darrellroberts" 
+        style={{ filter: "grayscale(0)" }}
+        width="850" 
+        height="850" />
+      </div>
+      <p>
+      Just for clarity, a lower Lighthouse score is not the be all or end all, and is unrealistic for websites that require a lot of JavaScript. You can imagine as well, for websites that are scaled to withstand millions of visitors and need to fulfill multiple functions, it becomes harder to maintain a high performance score, as other issues such as bugs take higher priority.
+      </p>
+      <br/>
+      <p>
+      All the more impressive then that gov.uk can achieve this score, considering that it is the A-Z for millions of Brits needing to, for instance: renew their passport, do their tax return or, currently, register to vote in the general election.
+      </p>
+      <br/>
+      <p>
+      What surprised me most of all, is that it has its own User Interface framework, named simply: <a href="https://design-system.service.gov.uk/" target="_blank">gov.uk Frontend</a>. I wasn't sure why at first, as is it encouraging others to make imitation UK government websites? But then I snapped out of my own stupidity and realised it's to lay the foundation for subsidiaries of the government, such as local services. Within this framework it points to a JavaScript templating language:<a href="https://mozilla.github.io/nunjucks/" target="_blank">Nunjucks</a>.
+      </p>
+      <br/>
+      <p>
+      The benefit of using a templating language is that, due to its effectiveness in reducing code duplication and boilerplate, it can lead to strong website performance and faster response times. It also allows for greater reusability, particularly in the case of internationlisation and localisation (i18n), which mostly concerns translating a website into another language. Sections of the gov.uk website are then (unsurprisingly) available is more than 60 languages, along with English and Welsh. 
+      </p>
+      <br/>
+      <p>
+      Moreover, in its own style guide it makes a point of <a href="https://design-system.service.gov.uk/accessibility/accessibility-strategy/" target="_blank">accessibility </a>. Within this, it cites the four pillars of Web accessibility: Perceivable, Operable, Understandable and Robust; the principles of universal design; and how it measures and tests its own accessibility. To cite its own statistic, 1 in 5 people in the UK have a disability, therefore this is an important thing to consider when designing a website. From my own experience, too many times have I come across a website that breaks the Web Content Accessibility Guidelines (WCAG), by using, for example, the wrong font colour on a conflicting background. The fact that it not only recognises this, but makes a point of routinely testing its own accessibility is admirable.   
+      </p>
+      <br/>
+      <p>
+      For me, gov.uk is the perfect example of how to digitalise essential government services. And it does this with a very no nonsense approach which is accessible to anyone.
+      </p>
+      <br/>
+      <p>
+      So, like I said, I'm no fan of the UK but it's this love of digitalisation that sometimes makes me homesick.
+      </p>
+      <br/>
+      </div>
+      ),
+      question: false,
+      date: "03/06/2024"
   }
 ]
 
