@@ -256,6 +256,98 @@ const entriesArray: EntryData[] = [
       ),
       question: false,
       date: "03/06/2024"
+  },
+  {    
+    id: 5,
+    title: "Six Best Youtubers for self-taught or Junior Developers",
+    path: "six-best-youtubers-for-self-taught-or-junior-developers",
+    links: [],
+    images: ["/assets/blogimages/youtubers.jpg"],
+    imageAlt: ["youtubers_screenshot"],
+    imageCaption: ["The six youtube channels from left to right: freecodecamp, Fireship, Theo, The Prime Time, Kevin Powell and Dev Mentor Dave"],
+    article:
+    ( 
+      <div>
+      <p>I won't lie. I've caught myself watching some of these youtubers late at night. Curiosity always got the better of me, and if I see a video on say a new CSS feature or updates on the latest coding drama, I can't help but watch it. </p>
+      <br/>
+      <p>It was not long after I entered the coding world that I became addicted to the following youtubers. They've aided me well so far in this journey and the thought had just occured to me that I should spread their recognition. If you are a self-taught developer, Youtube becomes your library. And if you are a Junior Developer unable to find a job, Youtube becomes your mentor.</p>
+      <br/>
+      <p> There is so much free information on the internet and it is a reminder that there really should be no paywalls on education.</p>
+      <br/>
+      <p> So in the spirit of learning, see below for some of the best coding youtubers I've come across, particularly for: tutorials, coding news, frontend, backend, CSS and just general advice.</p>
+      <br/>
+
+      <h2>Tutorials: freecodecamp</h2>
+      <p> Freecodecamp isn't really much of a secret amongst developers. It is a pretty famous channel for coding tutorials, ranging from frontend and backend roadmaps, AI courses, data science and even mathematics. If you want to choose a more specific path, they also have tutorials for specifics languages, including (but not exclusive to ) C#, C++, Python and JavaScript.</p>
+      <br/>
+      <p>One important thing to note however, is that you get the most out of a tutorial by being active yourself. Otherwise you fall into the common trap of tutorial hell. This is where you just blindly follow the tutorial and when you finish, you start another one. Then when you are forced to apply your knowledge, you find that you can't recall anything.</p>
+      <br/>
+      <p>To avoid this, be sure to not only code along with the tutorial but to add your own flair to it and be sure to test your own ideas. For example, rather than waiting for  the next step of the tutorial, pause the video and guess yourself what you need to do. Furthermore, experiment with other options to make your own project unique. You'll find that you'll encounter your own errors, but with each error you solve yourself, you learn much more effectively, rather than being told how to solve it.</p>
+      <br/>
+      <p> Anyway one of my favourite roadmaps of freecodecamp is <a href="https://www.youtube.com/watch?v=6nz8GXjxiHg&t=2998s" target="_blank"> how to get a developer job </a>. Granted, after watching the video, you won't be guaranteed a job but its main message I found to be inspiring. That being: make sure that you are always learning, and by doing so, you are already on the right path. </p>
+      <br/>
+
+      <h2>Coding News and Quick Overviews: Fireship </h2>
+      <p>Fireship is a great channel for keeping up with the latest coding news and gossip. Every few weeks or so, the channel releases what it calls 'Code Reports'. Together with the youtuber's very deadpan humour it makes for not only an informative watch but also an entertaining one.</p>
+      <br/>
+      <p>In addition Fireship seems to understand that everyone is in a rush and has a unique style to his videos. You may notice that he cuts out all the pointless chitchat and gets straight to the point. This is no more demonstrated by his 100 second videos, whereby he explains either a coding language, platform or tool in less than 100 seconds. It's done very skillfully and you can tell that he puts in a lot of effort into editing his videos to make this possible.</p>
+      <br/>
+      <p>It is for these reasons why I have found his channel invaluable for quick overviews of different approaches, such as <a href="https://www.youtube.com/watch?v=FQPlEnKav48&t=524s" target="_blank"> building the same web app in ten different languages </a>.</p>
+      <br/>
+      <h2> Frontend: Theo</h2>
+      <p>Theo is a San Francisco-based former Twitch frontend Engineer. That alone should tell you he knows his stuff.</p>
+      <br/>
+      <p> If however you need more convincing, you'll find that from his video library he constantly engages with the current frontend discourse, and also speaks openly about his feelings towards Rust - a much beloved backend language. He is a strong advocate for TypeScript and using NextJS properly, to the point that he'll draw diagrams in his videos explaining how it works under the hood.</p>
+      <br/>
+      <p>Therefore, he'll spend time explaining the why and the how on top of giving his opinion.</p>
+      <br/>
+      <p>My favourite video of his is where he goes through a<a href="https://www.youtube.com/watch?v=uqII0AOW1NM" target="_blank"> Frontend interview with Dan Abramov </a>. Abramov is one of the engineers from the React core team. Hence it's really interesting and humbling to see how a true expert navigates these types of interviews.</p>
+      <br/>
+
+      <h2> Backend: The Prime Time</h2>
+      <p>The Prime Time or Primeagen is quite an interesting character. If you are really struggling to get a job in tech and ever need motivation to keep going, his story will truly inspire you.</p>
+      <br/>
+      <p>In one video he is completely open about his past: he had a tough upbringing, failed at school and became consumed by his addictions. After multiple failed attempts at college, he decided once and for all to give it his absolute best, pushing himself to his limit where he would study every evening. It was only then that he found he succeeded and never looked back.</p>
+      <br/>
+      <p>He realised at that moment, although talent will get you far, hard work will win everytime. And therein lies his philosophy.</p>
+      <br/>
+      <p>Soon thereafter he graduated from college and got a career at Netflix as a Backend Engineer, probably one of the most sought after jobs in the tech industry. </p>
+      <br/>
+      <p> With such an insane backstory, Primeagen is a very devoted developer and preaches to others that you will only improve at coding if you put in the hours of hard work. In other words, there are no shortcuts. </p>
+      <br/>
+      <p>Although not his original channel, I found The Prime Time channel very helpful in terms of sharpening my coding knowledge. Within it are snippets from his live streams, where he engaged with other coding challenges and is very open when he makes mistakes.</p>
+      <br/>
+      <p> For instance, in this <a href="https://www.youtube.com/watch?v=flzlEmyxMs8&t=528s" target="_blank"> you don't know JavaScript </a> video, you follow his thought process which has improved my own perception of how JavaScript works under the hood.</p>
+      <br/>
+
+      <h2> CSS: Kevin Powell</h2>
+      <p>Kevin Powell is everything CSS.</p>
+      <br/>
+      <p> Although he does dabble with other subject areas like HTML and JavaScript, CSS is his expertise. I often find myself watching his videos to either optimise my own CSS code, or find out any useful features I wasn't aware of.</p>
+      <br/>
+      <p>In particular he helped me in some cases reduce the need for long media queries, with properties such as clamp(). With it, it seems almost like magic the way your font size can grow or shrink depending on the viewport, without the need to specify either a maximum or minimum width media query.</p>
+      <br/>
+      <p> Kevin not only has his finger on the pulse for new CSS updates, but he also points out features which developers aren't even aware of.</p>
+      <br/>
+      <p> For example, he has a video on the <a href="https://www.youtube.com/watch?v=opHu7HvFM60&t=21s" target="_blank"> most common unused CSS features </a> which in itself seems endless and I still need to study it in detail.</p>
+      <br/>
+
+      <h2> General advice: Dev Mentor Dave</h2>
+      <p>With the tech world in a whirlwind at the moment, whereby it is hell on earth being a Junior Developer in need of a job, Dave is on a mission.</p>
+      <br/>
+      <p>He wants to help Junior Developers around the world land their first job, one video at a time. Hence his name: Dev Mentor Dave.</p>
+      <br/>
+      <p>However, as this is a monumental responsibility for anyone, he is also very much grounded and realistic. He gives general advice for: job searching, what companies are looking for, how to increase your chances ect. At the same time, he admits that it is a hellish landscape and it just might not be possible for some people. For example, his main advice is that if you are thinking of changing careers, you should learn whilst you are still working because most companies at the moment just aren't interested in hiring Junior Developers.</p>
+      <br/>
+      <p>Despite this realistic yet daunting outcome, it doesn't mean that Dave is not trying his utmost best to help others. Along with his down-to-earth insights such as <a href="https://www.youtube.com/watch?v=qL-nEolj4ZM" target="_blank"> the struggle of finding a mentor </a>, he is also producing weekly livestreams for a group project he is leading. In this project he hopes  to give as many Junior Developers as possible the opportunity to learn about code reviews and open source contributions. He is always looking to spread the word for contributors so if you are interested, visit his channel for more details.</p>
+      <br/>
+      <hr></hr>
+      <br/>
+      <p>So those are the six youtubers I have found helpful in my own coding journey. I hope at the very least you can learn something from them as well.</p>
+      </div>
+      ),
+      question: false,
+      date: "10/06/2024"
   }
 ]
 
