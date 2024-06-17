@@ -348,6 +348,44 @@ const entriesArray: EntryData[] = [
       ),
       question: false,
       date: "10/06/2024"
+  },
+  {    
+    id: 6,
+    title: "When not to use AI",
+    path: "when-not-to-use-ai",
+    links: [],
+    images: ["/assets/blogimages/chatgpt.jpg"],
+    imageAlt: ["chatgpt_screenshot"],
+    imageCaption: ["A screenshot from Virej's youtube video of gaslighting AI into 2 + 2 = 5"],
+    article:
+    ( 
+      <div>
+      <p>I'm sure I had a similar reaction to many when I first used ChatGPT. Amazement.</p>
+      <br/>
+      <p>All the possibilities flashed before my eyes. I thought you could use it to code anything, learn anything you wanted and it even gave me an idea of using it to create a virtual tandem parter <a href="https://www.tandem-gpt.com/" target="_blank">(before discovering someone beat me to it) </a>.</p>
+      <br/>
+      <p> It also gave me the feeling of redundancy. I thought, if this ChatGPT could code anything then surely the rumours are true: AI will take our jobs.</p>
+      <br/>
+      <p> Subsequently, I began using it for my own coding problems and soon developed horrible habits. For instance, if I wanted to create a function, rather than figuring out how to do it, I would just prompt the AI. For clarity, I did this more to see how they would approach the problem, rather than for it to code for me. Nevertheless, it wasn't a good thing to practice. The more I used it, however, the more I noticed its foibles.</p>
+      <br/>
+      <p> When I would use its suggestion, it often introduce new bugs into my codebase. This then became a new problem to solve. Solving this bug was not entirely straight forward either, as the AI may use a coding pattern or inbuilt function I was unaware of, meaning I had to spend time studying this when I could have exerted energy on just the initial task itself. </p>
+      <br/>
+      <p>I guess you could make the argument that I need to learn how to prompt properly, but even so, I would say why not just spend that same effort on solving the original problem? When you solve this problem yourself, you are thinking with you own working knowledge and by doing so, you can explain every step you took and why you did it. With an AI solution, your explanation usually consists of only, 'it works' but not understanding why it works. As a result, when it breaks you struggle to know how to fix it before feeding it again into the AI language model, digging yourself deeper. In addition, if you need to optimise the code, you most likely hit a brick wall, as how can you simplify something you never truly understood?</p>
+      <br/>
+      <p>Also I think the problem lies in not how you prompt the AI, but also when you use it. If you use AI for a subject or topic you are not too familiar with, it can be a dangerous thing, as you are unaware of when it makes a mistake. And it makes plenty. Furthermore, if you are somewhat disagreeable, you can gaslight it to say whatever you want. For example, when one user convinced it to <a href="https://www.youtube.com/watch?v=3wlvNfTNgB8" target="_blank"> believe 2 + 2 = 5 </a>. Or in other words, when a user became Big Brother from Nineteen Eighty-Four.</p>
+      <br/>
+      <p> If you are aware of the topic at hand, then you will probably notice whenever it makes a mistake or if something sounds implausible. For instance, I noticed myself when I would ask it for JavaScript solutions, it would sometimes for whatever reason omit keywords such as "await" from asynchronous API calls. You correct the ChatGPT, receive an apology and then a part of you thinks: people say that AI will takeover coding jobs? Which I have said before, is a <a href="https://www.youtube.com/watch?v=XKkoVpupYdw" target="_target">long debunked myth used to generate clicks and buzz </a>, mostly by CEOs who don't have a clue and jump on the bandwagon.</p>
+      <br/>
+      <p>Despite this, AI can be good to give overviews. Much like Wikipedia, if prompted, it can give you a quick snapshot of any topic which is good if you're not sure whether to learn a new technology. Personally, I use <a href="https://gemini.google.com/app?hl=de" target="_blank">Google Gemini </a> because it often gives you its sources, similar to a university essay, so you can investigate it further, as well as fact check what it states. So, similar to how you would use Wikipedia, use it with a pinch of salt and don't treat it as gospel.</p>
+      <br/>
+      <p>AI language models are undoubtedly a powerful tool that can improve your workflow and save you time. But using it as a substitute for learning should set off alarm bells. To master a subject, you need to struggle, get stuck, become frustrated, only then to connect the dots and find the solution, progressing forward.</p>
+      <br/>
+      <p>To paraphrase the late president John F. Kennedy, all problems are made by humans, therefore can only be solved by humans.   
+      </p>
+      </div>
+      ),
+      question: false,
+      date: "17/06/2024"
   }
 ]
 
