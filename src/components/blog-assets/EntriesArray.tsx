@@ -386,6 +386,47 @@ const entriesArray: EntryData[] = [
       ),
       question: false,
       date: "17/06/2024"
+  }, 
+  {    
+    id: 7,
+    title: "Difference between Web and Mobile App Development",
+    path: "difference-between-web-and-mobile-app-development",
+    links: [],
+    images: ["/assets/blogimages/mobileapp.jpg"],
+    imageAlt: ["mobileapp_screenshot"],
+    imageCaption: ["A screenshot of me creating a simple mobile app on the Flutter framework"],
+    article:
+    ( 
+      <div>
+      <p>Those who haven't either developed a website or mobile application would be forgiven for thinking they're the same. It's easy to think they're not so different and surely one feeds into the other?</p>
+      <br/>
+      <p> The easiest way to answer this, is to look at tech roles in most companies. Usually, they don't just employ mobile app developers, but specifically Android and iOS developers. Thereby, drawing a distinction between the two. And for their website, they might use either a team of web developers; combination of a Frontend, Backend developer along with a UI/UX designer; or might even just freestyle it with either a Fullstack developer or a third-party Web agency. Nevertheless, it's incredibly rare that you'd have the employee who develops the website, also overseeing the company's mobile app developement on Google Play and the Apple Store.</p>
+      <br/>
+      <p> But why are they so different?</p>
+      <br/>
+      <p> First off, a website application runs on the browser's engine, whether it's Chrome, Safari, Firefox, or any other (RIP Windows Explorer). It's irrelevant what Operating System (OS) the user has because the web application only exists, broadly speaking, within the browser. A mobile application, on the other hand, runs on the actual OS, or in other words, mobile device. With this, there are two very distinct options: Android or iOS. This alone has far-reaching implications.</p>
+      <br/>
+      <p>For instance, although there are countless frameworks and templating languages you can use to develop websites, every dynamic website with colour always contain the following: HTML, CSS and JavaScript. Although different browsers may use different engines to deploy this code, such as the V8 engine on Chrome and WebKit on Safari, the same website will run the same on either engine, with the exception of freshly-released features. To which, you would use <a href="https://caniuse.com/" target="_blank"> caniuse </a> to ensure complete compatibility. In this case the developer only has to slightly alter their code if such an incompatibility existed (for example, "--webkit" for new CSS features). Therefore, when making a website, you can easily implement the one codebase philosophy, as ordained from the <a href="https://12factor.net/" target="_blank"> Twelve Factor App </a>. Translating this website into a mobile application however, is a different beast entirely.</p>
+      <br/>
+      <p>A mobile application is in other words a type of software that runs on a mobile device. Whether you want to run this software on an Android or an iOS device, is a question you should immediately ask yourself. And if you want to run it on both, you have your work cut out for you. There's a reason why companies employ both an Android Developer and an iOS Developer, because, unlike with a web application, a mobile application or software runs on the OS's engine rather than the browser's. And as Android and iOS devices are very much different in terms of how they are developed, the mobile software needs to be compatible with the OS it runs on.</p>
+      <br/>
+      <p>Initially, this meant two completely difference codebases. For example, Android applications mostly run on Kotlin, a programming language that is compatible with Java. Software on iOS devices however, run on Swift which is an evolution of Objective C. This is why if you write an Android application, it can't run on an iOS device. But since the last five to ten years, other approaches have been invented. </p>
+      <br/>
+      <p>For instance, there's the React Native framework, which allows the developer to code a JSX-style application for both Android and iOS. More recently, Flutter also took to the scene as another cross-platform alternative developed by Google. Written in Dart, it is quite an unknown language but shares similarities to other object-oriented languages such as Java and C#. It also has the type-safety you'd find in TypeScript to catch bugs early in the process. Hence, these alternatives help employ the one codebase philosophy in order to run a mobile app on both Android and iOS.</p>
+      <br/>
+      <p>Nevertheless, no matter which approach you use for iOS, you still need to use <a href="https://developer.apple.com/xcode/" target="_blank">Xcode</a> if you ever want to publish your application. Xcode is a development environment that helps package you code for production and send it to the Apple App Store. In true Apple style, you can only run Xcode on Apple devices. Because, you know, it's Apple. This is bad news if you do not code on a MacOS like myself.</p> 
+      <br/>
+      <p>Nevertheless, once you dive into mobile app development, you'll find it is quite a different world to making a website.</p>
+      <br/>
+      <p>One advantage of developing a mobile application is that you have access to numerous native features, such as: GPS, file upload, gyroscope detection, accelerometer, the device's camera and more. So you have plenty in your arsenal to let you imagination run wild. With these features however, you also have to consider the security implications for which both Google Play and the Apple Store will hold your feet to the fire should you make a mistake. Much like SEO for websites, you also have your <a href="https://www.searchenginejournal.com/app-store-optimization-how-to-guide/241967/" target="_blank">App Store Optimization</a> score, which determines where you mobile app will rank on the search results. One crucifying rank factor are the ratings, which of course do not exist for websites. And if you get a few one star ratings, you will have a mountain to climb to escape the ensuing persecution from the crawl bots.</p>
+      <br/>
+      <p>All in all, if you are thinking of developing a mobile application, there is nothing stopping you. Know only that it is a completely different developer experience from making a website.</p>
+      <br/>
+      <p>There is something special about opening your own mobile app on your own mobile, which you can't recreate when making a website. You just have to ask yourself after all the torment, will it be worth it?</p>
+      </div>
+      ),
+      question: false,
+      date: "24/06/2024"
   }
 ]
 
