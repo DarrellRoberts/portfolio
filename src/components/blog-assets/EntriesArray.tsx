@@ -447,6 +447,8 @@ const entriesArray: EntryData[] = [
       <br/>
       <p> They are automated programs, similar to web crawlers, designated to trawl websites and collect specific data. Such data can include product prices, news headlines, or social media content. However, this also means scraper bots can be programmed to collect sensitive information, such as API keys. GitHub is of course the perfect target, considering the sheer volume of published codebases that are made public. </p>
       <br/>
+      <p>Data theft is ever prevalent on the internet, and scraper bots are just one of the methods criminals will use to harvest sensitive information. Therefore, any such data should be treated with the utmost care and the developer should take all the steps necessary to encrypt and protect this information.</p>
+      <br/>
       <p>Though not all scraper bots are used entirely for malicious reasons. For example, price comparison websites use them to compare flights, hotels and car rental prices. So it is a way of automating data collection for a database.</p>
       <br/>
       <p>In addition creating a scraper script is no secret. For instance, <a href="https://www.freecodecamp.org/news/web-scraping-in-javascript-with-puppeteer/" target="_blank"> you can easily create a basic one with Node.js</a>. Of course it's strongly advised that you only scrape from websites that allow it, and use this script within ethical and legal limits. I had a go and you can see what information I was easily able to scrape from the <a href="#top">Giraffe wikipedia website</a>. Should I feel the need to build a Giraffe database, I'm all set.</p>
@@ -455,9 +457,9 @@ const entriesArray: EntryData[] = [
       <br/>
       <p>With AI there's also the problem of "giraffing". This is the problem whereby the AI is trained on tonnes of labelled photos, scraped from the internet. However, due to the quantity of Giraffe images, the AI is falsely trained that <a href="https://www.tumblr.com/picdescbot/182455666385/how-math-can-be-racist-giraffing" target="_blank"> Giraffes are everywhere </a>. If the AI was sentient, for instance, it might think that it would be near impossible to walk down Oxford Street in London without bumping into a Giraffe. This somewhat highlights the limits of scraping for data collection and how the internet is not a valid representation of the real world. There are no peer reviews such as with academic articles, that hold the author to account if they can't back up their assumptions. Yet another reason to not be completely beholden on AI.</p>
       <br/>
-      <p>Scraper bots are not necessarily a force for evil, but are a reminder that the internet can be a dangerous place.</p> 
+      <p>Scraper bots are not necessarily a force for evil, but are a reminder that the internet can be a dangerous place. Knowing how they work and how to develope one, can further assist you in protecting your own data.</p> 
       <br/>
-      <p>They can be a helpful time-saver when automating data collection though it's important to recognise which sources you are taking it from. This is to not only show that you are more ethical than AI, but also because you may have inadvertently scraped a website full of Giraffe pictures.</p>
+      <p>They can be a helpful time-saver when automating data collection, though it's important to recognise what type of data you are scraping and which sources you are taking it from. This is to not only show that you are more ethical than AI, but also because you may have inadvertently scraped a website full of Giraffe pictures.</p>
       </div>
       ),
       question: false,
