@@ -427,6 +427,41 @@ const entriesArray: EntryData[] = [
       ),
       question: false,
       date: "24/06/2024"
+  },
+  {    
+    id: 8,
+    title: "The Ethics of Scraper Bots",
+    path: "the-ethics-of-scraper-bots",
+    links: [],
+    images: ["/assets/blogimages/scraped.jpg"],
+    imageAlt: ["scraped_screenshot"],
+    imageCaption: ["A screenshot of information I scraped from the Giraffe wikipedia page"],
+    article:
+    ( 
+      <div>
+      <p>I became interested in scraper bots when I heard of the catastrophic mistake developers of the Rabbit r1 made with their code.</p>
+      <br/>
+      <p>If you are unaware, youtuber Fireship, a channel I've spoken praise of before, <a href="https://www.youtube.com/watch?v=lkbV8oP-F44" target="_blank"> gives a great summary </a>. Long story short, the codebase of the Rabbit r1, an AI-assisted device that mimics the capabilities of an Android, was exposed as hardcoding its API keys for multiple services, such as ElevenLabs, Azure, Google Maps and Yelp. API keys are essentially passwords you need to access these databases, and if you've exposed them, it means anyone can access this data and do whatever they want with it - create, edit or delete it. Hence you want to protect and hide your API key at all cost so that yours and the users' data is not compromised.</p>
+      <br/>
+      <p>It's a big no no and it's one of the first things you are taught not to do when creating an application. One issue of hardcoding your API keys and uploading your code to GitHub is that there are numerous scraper bots waiting to take advantage of these keys. But what are scraper bots?</p>
+      <br/>
+      <p> They are automated programs, similar to web crawlers, designated to trawl websites and collect specific data. Such data can include product prices, news headlines, or social media content. However, this also means scraper bots can be programmed to collect sensitive information, such as API keys. GitHub is of course the perfect target, considering the sheer volume of published codebases that are made public. </p>
+      <br/>
+      <p>Though not all scraper bots are used entirely for malicious reasons. For example, price comparison websites use them to compare flights, hotels and car rental prices. So it is a way of automating data collection for a database.</p>
+      <br/>
+      <p>In addition creating a scraper script is no secret. For instance, <a href="https://www.freecodecamp.org/news/web-scraping-in-javascript-with-puppeteer/" target="_blank"> you can easily create a basic one with Node.js</a>. Of course it's strongly advised that you only scrape from websites that allow it, and use this script within ethical and legal limits. I had a go and you can see what information I was easily able to scrape from the <a href="#top">Giraffe wikipedia website</a>. Should I feel the need to build a Giraffe database, I'm all set.</p>
+      <br/>
+      <p>But when you discover the power of scraper bots, the question of plagiarism arises. OpenAI, for example, uses its own GPTBot to scrape other websites in order to collect the vast amount of data it needs. This data is then used to train the AI without credit to the authors. I mentioned in <a href="/blog/when-not-to-use-ai" target="_blank">one of my earlier articles</a> that some AI models provide their sources but this practice is not universal.</p>
+      <br/>
+      <p>With AI there's also the problem of "giraffing". This is the problem whereby the AI is trained on tonnes of labelled photos, scraped from the internet. However, due to the quantity of Giraffe images, the AI is falsely trained that <a href="https://www.tumblr.com/picdescbot/182455666385/how-math-can-be-racist-giraffing" target="_blank"> Giraffes are everywhere </a>. If the AI was sentient, for instance, it might think that it would be near impossible to walk down Oxford Street in London without bumping into a Giraffe. This somewhat highlights the limits of scraping for data collection and how the internet is not a valid representation of the real world. There are no peer reviews such as with academic articles, that hold the author to account if they can't back up their assumptions. Yet another reason to not be completely beholden on AI.</p>
+      <br/>
+      <p>Scraper bots are not necessarily a force for evil, but are a reminder that the internet can be a dangerous place.</p> 
+      <br/>
+      <p>They can be a helpful time-saver when automating data collection though it's important to recognise which sources you are taking it from. This is to not only show that you are more ethical than AI, but also because you may have inadvertently scraped a website full of Giraffe pictures.</p>
+      </div>
+      ),
+      question: false,
+      date: "01/07/2024"
   }
 ]
 
