@@ -464,6 +464,42 @@ const entriesArray: EntryData[] = [
       ),
       question: false,
       date: "01/07/2024"
+  },
+  {    
+    id: 9,
+    title: "Choosing your Integrated Development Environment",
+    path: "choosing-your-integrated-development-environment",
+    links: [],
+    images: ["/assets/blogimages/ide.jpg"],
+    imageAlt: ["ide_screenshot"],
+    imageCaption: ["The visual difference between coding on a text editor and coding on an IDE"],
+    article:
+    ( 
+      <div>
+      <p>When I first tried coding, I was unaware of what an Integrated Development Environment was.</p>
+      <br/>
+      <p>All I knew was the text editor: notepad, which I used at the time to write HTML. I was learning it on Codeacademy but had no idea where I should write code for my own project, so chose notepad for lack of knowing any better. In reality this was horrible choice, as my code soon became messy. It was hard to tell some elements apart, as well as where to indent the child elements within its parent. Due to notepad's black and white design, it was also just hard to read. Initially, this threw me off coding because writing it within this desaturated virtual window, I found uninspiring and whenever I tried to read it, it gave me a headache. It was only many years later, when I took coding more seriously that I discovered the power of Integrated Development Environments or IDEs.</p>
+      <br/>
+      <p>IDEs are essentially software designed for programmers to write code efficiently and in a read-friendly manner. They are as numerous as they come and some have specific functions, such as to develope mobile apps on Android Studio; whilst others might have a more generalist purpose like Visual Studio Code. Unlike notepad, IDEs go way beyond providing the benefit of readability.</p>
+      <br/>
+      <p>For instance, on top  of providing a text editor, IDEs also have compiling functionalities, which allow developers to compile their code into machine-readable languages. This is particularly optimal for languages that require compiling, such as Java. There are also code completion shortcuts, which give developers ways to optimise their process and to skip the boredom of repeatedly writing boiler plate code. It's also common for an IDE to include debugging capabilities.</p>
+      <br/>
+      <p>This allows the developer to run their code step by step and introduce breakpoints, whereby they can pause the program at a specific point in their code. If there is a bug, this proves invaluable for when the developer wants to watch the value of a particular variable. For example, if this variable changes state when the program executes a specific line of code, you have your first clue as to what went wrong.  
+      </p>
+      <br/>
+      <p>IDEs also often support extensions, in a similar manner to browsers, which allow the user to install further features. For example, a common one for Visual Studio Code is <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank">Prettier </a>, which automatically formats you code to make it more digestible to the reader.</p>
+      <br/>
+      <p>Talking of Visual Studio Code, it's quite an interesting IDE. It is one of the more popular choices as it has approximately 14 million monthly users, and it's actually written mostly in TypeScript. Visual Studio Code is based on Electron, <a href="https://www.electronjs.org/" target="_blank">a framework for building desktop applications </a>, that's conversely written mostly in C++. Electron itself is quite influential as it has been used not just for VS code, but also by other IDEs, such as Atom. All of which are open-source, therefore the community help drive its features. However, it's worth noting that Atom discontinued development and updates as of 2022.</p>
+      <br/>
+      <p>You also have the Xcode IDE exclusively for Apple devices, <a href="/blog/difference-between-web-and-mobile-app-development" target="_blank">which I've discussed briefly before in one of my other articles </a>. It supports languages used for Apple products and iOS app development, such as Swift, C++ and Objective-C. There are also IDEs specific for certain languages, such as PhpStorm for PHP developers. As it's PHP-focused, it supports CMS tools such as WordPress. There is also Netbeans, first released in 1997, which supports various languages but is commonly used by Java Developers and has a powerful FTP client feature. For a more extensive exploration of other IDEs, <a href="https://www.techrepublic.com/article/best-ide-software/" target="_blank">this article details some of the best </a>. </p>
+      <br/>
+      <p> Ultimately, when choosing your IDE, it all comes down to preference and practicability. If you wanted to make an iOS app for example, and the IDE you just downloaded was Android Studio, then you are in trouble. Thankfully, the majority of IDEs are free.</p>
+      <br/>
+      <p>It is nevertheless important you choose one that facilitates your workflow and makes you love coding. Otherwise, you'll fall into the trap I once did of becoming jaded of programming, simply because your IDE - or text editor in my case - provided a terrible developer experience.</p>
+      </div>
+      ),
+      question: false,
+      date: "08/07/2024"
   }
 ]
 
