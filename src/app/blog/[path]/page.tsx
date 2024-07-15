@@ -4,7 +4,7 @@ import EntriesArray from "../../../components/blog-assets/EntriesArray";
 import styles from "./post.module.css";
 import { useContext } from "react";
 import { ThemeContext } from "@/components/context/ThemeContext";
-import { useParams } from "next/navigation";
+import { useParams } from "next/navigation"; 
 import Image from "next/image";
 import Link from "next/link";
 
