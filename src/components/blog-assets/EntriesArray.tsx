@@ -500,6 +500,50 @@ const entriesArray: EntryData[] = [
       ),
       question: false,
       date: "08/07/2024"
+  },
+  {    
+    id: 10,
+    title: "Google Web Vitals - Measuring your Frontend Performance",
+    path: "google-web-vitals-measuring-your-frontend-performance",
+    links: [],
+    images: ["/assets/blogimages/darrelllcp.jpg"],
+    imageAlt: ["ide_screenshot"],
+    imageCaption: ["A screenshot of me using the Performance tool to determine the Largest Contentful Paint"],
+    article:
+    ( 
+      <div>
+      <p>When you build a website or web app, there are so many factors to consider that it can be hard to know how you can actually measure its success. For example, is success measured by the users' feedback, how many features it has or its volume of traffic? This is just a handful of ways of how you can get feedback and neither really tells the developer if the code itself needs improving.</p>
+      <br/>
+      <p>You could have a web app with numerous features and a jaw-dropping design, but its codebase could be completely cluttered with unnecessary JavaScript code, leading to a longer than usual loading time. In which case it would actually have a knock-on effect on the user experience as well as its SEO performance, causing a lower ranking on the Search Engine Results Page. So how do you test this?</p>
+      <br/>
+      <p>Enter <a href="https://web.dev/articles/vitals#core-web-vitals" target="_blank">Google Web Vitals </a>. These are a set of metrics provided by Google to offer guidance to the developer on how to measure the user experience. For example, its three core metrics are: Largest Contentful Paint (LCP), Interaction to Next Paint (INP) and Cumulative Layout Shift (CLS). Let's break these down.</p>
+      <br/>
+      <p>LCP is the render time of the largest node on the landing page. It often corresponds to an img, h1 or div HTML element. When you perform this test, it will tell you which element on your page is the LCP - for example, <a href="#top">in the screenshot above </a>, you can see it's the image element on my homepage. In order to do this yourself, just open the Chrome developer tools, go to Performance and click on the Start Profiling button (an icon in the shape of a circle with an arrow on the end of it). So why is LCP important?</p>
+      <br/>
+      <p>As this measures your landing page's largest node, it essentially is analysing the loading time of the element that will take the longest to render. Therefore, it is a good indication of the general loading time of your website, as it measures the biggest offender, on the HTML page, for slow loading times so to speak. Google states that a good loading time for LCP is below 2.5 seconds. Anything that takes longer than this but is faster than 4 seconds, needs improvement. And a LCP that takes longer than 4 seconds to render, corresponds to bad performance. Again if you look at the screenshot of my website, you'll see that the loading time of the LCP is 0.155 seconds (154.6ms). So I don't need to worry.  
+      </p>
+      <br/>
+      <p>Excessive JavaScript code can be one of the culprits of long LCP loading times. If the app uses Client-side rendering, the JavaScript code needs to be executed first before any HTML element is rendered. This is why conditional rendering and asynchronous fetching are important. When you fetch data from a database on a webpage, this process, if not handled correctly, can delay or even stop the rendering of the HTML elements.</p>
+      <br/>
+      <p>Then you have INP, which is a metric that analyses a page's responsiveness to a user's interaction. Think of when a user clicks a dropdown menu or clicks on a button that executes a function. It measures the time between the user initiating the interaction, and the page responding. Testing it is a bit more complicated. Again on the performance tab of Chrome Developer Tools, you click on record and execute the interaction you want to test. Here is a <a href="https://www.debugbear.com/blog/inp-chrome-devtools" target="_blank"> more detailed explanation of the process </a>.</p>
+      <br/>
+      <p>Similarly, Google sets guidelines for how long this metric should be. It is more strict in this case as a response of longer than 500ms is consider poor, and anything above 200ms needs improvement.</p>
+      <br/>
+      <p>Lastly, we have CLS which essentially measures the shifting of HTML elements between page loads. This can get quite complex if explained in detail, but I'm sure we've all experienced a poor performing CLS score. Think of a time when you've been on a webpage and have been bombarded with popup adverts. When you click on the cross icon to close the popup, the elements shift and you have inadvertently click on "Confirm", "OK" or "I agree to give you one million dollars". This of course is the worst case scenario but you still have shifting elements on trustworthy webpages.</p>
+      <br/>
+      <p> For example, when you are at the checkout of an ecommerce website, if you remove items from your basket you might see elements shift to compensate for the change in state, such as reduction in price and quantity. So it is inheritly not a bad thing, but a bad CLS score is definitely something to avoid. Though how is CLS  measured?</p>
+      <br/>
+      <p>It comes down to two factors, which are known as the <a href="https://www.debugbear.com/docs/metrics/cumulative-layout-shift" target="_blank">impact fraction and distance fraction </a>. This measures how much of the screen is impacted from the shift of elements, as well as how far an element has moved. For instance, in my popup ad example, it would consider when the user clicks the cross, how much of the user's viewport is affected, along with what percentage of pixels did the cross and "Confirm" button move. As these both are percentages multiplied together, it generates a score between 0 and 0.99. Google states that a score of anything over 25% is considered poor.</p>
+      <br />
+      <p>Although LCP, INP and CLS are considered the core metrics to measure Frontend performance, there are others, such as First Paint, which measures how long it takes the first pixels to render, as well as the DOMContentLoaded Event, which measures the point when a browser can initiate Client-side rendering. But these are considered to be not so crucial. Another useful tool is the Chrome extension Lighthouse, which I've mentioned in a  <a href="/blog/gov-uk-how-to-build-a-government-website" target="_blank">previous blog post </a>. It essentially measures all of the metrics I've mentioned, along with others, and even gives recommendations on how to improve your performance score.</p>
+      <br />
+      <p>However, one thing Apple users are probably screaming about at this point, is what about other browsers such as Safari? Google Web Vitals are metrics Google use to rank the performance of web pages and determine their SEO-ranking. As a result, the metrics are automatically viewable on Chrome browsers. Though you won't find the same layout on other browsers, as these are Google-defined metrics. Nevertheless, Safari does have its own dev-tools for performance insights and you can also install extensions such as  <a href="https://apps.apple.com/de/app/vita-web-vitals-for-safari/id1593529295" target="_blank">Vita </a>, to measure specific metrics. Failing that, I would just say, download Chrome and stop moaning.</p>
+      <br />
+      <p>And so, that is how you measure your Web app performance. Of course a poor performance according to these Web Vital metrics, does not mean you should destroy you website with fire. You might actually find a lot of websites, particularly large ones, often do not have optimal metrics. Nevertheless, it is still something to aim for and provides a way to optimise you performance in order to reap the rewards on the Search Engine Results Page.</p>
+      </div>
+      ),
+      question: false,
+      date: "15/07/2024"
   }
 ]
 
