@@ -88,6 +88,20 @@
   border-radius: 25px;
 }
 
+.nextArticleCon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prevArticle, .nextArticle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin: 0px 1rem;
+}
+
   @keyframes fadeIn {
     0% {
       transform: translateY(-50px);
@@ -146,5 +160,8 @@
     .imageCon img, .imageCon2 img {
       aspect-ratio: 1/0.65;
       width: 100%;
+    }
+    .prevArticle h3, .nextArticle h3 {
+      display: none;
     }
   }
