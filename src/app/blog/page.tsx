@@ -6,6 +6,7 @@ import { ThemeContext } from "@/components/context/ThemeContext";
 import Link from "next/link";
 import Image from "next/image";
 import SearchBar from "@/components/search/SearchBar";
+import ButtonComponent from "@/components/button/ButtonComponent";
 
 export default function Blog() {
   const [searchbar, setSearchBar] = useState<string>("");
@@ -18,6 +19,8 @@ export default function Blog() {
   } else {
     blogArray = EntriesArray;
   }
+
+  const randomIndex = Math.floor(Math.random() * EntriesArray.length)
   return (
     <div style={{ backgroundColor: themeStyles.bg }} className="">
       <section
@@ -33,7 +36,12 @@ export default function Blog() {
               Blog
             </h1>
             <div className={styles.postsCon}>
+              <span className={styles.searchButtonCon}>
               <SearchBar setSearchBar={setSearchBar} />
+              <Link href={`/blog/${EntriesArray[randomIndex]?.path}`}>
+              <ButtonComponent text={"I feel lucky"} />
+              </Link>
+              </span>
               {blogArray.length !== 0 ? (
                 blogArray.map((item, i) => (
                   <Link
