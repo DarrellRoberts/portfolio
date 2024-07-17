@@ -22,6 +22,12 @@
   margin: 1rem 3rem;
 }
 
+.searchButtonCon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .noresultsCon {
   display: flex;
   justify-content: center;
@@ -107,6 +113,9 @@
     .mail {
       width: 100px;
       margin: 2rem 0px;
+    }
+    .searchButtonCon {
+      flex-direction: column;
     }
     .postsCon a {
       margin: 1rem 0px;

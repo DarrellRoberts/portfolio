@@ -26,7 +26,7 @@ export default function SearchBar({setSearchBar}) {
   return (
     <Space>
       <Search
-      className={isLightTheme ? "searchCon" : "darkSearchCon"}
+      className={isLightTheme ? "searchCon" : "dark searchCon"}
       placeholder="Search here by title" 
       onSearch={onSearch}
       onChange={handleInputChange}

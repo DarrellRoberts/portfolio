@@ -1,0 +1,10 @@
+.buttonCon {
+    width: 10rem;
+    font-weight: 900;
+}
+
+@media  screen and (max-width: 800px) {
+    .buttonCon {
+        margin-bottom: 1rem;
+    }
+}

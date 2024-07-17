@@ -1,10 +1,11 @@
-.searchCon, .darkSearchCon {
+.searchCon {
     margin: 3rem 0px; 
 }
 
 :where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary,
 :where(.css-1xg9z9n).ant-btn-primary {
     color: var(--secondaryColor);
+    border-color: var(--secondaryColor);
     font-size: 1rem;
 }
 
@@ -19,18 +20,27 @@
     font-size: 1rem;
 }
 
-.darkSearchCon :where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary,
-.darkSearchCon :where(.css-1xg9z9n).ant-btn-primary {
+.dark:where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary,
+.dark:where(.css-1xg9z9n).ant-btn-primary,
+.dark :where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary,
+.dark :where(.css-1xg9z9n).ant-btn-primary {
     color: var(--mainColor);
+    border-color: var(--mainColor);
     font-size: 1rem;
 }
 
-.darkSearchCon :where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover,
-.darkSearchCon :where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):focus,
-.darkSearchCon :where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):active,
-.darkSearchCon :where(.css-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover,
-.darkSearchCon :where(.css-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):focus,
-.darkSearchCon :where(.css-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):active {
+.dark :where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover,
+.dark :where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):focus,
+.dark :where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):active,
+.dark :where(.css-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover,
+.dark :where(.css-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):focus,
+.dark :where(.css-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):active,
+.dark:where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover,
+.dark:where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):focus,
+.dark:where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):active,
+.dark:where(.css-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover,
+.dark:where(.css-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):focus,
+.dark:where(.css-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):active {
     background-color: var(--mainColor);
     color: var(--secondaryColor);
     font-size: 1rem;
