@@ -1949,7 +1949,7 @@ const entriesArray: EntryData[] = [
           product is live, prioritising the prevention of the worst case
           scenario. By doing this, it will not only save the company a lot of
           money but also in some cases potential lawsuits and the reputational
-          damage that can come from it.
+          damage that can come with it.
         </p>
         <br />
         <p>
@@ -2015,7 +2015,7 @@ const entriesArray: EntryData[] = [
           payments. I'm a fan of the <a href="https://www.cypress.io/" target="_blank"> Cypress framework </a> for end-to-end testing.
           Again for JavaScript, you also have relevant npm packages to run on
           your desired framework. It probably sounds sad but it is quite fun
-          just writing tests and watching the tool do it work.
+          just writing these tests and watching the tool do its work.
         </p>
         <br />
         <p>
@@ -2029,12 +2029,12 @@ const entriesArray: EntryData[] = [
         </p>
         <br />
         <p>
-          Then once you have written enough failing tests, you can be more adventurous. This time you write just enough code to pass the test, so in the same example, you can write a test for the function to always expect a string value - to which, the test will pass. Obviously these are just basic examples but it's good to start small and basic at first. Through this method, if your tests fail, it is a lot easier to pinpoint where it went wrong as oppose to using a much more convoluted test, which would have more potential outcomes.  
+          Then once you have written enough failing tests, you can be more adventurous. This time you write just enough code to pass the test, so in the same example, you can write a test for the function to always expect a string value - to which, the test will pass. Obviously these are just basic examples but it's good to start small. Through this method, if your tests fail, it is a lot easier to pinpoint where it went wrong as oppose to using a much more convoluted test. The latter would have more potential outcomes and thus, if it fails, it is harder to know at first where it went wrong.  
         </p>
         <br />
         <p>
           Pass this stage, when satisfied you have written enough fail-safes,
-          you then refactor the code to make it as efficient as possible, and to
+          you can then refactor the code to make it as efficient as possible, and to
           ensure it abides by the linting and design rules of the codebase. For
           instance, if your function runs on 10 lines of code, can it run on 5
           lines instead and also pass the aforementioned tests.
@@ -2047,11 +2047,10 @@ const entriesArray: EntryData[] = [
           understandable why some companies may discourage such practices.
           Nevertheless, by working towards this methodology you have potentially
           inadvertedly fixed numerous bugs that can occur after the code is
-          pushed to production. In addition testing should be more a catch-all
-          rather than unique to every specific function or feature. For example,
-          it's common to integrate it into your CI/CD workflow, particularly for
+          pushed to production. In addition testing should have a more catch-all focus so that it can be executed for future functions and features. For example,
+          it's common to integrate it into your Continous Integration/Continous Delivery workflow, particularly for
           open-source projects, so that before a developer submits a Pull
-          Request (PR), they are required to execute the provided tests. This
+          Request (PR), they are required to run the provided tests. This
           provides a further level of protection before the PR is inspected in a
           code review.
         </p>
