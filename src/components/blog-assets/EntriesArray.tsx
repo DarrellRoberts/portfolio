@@ -1932,16 +1932,14 @@ const entriesArray: EntryData[] = [
     ],
     article: (
       <div>
-        <p>
-          Testing in general is considered a core pillar of best practices.
-        </p>
+        <p>Testing in general is considered a core pillar of best practices.</p>
         <br />
         <p>
           Whether it's involved in production lines to test the strength of
           material, screening movie previews to a test audience or running
-          pre-production code, the value of testing in all disciplines has a common benefit. Its
-          purpose is to identify every possible fault before the product is
-          finalised.
+          pre-production code, the value of testing in all disciplines has a
+          common benefit. Its purpose is to identify every possible fault before
+          the product is finalised.
         </p>
         <br />
         <p>
@@ -1957,7 +1955,13 @@ const entriesArray: EntryData[] = [
           You need to look just at the Titan submersible implosion last year,
           which was the result of little testing and not listening to the
           experts. And recently, you can also argue that the Crowdstrike
-          disaster, <a href="https://www.youtube.com/watch?v=H9RSeDUdkCA" target="_blank"> which caused roughly 8.5 million Microsoft devices around the world to crash</a>, occurred due to poor testing. So why do some companies avoid it?
+          disaster,{" "}
+          <a href="https://www.youtube.com/watch?v=H9RSeDUdkCA" target="_blank">
+            {" "}
+            which caused roughly 8.5 million Microsoft devices around the world
+            to crash
+          </a>
+          , occurred due to poor testing. So why do some companies avoid it?
         </p>
         <br />
         <p>
@@ -1979,8 +1983,13 @@ const entriesArray: EntryData[] = [
         </p>
         <br />
         <p>
-          There are <a href="https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing" target="_blank">
-            quite a handful of tests you can implement </a>
+          There are{" "}
+          <a
+            href="https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing"
+            target="_blank"
+          >
+            quite a handful of tests you can implement{" "}
+          </a>
           , but generally it's considered that the three main ones are: Unit
           Testing, Integration Testing and End-to-End Testing.
         </p>
@@ -1990,7 +1999,11 @@ const entriesArray: EntryData[] = [
           This is the most low level testing you can implement. Its purpose is
           to test specific methods or functions. Of course you'll have different
           frameworks for different coding languages but I like to use
-          <a href="https://jestjs.io/" target="_blank"> Jest for JavaScript Unit Testing </a>. You can run it in a simple .js file or download modified npm
+          <a href="https://jestjs.io/" target="_blank">
+            {" "}
+            Jest for JavaScript Unit Testing{" "}
+          </a>
+          . You can run it in a simple .js file or download modified npm
           packages if you wanted to, say, run it within a React app.
         </p>
         <br />
@@ -2012,10 +2025,15 @@ const entriesArray: EntryData[] = [
           mindblowing (then again, I'm easily impressed). Its purpose is to
           mimic the behaviour of a user by completing tasks such as logging into
           a webpage, filling out and submitting a form and even making online
-          payments. I'm a fan of the <a href="https://www.cypress.io/" target="_blank"> Cypress framework </a> for end-to-end testing.
-          Again for JavaScript, you also have relevant npm packages to run on
-          your desired framework. It probably sounds sad but it is quite fun
-          just writing these tests and watching the tool do its work.
+          payments. I'm a fan of the{" "}
+          <a href="https://www.cypress.io/" target="_blank">
+            {" "}
+            Cypress framework{" "}
+          </a>{" "}
+          for end-to-end testing. Again for JavaScript, you also have relevant
+          npm packages to run on your desired framework. It probably sounds sad
+          but it is quite fun just writing these tests and watching the tool do
+          its work.
         </p>
         <br />
         <p>
@@ -2024,20 +2042,39 @@ const entriesArray: EntryData[] = [
         </p>
         <br />
         <p>
-          According to the <a href="https://circleci.com/blog/test-driven-development-tdd/" target="_blank"
-          > pillars of Test Driven Development </a> , essentially you start by writing the test to fail. For example, when unit testing a function that always returns a string value, you can first write a test to always expect an integer - and thus, the test will fail. This essentially sets the baseline and confirms that the testing framework is set up correctly.
+          According to the{" "}
+          <a
+            href="https://circleci.com/blog/test-driven-development-tdd/"
+            target="_blank"
+          >
+            {" "}
+            pillars of Test Driven Development{" "}
+          </a>{" "}
+          , essentially you start by writing the test to fail. For example, when
+          unit testing a function that always returns a string value, you can
+          first write a test to always expect an integer - and thus, the test
+          will fail. This essentially sets the baseline and confirms that the
+          testing framework is set up correctly.
         </p>
         <br />
         <p>
-          Then once you have written enough failing tests, you can be more adventurous. This time you write just enough code to pass the test, so in the same example, you can write a test for the function to always expect a string value - to which, the test will pass. Obviously these are just basic examples but it's good to start small. Through this method, if your tests fail, it is a lot easier to pinpoint where it went wrong as oppose to using a much more convoluted test. The latter would have more potential outcomes and thus, if it fails, it is harder to know at first where it went wrong.  
+          Then once you have written enough failing tests, you can be more
+          adventurous. This time you write just enough code to pass the test, so
+          in the same example, you can write a test for the function to always
+          expect a string value - to which, the test will pass. Obviously these
+          are just basic examples but it's good to start small. Through this
+          method, if your tests fail, it is a lot easier to pinpoint where it
+          went wrong as oppose to using a much more convoluted test. The latter
+          would have more potential outcomes and thus, if it fails, it is harder
+          to know at first where it went wrong.
         </p>
         <br />
         <p>
           Pass this stage, when satisfied you have written enough fail-safes,
-          you can then refactor the code to make it as efficient as possible, and to
-          ensure it abides by the linting and design rules of the codebase. For
-          instance, if your function runs on 10 lines of code, can it run on 5
-          lines instead and also pass the aforementioned tests.
+          you can then refactor the code to make it as efficient as possible,
+          and to ensure it abides by the linting and design rules of the
+          codebase. For instance, if your function runs on 10 lines of code, can
+          it run on 5 lines instead and also pass the aforementioned tests.
         </p>
         <br />
         <p>You then repeat this process for every feature.</p>
@@ -2047,25 +2084,248 @@ const entriesArray: EntryData[] = [
           understandable why some companies may discourage such practices.
           Nevertheless, by working towards this methodology you have potentially
           inadvertedly fixed numerous bugs that can occur after the code is
-          pushed to production. In addition testing should have a more catch-all focus so that it can be executed for future functions and features. For example,
-          it's common to integrate it into your Continous Integration/Continous Delivery workflow, particularly for
-          open-source projects, so that before a developer submits a Pull
-          Request (PR), they are required to run the provided tests. This
-          provides a further level of protection before the PR is inspected in a
-          code review.
+          pushed to production. In addition testing should have a more catch-all
+          focus so that it can be executed for future functions and features.
+          For example, it's common to integrate it into your Continous
+          Integration/Continous Delivery workflow, particularly for open-source
+          projects, so that before a developer submits a Pull Request (PR), they
+          are required to run the provided tests. This provides a further level
+          of protection before the PR is inspected in a code review.
         </p>
         <br />
         <p>
           Testing in coding, like in other practices, is essential for producing
           a quality assured product. Though it extends the production timeline,
           it also saves an insurmountable amount of time developers would have
-          to spend in order to fix the bugs that were not otherwise caught in the
-          pre-production phase.
+          to spend in order to fix the bugs that were not otherwise caught in
+          the pre-production phase.
         </p>
       </div>
     ),
     question: false,
     date: "29/07/2024",
+  },
+  {
+    id: 13,
+    title: "Finding A Job in Tech: A Modern Day Dante's Inferno",
+    path: "finding-a-job-in-tech-a-modern-day-dante-inferno",
+    links: [],
+    images: ["/assets/blogimages/dante.jpg"],
+    imageAlt: ["Screenshot of job application"],
+    imageCaption: [
+      "One of the Junior Developer jobs advertised on LinkedIn which is actually an unpaid internship. Note it requires SaSS and API integration experience. The tone of the position says it all.",
+    ],
+    article: (
+      <div>
+        <p>
+          It's no secret that the job market in tech is in turmoil at the
+          moment.{" "}
+        </p>
+        <br/>
+        <p>
+          Last week I received a rejection from a company for a developer job in
+          Berlin. They told me that they had to shift through more than 500
+          applications. We've all had to face rejections in our job search, but
+          when you hear that a company shifted through more than 500
+          applications for a local job role, it makes you wonder how deep the
+          problem lies.
+        </p>
+        <br/>
+        <p>
+          When you're applying for a job locally, it can be difficult to know
+          whether the competitive environment you are competing against is
+          localised, or more a global phenomenon. However, it's clear that this
+          is not a Berlin issue. For example, software company Cambium
+          Applicable Innovation, based in southern Israel,{" "}
+          <a
+            href="https://www.calcalistech.com/ctechnews/article/o4b1x3bqu"
+            target="_blank"
+          >
+            {" "}
+            advertised an entry-level job role for 72 hours and received over 700
+            applications{" "}
+          </a>
+          . So why are there so many applicants?
+        </p>
+        <br/>
+        <p>
+          It can be broken down into two: a surplus of candidates and lack of
+          available jobs.
+        </p>
+        <br/>
+        <p>
+          One obvious reason for the surplus of candidates is the success of
+          coding bootcamps. The concept for coding bootcamps started around 2011
+          in response to the growing demand for software developers, and
+          longevity of obtaining a Computer Science degree. However, in recent
+          years coding bootcamps have exploded in popularity due to the
+          increased demand of developers during the Covid pandemic. As it
+          stands, according to Forbes,{" "}
+          <a
+            href="https://www.forbes.com/advisor/education/bootcamps/coding-bootcamp-statistics/"
+            target="_blank"
+          >
+            {" "}
+            the coding bootcamp market is projected to grow to almost one
+            billion dollars by 2030{" "}
+          </a>
+          .
+        </p>
+        <br/>
+        <p>
+          It's hard not to see the attraction of bootcamps. They promise an
+          exciting career change into an industry known for its high salaries
+          within a space of just a few months. It's no wonder then that,
+          reportedly, in the USA alone{" "}
+          <a
+            href="https://www.bestcolleges.com/news/rise-and-fall-of-coding-bootcamps/"
+            target="_blank"
+          >
+            {" "}
+            60,000 students graduated from coding bootcamps in 2023{" "}
+          </a>
+          . But if jobs are plentiful, why are these same students struggling in
+          the job market? The fact is, the job market isn't what it used to be.
+        </p>
+        <br/>
+        <p>
+          It's really no secret that there have been tech layoffs recently.
+          According to tech target, between 2022 and 2024,{" "}
+          <a
+            href="https://www.techtarget.com/whatis/feature/Tech-sector-layoffs-explained-What-you-need-to-know"
+            target="_blank"
+          >
+            there have been more than 500,000 tech layoffs worldwide{" "}
+          </a>
+          , which is a colosal figure. One reason for this is the overhiring
+          practices of companies during the pandemic. As they saw an increase in
+          online users during Covid, it led to a greater demand in online services. With this
+          greater demand, came more feature request and thus a higher demand for
+          developers.
+        </p>
+        <br/>
+        <p>
+          However, now that we are no longer under Covid restrictions, the
+          demand has fallen sharply and with it, the revenue. Thus, those same
+          jobs that were needed during Covid became redundant.</p>
+          <br/>
+          <p> Of course another
+          more popular reason is the rise of AI, but this is more of a headline
+          grabber than the actual truth. Despite what the tech-illiterate CEOs
+          will say, an AI app cannot replace a developer,{" "}
+          <a href="blog/when-not-to-use-ai" target="_blank">
+            {" "}
+            as I've said in another article{" "}
+          </a>
+          . Also, according to Bloomberg, tech giants such as Amazon and
+          Microsoft are failing to show investors the{" "}
+          <a
+            href="https://www.bloomberg.com/news/articles/2024-08-02/big-tech-fails-to-convince-wall-street-that-ai-is-paying-off?embedded-checkout=true"
+            target="_blank"
+          >
+            {" "}
+            profitability of AI{" "}
+          </a>
+          . Nevertheless, what perplexed me after I finished a coding bootcamp,
+          what its repeated claim of the vast treasure of junior tech jobs, as
+          when I entered this landscape I felt completely fooled.
+        </p>
+        <br/>
+        <p>
+          A common theme with junior jobs that applies to all disciplines is
+          that you need experience to get experience. It was something I knew a
+          long time ago when I was a graduate and didn't realise that getting
+          a master degree in history was seen by companies as useful as spelling
+          my own name (which a lot of companies get wrong by the way but I never
+          complain). In fact currently around{" "}
+          <a href="https://www.youtube.com/watch?v=HWXmfrXNwqw" target="_blank">
+            {" "}
+            63% of all entry jobs require 3 years of experience
+          </a>
+          . A junior job is very much a doublethink of being experienced enough
+          to be inexperienced. But companies have their reasons.
+        </p>
+        <br/>
+        <p>
+          For instance, it ultimately comes down to trust and whether they can
+          view you as a loyal employee. Of course you can take measures to ease
+          their anxiety such as working on your own projects, contributing to
+          open source or volunteering at an organisation (all of which I do). But, as youtuber Dev Mentor Dave says,{" "}
+          <a href="https://www.youtube.com/watch?v=z5ynawkrCos" target="_blank">
+            {" "}
+            they want to also make sure that you won't leave the company within
+            one year of joining{" "}
+          </a>
+          . It's therefore easier to trust a candidate who already has a few
+          years tech experience at a company, as they have both shown loyalty
+          and ability to code responsibly.
+        </p>
+        <br/>
+        <p>
+          There is also the trending use of 'ghost jobs'. 'Ghost jobs' are job
+          positions published by a company in which they have no interest in
+          filling. This could be either because they already have an internal
+          candidate in mind, or if they simply just want to be seen as by
+          investors to be a growing company with endless opportunities. It's
+          also a possibility that there isn't even an open position and they're
+          just waiting for their unicorn candidate, who possesses knowledge of
+          an{" "}
+          <a
+            href="/blog/learn-a-new-skill-or-strengthen-my-current-one"
+            target="_blank"
+          >
+            infinite number of coding languages{" "}
+          </a>
+          .
+        </p>
+        <br/>
+        <p>
+          Yet this isn't the only reason why a candidate might be rejected and
+          to be frank, it becomes a lot more impersonal and robotic.
+        </p>
+        <br/>
+        <p>
+          The rise of Applicant Tracking Software (ATS) is the main reason why
+          an applicant doesn't even reach the first interview. ATS is an
+          automated tool that can scan multiple CVs and rank them according to
+          the company's preferences. These preferences can range from desired
+          skills and experience to location and even more questionable
+          preferences, such as personality type. It seems like an impersonal
+          approach to processing CVs, however when you read at the start of this
+          article that some positions received more than 500 applications, how
+          else can a team filter through such a large volume of potential
+          candidates.
+        </p>
+        <br/>
+        <p>
+          Even so, it completely detaches the human experience of applying for a
+          job which was so previously prevalent.
+        </p>
+        <br/>
+        <p>
+          There's been a lot of doom and gloom in this article but don't be
+          afraid. I think it's better to validate an applicant's feelings that
+          the job market is indeed in turmoil, rather than gaslight them that
+          there are hundreds of jobs and they just need to work harder.
+        </p>
+        <br/>
+        <p>
+          If you need motivation, watch this Primeagen's video (former Netflix
+          engineer) where he{" "}
+          <a
+            href="https://www.youtube.com/watch?v=7d-W26mqajg&t=560s"
+            target="_blank"
+          >
+            {" "}
+            discusses the plight of Junior Engineers and how there is hope{" "}
+          </a>
+          .
+        </p>
+        <br/>
+      </div>
+    ),
+    question: false,
+    date: "05/08/2024",
   },
 ];
 
