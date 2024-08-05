@@ -2213,7 +2213,7 @@ const entriesArray: EntryData[] = [
           more popular reason is the rise of AI, but this is more of a headline
           grabber than the actual truth. Despite what the tech-illiterate CEOs
           will say, an AI app cannot replace a developer,{" "}
-          <a href="blog/when-not-to-use-ai" target="_blank">
+          <a href="/blog/when-not-to-use-ai" target="_blank">
             {" "}
             as I've said in another article{" "}
           </a>
