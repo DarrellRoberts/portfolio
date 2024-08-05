@@ -2190,7 +2190,7 @@ const entriesArray: EntryData[] = [
         <br/>
         <p>
           It's really no secret that there have been tech layoffs recently.
-          According to tech target, between 2022 and 2024,{" "}
+          According to Tech Target, between 2022 and 2024:{" "}
           <a
             href="https://www.techtarget.com/whatis/feature/Tech-sector-layoffs-explained-What-you-need-to-know"
             target="_blank"
@@ -2227,17 +2227,17 @@ const entriesArray: EntryData[] = [
             profitability of AI{" "}
           </a>
           . Nevertheless, what perplexed me after I finished a coding bootcamp,
-          what its repeated claim of the vast treasure of junior tech jobs, as
+          was its repeated claim of the vast treasure of junior tech jobs, as
           when I entered this landscape I felt completely fooled.
         </p>
         <br/>
         <p>
           A common theme with junior jobs that applies to all disciplines is
           that you need experience to get experience. It was something I knew a
-          long time ago when I was a graduate and didn't realise that getting
+          long time ago when I was a graduate. At that time I didn't realise that getting
           a master degree in history was seen by companies as useful as spelling
-          my own name (which a lot of companies get wrong by the way but I never
-          complain). In fact currently around{" "}
+          my own name - which a lot of companies get wrong by the way but I never
+          complain. In fact currently around{" "}
           <a href="https://www.youtube.com/watch?v=HWXmfrXNwqw" target="_blank">
             {" "}
             63% of all entry jobs require 3 years of experience
