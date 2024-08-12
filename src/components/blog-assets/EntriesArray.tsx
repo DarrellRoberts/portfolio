@@ -63,7 +63,7 @@ const entriesArray: EntryData[] = [
           <a href="https://localwp.com/" target="_blank">
             Local WP
           </a>{" "}
-          - a WordPress developement tool. By doing this rather than using
+          - a WordPress development tool. By doing this rather than using
           WordPress itself, I've actually automated even more tasks, such as
           layouts, plugin management and writing code. Besides, I wanted to
           explore the more expedient option in order to see its benefits in all
@@ -2121,7 +2121,7 @@ const entriesArray: EntryData[] = [
           It's no secret that the job market in tech is in turmoil at the
           moment.{" "}
         </p>
-        <br/>
+        <br />
         <p>
           Last week I received a rejection from a company for a developer job in
           Berlin. They told me that they had to shift through more than 500
@@ -2130,7 +2130,7 @@ const entriesArray: EntryData[] = [
           applications for a local job role, it makes you wonder how deep the
           problem lies.
         </p>
-        <br/>
+        <br />
         <p>
           When you're applying for a job locally, it can be difficult to know
           whether the competitive environment you are competing against is
@@ -2142,17 +2142,17 @@ const entriesArray: EntryData[] = [
             target="_blank"
           >
             {" "}
-            advertised an entry-level job role for 72 hours and received over 700
-            applications{" "}
+            advertised an entry-level job role for 72 hours and received over
+            700 applications{" "}
           </a>
           . So why are there so many applicants?
         </p>
-        <br/>
+        <br />
         <p>
           It can be broken down into two: a surplus of candidates and lack of
           available jobs.
         </p>
-        <br/>
+        <br />
         <p>
           One obvious reason for the surplus of candidates is the success of
           coding bootcamps. The concept for coding bootcamps started around 2011
@@ -2171,7 +2171,7 @@ const entriesArray: EntryData[] = [
           </a>
           .
         </p>
-        <br/>
+        <br />
         <p>
           It's hard not to see the attraction of bootcamps. They promise an
           exciting career change into an industry known for its high salaries
@@ -2187,7 +2187,7 @@ const entriesArray: EntryData[] = [
           . But if jobs are plentiful, why are these same students struggling in
           the job market? The fact is, the job market isn't what it used to be.
         </p>
-        <br/>
+        <br />
         <p>
           It's really no secret that there have been tech layoffs recently.
           According to Tech Target, between 2022 and 2024:{" "}
@@ -2199,20 +2199,22 @@ const entriesArray: EntryData[] = [
           </a>
           , which is a colosal figure. One reason for this is the overhiring
           practices of companies during the pandemic. As they saw an increase in
-          online users during Covid, it led to a greater demand in online services. With this
-          greater demand, came more feature request and thus a higher demand for
-          developers.
+          online users during Covid, it led to a greater demand in online
+          services. With this greater demand, came more feature request and thus
+          a higher demand for developers.
         </p>
-        <br/>
+        <br />
         <p>
           However, now that we are no longer under Covid restrictions, the
           demand has fallen sharply and with it, the revenue. Thus, those same
-          jobs that were needed during Covid became redundant.</p>
-          <br/>
-          <p> Of course another
-          more popular reason is the rise of AI, but this is more of a headline
-          grabber than the actual truth. Despite what the tech-illiterate CEOs
-          will say, an AI app cannot replace a developer,{" "}
+          jobs that were needed during Covid became redundant.
+        </p>
+        <br />
+        <p>
+          {" "}
+          Of course another more popular reason is the rise of AI, but this is
+          more of a headline grabber than the actual truth. Despite what the
+          tech-illiterate CEOs will say, an AI app cannot replace a developer,{" "}
           <a href="/blog/when-not-to-use-ai" target="_blank">
             {" "}
             as I've said in another article{" "}
@@ -2230,14 +2232,14 @@ const entriesArray: EntryData[] = [
           was its repeated claim of the vast treasure of junior tech jobs, as
           when I entered this landscape I felt completely fooled.
         </p>
-        <br/>
+        <br />
         <p>
           A common theme with junior jobs that applies to all disciplines is
           that you need experience to get experience. It was something I knew a
-          long time ago when I was a graduate. At that time I didn't realise that getting
-          a master degree in history was seen by companies as useful as spelling
-          my own name - which a lot of companies get wrong by the way but I never
-          complain. In fact currently around{" "}
+          long time ago when I was a graduate. At that time I didn't realise
+          that getting a master degree in history was seen by companies as
+          useful as spelling my own name - which a lot of companies get wrong by
+          the way but I never complain. In fact currently around{" "}
           <a href="https://www.youtube.com/watch?v=HWXmfrXNwqw" target="_blank">
             {" "}
             63% of all entry jobs require 3 years of experience
@@ -2245,12 +2247,13 @@ const entriesArray: EntryData[] = [
           . A junior job is very much a doublethink of being experienced enough
           to be inexperienced. But companies have their reasons.
         </p>
-        <br/>
+        <br />
         <p>
           For instance, it ultimately comes down to trust and whether they can
           view you as a loyal employee. Of course you can take measures to ease
           their anxiety such as working on your own projects, contributing to
-          open source or volunteering at an organisation (all of which I do). But, as youtuber Dev Mentor Dave says,{" "}
+          open source or volunteering at an organisation (all of which I do).
+          But, as youtuber Dev Mentor Dave says,{" "}
           <a href="https://www.youtube.com/watch?v=z5ynawkrCos" target="_blank">
             {" "}
             they want to also make sure that you won't leave the company within
@@ -2260,7 +2263,7 @@ const entriesArray: EntryData[] = [
           years tech experience at a company, as they have both shown loyalty
           and ability to code responsibly.
         </p>
-        <br/>
+        <br />
         <p>
           There is also the trending use of 'ghost jobs'. 'Ghost jobs' are job
           positions published by a company in which they have no interest in
@@ -2278,12 +2281,12 @@ const entriesArray: EntryData[] = [
           </a>
           .
         </p>
-        <br/>
+        <br />
         <p>
           Yet this isn't the only reason why a candidate might be rejected and
           to be frank, it becomes a lot more impersonal and robotic.
         </p>
-        <br/>
+        <br />
         <p>
           The rise of Applicant Tracking Software (ATS) is the main reason why
           an applicant doesn't even reach the first interview. ATS is an
@@ -2296,19 +2299,19 @@ const entriesArray: EntryData[] = [
           else can a team filter through such a large volume of potential
           candidates.
         </p>
-        <br/>
+        <br />
         <p>
           Even so, it completely detaches the human experience of applying for a
           job which was so previously prevalent.
         </p>
-        <br/>
+        <br />
         <p>
           There's been a lot of doom and gloom in this article but don't be
           afraid. I think it's better to validate an applicant's feelings that
           the job market is indeed in turmoil, rather than gaslight them that
           there are hundreds of jobs and they just need to work harder.
         </p>
-        <br/>
+        <br />
         <p>
           If you need motivation, watch this Primeagen's video (former Netflix
           engineer) where he{" "}
@@ -2321,11 +2324,295 @@ const entriesArray: EntryData[] = [
           </a>
           .
         </p>
-        <br/>
+        <br />
       </div>
     ),
     question: false,
     date: "05/08/2024",
+  },
+  {
+    id: 14,
+    title: "Should I Create a Website, Mobile App or Software?",
+    path: "should-i-create-a-website-mobile-app-or-software",
+    links: [],
+    images: ["/assets/blogimages/mygame.jpg"],
+    imageAlt: ["Screenshot of my game executable file"],
+    imageCaption: ["The executable file of a game I made with Java code"],
+    article: (
+      <div>
+        <p>
+          One of the benefits of coding is that it is so vast and you can create
+          anything. For example, you can develope: your own international store
+          on a website; a mobile app that utilizes the user's camera and
+          geo-location; or even you own desktop computer game. The only limit is
+          your imagination - and the technical limits of your equipment
+          (especially for computer games).
+        </p>
+        <br />
+        <p>
+          Whatever you create, they should all serve a purpose: solving a
+          problem. Empathy programming is a phrase you hear often, and refers to
+          understanding the perspective of the end-user. You think of their
+          needs and requirements, and link it to how you can help them. A user
+          may think they need all kinds of products for their business idea, but
+          really only one type would suffice.
+        </p>
+        <br />
+        <p>
+          For instance, a user who requires an ecommerce website may also want a
+          mobile app, whereby their users can also order on the store. In
+          addition they may also want a system install in their physical stores,
+          which enables customers to order from the device that utilises a
+          software you coded (such as in McDonalds). Yet, particularly when
+          starting out, only one type of product will do the trick.
+        </p>
+        <br />
+        <p>
+          But what are the main differences between developing a website, mobile
+          app and software?
+        </p>
+        <br />
+        <h2> Website </h2>
+        <p>
+          One constant with a website or web app is that they always communicate
+          with a server. This is via the Hypertext Transfer Protocol (HTTP) and is the
+          basis of how data is communicated on the World Wide Web. The method is
+          achieved through a Request-Response cycle and is fundamental to
+          understand if you want to create your own website. Your browser, also
+          known as the client, sends a HTTP request to the server. The server
+          processes this request and sends a response with the requested data.
+          However, when a user types in your URL, the Request-Response cycle is
+          just one part of the process.
+        </p>
+        <br />
+        <p>
+          First the browser searches the Domain Name System (DNS) for the given
+          address and finds its associated Internet Protocol (IP) address. This
+          is why one of the first things you need to establish when making a
+          website is your domain name, and acquiring this property on, for
+          example,{" "}
+          <a href="https://www.godaddy.com" target="_blank">
+            GoDaddy{" "}
+          </a>
+          . After the IP address has been found, the browser then establishes a
+          Transmission Control Protocol (TCP) connection with the web server. </p>
+          <br />
+          <p>
+          Once this is established the Request-Response cycle begins and in the
+          case of just typing in a web URL, the user is sending a GET request to
+          the server to retrieve all the information needed to read the webpage.
+          It's through this TCP connection that the server is able to send back
+          this information in a response. Once retrieved, the browser renders
+          this information via one of multiple methods such as Client-side rendering,
+          which prioritises the loading of JavaScript, or Server-side rendering,
+          which prioritises the loading of HTML content. Every request is
+          independent of the next, therefore neither the server nor the client
+          stores this information by default. This is why caching can be
+          important as you can save copies of web page resources to improve the
+          performance of loading times. Also what is now commonplace is HTTP
+          Secure protocols (i.e. https). With this, the data sent via the TCP
+          connection is encrypted making is harder to breach.
+        </p>
+        <br />
+        <p>
+          From the beginning this can all sound complicated but its important to
+          understand when you connect the Frontend and Backend of a web app. The
+          majority of the latter are Fullstack because you need a functional
+          Backend to have usable features, and you need a flowing Frontend to have
+          a user-friendly user interface. And on the topic of user interfaces,
+          you also need to consider responsiveness.
+        </p>
+        <br />
+        <p>
+          One problem you won't necessarily have with mobile apps or software,
+          is how your application will look on different screen sizes. For
+          websites however, users will view it on a plethora of viewports
+          ranging from super narrow 300px mobile devices, to gigantic 4000px
+          projector screens. Luckily, you have a lot of tools at your disposal
+          as well as various approaches. For example, you have{" "}
+          <a
+            href="https://theandreflores.medium.com/mobile-first-vs-desktop-first-design-8eeb3875cced"
+            target="_blank"
+          >
+            mobile-first and desktop-first design{" "}
+          </a>
+          . This essentially asks whether you to prioritise mobile or desktop
+          screen sizes. Generally, the former is preferred. For a website, you
+          also have to consider browser compatibility.
+        </p>
+        <br />
+        <p>
+          When new features are released on either JavaScript, HTML or CSS (the
+          three amigos of website development), not all browsers are able to
+          render them as they use different engines. Google Chrome uses the V8
+          engine to render website assets, whereas Safari uses Webkit. A key
+          tool that you can use however is{" "}
+          <a href="https://caniuse.com/" target="_blank">
+            {" "}
+            caniuse{" "}
+          </a>
+          . This is able to tell you whether the latest CSS scroll animation,
+          for example, is compatible with Chrome, Safari, Firefox and other
+          browsers.
+        </p>
+        <br />
+        <p>
+          Finally, hosting your website is also an unavoidable step you must
+          follow in website development. When you have created your web app, you
+          will have a list of HTML, CSS and JavaScript files along with
+          potential media assets such as images, videos or audio tracks that
+          will have to be stored somewhere. This is where hosting comes in, as
+          it provides a virtual storage space for this files, where the server
+          can access them and send to the client. Although you can theoretically
+          self-host, it's not recommended unless you have the resources and the
+          technical knowledge to achieve it. You need either a physical or
+          virtual private server (VPS) to begin with, along with the technical
+          expertise of server administration and networking.
+        </p>
+        <br />
+        <p>
+          It's much more common to use a third-party hosting service and there
+          are loads to choose from. For example, if you use a JavaScript
+          framework, its common to deploy these apps on Netlify, Vercel or
+          Render (though more common for Backend apps). There are also an
+          endless supply of Amazon Web Services, each with their own traits and
+          specialty. In fact AWS services have such a penetration in the hosting
+          space that the aforementioned tools Netlify, Vercel and Render, use
+          AWS themselves. They are really just AWS services in disguise.
+        </p>
+        <br />
+        <p>
+          There's a lot to unpack with web development and I could go on,
+          showing my natural bias towards it, but how does developing a mobile
+          app differ?
+        </p>
+        <br />
+        <h2> Mobile App </h2>
+        <p>
+          The difference between developing a mobile and web app is{" "}
+          <a
+            href="/blog/difference-between-web-and-mobile-app-development"
+            target="_blank"
+          >
+            {" "}
+            something I have already spoken about{" "}
+          </a>
+          . Nevertheless, how it differs in reference to the HTTP Protocol,
+          responsiveness and browser compatibility is not something I have
+          discussed.
+        </p>
+        <br />
+        <p>
+          As I've said before, a mobile app is essentially a piece of software
+          that exists on your mobile device. Depending on how this app
+          functions, it does not inherently need the internet to function. For
+          instance, you can have (and easily make if you are so inclined) a
+          calculator app on your phone which functions perfectly well without
+          WiFi. This of course is in direct contrast to a web app, and, although
+          you can make provisions for certain web pages to function on offline
+          mode with caching and cookies, there's only so far you can go and do
+          without a TCP connection.
+        </p>
+        <br />
+        <p>
+          Moreover, as a mobile app either exists within the Android or iOS
+          universe, you only have to worry about one rendering engine, as
+          opposed to many. This also means when you publish your app, you
+          essentially only have the choice of two services: Google Play and the
+          Apple Store. They in this instance take on the role of hosting your
+          files. Though this of course is not without its challenges, as both
+          publishers have strict guidelines and hurdles to jump over, so you'll
+          spend a lot of time making sure your app complies with their
+          regulation.
+        </p>
+        <br />
+        <p>
+          One secret weapon of mobile apps however, are its native features. For
+          instance, most smartphones have a camera, microphone, GPS,
+          accelerometer, gyroscope, magnetometer, proximity sensor, touchscreen
+          and more. With this hardware, you can create all sorts of things which
+          is a lot more difficult with a computer or laptop.
+        </p>
+        <br />
+        <p>
+          Although how does developing software in general offer a different
+          experience?
+        </p>
+        <br />
+        <h2> Software </h2>
+        <p>
+          Despite the variety and different approaches to developing a website
+          or mobile app, nothing is more vague nor vast than software
+          development.
+        </p>
+        <br />
+        <p>
+          Software comes in all different shape and sizes, from something small
+          such as a digital stopwatch to something huge such as an Air Traffic
+          Control system. Unlike with websites, which will always consist of the
+          same languages (give or take PHP), or mobile apps which consist either
+          of Kotlin or Swift code at its core, software can vary largely from
+          the language it's written in. To name a few, you have: operating
+          systems such as Windows and Linux which use C and C++; Large Language
+          Models (LLM), which are the core of AI software, written in Python;
+          extremely powerful gaming engines, such as Unity written in C#; supply
+          chain management software with Java; and many more. With these
+          examples, it really gives the impression that anything is possible. Or
+          in other words, to every problem, there's a software that can solve
+          it.
+        </p>
+        <br />
+        <p>
+          As software is an application that needs to be installed, its files
+          generally exist within its own directory. Although this means there's
+          no need either for a hosting service, you still need to find some sort
+          of means of turning you code into what's called an executable or .exe
+          for short. The latter may sound familiar as when you start a software
+          application on your device, you often look for the .exe file. Of
+          course whatever operating system you are using, you want to make sure
+          that you packaged your code into a compatible or OS-native executable,
+          otherwise it won't run.
+        </p>
+        <br />
+        <p>
+          One example of this is{" "}
+          <a href="https://launch4j.sourceforge.net/" target="_blank">
+            {" "}
+            Launch4J{" "}
+          </a>{" "}
+          for Java applications. This tool essentially bundles the Java Runtime
+          Environment (JRE) into a Windows native .exe file. On launch the Java
+          Virtual Machine is initiated and loads the main Java class, and
+          executes the application. In essence you could view this as deploying
+          your code, as you would for a website app.
+        </p>
+        <br />
+        <p>
+          Perhaps one of the main differences between a say desktop software
+          application and website is the styling. Whereas on a website you can
+          easily play with CSS, as the stylesheet is linked in the HTML file,
+          this isn't an option on a, say, C++ application. For the latter you
+          employ different approaches such as utilising the Windows API
+          functions, if you app exists on this OS, or you can employ external UI
+          frameworks or Widgets to modify your user interface.
+        </p>
+        <br />
+        <hr />
+        <br/>
+        <p>
+          Ultimately, developing a website, mobile app or piece of software will
+          offer very different and unique developer experiences.
+        </p>
+        <br />
+        <p>
+          On the other hand, whatever you learn from one project can always be transferred to the
+          next project. This is because the core principles of coding and solving a problem will
+          always remain the same.
+        </p>
+      </div>
+    ),
+    question: false,
+    date: "12/08/2024",
   },
 ];
 
