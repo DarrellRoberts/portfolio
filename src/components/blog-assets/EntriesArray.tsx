@@ -2375,14 +2375,14 @@ const entriesArray: EntryData[] = [
         <h2> Website </h2>
         <p>
           One constant with a website or web app is that they always communicate
-          with a server. This is via the Hypertext Transfer Protocol (HTTP) and is the
-          basis of how data is communicated on the World Wide Web. The method is
-          achieved through a Request-Response cycle and is fundamental to
-          understand if you want to create your own website. Your browser, also
-          known as the client, sends a HTTP request to the server. The server
-          processes this request and sends a response with the requested data.
-          However, when a user types in your URL, the Request-Response cycle is
-          just one part of the process.
+          with a server. This is via the Hypertext Transfer Protocol (HTTP) and
+          is the basis of how data is communicated on the World Wide Web. The
+          method is achieved through a Request-Response cycle and is fundamental
+          to understand if you want to create your own website. Your browser,
+          also known as the client, sends a HTTP request to the server. The
+          server processes this request and sends a response with the requested
+          data. However, when a user types in your URL, the Request-Response
+          cycle is just one part of the process.
         </p>
         <br />
         <p>
@@ -2395,21 +2395,22 @@ const entriesArray: EntryData[] = [
             GoDaddy{" "}
           </a>
           . After the IP address has been found, the browser then establishes a
-          Transmission Control Protocol (TCP) connection with the web server. </p>
-          <br />
-          <p>
+          Transmission Control Protocol (TCP) connection with the web server.{" "}
+        </p>
+        <br />
+        <p>
           Once this is established the Request-Response cycle begins and in the
           case of just typing in a web URL, the user is sending a GET request to
           the server to retrieve all the information needed to read the webpage.
           It's through this TCP connection that the server is able to send back
           this information in a response. Once retrieved, the browser renders
-          this information via one of multiple methods such as Client-side rendering,
-          which prioritises the loading of JavaScript, or Server-side rendering,
-          which prioritises the loading of HTML content. Every request is
-          independent of the next, therefore neither the server nor the client
-          stores this information by default. This is why caching can be
-          important as you can save copies of web page resources to improve the
-          performance of loading times. Also what is now commonplace is HTTP
+          this information via one of multiple methods such as Client-side
+          rendering, which prioritises the loading of JavaScript, or Server-side
+          rendering, which prioritises the loading of HTML content. Every
+          request is independent of the next, therefore neither the server nor
+          the client stores this information by default. This is why caching can
+          be important as you can save copies of web page resources to improve
+          the performance of loading times. Also what is now commonplace is HTTP
           Secure protocols (i.e. https). With this, the data sent via the TCP
           connection is encrypted making is harder to breach.
         </p>
@@ -2418,9 +2419,9 @@ const entriesArray: EntryData[] = [
           From the beginning this can all sound complicated but its important to
           understand when you connect the Frontend and Backend of a web app. The
           majority of the latter are Fullstack because you need a functional
-          Backend to have usable features, and you need a flowing Frontend to have
-          a user-friendly user interface. And on the topic of user interfaces,
-          you also need to consider responsiveness.
+          Backend to have usable features, and you need a flowing Frontend to
+          have a user-friendly user interface. And on the topic of user
+          interfaces, you also need to consider responsiveness.
         </p>
         <br />
         <p>
@@ -2598,21 +2599,214 @@ const entriesArray: EntryData[] = [
         </p>
         <br />
         <hr />
-        <br/>
+        <br />
         <p>
           Ultimately, developing a website, mobile app or piece of software will
           offer very different and unique developer experiences.
         </p>
         <br />
         <p>
-          On the other hand, whatever you learn from one project can always be transferred to the
-          next project. This is because the core principles of coding and solving a problem will
-          always remain the same.
+          On the other hand, whatever you learn from one project can always be
+          transferred to the next project. This is because the core principles
+          of coding and solving a problem will always remain the same.
         </p>
       </div>
     ),
     question: false,
     date: "12/08/2024",
+  },
+  {
+    id: 15,
+    title: "What are the signs of an interesting project?",
+    path: "what-are-the-signs-of-an-interesting-project",
+    links: [],
+    images: ["/assets/blogimages/book.jpg"],
+    imageAlt: ["Screenshot of 3D on my book club website"],
+    imageCaption: ["The 3D feature I implemented on my own Fullstack web application"],
+    article: (
+      <div>
+        <p>
+          Like many professions, developers need a portfolio to showcase their
+          work. Word of mouth alone isn't enough to convince either clients or
+          companies that you're the right fit for the job.
+        </p>
+<br/>
+        <p>
+          And so, in this portfolio you'd expect at least a handful of projects
+          that show the applied knowledge of their skills. Of course this will
+          vary depending of their discipline.
+        </p>
+        <br/>
+        <p>
+          For example, a backend developer may showcase projects pertaining to
+          RESTful APIs, database management or microservices that scale an app.
+          Therefore you'd expect to see the use of Node.js or Python for
+          server-side code, SQL or NoSQL for database queries, or AWS for
+          serverless applications. In addition these projects could also be
+          logic for a software application or even a video game. In such a case
+          you may see the practical use of Java, C++ or C#.
+        </p>
+        <br/>
+        <p>
+          In essence the backend developer is trying to show not only that they
+          have a firm grasp on data structures and algorithms, but that they can
+          use them for practical use cases.{" "}
+        </p>
+        <br/>
+        <p>
+          On the other hand, a frontend developer would present very different
+          applications. As frontend is more considered with the client-side and
+          user interfaces, there's a heightened importance on responsiveness and
+          the user experience.
+        </p>
+        <br/>
+        <p>
+          For instance, it could be the design, layout and user journey of an
+          ecommerce website, the presentation of a mobile app or interactivity
+          of a social media project. Frontend
+          developers usually make use of the three amigos of web development: HTML, CSS and
+          JavaScript. These present different challenges to say creating an API
+          with Python.
+        </p>
+        <br/>
+        <p>
+          A frontend developer wants to show that they can make consistent,
+          responsive user interfaces, which conform to the accessibility
+          standards.
+        </p>
+        <br/>
+        <p>
+          However, you may notice that either a purely backend project or purely
+          frontend project, is not much without the other. You can't have an
+          ecommerce website, for example, without a backend. Nor can you have a
+          database that is accessible to the average user without a user
+          interface. Therefore, if you have a Fullstack project, you show the
+          power of both. So in my ecommerce example, an ecommerce website
+          whereby the developer has made both the user interface with, say,
+          React; as well as a backend that can process clients' request and
+          store the product information in a database with say Express; would be
+          an example of a Fullstack project.
+        </p>
+        <br/>
+        <p>
+          Showing a Fullstack project is a lot more impressive as it shows that
+          you can navigate with both Frontend and Backend technology, along with
+          the ability to work directly with databases. But what makes a great
+          Fullstack project?
+        </p>
+        <br/>
+        <p>
+          First off, let's talk about which projects not to do. And speak of the
+          devil. A common project you may see amongst Fullstack Developers is a
+          to-do app. It's a common one developers do at coding bootcamps as an
+          introduction to JavaScript, Node.js and how to link the Frontend to
+          the Backend. Problem is, because so many developers make one, it's not
+          particularly interesting to see one in a portfolio. This also means
+          that the challenges it presents are usually generic. Thus, not that
+          impressive nor that interesting to conquer. Lastly, to-do apps these
+          days are so well-developed that it is incredibly hard to create a
+          better one. Just look at{" "}
+          <a href="https://www.notion.so/" target="_blank">
+            {" "}
+            Notion{" "}
+          </a>
+          .
+        </p>
+        <br/>
+        <p>
+          So the idea is to make a project that will catch the reader's eye and
+          make them want to investigate. A good way to start is essentially to
+          solve a problem, which really is the{" "}
+          <a
+            href="/blog/should-i-create-a-website-mobile-app-or-software"
+            target="_blank"
+          >
+            {" "}
+            main purpose of coding{" "}
+          </a>
+          . Ask around your friend groups or family and see if they have a
+          blocker or issue with a task that may inconvenience them. Of course
+          this can be anything and that's the point, as it's likely they'll have
+          a unique problem which requires a unique solution - and thus your
+          project is born. Often people need reminders, which can be translated
+          into apps with timers, or struggle to manage large quantities of data,
+          which can be stored in a database. I could give examples but that kind
+          of defeats the purpose of creating a one of a kind project. I can
+          however tell you what I did.
+        </p>
+        <br/>
+        <p>
+          As a keen book reader, or I'll be honest, book snob, I am member of a
+          book club. We'd read a book, score it, record it and choose the next.
+          Originally, these scores only existed on a Whatsapp group and it was
+          not long until it became incredibly difficult to figure out who scored
+          what on a particular book. So then I noticed the problem and found the
+          solution was to store the scores or data into a Mongo Database. I
+          needed to create a server application to do this, so I made an Express
+          app which could communicate with MongoDB. But then I wanted myself and
+          the members to be able to directly submit their scores into this
+          database, which meant creating a list of CRUD operations. The members
+          of this book club aren't developers, therefore I needed to make a user
+          interface, which I did with the Next framework, and voila - our Fullstack, book club website was born.{" "}
+        </p>
+        <br/>
+        <p>
+          We now use this website for our book scores and every member has their
+          own account login and profile page.
+        </p>
+        <br/>
+        <p>
+          Yet I didn't create the website and abandon it, as you shouldn't do
+          either with your projects. This is why it's also good to create a
+          project that either you or someone else will use regularly. It should
+          be an ongoing work-in-progress that needs updating, refactoring and
+          new features. I achieve this by asking the book club members to always
+          let me know if they have any ideas for new features. By doing this, it
+          challenges me to think on my feet. If I implemented just my own ideas,
+          there is a certain bias as I may only work on features I know,
+          subconsciously, I can implement. For instance, one of the book club
+          members wanted to know if it was possible for me to display the books
+          as 3D models.{" "}
+          <a href="/blog/3d-websites-threejs-and-blender" target="_blank">
+            {" "}
+            Although I worked with 3D projects before{" "}
+          </a>
+          , doing it within a Fullstack application that ran on Next, definitely
+          felt like a big challenge. Not only would I need to integrate it
+          already with the existing codebase, but I would need to consider how I
+          could implement it within the Next infrastructure. Suffice it to say,{" "}
+          <a
+            href="https://bookclub-brothers.vercel.app/books/library/3d"
+            target="_blank"
+          >
+            {" "}
+            I was able to create it{" "}
+          </a>{" "}
+          and it was a great feeling, mostly because I was able to bring another
+          person's vision to life.
+        </p>
+        <br/>
+        <p>
+          But my example is just one of numerous ways you can create a Fullstack
+          application and the sky is the limit. By making it idiosyncratic and
+          unique to your situation, it will be naturally interesting and
+          non-generic.
+        </p>
+        <br/>
+        <p>
+          Essentially, it should be something that reignites your passion in
+          coding. <a href="/blog/finding-a-job-in-tech-a-modern-day-dante-inferno" target="_blank"> The job market is especially turbulent at the moment </a> and
+          rejections can kill your ambition.
+        </p>
+        <br/>
+        <p>
+          Therefore, having a project that you love working on will be your
+          guiding light.
+        </p>
+      </div>
+    ),
+    question: false,
+    date: "19/08/2024",
   },
 ];
 
