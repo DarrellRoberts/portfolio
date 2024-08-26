@@ -80,7 +80,8 @@
 .imageCon img {
   filter: grayscale(1);
   border-radius: 25px;
-  width: 65%;
+  width: 1140px;
+  height: 550px;
 }
 
 .imageCon2 img {

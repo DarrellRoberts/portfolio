@@ -2622,7 +2622,9 @@ const entriesArray: EntryData[] = [
     links: [],
     images: ["/assets/blogimages/book.jpg"],
     imageAlt: ["Screenshot of 3D on my book club website"],
-    imageCaption: ["The 3D feature I implemented on my own Fullstack web application"],
+    imageCaption: [
+      "The 3D feature I implemented on my own Fullstack web application",
+    ],
     article: (
       <div>
         <p>
@@ -2630,13 +2632,13 @@ const entriesArray: EntryData[] = [
           work. Word of mouth alone isn't enough to convince either clients or
           companies that you're the right fit for the job.
         </p>
-<br/>
+        <br />
         <p>
           And so, in this portfolio you'd expect at least a handful of projects
           that show the applied knowledge of their skills. Of course this will
           vary depending of their discipline.
         </p>
-        <br/>
+        <br />
         <p>
           For example, a backend developer may showcase projects pertaining to
           RESTful APIs, database management or microservices that scale an app.
@@ -2646,35 +2648,34 @@ const entriesArray: EntryData[] = [
           logic for a software application or even a video game. In such a case
           you may see the practical use of Java, C++ or C#.
         </p>
-        <br/>
+        <br />
         <p>
           In essence the backend developer is trying to show not only that they
           have a firm grasp on data structures and algorithms, but that they can
           use them for practical use cases.{" "}
         </p>
-        <br/>
+        <br />
         <p>
           On the other hand, a frontend developer would present very different
           applications. As frontend is more considered with the client-side and
           user interfaces, there's a heightened importance on responsiveness and
           the user experience.
         </p>
-        <br/>
+        <br />
         <p>
           For instance, it could be the design, layout and user journey of an
           ecommerce website, the presentation of a mobile app or interactivity
-          of a social media project. Frontend
-          developers usually make use of the three amigos of web development: HTML, CSS and
-          JavaScript. These present different challenges to say creating an API
-          with Python.
+          of a social media project. Frontend developers usually make use of the
+          three amigos of web development: HTML, CSS and JavaScript. These
+          present different challenges to say creating an API with Python.
         </p>
-        <br/>
+        <br />
         <p>
           A frontend developer wants to show that they can make consistent,
           responsive user interfaces, which conform to the accessibility
           standards.
         </p>
-        <br/>
+        <br />
         <p>
           However, you may notice that either a purely backend project or purely
           frontend project, is not much without the other. You can't have an
@@ -2687,14 +2688,14 @@ const entriesArray: EntryData[] = [
           store the product information in a database with say Express; would be
           an example of a Fullstack project.
         </p>
-        <br/>
+        <br />
         <p>
           Showing a Fullstack project is a lot more impressive as it shows that
           you can navigate with both Frontend and Backend technology, along with
           the ability to work directly with databases. But what makes a great
           Fullstack project?
         </p>
-        <br/>
+        <br />
         <p>
           First off, let's talk about which projects not to do. And speak of the
           devil. A common project you may see amongst Fullstack Developers is a
@@ -2712,7 +2713,7 @@ const entriesArray: EntryData[] = [
           </a>
           .
         </p>
-        <br/>
+        <br />
         <p>
           So the idea is to make a project that will catch the reader's eye and
           make them want to investigate. A good way to start is essentially to
@@ -2734,7 +2735,7 @@ const entriesArray: EntryData[] = [
           of defeats the purpose of creating a one of a kind project. I can
           however tell you what I did.
         </p>
-        <br/>
+        <br />
         <p>
           As a keen book reader, or I'll be honest, book snob, I am member of a
           book club. We'd read a book, score it, record it and choose the next.
@@ -2747,14 +2748,15 @@ const entriesArray: EntryData[] = [
           the members to be able to directly submit their scores into this
           database, which meant creating a list of CRUD operations. The members
           of this book club aren't developers, therefore I needed to make a user
-          interface, which I did with the Next framework, and voila - our Fullstack, book club website was born.{" "}
+          interface, which I did with the Next framework, and voila - our
+          Fullstack, book club website was born.{" "}
         </p>
-        <br/>
+        <br />
         <p>
           We now use this website for our book scores and every member has their
           own account login and profile page.
         </p>
-        <br/>
+        <br />
         <p>
           Yet I didn't create the website and abandon it, as you shouldn't do
           either with your projects. This is why it's also good to create a
@@ -2785,20 +2787,27 @@ const entriesArray: EntryData[] = [
           and it was a great feeling, mostly because I was able to bring another
           person's vision to life.
         </p>
-        <br/>
+        <br />
         <p>
           But my example is just one of numerous ways you can create a Fullstack
           application and the sky is the limit. By making it idiosyncratic and
           unique to your situation, it will be naturally interesting and
           non-generic.
         </p>
-        <br/>
+        <br />
         <p>
           Essentially, it should be something that reignites your passion in
-          coding. <a href="/blog/finding-a-job-in-tech-a-modern-day-dante-inferno" target="_blank"> The job market is especially turbulent at the moment </a> and
-          rejections can kill your ambition.
+          coding.{" "}
+          <a
+            href="/blog/finding-a-job-in-tech-a-modern-day-dante-inferno"
+            target="_blank"
+          >
+            {" "}
+            The job market is especially turbulent at the moment{" "}
+          </a>{" "}
+          and rejections can kill your ambition.
         </p>
-        <br/>
+        <br />
         <p>
           Therefore, having a project that you love working on will be your
           guiding light.
@@ -2807,6 +2816,172 @@ const entriesArray: EntryData[] = [
     ),
     question: false,
     date: "19/08/2024",
+  },
+  {
+    id: 16,
+    title: "How to handle rejections?",
+    path: "how-to-handle-rejections",
+    links: [],
+    images: ["/assets/blogimages/firstname.jpg"],
+    imageAlt: ["Screenshot of a job rejection"],
+    imageCaption: [
+      "A genuine rejection I got from a company after a series of interviews and technical exercises. Not sure who this {{first_name} candidate is, but it's not how you spell my name",
+    ],
+    article: (
+      <div>
+        <p>
+          To state the obvious, rejections are a part of life. If you have
+          seldom experienced them, you probably are not very daring.
+        </p>
+        <br />
+        <p>
+          As I mentioned in a previous post,{" "}
+          <a
+            href="/blog/finding-a-job-in-tech-a-modern-day-dante-inferno"
+            target="_blank"
+          >
+            getting a job in the tech industry is a nightmare at the moment{" "}
+          </a>
+          . So much so, that candidates don't just get a rejection here or
+          there, but multiple rejections in a week if not a day. And to rub salt
+          in the wound, most companies outright refuse to give feedback, leaving
+          the candidate to second-guess what they did wrong.
+        </p>
+        <br />
+        <p>
+          The rejection itself is most likely a template. In some cases I find
+          these template rejections disrespectful, especially if you have
+          undergone four or five stages of interviews. Or in other words have
+          spent four to six weeks in the interview process only to be met with
+          something written years ago. If they're incapable of changing your
+          name, <a href="#">such as here</a>, it adds further insult to injury.
+          Unfortunately, it is the case that there is no standard practice of
+          interviewing. The company can do whatever they choose and they're not
+          even obligated to reply to you. This is quite frustrating for the
+          candidate, particularly if they are freelance, as time is money. There
+          are of course websites such as{" "}
+          <a href="https://www.glassdoor.com" target="_blank">
+            Glassdoor
+          </a>
+          , which try to give the power back to the candidate, but this seems
+          somewhat ineffective. For example, not all companies are registered on
+          this platform and it's been known that some companies will force its
+          employees, specifically HR, to write positive reviews.
+        </p>
+        <br />
+        <p>
+          So, if you are somewhat powerless in this nightmare system, what can
+          you do about it?
+        </p>
+        <br />
+        <p>
+          When you get a rejection, its only power is how it affects you. If you
+          for instance got an offer for your dream job and at the same time, got
+          a rejection from an another company; I'm willing to bet you couldn't
+          care less. However, if you had sent out hundreds of applications,
+          finally got an interview, got to the last stage and the interviewer
+          says: "You've really impressed us, we'll probably make you an offer".
+          Only for you to get that email: "Thank you for your application but
+          it's a no".And then your world may crumble beneath your feet and panic
+          attacks become a part of your sleeping routine.
+        </p>
+        <br />
+        <p>
+          I noticed with myself that the a response from a company could
+          literally regulate my mood. I get invited to an interview, I'm on
+          Cloud Nine; I get a rejection after the interview with no feedback and
+          I want to bury myself underneath the Earth's core. So what can you do
+          about it?
+        </p>
+        <br />
+        <p>
+          First of all, regardless of everything, do something that both you
+          enjoy and involves other people every week. The idea is that you have
+          something to take your mind off it, as, for example, with sport, you
+          physically have to live in the moment to say receive a football, swing
+          a squash racket or climb a wall. This allows your subconscious to work
+          on anything that's troubling you and you may find you have a new
+          perspective afterwards.
+        </p>
+        <br />
+        <p>
+          Second, work on a coding project you love. Many of us have coding
+          projects we are really passionate about but may not have the time to
+          work on. The worst thing about rejections is that it can kill your
+          motivation to keep going. The best antidote to this is to return to
+          your passion project and to just reignite that fire inside you. You
+          may also find you'll have created some cool new features and then by
+          your next interview, you'll have something to show off. Win win. It's
+          also good to look at your older projects and remind yourself how far
+          you've come. You may, for example, be able to code a function that you
+          originally wrote in ten lines of code to five lines of code.
+        </p>
+        <br />
+        <p>
+          It is also good to ask for feedback but this has become a cliche at
+          this point. As I alluded to earlier, many companies aren't interested
+          in giving valuable feedback to rejected candidates, so it will often
+          feel pointless. Nevertheless, despite the numerous companies unwilling
+          to give me feedback, I had one or two that have been nice enough to
+          provide me detailed feedback about my performance and it has proven to
+          be incredibly valuable. This feedback made me a much better developer
+          and I am eternally grateful for it. So always worth a shot.
+        </p>
+        <br />
+        <p>
+          In addition I would say before you have the initial interview or
+          interviews, tell as few people as possible. This also goes without
+          saying if you are currently employed (otherwise colleagues can gossip
+          and you lose your job), but I say it mostly for your piece of mind. If
+          you told ten people you have an interview and you received a rejection
+          from said interview; you now have ten people who will naturally ask
+          how it went. You'll then have to relive that rejection ten times when
+          you tell them. Of course if you got a rejection, you may find it
+          lethargic to talk about it. But by not saying you had an
+          interview in the first place, you have control over whether you want
+          to talk about it or not. Otherwise they'll ask and it can get awkrawd
+          if you don't want to talk about it.
+        </p>
+        <br />
+        <p>
+          It's also worth noting that companies themselves struggle to interview
+          candidates to their satisfaction. There is no one size fits all but
+          Theo, a former Senior Frontend Engineer at Twitch{" "}
+          <a href="https://www.youtube.com/watch?v=H2OjewTu_fY" target="_blank">
+            {" "}
+            gave some good suggestions
+          </a>
+          . To some companies it's whether you can solve{" "}
+          <a href="https://leetcode.com/" target="_blank">
+            Leetcode problems
+          </a>
+          , to others it's whether you can recite all the technical quirks of
+          your chosen language and to any others it may be a take home task with
+          an unspecified time limit.
+        </p>
+        <br />
+        <p>
+          Ultimately, it's always important to know that a rejection has a much
+          power as you give it and it doesn't define who you are. It can
+          sometimes be impossible to show your true strengths in an interview,
+          particularly if your interviewer interrupts you as you speak, or mocks
+          you for being too technical.
+        </p>
+        <br />
+        <p>
+          And at end of the day, after a rejection you can only get a new job by
+          sending a new application to another company. So at some point you
+          will need to get back on that horse and try again. It's always good to
+          reflect and think of what you will change next time in the interview
+          process, but it is not something to dwell on.
+        </p>
+        <br />
+        <p>Your mental wellbeing should be the priority number one, which only you can champion.</p>
+        <br />
+      </div>
+    ),
+    question: false,
+    date: "26/08/2024",
   },
 ];
 
