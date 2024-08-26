@@ -2877,19 +2877,19 @@ const entriesArray: EntryData[] = [
         <p>
           When you get a rejection, its only power is how it affects you. If you
           for instance got an offer for your dream job and at the same time, got
-          a rejection from an another company; I'm willing to bet you couldn't
+          a rejection from another company; I'm willing to bet you couldn't
           care less. However, if you had sent out hundreds of applications,
           finally got an interview, got to the last stage and the interviewer
           says: "You've really impressed us, we'll probably make you an offer".
-          Only for you to get that email: "Thank you for your application but
-          it's a no".And then your world may crumble beneath your feet and panic
+          Only for you to get that email: "Thank you for your time but
+          it's a no". Your world may crumble beneath your feet and panic
           attacks become a part of your sleeping routine.
         </p>
         <br />
         <p>
-          I noticed with myself that the a response from a company could
+          I noticed with myself that the response from a company could
           literally regulate my mood. I get invited to an interview, I'm on
-          Cloud Nine; I get a rejection after the interview with no feedback and
+          cloud nine; I get a rejection after the interview with no feedback and
           I want to bury myself underneath the Earth's core. So what can you do
           about it?
         </p>
@@ -2934,7 +2934,7 @@ const entriesArray: EntryData[] = [
           saying if you are currently employed (otherwise colleagues can gossip
           and you lose your job), but I say it mostly for your piece of mind. If
           you told ten people you have an interview and you received a rejection
-          from said interview; you now have ten people who will naturally ask
+          from said interview, you now have ten people who will naturally ask
           how it went. You'll then have to relive that rejection ten times when
           you tell them. Of course if you got a rejection, you may find it
           lethargic to talk about it. But by not saying you had an
@@ -2946,7 +2946,7 @@ const entriesArray: EntryData[] = [
         <p>
           It's also worth noting that companies themselves struggle to interview
           candidates to their satisfaction. There is no one size fits all but
-          Theo, a former Senior Frontend Engineer at Twitch{" "}
+          Theo, a former Senior Frontend Engineer at Twitch,{" "}
           <a href="https://www.youtube.com/watch?v=H2OjewTu_fY" target="_blank">
             {" "}
             gave some good suggestions
@@ -2956,27 +2956,27 @@ const entriesArray: EntryData[] = [
             Leetcode problems
           </a>
           , to others it's whether you can recite all the technical quirks of
-          your chosen language and to any others it may be a take home task with
+          your chosen language, and to any others it may be a take home task with
           an unspecified time limit.
         </p>
         <br />
         <p>
-          Ultimately, it's always important to know that a rejection has a much
-          power as you give it and it doesn't define who you are. It can
+          Ultimately, it's always important to know that a rejection has as much
+          power as you give it, and it doesn't define who you are. It can
           sometimes be impossible to show your true strengths in an interview,
           particularly if your interviewer interrupts you as you speak, or mocks
           you for being too technical.
         </p>
         <br />
         <p>
-          And at end of the day, after a rejection you can only get a new job by
+          And at the end of the day, after a rejection you can only get a new job by
           sending a new application to another company. So at some point you
           will need to get back on that horse and try again. It's always good to
           reflect and think of what you will change next time in the interview
           process, but it is not something to dwell on.
         </p>
         <br />
-        <p>Your mental wellbeing should be the priority number one, which only you can champion.</p>
+        <p>Your mental wellbeing should be the number one priority, which only you can champion.</p>
         <br />
       </div>
     ),
