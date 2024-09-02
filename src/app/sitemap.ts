@@ -23,7 +23,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "finding-a-job-in-tech-a-modern-day-dante-inferno",
     "/should-i-create-a-website-mobile-app-or-software",
     "/what-are-the-signs-of-an-interesting-project",
-    "/how-to-handle-rejections"
+    "/how-to-handle-rejections",
+    "/cybersecurity-basics-for-web-applications"
   ].map((route) => ({
     url: `https://darrellroberts.com${route}`,
     lastModified: new Date().toISOString().split("T")[0],

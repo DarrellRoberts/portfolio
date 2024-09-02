@@ -2877,21 +2877,20 @@ const entriesArray: EntryData[] = [
         <p>
           When you get a rejection, its only power is how it affects you. If you
           for instance got an offer for your dream job and at the same time, got
-          a rejection from another company; I'm willing to bet you couldn't
-          care less. However, if you had sent out hundreds of applications,
-          finally got an interview, got to the last stage and the interviewer
-          says: "You've really impressed us, we'll probably make you an offer".
-          Only for you to get that email: "Thank you for your time but
-          it's a no". Your world may crumble beneath your feet and panic
-          attacks become a part of your sleeping routine.
+          a rejection from another company; I'm willing to bet you couldn't care
+          less. However, if you had sent out hundreds of applications, finally
+          got an interview, got to the last stage and the interviewer says:
+          "You've really impressed us, we'll probably make you an offer". Only
+          for you to get that email: "Thank you for your time but it's a no".
+          Your world may crumble beneath your feet and panic attacks become a
+          part of your sleeping routine.
         </p>
         <br />
         <p>
-          I noticed with myself that the response from a company could
-          literally regulate my mood. I get invited to an interview, I'm on
-          cloud nine; I get a rejection after the interview with no feedback and
-          I want to bury myself underneath the Earth's core. So what can you do
-          about it?
+          I noticed with myself that the response from a company could literally
+          regulate my mood. I get invited to an interview, I'm on cloud nine; I
+          get a rejection after the interview with no feedback and I want to
+          bury myself underneath the Earth's core. So what can you do about it?
         </p>
         <br />
         <p>
@@ -2937,10 +2936,10 @@ const entriesArray: EntryData[] = [
           from said interview, you now have ten people who will naturally ask
           how it went. You'll then have to relive that rejection ten times when
           you tell them. Of course if you got a rejection, you may find it
-          lethargic to talk about it. But by not saying you had an
-          interview in the first place, you have control over whether you want
-          to talk about it or not. Otherwise they'll ask and it can get awkrawd
-          if you don't want to talk about it.
+          lethargic to talk about it. But by not saying you had an interview in
+          the first place, you have control over whether you want to talk about
+          it or not. Otherwise they'll ask and it can get awkrawd if you don't
+          want to talk about it.
         </p>
         <br />
         <p>
@@ -2956,8 +2955,8 @@ const entriesArray: EntryData[] = [
             Leetcode problems
           </a>
           , to others it's whether you can recite all the technical quirks of
-          your chosen language, and to any others it may be a take home task with
-          an unspecified time limit.
+          your chosen language, and to any others it may be a take home task
+          with an unspecified time limit.
         </p>
         <br />
         <p>
@@ -2969,19 +2968,177 @@ const entriesArray: EntryData[] = [
         </p>
         <br />
         <p>
-          And at the end of the day, after a rejection you can only get a new job by
-          sending a new application to another company. So at some point you
-          will need to get back on that horse and try again. It's always good to
-          reflect and think of what you will change next time in the interview
-          process, but it is not something to dwell on.
+          And at the end of the day, after a rejection you can only get a new
+          job by sending a new application to another company. So at some point
+          you will need to get back on that horse and try again. It's always
+          good to reflect and think of what you will change next time in the
+          interview process, but it is not something to dwell on.
         </p>
         <br />
-        <p>Your mental wellbeing should be the number one priority, which only you can champion.</p>
+        <p>
+          Your mental wellbeing should be the number one priority, which only
+          you can champion.
+        </p>
         <br />
       </div>
     ),
     question: false,
     date: "26/08/2024",
+  },
+  {
+    id: 17,
+    title: "Cybersecurity Basics for Web Applications",
+    path: "cybersecurity-basics-for-web-applications",
+    links: [],
+    images: ["/assets/blogimages/cyber.jpg"],
+    imageAlt: ["Screenshot of the use of Content Security Policy"],
+    imageCaption: [
+      "A rudimentary example of using the Content Security Policy",
+    ],
+    article: (
+      <div>
+        <p>
+          Cybersecurity is a huge topic which you can carve your own career
+          from.
+        </p>
+        <br />
+        <p>
+          {" "}
+          For example, many big companies have their own cybersecurity experts
+          to protect against many forms of attacks, such as: phishing, malware,
+          ransomware, Denial-of-Service (DoS) attacks and SQL injection.{" "}
+        </p>
+        <br />
+        <p>
+          {" "}
+          Of course there are also social engineering attacks for which may
+          render the cyber security expert helpless. For example, this relates
+          to copying work passes posted publicly on LinkedIn, and pretending to be an employee to gain physical access into a company.{" "}
+        </p>
+        <br />
+        <p>
+          Therefore, there are numerous ways to breach the data security of a
+          company. A good way of looking at it is that nothing is "unhackable"
+          but you must do everything in your power to make it so. Although
+          cybersecurity is its own discipline, there are a few things you can do
+          or at least consider, to give your website at least a basic level of
+          protection. But where do you start?
+        </p>
+        <br />
+        <p>
+          {" "}
+          One helpful resource is the Open Worldwide Application Security
+          Project (OWASP). It is an open source community that provides free
+          resources in relation to cyber security. One of its main pages is the,{" "}
+          <a
+            href="https://owasp.org/www-project-top-10-client-side-security-risks/"
+            target="_blank"
+          >
+            {" "}
+            Top 10 Client-Side Security Risks{" "}
+          </a>
+          . It was published first in 2003 and is regularly updated, detailing
+          the latest risks and how to protect against them.{" "}
+        </p>
+        <br />
+        <p>
+          {" "}
+          A helpful level of protection is the Content Security Policy (CSP).
+          This prevents data injection attacks and{" "}
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP"
+            target="_blank"
+          >
+            {" "}
+            cross-site scripting (XSS){" "}
+          </a>
+          , by specifying which type of resources are allowed to be loaded on a
+          web page. For example, with CSP you can prevent users from injecting
+          their own script onto your webpage. Also, if you have given the appropriate endpoint, you can report a violation of the policy. Or in other words, when a user attempts to unleash a malicious script on your webpage, it blocks and reports it.
+        </p>
+        <br />
+        <p>
+          {" "}
+          Cross-Origin Resource Sharing (CORS) is also a protective measure. This allows web browsers to make requests to a server on a different domain. The default behaviour of a web browser is the Same-Origin Policy, which prevents scripts from one domain accessing resources from another domain. Through this measure, it stops malicious scripts from stealing data or compromising user privacy. However, apps such as Single Page Applications (SPA) often have to send requests to a resource on a different domain, such as an external API. In this case the browser sends a CORS request which contains the origin of the request and web domain. If the server hosting this API is not setup to receive CORS request, access will be denied.
+        </p>
+        <br />
+        <p>
+          Another commonly known security measure is the Hyper Text Transfer
+          Protocol Secure or HTTPS. Originally, data was sent between the client
+          and the server on just the Hyper Text Transfer Protocol (HTTP). This
+          data would be sent as just plain text and it was vulnerable to
+          interception. In addition there is no authentication meaning that
+          there is no verification of the website or server. If you were on such
+          a website, for instance, and paid for a product, hackers could
+          intercept the request when you made a payment and have access to your
+          credit card details.
+        </p>
+        <br />
+        <p>
+          {" "}
+          On the other hand, HTTPS provides a much more secure data transfer.
+          In the same example if you paid for a product on a HTTPS website, that
+          same data in the request would be encrypted via Secure Sockets
+          Layer/Transport Layer Security. Furthermore, the website's identity is
+          verified with a digital certificate, authenticating that it's trusted
+          and not a malicious clone.
+        </p>
+        <br />
+        <p>
+          Another common practice to protect your data is by using environmental
+          variables or env values. These would sit somewhere in your backend holding
+          the keys to your database system. Without these values, you won't have access to add, edit, remove or read data from the database. Despite it being common practice to hide these values, there are cases whereby{" "}
+          <a href="https://www.youtube.com/watch?v=lkbV8oP-F44" target="_blank">
+            companies have accidentally exposed these env values{" "}
+          </a>
+          . As mentioned before, this can be catastrophic if published publicly
+          on GitHub due to{" "}
+          <a href="/blog/the-ethics-of-scraper-bots" target="_blank">
+            the prevalence of malicious scraper bots{" "}
+          </a>
+          . When you have access to these keys, you can manipulate the database
+          however you see fit.
+        </p>
+        <br />
+        <p>
+          There are of course many other forms of protections, but the list is
+          indeed endless.
+        </p>
+        <br />
+        <p>
+          You can work to implement as much protective measures as you can, but
+          at some point, you might find that it is impacting your productivity
+          on developing the actual application. In some ways it makes sense to
+          prioritise its security particularly if your app contains sensitive
+          data. On the other hand if your application is more say 'playful' and
+          has no sensitive data, you'd be forgiven for not making cybersecurity
+          a priority. In addition you can always pay for a software or access to
+          a secure API, if you are concerned with handling sensitive data. For
+          instance, a lot of small companies that handle financial transactions
+          use the{" "}
+          <a href="https://docs.stripe.com/api" target="_blank">
+            Stripe API{" "}
+          </a>
+          . Not only does this save time, it also places the burden of handling
+          this type of data on another (trusted) party.
+        </p>
+        <br />
+        <p>
+          The pure vastness of cybersecurity is why some companies dedicate even
+          whole departments to it, but everything is contextual and it doesn't
+          mean you should do the same.{" "}
+        </p>
+        <br />
+        <p>
+          Just ensure you have implemented the absolute essentials - unless
+          Cybersecurity interests you, in which case, dive in and make an
+          impenetrable fortress.{" "}
+        </p>
+        <br />
+      </div>
+    ),
+    question: false,
+    date: "02/09/2024",
   },
 ];
 
