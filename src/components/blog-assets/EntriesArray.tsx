@@ -2987,8 +2987,8 @@ const entriesArray: EntryData[] = [
   },
   {
     id: 17,
-    title: "Cybersecurity Basics for Web Applications",
-    path: "cybersecurity-basics-for-web-applications",
+    title: "Web Security Basics",
+    path: "web-security-basics",
     links: [],
     images: ["/assets/blogimages/cyber.jpg"],
     imageAlt: ["Screenshot of the use of Content Security Policy"],
@@ -3012,7 +3012,7 @@ const entriesArray: EntryData[] = [
         <p>
           {" "}
           Of course there are also social engineering attacks for which may
-          render the cyber security expert helpless. For example, this relates
+          render the cybersecurity expert helpless. For example, this relates
           to copying work passes posted publicly on LinkedIn, and pretending to be an employee to gain physical access into a company.{" "}
         </p>
         <br />
@@ -3029,7 +3029,7 @@ const entriesArray: EntryData[] = [
           {" "}
           One helpful resource is the Open Worldwide Application Security
           Project (OWASP). It is an open source community that provides free
-          resources in relation to cyber security. One of its main pages is the,{" "}
+          resources in relation to cybersecurity. One of its main pages is the,{" "}
           <a
             href="https://owasp.org/www-project-top-10-client-side-security-risks/"
             target="_blank"
@@ -3131,7 +3131,7 @@ const entriesArray: EntryData[] = [
         <br />
         <p>
           Just ensure you have implemented the absolute essentials - unless
-          Cybersecurity interests you, in which case, dive in and make an
+          cybersecurity interests you, in which case, dive in and make an
           impenetrable fortress.{" "}
         </p>
         <br />
