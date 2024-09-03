@@ -159,8 +159,8 @@
       padding: 6rem;
     }
     .imageCon img, .imageCon2 img {
-      aspect-ratio: 1/0.65;
-      width: 100%;
+      width: 400px;
+      height: 225px;
     }
     .prevArticle h3, .nextArticle h3 {
       display: none;
