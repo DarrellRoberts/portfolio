@@ -127,7 +127,7 @@ export default function About() {
                   <li style={{ color: themeStyles.mainText }}>
                     Graduated as a Fullstack Developer from WBS Coding School in
                     November 2023. The bootcamp gave me a solid foundation for
-                    web developement{" "}
+                    web development{" "}
                   </li>
                   <li style={{ color: themeStyles.mainText }}>
                     Completed Udemy's Data Structures and Algorithms course in
