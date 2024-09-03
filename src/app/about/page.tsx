@@ -122,8 +122,7 @@ export default function About() {
                 >
                   <li style={{ color: themeStyles.mainText }}>
                     Master of Research in History from University of Edinburgh.
-                    This equipped me with vital research skills and made me
-                    self-motivated to reach my goals.
+                    This equipped me with vital research skills in order to learn and teach myself anything.
                   </li>
                   <li style={{ color: themeStyles.mainText }}>
                     Graduated as a Fullstack Developer from WBS Coding School in
@@ -162,14 +161,7 @@ export default function About() {
                   }
                 >
                   <li style={{ color: themeStyles.mainText }}>
-                    I currently volunteer at two organisations as a Freelance
-                    Developer:
-                  </li>
-                  <ul className={styles.experienceList}>
-                    <li
-                      style={{ color: themeStyles.mainText }}
-                      id={styles.experienceItem}
-                    >
+                    I currently volunteer at the {" "}
                       <a
                         style={{ color: themeStyles.secondaryText }}
                         className="underline"
@@ -178,26 +170,9 @@ export default function About() {
                       >
                         Internet Archive's Open Library
                       </a>
-                      : open source digital library with over 5 million books. I
+                       . It is a open source digital library with over 5 million books. I
                       help implement frontend features, such as Dark Mode, participate in weekly calls and respond to GitHub issues (Web.py, Docker, Less CSS, JavaScript)
                     </li>
-                    <li
-                      style={{ color: themeStyles.mainText }}
-                      id={styles.experienceItem}
-                    >
-                      <a
-                        style={{ color: themeStyles.secondaryText }}
-                        className="underline"
-                        href="https://tactical.vote/"
-                        target="_blank"
-                      >
-                        Tactical.vote
-                      </a>
-                      : tool to assist tactical voting tactics this coming
-                      General Election in the UK. I am creating a mobile app for
-                      them (React Native, Expo)
-                    </li>
-                  </ul>
                   <li style={{ color: themeStyles.mainText }}>
                     I am also currently working on three main projects:
                   </li>
