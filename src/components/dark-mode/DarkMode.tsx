@@ -25,7 +25,8 @@ export default function Header() {
   }, []);
   return (
     <div className={style.themeCon}>
-      <input type="checkbox" id="theme" ref={checkBox} onClick={setCookie} />
+      <label htmlFor="theme">Change Theme</label>
+      <input type="checkbox" id="theme" ref={checkBox} name="dark_mode" onClick={setCookie} />
     </div>
   );
 }
