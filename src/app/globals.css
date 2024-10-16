@@ -10,6 +10,7 @@
 :root {
   --mainColor: #0A2647;
   --secondaryColor: #90ee90;
+  --tertiaryColor: #FFFFFF;
   --mainFont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -28,8 +29,19 @@ h2, h3, p, a, ul, li {
 .heroTitle {
   font-size: 8rem;
   line-height: 7rem;
-  color: white;
+  color: var(--tertiaryColor);
 }
+
+body:has(#theme:checked) {
+  --mainColor: #90ee90;
+  --secondaryColor: #0A2647;
+  --tertiaryColor: #000000;
+}
+
+body:has(#theme:checked) .heroImage {
+  filter: brightness(0) ;
+}
+
 
 @media  screen and (max-width: 900px) {
   .heroTitle {

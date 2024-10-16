@@ -16,7 +16,7 @@
 
   .skillsCon h2 {
     margin: 1.5rem 0px;
-    border-bottom-color: white;
+    border-bottom-color: var(--tertiaryColor);
     border-bottom-style: solid;
     border-bottom-width: 1px;
     font-size: 3rem;
@@ -25,7 +25,7 @@
   }
 
   .skillsCon h2:active {
-    color: white;
+    color: var(--tertiaryColor);
   }
 
   .skillsList {
@@ -37,16 +37,15 @@
   }
 
   .skillsList img, .skillsListOut img {
-    filter: grayscale(1);
+    filter: grayscale(1) brightness(0.75);
   }
 
   .skillsList img:hover, .skillsListOut img:hover {
-    filter: grayscale(0);
+    filter: grayscale(0) brightness(0.85);
   }
 
   .skillsListOut {
     display: grid;
-    /* position: absolute; */
     overflow: hidden;
     z-index: -100;
     grid-template-columns: repeat(3, 300px);

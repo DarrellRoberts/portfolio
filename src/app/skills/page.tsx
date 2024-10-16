@@ -3,8 +3,6 @@ import { Popover } from "antd";
 import { useReducer } from "react";
 import Image from "next/image";
 import styles from "./skills.module.css";
-import { useContext } from "react";
-import { ThemeContext } from "@/components/context/ThemeContext";
 
 type StateType = {
   showFrontend: boolean;
@@ -36,33 +34,15 @@ export default function Skills() {
     showTools: false,
   });
 
-  const { light, dark, isLightTheme } = useContext(ThemeContext);
-
-  const themeStyles = isLightTheme ? light : dark;
-
   return (
-    <div style={{ backgroundColor: themeStyles.bg }}>
-      <section
-        style={{ backgroundColor: themeStyles.bg }}
-        className={styles.homepageCon}
-      >
+    <div>
+      <section className={styles.homepageCon}>
         <div className={styles.titleCon}>
           <div className={styles.darrellCon}>
-            <h1
-              style={{ color: themeStyles.secondaryText }}
-              className="heroTitle"
-            >
-              Skills
-            </h1>
+            <h1 className="heroTitle">Skills</h1>
             <div className={styles.skillsCon}>
               <div className="flex flex-col">
-                <h2
-                  style={{
-                    color: themeStyles.mainText,
-                    borderColor: themeStyles.secondaryText,
-                  }}
-                  onClick={() => dispatch({ type: "toggleShowFrontend" })}
-                >
+                <h2 onClick={() => dispatch({ type: "toggleShowFrontend" })}>
                   Frontend
                 </h2>
                 <ul
@@ -75,9 +55,6 @@ export default function Skills() {
                   <Popover title="HTML5">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme ? { filter: "brightness(0)" } : null
-                        }
                         src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
                         width="65"
                         height="65"
@@ -88,9 +65,6 @@ export default function Skills() {
                   <Popover title="CSS3">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme ? { filter: "brightness(0)" } : null
-                        }
                         src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
                         width="65"
                         height="65"
@@ -101,9 +75,6 @@ export default function Skills() {
                   <Popover title="Tailwind CSS">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme ? { filter: "brightness(0)" } : null
-                        }
                         src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg"
                         width="65"
                         height="65"
@@ -114,9 +85,6 @@ export default function Skills() {
                   <Popover title="JavaScript">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme ? { filter: "brightness(0)" } : null
-                        }
                         src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
                         width="65"
                         height="65"
@@ -127,9 +95,6 @@ export default function Skills() {
                   <Popover title="TypeScript">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme ? { filter: "brightness(0)" } : null
-                        }
                         src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
                         width="65"
                         height="65"
@@ -140,9 +105,6 @@ export default function Skills() {
                   <Popover title="React">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme ? { filter: "brightness(0)" } : null
-                        }
                         src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
                         width="65"
                         height="65"
@@ -153,11 +115,6 @@ export default function Skills() {
                   <Popover title="Vite">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme
-                            ? { filter: "brightness(0.65) grayscale(1)" }
-                            : null
-                        }
                         src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg"
                         width="65"
                         height="65"
@@ -198,9 +155,6 @@ export default function Skills() {
                   <Popover title="React Native">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme ? { filter: "brightness(0)" } : null
-                        }
                         src="https://devtop.io/wp-content/uploads/2022/10/react-native-1.png"
                         width="120"
                         height="120"
@@ -211,11 +165,6 @@ export default function Skills() {
                   <Popover title="Vue">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme
-                            ? { filter: "brightness(0.65) grayscale(1)" }
-                            : null
-                        }
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png"
                         width="65"
                         height="65"
@@ -226,11 +175,6 @@ export default function Skills() {
                   <Popover title="Nuxt">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme
-                            ? { filter: "brightness(0.65) grayscale(1)" }
-                            : null
-                        }
                         src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nuxtjs-colored.svg"
                         width="65"
                         height="65"
@@ -242,13 +186,7 @@ export default function Skills() {
               </div>
 
               <div className="flex flex-col">
-                <h2
-                  style={{
-                    color: themeStyles.mainText,
-                    borderColor: themeStyles.secondaryText,
-                  }}
-                  onClick={() => dispatch({ type: "toggleShowBackend" })}
-                >
+                <h2 onClick={() => dispatch({ type: "toggleShowBackend" })}>
                   Backend
                 </h2>
                 <ul
@@ -259,9 +197,6 @@ export default function Skills() {
                   <Popover title="Node.js">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme ? { filter: "brightness(0)" } : null
-                        }
                         src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg"
                         width="65"
                         height="65"
@@ -282,11 +217,6 @@ export default function Skills() {
                   <Popover title="Java">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme
-                            ? { filter: "brightness(0.65) grayscale(1)" }
-                            : null
-                        }
                         src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg"
                         width="65"
                         height="65"
@@ -298,13 +228,7 @@ export default function Skills() {
               </div>
 
               <div className="flex flex-col">
-                <h2
-                  style={{
-                    color: themeStyles.mainText,
-                    borderColor: themeStyles.secondaryText,
-                  }}
-                  onClick={() => dispatch({ type: "toggleShowDatabase" })}
-                >
+                <h2 onClick={() => dispatch({ type: "toggleShowDatabase" })}>
                   Database
                 </h2>
                 <ul
@@ -317,11 +241,6 @@ export default function Skills() {
                   <Popover title="MongoDB">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme
-                            ? { filter: "brightness(0.65) grayscale(1)" }
-                            : null
-                        }
                         src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg"
                         width="65"
                         height="65"
@@ -332,11 +251,6 @@ export default function Skills() {
                   <Popover title="MySQL">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme
-                            ? { filter: "brightness(0.65) grayscale(1)" }
-                            : null
-                        }
                         src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg"
                         width="65"
                         height="65"
@@ -347,11 +261,6 @@ export default function Skills() {
                   <Popover title="PostgreSQL">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme
-                            ? { filter: "brightness(0.65) grayscale(1)" }
-                            : null
-                        }
                         src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg"
                         width="65"
                         height="65"
@@ -362,9 +271,6 @@ export default function Skills() {
                   <Popover title="Render">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme ? { filter: "brightness(0)" } : null
-                        }
                         src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/render-colored.svg"
                         width="65"
                         height="65"
@@ -376,13 +282,7 @@ export default function Skills() {
               </div>
 
               <div className="flex flex-col">
-                <h2
-                  style={{
-                    color: themeStyles.mainText,
-                    borderColor: themeStyles.secondaryText,
-                  }}
-                  onClick={() => dispatch({ type: "toggleShowTools" })}
-                >
+                <h2 onClick={() => dispatch({ type: "toggleShowTools" })}>
                   Tools
                 </h2>
                 <ul
@@ -393,9 +293,6 @@ export default function Skills() {
                   <Popover title="Git">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme ? { filter: "brightness(0)" } : null
-                        }
                         src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg"
                         width="65"
                         height="65"
@@ -406,9 +303,6 @@ export default function Skills() {
                   <Popover title="Docker">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme ? { filter: "brightness(0)" } : null
-                        }
                         src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/docker-colored.svg"
                         width="65"
                         height="65"
@@ -419,9 +313,6 @@ export default function Skills() {
                   <Popover title="Photoshop">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme ? { filter: "brightness(0)" } : null
-                        }
                         src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored.svg"
                         width="65"
                         height="65"
@@ -432,11 +323,6 @@ export default function Skills() {
                   <Popover title="Figma">
                     <div className="flex flex-col items-center justify-center">
                       <img
-                        style={
-                          !isLightTheme
-                            ? { filter: "brightness(0.65) grayscale(1)" }
-                            : null
-                        }
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/512px-Figma-logo.svg.png"
                         width="45"
                         height="45"
@@ -459,8 +345,8 @@ export default function Skills() {
             </div>
           </div>
           <Image
-            className={styles.cog}
-            src={isLightTheme ? "/assets/cog.svg" : "/assets/cogD.svg"}
+            className={styles.cog + " heroImage"}
+            src="/assets/cog.svg"
             alt="cog"
             width="250"
             height="250"

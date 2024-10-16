@@ -1,0 +1,20 @@
+.themeCon input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.themeCon input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+.themeCon input[type="checkbox"]::before {
+  content: "";
+  width: 2.4rem;
+  height: 2.4rem;
+  transform: scale(1);
+  border-radius: 30px;
+  background-color: var(--secondaryColor);
+}

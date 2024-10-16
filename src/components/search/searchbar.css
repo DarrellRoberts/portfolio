@@ -19,29 +19,3 @@
     color: var(--mainColor);
     font-size: 1rem;
 }
-
-.dark:where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary,
-.dark:where(.css-1xg9z9n).ant-btn-primary,
-.dark :where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary,
-.dark :where(.css-1xg9z9n).ant-btn-primary {
-    color: var(--mainColor);
-    border-color: var(--mainColor);
-    font-size: 1rem;
-}
-
-.dark :where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover,
-.dark :where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):focus,
-.dark :where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):active,
-.dark :where(.css-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover,
-.dark :where(.css-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):focus,
-.dark :where(.css-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):active,
-.dark:where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover,
-.dark:where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):focus,
-.dark:where(.css-dev-only-do-not-override-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):active,
-.dark:where(.css-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover,
-.dark:where(.css-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):focus,
-.dark:where(.css-1xg9z9n).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):active {
-    background-color: var(--mainColor);
-    color: var(--secondaryColor);
-    font-size: 1rem;
-}

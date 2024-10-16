@@ -23,7 +23,7 @@
   font-size: 8rem;
   text-align: center;
   line-height: 7rem;
-  color: white;
+  color: var(--secondaryColor);
 }
 
 @keyframes fadeIn {

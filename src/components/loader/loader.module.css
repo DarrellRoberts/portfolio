@@ -4,8 +4,8 @@
     justify-content: center;
     align-items: center;
 }
-    
-.scribbleOne {
+
+.scribbleOne, .scribbleTwo, .scribbleThree {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,30 +13,19 @@
     border-width: 5px;
     border-style: double;
     padding: 5rem;
+}
+
+.scribbleOne {
     animation: wobble 4s linear 0s infinite, rotate 4s linear 0s infinite;
 }
-    
+
 .scribbleTwo {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-color: var(--secondaryColor);
-    border-width: 5px;
-    border-style:double;
-    padding: 5rem;
     animation: wobble2 4s linear 0s infinite, rotate 4s linear 0s infinite;
 }
     
 .scribbleThree {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-color: var(--secondaryColor);
-    border-width: 5px;
-    border-style:double;
-    padding: 5rem;
     animation: wobble3 4s linear 0s infinite, rotate 4s linear 0s infinite;
 }
     
