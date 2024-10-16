@@ -1,3 +1,7 @@
+.themeCon label {
+visibility: hidden;
+}
+
 .themeCon input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;

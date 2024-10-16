@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./navbar.module.css";
-import DarkMode from "./DarkMode";
+import DarkMode from "../dark-mode/DarkMode";
 
 export default function NavBar() {
   return (
