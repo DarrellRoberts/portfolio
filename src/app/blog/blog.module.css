@@ -48,7 +48,7 @@
 
 .rotateBorder {
   padding: 8rem;
-  border-color: white;
+  border-color: var(--tertiaryColor);
   border-width: 5px;
   border-style:ridge;
   animation: borderRad 7s linear 0s infinite;

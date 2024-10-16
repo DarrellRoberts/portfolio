@@ -3,8 +3,6 @@ import { useReducer } from "react";
 import Image from "next/image";
 import styles from "./contact.module.css";
 import Link from "next/link";
-import { useContext } from "react";
-import { ThemeContext } from "@/components/context/ThemeContext";
 
 type StateType = {
   showEmail: boolean;
@@ -35,34 +33,15 @@ export default function Contact() {
     showGithub: false,
     showTools: false,
   });
-
-  const { light, dark, isLightTheme, toggleTheme } = useContext(ThemeContext);
-
-  const themeStyles = isLightTheme ? light : dark;
-
   return (
-    <div style={{ backgroundColor: themeStyles.bg }} className="h-screen">
-      <section
-        style={{ backgroundColor: themeStyles.bg }}
-        className={styles.homepageCon}
-      >
+    <div className="h-screen">
+      <section className={styles.homepageCon}>
         <div className={styles.titleCon}>
           <div className={styles.darrellCon}>
-            <h1
-              style={{ color: themeStyles.secondaryText }}
-              className="heroTitle"
-            >
-              Contact
-            </h1>
+            <h1 className="heroTitle">Contact</h1>
             <div className={styles.skillsCon}>
               <div className="flex flex-col">
-                <h2
-                  style={{
-                    color: themeStyles.mainText,
-                    borderBottomColor: themeStyles.secondaryText,
-                  }}
-                  onClick={() => dispatch({ type: "toggleShowEmail" })}
-                >
+                <h2 onClick={() => dispatch({ type: "toggleShowEmail" })}>
                   Email
                 </h2>
                 <ul
@@ -70,25 +49,12 @@ export default function Contact() {
                     state.showEmail ? styles.skillsList : styles.skillsListOut
                   }
                 >
-                  <li
-                    style={{
-                      color: themeStyles.mainText,
-                      borderColor: themeStyles.secondaryText,
-                    }}
-                  >
-                    mrdarrellroberts@gmail.com
-                  </li>
+                  <li>mrdarrellroberts@gmail.com</li>
                 </ul>
               </div>
 
               <div className="flex flex-col">
-                <h2
-                  style={{
-                    color: themeStyles.mainText,
-                    borderBottomColor: themeStyles.secondaryText,
-                  }}
-                  onClick={() => dispatch({ type: "toggleShowLinkedIn" })}
-                >
+                <h2 onClick={() => dispatch({ type: "toggleShowLinkedIn" })}>
                   LinkedIn
                 </h2>
                 <ul
@@ -102,26 +68,13 @@ export default function Contact() {
                     target="_blank"
                     href="https://www.linkedin.com/in/d-j-roberts/"
                   >
-                    <li
-                      style={{
-                        color: themeStyles.mainText,
-                        borderColor: themeStyles.secondaryText,
-                      }}
-                    >
-                      https://www.linkedin.com/in/d-j-roberts/
-                    </li>
+                    <li>https://www.linkedin.com/in/d-j-roberts/</li>
                   </Link>
                 </ul>
               </div>
 
               <div className="flex flex-col">
-                <h2
-                  style={{
-                    color: themeStyles.mainText,
-                    borderBottomColor: themeStyles.secondaryText,
-                  }}
-                  onClick={() => dispatch({ type: "toggleShowGithub" })}
-                >
+                <h2 onClick={() => dispatch({ type: "toggleShowGithub" })}>
                   Github
                 </h2>
                 <ul
@@ -133,22 +86,15 @@ export default function Contact() {
                     target="_blank"
                     href="https://github.com/DarrellRoberts"
                   >
-                    <li
-                      style={{
-                        color: themeStyles.mainText,
-                        borderColor: themeStyles.secondaryText,
-                      }}
-                    >
-                      https://github.com/DarrellRoberts
-                    </li>
+                    <li>https://github.com/DarrellRoberts</li>
                   </Link>
                 </ul>
               </div>
             </div>
           </div>
           <Image
-            className={styles.mail}
-            src={isLightTheme ? "/assets/mail.svg" : "/assets/mailD.svg"}
+            className={styles.mail + " heroImage"}
+            src="/assets/mail.svg"
             alt="cog"
             width="250"
             height="250"

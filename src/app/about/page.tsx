@@ -1,8 +1,6 @@
 "use client";
 import { useReducer } from "react";
 import Loader from "@/components/loader/Loader";
-import { useContext } from "react";
-import { ThemeContext } from "@/components/context/ThemeContext";
 import styles from "./about.module.css";
 
 type StateType = {
@@ -35,13 +33,8 @@ export default function About() {
     showTools: false,
   });
 
-  const { light, dark, isLightTheme, toggleTheme } = useContext(ThemeContext);
-
-  const themeStyles = isLightTheme ? light : dark;
-
   return (
     <div
-      style={{ backgroundColor: themeStyles.bg }}
       className={
         state.showSummary ||
         state.showEducation ||
@@ -51,30 +44,13 @@ export default function About() {
           : "h-screen"
       }
     >
-      <section
-        style={{ backgroundColor: themeStyles.bg }}
-        className={styles.homepageCon}
-      >
+      <section className={styles.homepageCon}>
         <div className={styles.titleCon}>
           <div className={styles.darrellCon}>
-            <h1
-              style={{ color: themeStyles.secondaryText }}
-              className="heroTitle"
-            >
-              About Me
-            </h1>
-            <div
-              style={{ backgroundColor: themeStyles.bg }}
-              className={styles.skillsCon}
-            >
+            <h1 className="heroTitle">About Me</h1>
+            <div className={styles.skillsCon}>
               <div className="flex flex-col">
-                <h2
-                  style={{
-                    color: themeStyles.mainText,
-                    borderBottomColor: themeStyles.secondaryText,
-                  }}
-                  onClick={() => dispatch({ type: "toggleShowSummary" })}
-                >
+                <h2 onClick={() => dispatch({ type: "toggleShowSummary" })}>
                   Summary
                 </h2>
                 <ul
@@ -82,14 +58,13 @@ export default function About() {
                     state.showSummary ? styles.skillsList : styles.skillsListOut
                   }
                 >
-                  <li style={{ color: themeStyles.mainText }}>
+                  <li>
                     Career changer with four years' background in digital
                     marketing
                   </li>
-                  <li style={{ color: themeStyles.mainText }}>
+                  <li>
                     Had a passion for coding since{" "}
                     <a
-                      style={{ color: themeStyles.secondaryText }}
                       className="underline"
                       href="https://github.com/DarrellRoberts/microbit-competition"
                       target="_blank"
@@ -97,20 +72,12 @@ export default function About() {
                       winning a Microbit competition in 2018
                     </a>
                   </li>
-                  <li style={{ color: themeStyles.mainText }}>
-                    Now a Freelance Fullstack Developer
-                  </li>
+                  <li>Now a Freelance Fullstack Developer</li>
                 </ul>
               </div>
 
               <div className="flex flex-col">
-                <h2
-                  style={{
-                    color: themeStyles.mainText,
-                    borderBottomColor: themeStyles.secondaryText,
-                  }}
-                  onClick={() => dispatch({ type: "toggleShowEducation" })}
-                >
+                <h2 onClick={() => dispatch({ type: "toggleShowEducation" })}>
                   Education
                 </h2>
                 <ul
@@ -120,23 +87,24 @@ export default function About() {
                       : styles.skillsListOut
                   }
                 >
-                  <li style={{ color: themeStyles.mainText }}>
+                  <li>
                     Master of Research in History from University of Edinburgh.
-                    This equipped me with vital research skills in order to learn and teach myself anything.
+                    This equipped me with vital research skills in order to
+                    learn and teach myself anything.
                   </li>
-                  <li style={{ color: themeStyles.mainText }}>
+                  <li>
                     Graduated as a Fullstack Developer from WBS Coding School in
                     November 2023. The bootcamp gave me a solid foundation for
                     web development{" "}
                   </li>
-                  <li style={{ color: themeStyles.mainText }}>
+                  <li>
                     Completed Udemy's Data Structures and Algorithms course in
                     Januaray 2024. I learn from this course big O Notation,
                     fundamental data structures such as Linked Lists, Binary
                     Search Trees and Hash Tables, as well as common sorting,
                     searching and recursive algorithms
                   </li>
-                  <li style={{ color: themeStyles.mainText }}>
+                  <li>
                     I focus on learning something new every week. My philosophy
                     is: if the motivation is there, you can learn anything
                   </li>
@@ -144,13 +112,7 @@ export default function About() {
               </div>
 
               <div className="flex flex-col">
-                <h2
-                  style={{
-                    color: themeStyles.mainText,
-                    borderBottomColor: themeStyles.secondaryText,
-                  }}
-                  onClick={() => dispatch({ type: "toggleShowExperience" })}
-                >
+                <h2 onClick={() => dispatch({ type: "toggleShowExperience" })}>
                   Experience
                 </h2>
                 <ul
@@ -160,51 +122,29 @@ export default function About() {
                       : styles.skillsListOut
                   }
                 >
-                  <li style={{ color: themeStyles.mainText }}>
-                    I currently volunteer at the {" "}
-                      <a
-                        style={{ color: themeStyles.secondaryText }}
-                        className="underline"
-                        href="https://openlibrary.org/"
-                        target="_blank"
-                      >
-                        Internet Archive's Open Library
-                      </a>
-                       . It is a open source digital library with over 5 million books. I
-                      help implement frontend features, such as Dark Mode, participate in weekly calls and respond to GitHub issues (Web.py, Docker, Less CSS, JavaScript)
-                    </li>
-                  <li style={{ color: themeStyles.mainText }}>
-                    I am also currently working on three main projects:
-                  </li>
-                  <ul className={styles.experienceList}>
-                    <li
-                      style={{ color: themeStyles.mainText }}
-                      id={styles.experienceItem}
-                    >
-                      The Book Club Brothers
-                    </li>
-                    <li
-                      style={{ color: themeStyles.mainText }}
-                      id={styles.experienceItem}
-                    >
-                      The Book Club League
-                    </li>
-                    <li
-                      style={{ color: themeStyles.mainText }}
-                      id={styles.experienceItem}
-                    >
-                      {" "}
-                      Shark Explorer
-                    </li>
-                  </ul>
-                  <li style={{ color: themeStyles.mainText }}>
-                    To view these projects and more, see my portfolio{" "}
+                  <li>
+                    I currently volunteer at the{" "}
                     <a
-                      style={{ color: themeStyles.secondaryText }}
                       className="underline"
-                      href="/portfolio"
+                      href="https://openlibrary.org/"
                       target="_blank"
                     >
+                      Internet Archive's Open Library
+                    </a>
+                    . It is a open source digital library with over 5 million
+                    books. I help implement frontend features, such as Dark
+                    Mode, participate in weekly calls and respond to GitHub
+                    issues (Web.py, Docker, Less CSS, JavaScript)
+                  </li>
+                  <li>I am also currently working on three main projects:</li>
+                  <ul className={styles.experienceList}>
+                    <li id={styles.experienceItem}>The Book Club Brothers</li>
+                    <li id={styles.experienceItem}>The Book Club League</li>
+                    <li id={styles.experienceItem}> Shark Explorer</li>
+                  </ul>
+                  <li>
+                    To view these projects and more, see my portfolio{" "}
+                    <a className="underline" href="/portfolio" target="_blank">
                       here{" "}
                     </a>
                   </li>

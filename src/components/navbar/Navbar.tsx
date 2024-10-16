@@ -1,80 +1,38 @@
-"use client";
-
 import Link from "next/link";
 import styles from "./navbar.module.css";
-import { useContext } from "react";
-import { ThemeContext } from "@/components/context/ThemeContext";
+import DarkMode from "./DarkMode";
 
 export default function NavBar() {
-  const { light, dark, isLightTheme, toggleTheme } = useContext(ThemeContext);
-
-  const themeStyles = isLightTheme ? light : dark;
-
   return (
-    <nav
-      className={styles.navbarCon}
-      style={{ backgroundColor: themeStyles.bg }}
-    >
-      <div
-        style={{ borderColor: themeStyles.secondaryText }}
-        className={styles.leftCon}
-      >
+    <nav className={styles.navbarCon}>
+      <div className={styles.leftCon}>
         <span>
-          <Link style={{ color: themeStyles.mainText }} href="/">
-            DR
-          </Link>
+          <Link href="/">DR</Link>
         </span>
       </div>
-      <ul className={isLightTheme ? styles.navbarList : styles.navbarListDark}>
+      <ul className={styles.navbarList}>
         <li>
-          <Link style={{ color: themeStyles.mainText }} href="/about">
-            About
-          </Link>
+          <Link href="/about">About</Link>
         </li>
-        <li style={{ color: themeStyles.secondaryText }} id={styles.emptyList}>
-          {" "}
-          |{" "}
-        </li>
+        <li id={styles.emptyList}> | </li>
         <li>
-          <Link style={{ color: themeStyles.mainText }} href="/skills">
-            Skills
-          </Link>
+          <Link href="/skills">Skills</Link>
         </li>
-        <li style={{ color: themeStyles.secondaryText }} id={styles.emptyList}>
-          {" "}
-          |{" "}
-        </li>
+        <li id={styles.emptyList}> | </li>
         <li>
-          <Link style={{ color: themeStyles.mainText }} href="/portfolio">
-            Portfolio
-          </Link>
+          <Link href="/portfolio">Portfolio</Link>
         </li>
-        <li style={{ color: themeStyles.secondaryText }} id={styles.emptyList}>
-          {" "}
-          |{" "}
-        </li>
+        <li id={styles.emptyList}> | </li>
         <li>
-          <Link style={{ color: themeStyles.mainText }} href="/blog">
-            Blog
-          </Link>
+          <Link href="/blog">Blog</Link>
         </li>
-        <li style={{ color: themeStyles.secondaryText }} id={styles.emptyList}>
-          {" "}
-          |{" "}
-        </li>
+        <li id={styles.emptyList}> | </li>
         <li>
-          <Link style={{ color: themeStyles.mainText }} href="/contact">
-            Contact
-          </Link>
+          <Link href="/contact">Contact</Link>
         </li>
       </ul>
       <div className={styles.rightCon}>
-        {/* <span><Link style={{color: themeStyles.mainText}} href="/de">DE</Link></span> */}
-        <div
-          onClick={toggleTheme}
-          className={styles.lightCircle}
-          style={{ backgroundColor: themeStyles.mainText }}
-        ></div>
+        <DarkMode />
       </div>
     </nav>
   );

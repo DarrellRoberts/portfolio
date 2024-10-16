@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
-import ThemeContextProvider from "../components/context/ThemeContext";
 
 export const metadata: Metadata = {
   title: "Darrell Roberts - Freelance Web Developer",
@@ -16,17 +15,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ThemeContextProvider>
-      <html lang="en">
-        <head>
-          <link rel="icon" href="/assets/logo.jpg" type="image/jpg" />
-        </head>
-        <body>
-          <NavBar />
-          {children}
-          <Footer />
-        </body>
-      </html>
-    </ThemeContextProvider>
+    <html lang="en">
+      <head>
+        <link rel="icon" href="/assets/logo.jpg" type="image/jpg" />
+      </head>
+      <body>
+        <NavBar />
+        {children}
+        <Footer />
+      </body>
+    </html>
   );
 }

@@ -6,4 +6,5 @@
 
 .footerCon span {
     margin: 2rem;
+    color: var(--tertiaryColor);
 }

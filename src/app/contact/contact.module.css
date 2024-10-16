@@ -16,7 +16,7 @@
 
   .skillsCon h2 {
     margin: 1.5rem 0px;
-    border-bottom-color: white;
+    border-bottom-color: var(--tertiaryColor);
     border-bottom-style: solid;
     border-bottom-width: 1px;
     font-size: 3rem;
@@ -24,7 +24,7 @@
   }
   
   .skillsCon h2:active {
-    color: white;
+    color: var(--tertiaryColor);
   }
 
   .skillsList {
@@ -51,6 +51,7 @@
     padding: 10px;
     font-weight: bold;
     transition: all 0.15s ease-in;
+    border-color: var(--tertiaryColor);
   }
 
   .mail {
