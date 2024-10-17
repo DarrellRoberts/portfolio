@@ -5,8 +5,9 @@ import { backendJson } from "./backendJson";
 export default function FrontendList() {
   return (
     <>
-      {backendJson.map((skill) => (
+      {backendJson.map((skill, i) => (
         <SkillTemplate
+        key={i}
           title={skill.title}
           src={skill.src}
           width={skill.width ?? "65"}

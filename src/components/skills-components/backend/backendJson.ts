@@ -5,7 +5,7 @@ type Skill = {
     height?: string
 }
 
-export const backendJson: Skill[] =
+const backendJson: Skill[] =
   [
     {
       title: 'Node.js',
@@ -20,3 +20,5 @@ export const backendJson: Skill[] =
       src: 'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg'
     }
 ];
+
+export {backendJson};

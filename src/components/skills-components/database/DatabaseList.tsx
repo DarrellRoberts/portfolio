@@ -5,8 +5,9 @@ import { databaseJson } from "./databaseJson";
 export default function FrontendList() {
   return (
     <>
-      {databaseJson.map((skill) => (
+      {databaseJson.map((skill, i) => (
         <SkillTemplate
+        key={i}
           title={skill.title}
           src={skill.src}
           width={skill.width ?? "65"}

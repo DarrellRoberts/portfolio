@@ -1,8 +1,12 @@
 "use client";
-import { Popover } from "antd";
+
 import { useReducer } from "react";
 import Image from "next/image";
 import styles from "./skills.module.css";
+import FrontendList from "@/components/skills-components/frontend/FrontendList";
+import BackendList from "@/components/skills-components/backend/BackendList";
+import DatabaseList from "@/components/skills-components/database/DatabaseList";
+import ToolsList from "@/components/skills-components/tools/ToolsList";
 
 type StateType = {
   showFrontend: boolean;
@@ -52,136 +56,7 @@ export default function Skills() {
                       : styles.skillsListOut
                   }
                 >
-                  <Popover title="HTML5">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="HTML5"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="CSS3">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="CSS3"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="Tailwind CSS">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="TailwindCSS"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="JavaScript">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="JavaScript"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="TypeScript">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="TypeScript"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="React">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="React"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="Vite">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="Vite"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="Next">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="NextJs"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="Vercel">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png"
-                        width="65"
-                        height="65"
-                        alt="Vercel"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="Three.js">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://global.discourse-cdn.com/standard17/uploads/threejs/original/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751.png"
-                        width="65"
-                        height="65"
-                        alt="Three.js"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="React Native">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://devtop.io/wp-content/uploads/2022/10/react-native-1.png"
-                        width="120"
-                        height="120"
-                        alt="React Native"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="Vue">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png"
-                        width="65"
-                        height="65"
-                        alt="Vue"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="Nuxt">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nuxtjs-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="Nuxt"
-                      />
-                    </div>
-                  </Popover>
+                  <FrontendList />
                 </ul>
               </div>
 
@@ -194,36 +69,7 @@ export default function Skills() {
                     state.showBackend ? styles.skillsList : styles.skillsListOut
                   }
                 >
-                  <Popover title="Node.js">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="NodeJS"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="Express.js">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="Express"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="Java">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="Java"
-                      />
-                    </div>
-                  </Popover>
+                  <BackendList />
                 </ul>
               </div>
 
@@ -238,46 +84,7 @@ export default function Skills() {
                       : styles.skillsListOut
                   }
                 >
-                  <Popover title="MongoDB">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="MongoDB"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="MySQL">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="MySQL"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="PostgreSQL">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="PostgreSQL"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="Render">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/render-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="Render"
-                      />
-                    </div>
-                  </Popover>
+                  <DatabaseList />
                 </ul>
               </div>
 
@@ -290,56 +97,7 @@ export default function Skills() {
                     state.showTools ? styles.skillsList : styles.skillsListOut
                   }
                 >
-                  <Popover title="Git">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="Git"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="Docker">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/docker-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="Docker"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="Photoshop">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored.svg"
-                        width="65"
-                        height="65"
-                        alt="Photoshop"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="Figma">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/512px-Figma-logo.svg.png"
-                        width="45"
-                        height="45"
-                        alt="Figma"
-                      />
-                    </div>
-                  </Popover>
-                  <Popover title="Expo Go">
-                    <div className="flex flex-col items-center justify-center">
-                      <img
-                        src="https://seeklogo.com/images/E/expo-go-app-logo-BBBE394CB8-seeklogo.com.png"
-                        width="65"
-                        height="65"
-                        alt="Expo Go"
-                      />
-                    </div>
-                  </Popover>
+                  <ToolsList />
                 </ul>
               </div>
             </div>
