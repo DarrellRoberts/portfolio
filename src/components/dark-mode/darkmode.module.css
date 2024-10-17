@@ -1,5 +1,12 @@
+.themeCon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .themeCon label {
-visibility: hidden;
+color: var(--mainColor);
 }
 
 .themeCon input[type="checkbox"] {
