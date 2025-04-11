@@ -1,8 +1,8 @@
 type Skill = {
-    title: string,
-    src: string,
-    width?: string,
-    height?: string
+  title: string
+  src: string
+  width?: string
+  height?: string
 }
 
 export const frontendJson: Skill[] = [
@@ -44,13 +44,13 @@ export const frontendJson: Skill[] = [
   },
   {
     title: "ThreeJS",
-    src: "https://global.discourse-cdn.com/standard17/uploads/threejs/original/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751.png",
+    src: "https://canada1.discourse-cdn.com/flex035/uploads/threejs/original/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751.png",
   },
   {
     title: "React Native",
     src: "https://devtop.io/wp-content/uploads/2022/10/react-native-1.png",
     width: "100",
-    height: "100"
+    height: "100",
   },
   {
     title: "Vue",
@@ -60,4 +60,4 @@ export const frontendJson: Skill[] = [
     title: "Nuxt",
     src: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nuxtjs-colored.svg",
   },
-];
+]
