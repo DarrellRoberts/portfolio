@@ -1,18 +1,18 @@
-import Image from "next/image";
-import styles from "../../app/blog/[path]/post.module.css";
+import Image from "next/image"
+import styles from "../../app/blog/[path]/post.module.css"
 
 type EntryData = {
-  id: number;
-  title: string;
-  path: string;
-  links?: string[];
-  images: string[];
-  imageAlt: string[];
-  imageCaption: string[];
-  article: any;
-  question: boolean;
-  date: string;
-};
+  id: number
+  title: string
+  path: string
+  links?: string[]
+  images: string[]
+  imageAlt: string[]
+  imageCaption: string[]
+  article: any
+  question: boolean
+  date: string
+}
 
 const entriesArray: EntryData[] = [
   {
@@ -3012,8 +3012,9 @@ const entriesArray: EntryData[] = [
         <p>
           {" "}
           Of course there are also social engineering attacks for which may
-          render the cybersecurity expert helpless. For example, this relates
-          to copying work passes posted publicly on LinkedIn, and pretending to be an employee to gain physical access into a company.{" "}
+          render the cybersecurity expert helpless. For example, this relates to
+          copying work passes posted publicly on LinkedIn, and pretending to be
+          an employee to gain physical access into a company.{" "}
         </p>
         <br />
         <p>
@@ -3054,12 +3055,25 @@ const entriesArray: EntryData[] = [
           </a>
           , by specifying which type of resources are allowed to be loaded on a
           web page. For example, with CSP you can prevent users from injecting
-          their own script onto your webpage. Also, if you have given the appropriate endpoint, you can report a violation of the policy. Or in other words, when a user attempts to unleash a malicious script on your webpage, it blocks and reports it.
+          their own script onto your webpage. Also, if you have given the
+          appropriate endpoint, you can report a violation of the policy. Or in
+          other words, when a user attempts to unleash a malicious script on
+          your webpage, it blocks and reports it.
         </p>
         <br />
         <p>
           {" "}
-          Cross-Origin Resource Sharing (CORS) is also a protective measure. This allows web browsers to make requests to a server on a different domain. The default behaviour of a web browser is the Same-Origin Policy, which prevents scripts from one domain accessing resources from another domain. Through this measure, it stops malicious scripts from stealing data or compromising user privacy. However, apps such as Single Page Applications (SPA) often have to send requests to a resource on a different domain, such as an external API. In this case the browser sends a CORS request which contains the origin of the request and web domain. If the server hosting this API is not setup to receive CORS request, access will be denied.
+          Cross-Origin Resource Sharing (CORS) is also a protective measure.
+          This allows web browsers to make requests to a server on a different
+          domain. The default behaviour of a web browser is the Same-Origin
+          Policy, which prevents scripts from one domain accessing resources
+          from another domain. Through this measure, it stops malicious scripts
+          from stealing data or compromising user privacy. However, apps such as
+          Single Page Applications (SPA) often have to send requests to a
+          resource on a different domain, such as an external API. In this case
+          the browser sends a CORS request which contains the origin of the
+          request and web domain. If the server hosting this API is not setup to
+          receive CORS request, access will be denied.
         </p>
         <br />
         <p>
@@ -3075,9 +3089,8 @@ const entriesArray: EntryData[] = [
         </p>
         <br />
         <p>
-          {" "}
-          On the other hand, HTTPS provides a much more secure data transfer.
-          In the same example if you paid for a product on a HTTPS website, that
+          On the other hand, HTTPS provides a much more secure data transfer. In
+          the same example if you paid for a product on a HTTPS website, that
           same data in the request would be encrypted via Secure Sockets
           Layer/Transport Layer Security. Furthermore, the website's identity is
           verified with a digital certificate, authenticating that it's trusted
@@ -3086,8 +3099,11 @@ const entriesArray: EntryData[] = [
         <br />
         <p>
           Another common practice to protect your data is by using environmental
-          variables or env values. These would sit somewhere in your backend holding
-          the keys to your database system. Without these values, you won't have access to add, edit, remove or read data from the database. Despite it being common practice to hide these values, there are cases whereby{" "}
+          variables or env values. These would sit somewhere in your backend
+          holding the keys to your database system. Without these values, you
+          won't have access to add, edit, remove or read data from the database.
+          Despite it being common practice to hide these values, there are cases
+          whereby{" "}
           <a href="https://www.youtube.com/watch?v=lkbV8oP-F44" target="_blank">
             companies have accidentally exposed these env values{" "}
           </a>
@@ -3140,8 +3156,8 @@ const entriesArray: EntryData[] = [
     question: false,
     date: "02/09/2024",
   },
-];
+]
 
-entriesArray.reverse();
+entriesArray.reverse()
 
-export default entriesArray;
+export default entriesArray
