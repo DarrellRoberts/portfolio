@@ -1,6 +1,7 @@
+import { I18nProviderClient } from "../../../locales/client"
 import type { Metadata } from "next"
-import "./globals.css"
-import { Providers } from "./providers"
+import { Providers } from "@/app/providers" // Assuming this is also now a client component
+import "@/app/globals.css"
 
 export const metadata: Metadata = {
   title: "Darrell Roberts - Freelance Web Developer",
@@ -8,18 +9,20 @@ export const metadata: Metadata = {
     "Portfolio website of Darrell Roberts. I'm a Fullstack developer who lives in Berlin, Germany with a focus on Frontend. I work primarily with TypeScript on the following frameworks or libraries: React, Next, Vue and Nuxt. However, I also work with Node.js in the Backend and have experience with MongoDB and creating my own APIs. I currently volunteer remotely at the San Francisco-based Open Library, as a Freelance Developer.",
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: Readonly<{
+  params,
+}: {
   children: React.ReactNode
-}>) {
+  params: { locale: string }
+}) {
+  const { locale } = await params
   return (
-    <html lang="en" className="">
-      {/* <head>
-        <link rel="icon" href="" type="image/jpg" />
-      </head> */}
+    <html lang={locale} className="dark">
       <body>
-        <Providers>{children}</Providers>
+        <I18nProviderClient locale={locale}>
+          <Providers>{children}</Providers>
+        </I18nProviderClient>
       </body>
     </html>
   )
