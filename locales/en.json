@@ -1,4 +1,7 @@
 {
   "welcome": "Welcome to our application",
-  "languageSelect": "Select your language"
+  "languageSelect": "Select your language",
+  "project": {
+    "projects": "Projects"
+  }
 }
