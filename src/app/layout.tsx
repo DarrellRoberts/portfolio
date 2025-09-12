@@ -1,3 +1,5 @@
+import DarkProvider from "@/context/DarkContext"
+import Wrapper from "./Wrapper"
 import "./globals.css"
 
 export default function RootLayout({
@@ -6,8 +8,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html className="dark">
-      <body>{children}</body>
-    </html>
+    <DarkProvider>
+      <Wrapper>{children}</Wrapper>
+    </DarkProvider>
   )
 }
