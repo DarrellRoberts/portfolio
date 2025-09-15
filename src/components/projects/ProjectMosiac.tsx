@@ -25,12 +25,14 @@ const ProjectMosiac = ({ project }: Props) => {
         </h3>
       </div>
       <Link
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
         href={`/${locale}/projects/${project.title}`}
         className="grid grid-rows-2 grid-cols-4 gap-2 min-md:w-1/2 max-md:w-full"
       >
-        <div className="col-span-3 aspect-16/9 rounded-2xl relative">
+        <div
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          className="col-span-3 aspect-16/9 rounded-2xl relative hover:scale-115 transition-all transition-discrete hover:shadow-xl shadow-primary"
+        >
           <div
             className={`
               absolute inset-0 transition-opacity duration-500 ease-in-out rounded-2xl
@@ -62,7 +64,7 @@ const ProjectMosiac = ({ project }: Props) => {
         </div>
 
         <div
-          className="rounded-2xl"
+          className="rounded-2xl hover:scale-115 transition-all transition-discrete hover:shadow-xl shadow-primary"
           style={{
             backgroundImage: isDark
               ? `url(${project?.lightImages[1]})`
@@ -73,7 +75,7 @@ const ProjectMosiac = ({ project }: Props) => {
           }}
         />
         <div
-          className=" col-span-2 rounded-2xl"
+          className=" col-span-2 rounded-2xl hover:scale-115 transition-all transition-discrete hover:shadow-xl shadow-primary"
           style={{
             backgroundImage: isDark
               ? `url(${project?.lightImages[2]})`
@@ -84,7 +86,7 @@ const ProjectMosiac = ({ project }: Props) => {
           }}
         />
         <div
-          className="col-span-2 rounded-2xl"
+          className="col-span-2 rounded-2xl hover:scale-115 transition-all transition-discrete hover:shadow-xl shadow-primary"
           style={{
             backgroundImage: isDark
               ? `url(${project?.lightImages[3]})`
