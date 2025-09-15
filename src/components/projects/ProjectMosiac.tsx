@@ -3,7 +3,6 @@ import Link from "next/link"
 import { useCurrentLocale } from "../../../locales/client"
 import { DarkContext } from "@/context/DarkContext"
 import { type ProjectData } from "../../../types/ProjectData"
-import { main } from "framer-motion/m"
 
 type Props = {
   project: ProjectData
