@@ -1,6 +1,13 @@
 {
   "welcome": "Wilkommen in unserem App",
   "languageSelect": "Wählen Sie Ihre Sprache",
+  "navLinks": {
+    "aboutMe": "Über mich",
+    "experience": "Erfahrung",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
   "project": {
     "projects": "Projekte"
   }

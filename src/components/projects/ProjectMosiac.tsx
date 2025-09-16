@@ -1,3 +1,5 @@
+"use client"
+
 import React, { RefObject, useContext, useRef, useState } from "react"
 import Link from "next/link"
 import { useCurrentLocale } from "../../../locales/client"

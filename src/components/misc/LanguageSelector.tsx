@@ -18,7 +18,7 @@ const LanguageSelector = () => {
     <>
       <Dropdown>
         <DropdownTrigger>
-          <Button variant="bordered">
+          <Button variant="ghost" color="primary">
             {locale === "en" ? "English" : "Deutsch"}
             <div className="w-8">
               {locale === "en" ? <IconEN /> : <IconDE />}
