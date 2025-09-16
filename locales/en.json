@@ -1,6 +1,13 @@
 {
   "welcome": "Welcome to our application",
   "languageSelect": "Select your language",
+  "navLinks": {
+    "aboutMe": "About me",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
   "project": {
     "projects": "Projects"
   }

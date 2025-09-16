@@ -1,5 +1,4 @@
 import React from "react"
-import DarkMode from "../misc/DarkMode"
 import LanguageSelector from "../misc/LanguageSelector"
 import Logo from "../misc/Logo"
 import HeaderMenu from "./HeaderMenu"
@@ -11,7 +10,6 @@ const Header = () => {
       <div className="flex items-center gap-4">
         <HeaderMenu />
         <LanguageSelector />
-        <DarkMode />
       </div>
     </div>
   )

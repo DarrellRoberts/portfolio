@@ -11,7 +11,6 @@ const DarkProvider = ({ children }: PropsWithChildren) => {
   const [isDark, setIsDark] = useState<boolean>(true)
 
   const toggleDark = () => {
-    console.log(isDark)
     setIsDark(!isDark)
   }
 

@@ -15,9 +15,7 @@ export default function RootLayout({
   return (
     <html className={isDark ? "dark" : "light"}>
       <body>
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   )
