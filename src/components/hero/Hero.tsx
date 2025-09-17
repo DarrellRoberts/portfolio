@@ -7,7 +7,7 @@ import { DarkContext } from "@/context/DarkContext"
 const Hero = () => {
   const { isDark } = useContext(DarkContext)
   return (
-    <div className="h-150 max-sm:h-85 flex w-full justify-center max-md:flex-col max-md:items-center px-6">
+    <div className="h-150 max-sm:h-85 flex w-full justify-center max-md:flex-col max-md:items-center px-6 pt-15">
       <Image
         className="w-175"
         src={isDark ? "/hero-light.webp" : "/hero-dark.webp"}

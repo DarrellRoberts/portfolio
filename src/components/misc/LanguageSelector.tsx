@@ -1,57 +1,29 @@
-import {
-  Button,
-  Dropdown,
-  DropdownItem,
-  DropdownMenu,
-  DropdownTrigger,
-} from "@heroui/react"
+"use client"
+
 import React from "react"
 import { useChangeLocale, useCurrentLocale } from "../../../locales/client"
 import IconEN from "./icons/IconEN"
 import IconDE from "./icons/IconDE"
 
 const LanguageSelector = () => {
-  const changeLocale = useChangeLocale()
   const locale = useCurrentLocale()
+  const changeLocale = useChangeLocale()
 
+  const handleLocale = () => {
+    if (locale === "en") {
+      changeLocale("de")
+    } else {
+      changeLocale("en")
+    }
+  }
   return (
     <>
-      <Dropdown>
-        <DropdownTrigger>
-          <Button variant="ghost" color="primary">
-            {locale === "en" ? "English" : "Deutsch"}
-            <div className="w-8">
-              {locale === "en" ? <IconEN /> : <IconDE />}
-            </div>
-          </Button>
-        </DropdownTrigger>
-        <DropdownMenu>
-          <DropdownItem key="english">
-            <Button
-              onPress={() => changeLocale("en")}
-              variant="light"
-              className="flex gap-2 justify-around w-3/4"
-            >
-              English{" "}
-              <div className="w-8">
-                <IconEN />
-              </div>
-            </Button>
-          </DropdownItem>
-          <DropdownItem key="deutsch">
-            <Button
-              onPress={() => changeLocale("de")}
-              variant="light"
-              className="flex gap-2 justify-around w-3/4"
-            >
-              Deutsch{" "}
-              <div className="w-8">
-                <IconDE />
-              </div>
-            </Button>
-          </DropdownItem>
-        </DropdownMenu>
-      </Dropdown>
+      <div
+        className="w-12 cursor-pointer p-1 hover:p-[0px] rounded-full transition-all transition-discrete"
+        onClick={handleLocale}
+      >
+        {locale === "de" ? <IconEN /> : <IconDE />}
+      </div>
     </>
   )
 }

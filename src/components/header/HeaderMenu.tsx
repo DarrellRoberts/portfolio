@@ -18,20 +18,22 @@ import {
 } from "@heroicons/react/16/solid"
 import React from "react"
 import Logo from "../misc/Logo"
-import { useCurrentLocale, useI18n } from "../../../locales/client"
+import { useI18n } from "../../../locales/client"
 import DarkMode from "../misc/DarkMode"
 import LanguageSelector from "../misc/LanguageSelector"
-import IconEN from "../misc/icons/IconEN"
-import IconDE from "../misc/icons/IconDE"
 
 const HeaderMenu = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure()
   const t = useI18n()
-  const locale = useCurrentLocale()
 
   return (
     <>
-      <Button variant="ghost" onPress={onOpen} color="primary">
+      <Button
+        variant="ghost"
+        onPress={onOpen}
+        color="primary"
+        className="bg-secondary"
+      >
         <Bars3Icon />
       </Button>
       <Drawer
@@ -75,9 +77,7 @@ const HeaderMenu = () => {
                 </Link>
               </div>
               <DrawerFooter>
-                <div className="w-10">
-                  {locale === "en" ? <IconEN /> : <IconDE />}
-                </div>
+                <LanguageSelector />
               </DrawerFooter>
             </DrawerBody>
           </>

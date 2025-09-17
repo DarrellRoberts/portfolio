@@ -5,7 +5,7 @@ const DarkMode = () => {
   const { toggleDark } = useContext(DarkContext)
   return (
     <div
-      className="rounded-full bg-primary p-6 cursor-pointer"
+      className="rounded-full bg-primary p-5 cursor-pointer hover:p-6 transition-all transition-discrete"
       onClick={toggleDark}
     />
   )
