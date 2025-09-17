@@ -1,10 +1,28 @@
 "use client"
 
-import Header from "@/components/header/Header"
 import "./globals.css"
 import { useContext } from "react"
 import { DarkContext } from "@/context/DarkContext"
-import Footer from "@/components/footer/Footer"
+import localFont from "next/font/local"
+// import d from "../../public/"
+
+const sansation = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Sansation_Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Sansation_Light.ttf",
+      style: "light",
+    },
+    {
+      path: "../../public/fonts/Sansation_Bold.ttf",
+      style: "bold",
+    },
+  ],
+})
 
 export default function RootLayout({
   children,
@@ -13,10 +31,12 @@ export default function RootLayout({
 }>) {
   const { isDark } = useContext(DarkContext)
   return (
-    <html className={isDark ? "dark" : "light"}>
-      <body>
-        {children}
-      </body>
+    <html
+      className={
+        isDark ? `dark ${sansation.className}` : `light ${sansation.className}`
+      }
+    >
+      <body>{children}</body>
     </html>
   )
 }
