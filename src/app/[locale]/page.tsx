@@ -1,14 +1,14 @@
 import ProjectMosiacHome from "@/components/projects/ProjectMosiacHome"
 import Hero from "@/components/hero/Hero"
 import Skills from "@/components/skills/Skills"
-import Experience from "@/components/experience/Experience"
+import ExperienceHome from "@/components/experience/ExperienceHome"
 
 const Home = () => {
   return (
     <main>
       <Hero />
       <Skills />
-      <Experience />
+      <ExperienceHome />
       <ProjectMosiacHome />
     </main>
   )

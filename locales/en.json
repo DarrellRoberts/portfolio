@@ -8,6 +8,9 @@
     "projects": "Projects",
     "contact": "Contact"
   },
+  "experience": {
+    "experience": "Experience"
+  },
   "project": {
     "projects": "Projects"
   }
