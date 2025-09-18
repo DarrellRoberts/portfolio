@@ -9,12 +9,12 @@ const Logo = () => {
   const { isDark } = useContext(DarkContext)
   const locale = useCurrentLocale()
   return (
-    <Link href={`/${locale}`}>
+    <Link className="flex justify-center items-center" href={`/${locale}`}>
       <Image
         as={NextImage}
         src={isDark ? "/dr_logo_dark.webp" : "/dr_logo_light.webp"}
-        height={100}
         width={100}
+        height={100}
         alt="dr-logo"
       />
     </Link>

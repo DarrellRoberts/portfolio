@@ -57,23 +57,23 @@ const HeaderMenu = () => {
             </DrawerHeader>
             <DrawerBody>
               <div className="flex flex-col h-full justify-evenly">
-                <Link href="" className="flex gap-4">
-                  {t("navLinks.aboutMe")} <UserIcon className="size-6" />{" "}
+                <Link href="" className="flex gap-4 text-2xl">
+                  {t("navLinks.aboutMe")} <UserIcon className="size-8" />{" "}
                 </Link>
-                <Link href="" className="flex gap-4">
+                <Link href="" className="flex gap-4 text-2xl">
                   {t("navLinks.experience")}
-                  <ClipboardDocumentListIcon className="size-6" />
+                  <ClipboardDocumentListIcon className="size-8" />
                 </Link>
-                <Link href="" className="flex gap-4">
+                <Link href="" className="flex gap-4 text-2xl">
                   {t("navLinks.skills")}
-                  <LightBulbIcon className="size-6" />
+                  <LightBulbIcon className="size-8" />
                 </Link>
-                <Link href="" className="flex gap-4">
+                <Link href="" className="flex gap-4 text-2xl">
                   {t("navLinks.projects")}
-                  <CodeBracketIcon className="size-6" />
+                  <CodeBracketIcon className="size-8" />
                 </Link>
-                <Link href="" className="flex gap-4">
-                  {t("navLinks.contact")} <EnvelopeIcon className="size-6" />
+                <Link href="" className="flex gap-4 text-2xl">
+                  {t("navLinks.contact")} <EnvelopeIcon className="size-8" />
                 </Link>
               </div>
               <DrawerFooter>
