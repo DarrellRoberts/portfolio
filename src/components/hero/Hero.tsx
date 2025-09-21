@@ -37,7 +37,7 @@ const Hero = () => {
                   ? "sunken-ship-class w-50 h-50 z-1 absolute bottom-[37%] right-[5%]"
                   : "ship-class w-50 h-50 z-1 absolute bottom-[37%] right-[5%] cursor-pointer"
               }
-              src="/ship_dark2.webp"
+              src="/ship_dark.webp"
               alt="ship"
               width={500}
               height={500}
