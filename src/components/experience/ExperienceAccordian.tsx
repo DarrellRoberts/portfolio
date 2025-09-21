@@ -70,12 +70,10 @@ const ExperienceAccordian = () => {
             >
               <ul>
                 {job.description.map((point, pointIndex) => (
-                  <>
-                    <li className="list-disc text-primary" key={pointIndex}>
-                      {point}
-                    </li>
+                  <div key={pointIndex}>
+                    <li className="list-disc text-primary">{point}</li>
                     <br />
-                  </>
+                  </div>
                 ))}
               </ul>
             </AccordionItem>

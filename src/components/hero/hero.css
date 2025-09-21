@@ -1,0 +1,29 @@
+.ship-class {
+  animation: ship-sway 2s linear 0s infinite;
+}
+
+.sunken-ship-class {
+  animation: sink-ship 4s linear 0s 1;
+}
+
+@keyframes ship-sway {
+  0% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes sink-ship {
+  20% {
+    transform: rotate(180deg) translateY(-20%);
+  }
+  100% {
+    transform: translateY(80%);
+    opacity: 0;
+  }
+}
