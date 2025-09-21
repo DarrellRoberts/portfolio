@@ -8,7 +8,7 @@ const ExperienceHome = () => {
   const t = useI18n()
   return (
     <div className="">
-      <h2 className="min-sm:text-6xl font-bold">
+      <h2 className="text-6xl font-bold max-sm:text-3xl">
         {t("experience.experience")}
       </h2>
       <ExperienceAccordian />
