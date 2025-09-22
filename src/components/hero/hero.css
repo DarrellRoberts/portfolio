@@ -6,15 +6,19 @@
   animation: sink-ship 4s linear 0s 1;
 }
 
+.tumbleweed-class {
+  animation: move-tumbleweed 4s linear 0s infinite;
+}
+
 @keyframes ship-sway {
   0% {
-    transform: rotate(2deg);
+    transform: rotate(2deg) translateY(1%) translateX(-1%);
   }
   50% {
-    transform: rotate(-2deg);
+    transform: rotate(-2deg) translateY(-1%) translateX(1%);
   }
   100% {
-    transform: rotate(2deg);
+    transform: rotate(2deg) translateY(1%) translateX(-1%);
   }
 }
 
@@ -25,5 +29,51 @@
   100% {
     transform: translateY(80%);
     opacity: 0;
+  }
+}
+
+@keyframes move-tumbleweed {
+  0% {
+    transform: translateX(25vw) translateY(10vh) rotate(0deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translateX(12vw) translateY(-10vh) rotate(360deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(0vw) translateY(0vh) rotate(720deg);
+  }
+  75% {
+    transform: translateX(-12vw) translateY(-10vh) rotate(1080deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-25vw) translateY(0) rotate(1440deg);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  @keyframes move-tumbleweed {
+    0% {
+      transform: translateX(25vw) translateY(0) rotate(0deg);
+      opacity: 0;
+    }
+    25% {
+      transform: translateX(0vw) translateY(-5vh) rotate(360deg);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-25vw) translateY(0vh) rotate(720deg);
+    }
+    75% {
+      transform: translateX(-50vw) translateY(-5vh) rotate(1080deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-75vw) translateY(0) rotate(1440deg);
+      opacity: 0;
+    }
   }
 }

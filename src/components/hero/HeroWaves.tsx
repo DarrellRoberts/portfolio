@@ -6,6 +6,7 @@ const HeroWaves = () => {
   let time = 0
   const OnDraw = () => {
     time = time + 0.5
+    // time
     if (wavesCanvas.current) {
       let dataLine = wavesCanvas.current?.getContext("2d")
 
@@ -22,10 +23,6 @@ const HeroWaves = () => {
           cnt,
           wavesCanvas.current.height * 0.47 - Math.cos(time + cnt * 0.05) * 15
         )
-        // dataLine?.lineTo(
-        //   cnt,
-        //   wavesCanvas.current.height * 0.55 - Math.cos(time + cnt * 0.05) * 15
-        // )
       }
 
       dataLine!.strokeStyle = "#e2d4bb"
