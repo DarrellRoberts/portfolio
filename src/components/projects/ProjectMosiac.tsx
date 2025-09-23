@@ -18,12 +18,10 @@ const ProjectMosiac = ({ project }: Props) => {
   return (
     <div className="flex flex-col items-center gap-2">
       <div className="flex justify-around min-md:w-1/2 w-full">
-        <h3 className="self-start min-sm:text-4xl font-bold text-primary">
+        <h3 className="self-start min-sm:text-4xl max-sm:text-2xl font-bold text-primary">
           {project?.title}
         </h3>
-        <h3 className="self-end min-sm:text-3xl text-primary">
-          {project?.tech}
-        </h3>
+        <h3 className="self-end min-sm:text-3xl">{project?.tech}</h3>
       </div>
       <Link
         href={`/${locale}/projects/${project.title}`}

@@ -13,5 +13,14 @@
   },
   "project": {
     "projects": "Projects"
+  },
+  "skills": {
+    "skills": "Skills",
+    "mainStack": "Main Stack",
+    "tools": "Tools",
+    "database": "Database",
+    "frameworks": "Libraries and Frameworks",
+    "skillHoverAdmiral": "Choose your admiral. Hover over a skill",
+    "skillHoverCowboy": "Choose your cowboy. Hover over a skill"
   }
 }

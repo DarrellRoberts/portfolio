@@ -1,13 +1,13 @@
 import ProjectMosiacHome from "@/components/projects/ProjectMosiacHome"
 import Hero from "@/components/hero/Hero"
-import Skills from "@/components/skills/Skills"
+import SkillsHome from "@/components/skills/SkillsHome"
 import ExperienceHome from "@/components/experience/ExperienceHome"
 
 const Home = () => {
   return (
-    <main>
+    <main className="flex flex-col gap-20">
       <Hero />
-      <Skills />
+      <SkillsHome />
       <ExperienceHome />
       <ProjectMosiacHome />
     </main>

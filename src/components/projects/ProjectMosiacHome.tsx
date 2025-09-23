@@ -12,9 +12,11 @@ const ProjectMosiacHome = () => {
       <h2 className="text-6xl font-bold max-sm:text-3xl">
         {t("project.projects")}
       </h2>
-      {projects.map((project) => (
-        <ProjectMosiac project={project} key={project.title} />
-      ))}
+      <div className="flex flex-col justify-evenly h-full gap-20">
+        {projects.map((project) => (
+          <ProjectMosiac project={project} key={project.title} />
+        ))}
+      </div>
     </div>
   )
 }
