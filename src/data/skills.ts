@@ -49,7 +49,7 @@ export const skillsEN: SkillsData[] = [
     skillsLabels: ["NodeJS", "Express", "MongoDB", "Render"],
     skillsImages: [
       "/skills-logos/nodejs-colored.svg",
-      "/skills-logos/express-colored.svg",
+      "/skills-logos/expressjs.svg",
       "/skills-logos/mongodb-colored.svg",
       "/skills-logos/render-colored.svg",
     ],
@@ -105,7 +105,7 @@ export const skillsDE: SkillsData[] = [
     skillsLabels: ["NodeJS", "Express", "MongoDB", "Render"],
     skillsImages: [
       "/skills-logos/nodejs-colored.svg",
-      "/skills-logos/express-colored.svg",
+      "/skills-logos/expressjs.svg",
       "/skills-logos/mongodb-colored.svg",
       "/skills-logos/render-colored.svg",
     ],
