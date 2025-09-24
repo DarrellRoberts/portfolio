@@ -43,44 +43,67 @@ const HeaderMenu = () => {
         style={{ borderRadius: "0px" }}
       >
         <DrawerContent>
-          <>
-            <DrawerHeader className="flex w-full items-center justify-between gap-1">
-              <div className="flex items-center">
-                <Logo />
-                <div>
-                  Darrell Roberts
-                  <br />
-                  Frontend Engineer
+          {(onClose) => (
+            <>
+              <DrawerHeader className="flex w-full items-center justify-between gap-1">
+                <div className="flex items-center">
+                  <Logo />
+                  <div>
+                    Darrell Roberts
+                    <br />
+                    Frontend Engineer
+                  </div>
                 </div>
-              </div>
-              <DarkMode />
-            </DrawerHeader>
-            <DrawerBody>
-              <div className="flex flex-col h-full justify-evenly">
-                <Link href="" className="flex gap-4 text-2xl">
-                  {t("navLinks.aboutMe")} <UserIcon className="size-8" />{" "}
-                </Link>
-                <Link href="" className="flex gap-4 text-2xl">
-                  {t("navLinks.experience")}
-                  <ClipboardDocumentListIcon className="size-8" />
-                </Link>
-                <Link href="" className="flex gap-4 text-2xl">
-                  {t("navLinks.skills")}
-                  <LightBulbIcon className="size-8" />
-                </Link>
-                <Link href="" className="flex gap-4 text-2xl">
-                  {t("navLinks.projects")}
-                  <CodeBracketIcon className="size-8" />
-                </Link>
-                <Link href="" className="flex gap-4 text-2xl">
-                  {t("navLinks.contact")} <EnvelopeIcon className="size-8" />
-                </Link>
-              </div>
-              <DrawerFooter>
-                <LanguageSelector />
-              </DrawerFooter>
-            </DrawerBody>
-          </>
+                <DarkMode />
+              </DrawerHeader>
+              <DrawerBody>
+                <div className="flex flex-col h-full justify-evenly">
+                  <Link
+                    href="#about"
+                    className="flex gap-4 text-2xl"
+                    onPress={onClose}
+                  >
+                    {t("navLinks.aboutMe")} <UserIcon className="size-8" />{" "}
+                  </Link>
+                  <Link
+                    href="#experience"
+                    className="flex gap-4 text-2xl"
+                    onPress={onClose}
+                  >
+                    {t("navLinks.experience")}
+                    <ClipboardDocumentListIcon className="size-8" />
+                  </Link>
+                  <Link
+                    href="#skills"
+                    className="flex gap-4 text-2xl"
+                    onPress={onClose}
+                  >
+                    {t("navLinks.skills")}
+                    <LightBulbIcon className="size-8" />
+                  </Link>
+                  <Link
+                    href="#projects"
+                    className="flex gap-4 text-2xl"
+                    onPress={onClose}
+                  >
+                    {t("navLinks.projects")}
+                    <CodeBracketIcon className="size-8" />
+                  </Link>
+                  <Link
+                    href="#contact"
+                    className="flex gap-4 text-2xl"
+                    onPress={onClose}
+                  >
+                    {t("navLinks.contact")} <EnvelopeIcon className="size-8" />
+                  </Link>
+                </div>
+
+                <DrawerFooter>
+                  <LanguageSelector />
+                </DrawerFooter>
+              </DrawerBody>
+            </>
+          )}
         </DrawerContent>
       </Drawer>
     </>

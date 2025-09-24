@@ -15,7 +15,7 @@ const SkillsHome = () => {
   const t = useI18n()
   const { isDark } = useContext(DarkContext)
   return (
-    <div className="relative">
+    <div className="relative" id="skills">
       <h2 className="text-6xl font-bold max-sm:text-3xl">
         {t("skills.skills")}
       </h2>

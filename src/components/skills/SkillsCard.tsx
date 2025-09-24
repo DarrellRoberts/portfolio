@@ -20,7 +20,7 @@ const SkillsCard = ({ skill, setSkillImage, setSkillLabel }: Props) => {
       <CardBody className="grid grid-cols-3 gap-2 overflow-visible">
         {skill.skillsImages.map((skillImage, index) => (
           <div
-            className="relative inline-display cursor-pointer group overflow-visible flex items-center justify-center"
+            className="relative inline-display cursor-pointer group overflow-visible flex items-center justify-center p-4 hover:p-1 transition-all transition-discrete h-15"
             key={skill.skillsLabels[index]}
             onMouseEnter={() => {
               setSkillImage(skillImage)

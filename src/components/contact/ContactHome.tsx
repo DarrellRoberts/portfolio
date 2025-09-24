@@ -10,7 +10,7 @@ const Contact = () => {
   const { isDark } = useContext(DarkContext)
   const t = useI18n()
   return (
-    <div className="pt-8">
+    <div className="pt-8" id="contact">
       <h2 className="text-6xl font-bold max-sm:text-3xl">
         {t("contact.contact")}
       </h2>

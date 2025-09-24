@@ -7,7 +7,7 @@ import { useI18n } from "../../../locales/client"
 const ExperienceHome = () => {
   const t = useI18n()
   return (
-    <div className="">
+    <div className="" id="experience">
       <h2 className="text-6xl font-bold max-sm:text-3xl">
         {t("experience.experience")}
       </h2>
