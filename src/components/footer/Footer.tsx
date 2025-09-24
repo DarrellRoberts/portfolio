@@ -1,5 +1,5 @@
 import React from "react"
-import Contact from "../contact/Contact"
+import Contact from "../contact/ContactHome"
 
 const Footer = () => {
   return <Contact />

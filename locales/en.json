@@ -22,5 +22,8 @@
     "frameworks": "Libraries and Frameworks",
     "skillHoverAdmiral": "Choose your admiral. Hover over a skill",
     "skillHoverCowboy": "Choose your cowboy. Hover over a skill"
+  },
+  "contact": {
+    "contact": "Contact"
   }
 }
