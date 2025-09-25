@@ -81,4 +81,24 @@ export const projects: ProjectData[] = [
       "/portfolio-screenshots/stuttgart/st_otherroutes_dark.webp",
     ],
   },
+  {
+    title: "Pirate Work Management Tool",
+    tech: "React, TypeScript",
+    hoverImage: [
+      "/portfolio-screenshots/pirate/pir-maindashboard.webp",
+      "/portfolio-screenshots/pirate/pir-maindashboard.webp",
+    ],
+    lightImages: [
+      "/portfolio-screenshots/pirate/pir-maindashboard.webp",
+      "/portfolio-screenshots/pirate/pir-mobiledashboard.webp",
+      "/portfolio-screenshots/pirate/pir-create-scroll.webp",
+      "/portfolio-screenshots/pirate/pir-edit-scroll.webp",
+    ],
+    darkImages: [
+      "/portfolio-screenshots/pirate/pir-maindashboard.webp",
+      "/portfolio-screenshots/pirate/pir-mobiledashboard.webp",
+      "/portfolio-screenshots/pirate/pir-create-scroll.webp",
+      "/portfolio-screenshots/pirate/pir-edit-scroll.webp",
+    ],
+  },
 ]

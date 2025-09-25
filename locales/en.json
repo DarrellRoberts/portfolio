@@ -26,6 +26,9 @@
     "skillHoverAdmiral": "Choose your admiral. Hover over a skill",
     "skillHoverCowboy": "Choose your cowboy. Hover over a skill"
   },
+  "openSource": {
+    "openSource": "Open Source Contributions"
+  },
   "contact": {
     "contact": "Contact"
   }
