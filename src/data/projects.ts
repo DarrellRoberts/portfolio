@@ -41,4 +41,44 @@ export const projects: ProjectData[] = [
       "/portfolio-screenshots/bcb/bcb_profilepage_dark.webp",
     ],
   },
+  {
+    title: "Asteroid Tracker",
+    tech: "Vue, TypeScript",
+    hoverImage: [
+      "/portfolio-screenshots/asteroid/ast_maindashboard.webp",
+      "/portfolio-screenshots/asteroid/ast_maindashboard.webp",
+    ],
+    lightImages: [
+      "/portfolio-screenshots/asteroid/ast_maindashboard.webp",
+      "/portfolio-screenshots/asteroid/ast_dashboard_mobile.webp",
+      "/portfolio-screenshots/asteroid/ast_graphwidget.webp",
+      "/portfolio-screenshots/asteroid/ast_legendview.webp",
+    ],
+    darkImages: [
+      "/portfolio-screenshots/asteroid/ast_maindashboard.webp",
+      "/portfolio-screenshots/asteroid/ast_dashboard_mobile.webp",
+      "/portfolio-screenshots/asteroid/ast_graphwidget.webp",
+      "/portfolio-screenshots/asteroid/ast_legendview.webp",
+    ],
+  },
+  {
+    title: "Stuttgart Train Timetable",
+    tech: "Next, TypeScript",
+    hoverImage: [
+      "/portfolio-screenshots/stuttgart/st_maindashboard_light.webp",
+      "/portfolio-screenshots/stuttgart/st_maindashboard_dark.webp",
+    ],
+    lightImages: [
+      "/portfolio-screenshots/stuttgart/st_maindashboard_light.webp",
+      "/portfolio-screenshots/stuttgart/st_mobile_dashboard_light.webp",
+      "/portfolio-screenshots/stuttgart/st_loadingdashboard_light.webp",
+      "/portfolio-screenshots/stuttgart/st_otherroutes_light.webp",
+    ],
+    darkImages: [
+      "/portfolio-screenshots/stuttgart/st_maindashboard_dark.webp",
+      "/portfolio-screenshots/stuttgart/st_mobile_dashboard_dark.webp",
+      "/portfolio-screenshots/stuttgart/st_loadingdashboard_dark.webp",
+      "/portfolio-screenshots/stuttgart/st_otherroutes_dark.webp",
+    ],
+  },
 ]

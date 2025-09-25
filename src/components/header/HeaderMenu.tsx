@@ -90,6 +90,14 @@ const HeaderMenu = () => {
                     <CodeBracketIcon className="size-8" />
                   </Link>
                   <Link
+                    href="#opensource"
+                    className="flex gap-4 text-2xl"
+                    onPress={onClose}
+                  >
+                    Open Source
+                    <CodeBracketIcon className="size-8" />
+                  </Link>
+                  <Link
                     href="#contact"
                     className="flex gap-4 text-2xl"
                     onPress={onClose}
