@@ -20,6 +20,16 @@ export const projects: ProjectData[] = [
       "/portfolio-screenshots/eMission/em_video_player_dark.webp",
       "/portfolio-screenshots/eMission/em_carousel_dashboard_dark.webp",
     ],
+    description:
+      "An e-learning, B2B application that educates companies on sustainability",
+    features: [
+      "User-generated project and goals with the option to automate with an AI-feature",
+      "Circular dashboard to show user's progress",
+      "Video player with transcript, subtitles and customisable settings",
+      "Data-driven management dashboard to view and compare employees' progress",
+      "Over 30 interactive lessons in German, English and Polish",
+    ],
+    link: "https://www.e-mission.de/en",
   },
   {
     title: "Book Club Brothers",
@@ -40,6 +50,15 @@ export const projects: ProjectData[] = [
       "/portfolio-screenshots/bcb/bcb_3dbookpage_dark.webp",
       "/portfolio-screenshots/bcb/bcb_profilepage_dark.webp",
     ],
+    description: "A website and web application for my book club",
+    features: [
+      "A 3D and interactive book library built with ThreeJS",
+      "Various data-driven dashboards and charts to compare book ratings and specific details",
+      "Book rating system for non-fiction, novels as well as a specialised system anthologies",
+      "Customizable user profiles and achievement badges",
+      "Randomiser feature for user-selected books complete with data filters",
+    ],
+    link: "https://github.com/DarrellRoberts/BookClubBrothers_Frontend_NextMigration",
   },
   {
     title: "Asteroid Tracker",
@@ -60,6 +79,16 @@ export const projects: ProjectData[] = [
       "/portfolio-screenshots/asteroid/ast_graphwidget.webp",
       "/portfolio-screenshots/asteroid/ast_legendview.webp",
     ],
+    description:
+      "A widget dashboard showcasing the latest NASA data on Earth's asteroids",
+    features: [
+      "Showcases details such as: speed, size, magnitude, orbiting bodies and more about Earth's most recent asteroids",
+      "Illustrates each asteroid's distance from Earth with a line graph",
+      "Simple navigation between the different asteroids and a random selection feature",
+      "A detailed legend explaining the scientific keywords and abbreviations",
+      "Orbiting asteroid animation which differs dependant on the asteroid's toxicity",
+    ],
+    link: "https://github.com/DarrellRoberts/Asteroiden-Tracker",
   },
   {
     title: "Stuttgart Train Timetable",
@@ -80,6 +109,16 @@ export const projects: ProjectData[] = [
       "/portfolio-screenshots/stuttgart/st_loadingdashboard_dark.webp",
       "/portfolio-screenshots/stuttgart/st_otherroutes_dark.webp",
     ],
+    description:
+      "A website widget displaying Stuttgart's S-bahn train timetable graph",
+    features: [
+      "Implemented with ChartJS to show different journeys as well as its stops",
+      "Various S-bahn journeys are viewable",
+      "Responsive to mobile devices",
+      "Ability to add your own journeys",
+      "Complete with a dark mode feature",
+    ],
+    link: "https://github.com/DarrellRoberts/stuttgart-bildfahrplan-app",
   },
   {
     title: "Pirate Work Management Tool",
@@ -100,5 +139,13 @@ export const projects: ProjectData[] = [
       "/portfolio-screenshots/pirate/pir-create-scroll.webp",
       "/portfolio-screenshots/pirate/pir-edit-scroll.webp",
     ],
+    description:
+      "A tool to manage multiple to-do lists and workloads but also pirate-themed",
+    features: [
+      "Option to create multiple lists with different themes",
+      "Create, edit and delete list as well as to-do items, saved with local storage",
+      "Responsive to mobile devices",
+    ],
+    link: "https://github.com/DarrellRoberts/pirate-work-management-tool",
   },
 ]

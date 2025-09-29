@@ -35,5 +35,10 @@
   },
   "contact": {
     "contact": "Contact"
+  },
+  "notFound": {
+    "lostSea": "Not found. You appear to be lost at sea",
+    "lostDesert": "Not found. You are alone in the desert",
+    "clickHere": "Click here to navigate back to the homepage"
   }
 }

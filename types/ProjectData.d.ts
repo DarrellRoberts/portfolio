@@ -4,4 +4,7 @@ export type ProjectData = {
   hoverImage: string[]
   lightImages: string[]
   darkImages: string[]
+  description: string
+  features: string[]
+  link: string
 }

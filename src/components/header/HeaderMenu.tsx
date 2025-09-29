@@ -18,13 +18,14 @@ import {
 } from "@heroicons/react/16/solid"
 import React from "react"
 import Logo from "../misc/Logo"
-import { useI18n } from "../../../locales/client"
+import { useCurrentLocale, useI18n } from "../../../locales/client"
 import DarkMode from "../misc/DarkMode"
 import LanguageSelector from "../misc/LanguageSelector"
 
 const HeaderMenu = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure()
   const t = useI18n()
+  const locale = useCurrentLocale()
 
   return (
     <>
@@ -59,14 +60,14 @@ const HeaderMenu = () => {
               <DrawerBody>
                 <div className="flex flex-col h-full justify-evenly">
                   <Link
-                    href="#about"
+                    href={`/${locale}/#about`}
                     className="flex gap-4 text-2xl"
                     onPress={onClose}
                   >
                     {t("navLinks.aboutMe")} <UserIcon className="size-8" />{" "}
                   </Link>
                   <Link
-                    href="#experience"
+                    href={`/${locale}/#experience`}
                     className="flex gap-4 text-2xl"
                     onPress={onClose}
                   >
@@ -74,7 +75,7 @@ const HeaderMenu = () => {
                     <ClipboardDocumentListIcon className="size-8" />
                   </Link>
                   <Link
-                    href="#skills"
+                    href={`/${locale}/#skills`}
                     className="flex gap-4 text-2xl"
                     onPress={onClose}
                   >
@@ -82,7 +83,7 @@ const HeaderMenu = () => {
                     <LightBulbIcon className="size-8" />
                   </Link>
                   <Link
-                    href="#projects"
+                    href={`/${locale}/#projects`}
                     className="flex gap-4 text-2xl"
                     onPress={onClose}
                   >
@@ -90,7 +91,7 @@ const HeaderMenu = () => {
                     <CodeBracketIcon className="size-8" />
                   </Link>
                   <Link
-                    href="#opensource"
+                    href={`/${locale}/#opensource`}
                     className="flex gap-4 text-2xl"
                     onPress={onClose}
                   >
@@ -98,7 +99,7 @@ const HeaderMenu = () => {
                     <CodeBracketIcon className="size-8" />
                   </Link>
                   <Link
-                    href="#contact"
+                    href={`/${locale}/#contact`}
                     className="flex gap-4 text-2xl"
                     onPress={onClose}
                   >
