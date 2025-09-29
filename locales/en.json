@@ -9,7 +9,11 @@
     "contact": "Contact"
   },
   "about": {
-    "aboutMe": "About me"
+    "aboutMe": "About me",
+    "firstPoint": "Frontend Engineer specializing in React, Next.js, Vue.js, Nuxt.js and TypeScript, with a strong product-focused approach to developing performant, accessible, and data-rich user interfaces.",
+    "secondPoint": "Based in Berlin, I bring proven experience in delivering features for high-traffic applications, focusing on end-to-end UI ownership and architectural design.",
+    "thirdPoint": "My background includes work with both cutting-edge frameworks like Nuxt and significant contributions to open-source projects. I am passionate about clean code and translating complex requirements into intuitive user experiences.",
+    "lastSentence": "Scroll down to see my work!"
   },
   "experience": {
     "experience": "Experience"

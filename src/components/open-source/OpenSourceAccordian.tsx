@@ -78,7 +78,7 @@ const OpenSourceAccordian = () => {
                 {project.feature.map((point, pointIndex) => (
                   <div key={pointIndex}>
                     <div className="flex gap-2">
-                      <li className="list-disc">{point}</li>
+                      <li className="list-disc text-lg">{point}</li>
                       <Link
                         href={project.githubLink[pointIndex]}
                         target="_blank"
