@@ -62,10 +62,10 @@ const ExperienceAccordian = () => {
               aria-label={job.title}
               title={
                 <div className="flex justify-between w-full cursor-pointer">
-                  <span className="text-xl text-primary hover:text-default">
+                  <span className="text-xl text-primary hover:text-default max-sm:text-base">
                     {job.title}
                   </span>
-                  <span className="text-xl hover:text-primary">
+                  <span className="text-xl hover:text-primary max-sm:text-base">
                     {job.position}
                   </span>
                 </div>
@@ -74,8 +74,13 @@ const ExperienceAccordian = () => {
             >
               <ul>
                 {job.description.map((point, pointIndex) => (
-                  <div key={pointIndex}>
-                    <li className="list-disc">{point}</li>
+                  <div
+                    key={pointIndex}
+                    className="max-sm:flex max-sm:flex-col max-sm:items-center"
+                  >
+                    <li className="list-disc text-lg max-sm:text-base max-sm:w-3/4">
+                      {point}
+                    </li>
                     <br />
                   </div>
                 ))}
