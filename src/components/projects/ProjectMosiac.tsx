@@ -7,10 +7,11 @@ import { DarkContext } from "@/context/DarkContext"
 import { type ProjectData } from "../../../types/ProjectData"
 
 type Props = {
-  project: ProjectData
+  project: ProjectData | undefined
+  hideTitle?: boolean
 }
 
-const ProjectMosiac = ({ project }: Props) => {
+const ProjectMosiac = ({ project, hideTitle }: Props) => {
   const [isHovered, setIsHovered] = useState<boolean>(false)
   const locale = useCurrentLocale()
   const { isDark } = useContext(DarkContext)
@@ -18,13 +19,17 @@ const ProjectMosiac = ({ project }: Props) => {
   return (
     <div className="flex flex-col items-center gap-2">
       <div className="flex justify-around min-md:w-1/2 w-full">
-        <h3 className="self-start min-sm:text-4xl max-sm:text-2xl font-bold text-primary">
-          {project?.title}
-        </h3>
-        <h3 className="self-end min-sm:text-3xl">{project?.tech}</h3>
+        {!hideTitle && (
+          <>
+            <h3 className="self-start min-sm:text-4xl max-sm:text-2xl font-bold text-primary">
+              {project?.title}
+            </h3>
+            <h3 className="self-end min-sm:text-3xl">{project?.tech}</h3>
+          </>
+        )}
       </div>
       <Link
-        href={`/${locale}/projects/${project.title}`}
+        href={`/${locale}/projects/${project?.title}`}
         className="grid grid-rows-2 grid-cols-4 gap-6 min-md:w-1/2 max-md:w-full"
       >
         <div

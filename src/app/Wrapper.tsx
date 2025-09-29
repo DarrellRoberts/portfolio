@@ -36,6 +36,9 @@ export default function RootLayout({
         isDark ? `dark ${sansation.className}` : `light ${sansation.className}`
       }
     >
+      <head>
+        <link rel="icon" href="/dr_favicon.webp" type="image/webp" />
+      </head>
       <body>{children}</body>
     </html>
   )
