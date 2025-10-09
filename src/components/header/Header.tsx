@@ -7,7 +7,7 @@ import DarkMode from "../misc/DarkMode"
 const Header = () => {
   return (
     <>
-      <div className="sticky top-0 z-50 flex justify-between px-2">
+      <div className="sticky top-0 z-50 flex justify-between px-2 bg-secondary">
         <div className="rounded-[50%] bg-secondary flex justify-center items-center">
           <Logo />
         </div>

@@ -64,10 +64,10 @@ const OpenSourceAccordian = () => {
               aria-label={project.project}
               title={
                 <div className="flex justify-between w-full cursor-pointer">
-                  <span className="text-xl text-primary hover:text-default">
+                  <span className="text-xl text-primary hover:text-default max-sm:text-base">
                     {project.project}
                   </span>
-                  <span className="text-xl hover:text-primary">
+                  <span className="text-xl hover:text-primary max-sm:text-base">
                     {project.owner}
                   </span>
                 </div>
@@ -77,14 +77,18 @@ const OpenSourceAccordian = () => {
               <ul>
                 {project.feature.map((point, pointIndex) => (
                   <div key={pointIndex}>
-                    <div className="flex gap-2">
-                      <li className="list-disc text-lg">{point}</li>
-                      <Link
-                        href={project.githubLink[pointIndex]}
-                        target="_blank"
-                      >
-                        <LinkIcon className="size-6" />
-                      </Link>
+                    <div className="max-sm:flex max-sm:flex-col max-sm:items-center">
+                      <div className="flex max-sm:w-3/4 items-center gap-2">
+                        <li className="list-disc text-lg max-sm:text-base">
+                          {point}
+                        </li>
+                        <Link
+                          href={project.githubLink[pointIndex]}
+                          target="_blank"
+                        >
+                          <LinkIcon className="size-6 text-primary" />
+                        </Link>
+                      </div>
                     </div>
                     <br />
                   </div>

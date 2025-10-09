@@ -19,7 +19,11 @@
     "experience": "Erfahrung"
   },
   "project": {
-    "projects": "Projekte"
+    "projects": "Projekte",
+    "tech": "Technologie",
+    "description": "Beschreibung",
+    "features": "Funktionen",
+    "link": "Link"
   },
   "skills": {
     "skills": "Fähigkeiten",

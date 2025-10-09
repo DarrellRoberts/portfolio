@@ -19,7 +19,11 @@
     "experience": "Experience"
   },
   "project": {
-    "projects": "Projects"
+    "projects": "Projects",
+    "tech": "Tech",
+    "description": "Description",
+    "features": "Features",
+    "link": "Link"
   },
   "skills": {
     "skills": "Skills",

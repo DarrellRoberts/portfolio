@@ -21,11 +21,15 @@ import Logo from "../misc/Logo"
 import { useCurrentLocale, useI18n } from "../../../locales/client"
 import DarkMode from "../misc/DarkMode"
 import LanguageSelector from "../misc/LanguageSelector"
+import { useParams } from "next/navigation"
 
 const HeaderMenu = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure()
   const t = useI18n()
   const locale = useCurrentLocale()
+  const params = useParams()
+
+  console.log(params.project)
 
   return (
     <>
@@ -60,22 +64,14 @@ const HeaderMenu = () => {
               <DrawerBody>
                 <div className="flex flex-col h-full justify-evenly">
                   <Link
-                    href={`/${locale}/#about`}
+                    href={params.project ? `/${locale}/#about` : "#about"}
                     className="flex gap-4 text-2xl"
                     onPress={onClose}
                   >
                     {t("navLinks.aboutMe")} <UserIcon className="size-8" />{" "}
                   </Link>
                   <Link
-                    href={`/${locale}/#experience`}
-                    className="flex gap-4 text-2xl"
-                    onPress={onClose}
-                  >
-                    {t("navLinks.experience")}
-                    <ClipboardDocumentListIcon className="size-8" />
-                  </Link>
-                  <Link
-                    href={`/${locale}/#skills`}
+                    href={params.project ? `/${locale}/#skills` : "#skills"}
                     className="flex gap-4 text-2xl"
                     onPress={onClose}
                   >
@@ -83,7 +79,17 @@ const HeaderMenu = () => {
                     <LightBulbIcon className="size-8" />
                   </Link>
                   <Link
-                    href={`/${locale}/#projects`}
+                    href={
+                      params.project ? `/${locale}/#experience` : "#experience"
+                    }
+                    className="flex gap-4 text-2xl"
+                    onPress={onClose}
+                  >
+                    {t("navLinks.experience")}
+                    <ClipboardDocumentListIcon className="size-8" />
+                  </Link>
+                  <Link
+                    href={params.project ? `/${locale}/#projects` : "#projects"}
                     className="flex gap-4 text-2xl"
                     onPress={onClose}
                   >
@@ -91,7 +97,9 @@ const HeaderMenu = () => {
                     <CodeBracketIcon className="size-8" />
                   </Link>
                   <Link
-                    href={`/${locale}/#opensource`}
+                    href={
+                      params.project ? `/${locale}/#opensource` : "#opensource"
+                    }
                     className="flex gap-4 text-2xl"
                     onPress={onClose}
                   >
@@ -99,7 +107,7 @@ const HeaderMenu = () => {
                     <CodeBracketIcon className="size-8" />
                   </Link>
                   <Link
-                    href={`/${locale}/#contact`}
+                    href={params.project ? `/${locale}/#contact` : "#contact"}
                     className="flex gap-4 text-2xl"
                     onPress={onClose}
                   >
