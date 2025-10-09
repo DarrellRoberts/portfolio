@@ -1,0 +1,43 @@
+{
+  "welcome": "Wilkommen in unserem App",
+  "languageSelect": "Wählen Sie Ihre Sprache",
+  "navLinks": {
+    "aboutMe": "Über mich",
+    "experience": "Erfahrung",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "about": {
+    "aboutMe": "Über mich",
+    "firstPoint": "Frontend-Ingenieur mit Spezialisierung auf React, Next.js, Vue.js, Nuxt.js und TypeScript, mit einem starken Produktfokus bei der Entwicklung von performanten, zugänglichen und datenreichen Benutzeroberflächen.",
+    "secondPoint": "Mit Sitz in Berlin bringe ich nachgewiesene Erfahrung in der Bereitstellung von Funktionen für Anwendungen mit hohem Traffic mit, wobei mein Schwerpunkt auf der End-to-End-UI-Verantwortung und dem architektonischen Design liegt.",
+    "thirdPoint": "Mein Hintergrund umfasst die Arbeit mit modernen Frameworks wie Nuxt sowie bedeutende Beiträge zu Open-Source-Projekten. Ich lege großen Wert auf sauberen Code und die Umsetzung komplexer Anforderungen in intuitive Benutzererlebnisse.",
+    "lastSentence": "Scrollen Sie nach unten, um meine Arbeit zu sehen!"
+  },
+  "experience": {
+    "experience": "Erfahrung"
+  },
+  "project": {
+    "projects": "Projekte",
+    "tech": "Technologie",
+    "description": "Beschreibung",
+    "features": "Funktionen",
+    "link": "Link"
+  },
+  "skills": {
+    "skills": "Fähigkeiten",
+    "mainStack": "Haupt-Stack",
+    "tools": "Werkzeuge",
+    "database": "Datenbank",
+    "frameworks": "Bibliotheken und Frameworks",
+    "skillHoverAdmiral": "Wähle deinen Admiral. Fahren Sie mit der Maus über eine Fähigkeit",
+    "skillHoverCowboy": "Wähle deinen Cowboy. Fahren Sie mit der Maus über eine Fähigkeit"
+  },
+  "openSource": {
+    "openSource": "Open Source Beiträge"
+  },
+  "contact": {
+    "contact": "Kontakt"
+  }
+}

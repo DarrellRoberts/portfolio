@@ -1,9 +1,8 @@
-import styles from "./footer.module.css";
+import React from "react"
+import Contact from "../contact/ContactHome"
 
-export default function Footer() {
-  return (
-    <div className={styles.footerCon}>
-      <span>Darrell Roberts @2024</span>
-    </div>
-  );
+const Footer = () => {
+  return <Contact />
 }
+
+export default Footer
