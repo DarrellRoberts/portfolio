@@ -19,7 +19,7 @@ const Logo = () => {
       href={`/${locale}`}
     >
       {isHover && (
-        <div className=" flex w-45 h-45 absolute left-1/4 top-0">
+        <div className=" flex w-35 h-35 absolute left-1/4 top-0">
           {isDark ? (
             <HeroWaves />
           ) : (

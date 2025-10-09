@@ -10,7 +10,7 @@ const AboutHome = () => {
   const { isDark } = useContext(DarkContext)
   return (
     <div id="about">
-      <h2 className="text-6xl font-bold max-sm:text-3xl">
+      <h2 className="text-6xl font-bold max-sm:text-3xl pt-30">
         {t("about.aboutMe")}
       </h2>
       <div className="flex w-full justify-around items-center max-lg:flex-col-reverse">

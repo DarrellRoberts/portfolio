@@ -30,7 +30,7 @@ const ProjectMosiac = ({ project, hideTitle }: Props) => {
       </div>
       <Link
         href={`/${locale}/projects/${project?.title}`}
-        className="grid grid-rows-2 grid-cols-4 gap-6 min-md:w-1/2 max-md:w-full"
+        className="grid grid-rows-2 grid-cols-4 gap-6 min-md:w-7/10 max-md:w-full"
       >
         <div
           onMouseEnter={() => setIsHovered(true)}

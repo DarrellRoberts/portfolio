@@ -16,7 +16,7 @@ const SkillsHome = () => {
   const { isDark } = useContext(DarkContext)
   return (
     <div className="relative" id="skills">
-      <h2 className="text-6xl font-bold max-sm:text-3xl">
+      <h2 className="text-6xl font-bold max-sm:text-3xl pt-30">
         {t("skills.skills")}
       </h2>
       <div className="grid grid-cols-2 grid-rows-2 justify-items-center gap-4 m-4 max-sm:flex max-sm:flex-col max-sm:items-center mt-20">
