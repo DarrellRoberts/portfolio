@@ -1,3 +1,5 @@
+"use client"
+
 import { DarkContext } from "@/context/DarkContext"
 import React, { useContext } from "react"
 

@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useContext, useState } from "react"
 import { Image } from "@heroui/react"
 import { DarkContext } from "@/context/DarkContext"

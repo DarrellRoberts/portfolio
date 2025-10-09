@@ -1,3 +1,5 @@
+"use client"
+
 import {
   Button,
   Drawer,
@@ -28,8 +30,6 @@ const HeaderMenu = () => {
   const t = useI18n()
   const locale = useCurrentLocale()
   const params = useParams()
-
-  console.log(params.project)
 
   return (
     <>
