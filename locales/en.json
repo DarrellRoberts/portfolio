@@ -1,0 +1,48 @@
+{
+  "welcome": "Welcome to our application",
+  "languageSelect": "Select your language",
+  "navLinks": {
+    "aboutMe": "About me",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "about": {
+    "aboutMe": "About me",
+    "firstPoint": "Frontend Engineer specializing in React, Next.js, Vue.js, Nuxt.js and TypeScript, with a strong product-focused approach to developing performant, accessible, and data-rich user interfaces.",
+    "secondPoint": "Based in Berlin, I bring proven experience in delivering features for high-traffic applications, focusing on end-to-end UI ownership and architectural design.",
+    "thirdPoint": "My background includes work with both cutting-edge frameworks like Nuxt and significant contributions to open-source projects. I am passionate about clean code and translating complex requirements into intuitive user experiences.",
+    "lastSentence": "Scroll down to see my work!"
+  },
+  "experience": {
+    "experience": "Experience"
+  },
+  "project": {
+    "projects": "Projects",
+    "tech": "Tech",
+    "description": "Description",
+    "features": "Features",
+    "link": "Link"
+  },
+  "skills": {
+    "skills": "Skills",
+    "mainStack": "Main Stack",
+    "tools": "Tools",
+    "database": "Database",
+    "frameworks": "Libraries and Frameworks",
+    "skillHoverAdmiral": "Choose your admiral. Hover over a skill",
+    "skillHoverCowboy": "Choose your cowboy. Hover over a skill"
+  },
+  "openSource": {
+    "openSource": "Open Source Contributions"
+  },
+  "contact": {
+    "contact": "Contact"
+  },
+  "notFound": {
+    "lostSea": "Not found. You appear to be lost at sea",
+    "lostDesert": "Not found. You are alone in the desert",
+    "clickHere": "Click here to navigate back to the homepage"
+  }
+}
