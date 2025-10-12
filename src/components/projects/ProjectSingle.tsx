@@ -15,10 +15,9 @@ const ProjectSingle = ({ project }: Props) => {
   return (
     <>
       <div className="flex flex-col items-center gap-6">
-        <h1 className="text-8xl max-xl:text-7xl max-sm:text-3xl">
+        <h1 className="text-8xl max-xl:text-7xl max-sm:text-3xl max-sm:text-center">
           {project?.title}
         </h1>
-        <ProjectMosiac project={project} hideTitle={true} />
         <div className="grid grid-cols-2 w-full justify-items-center h-full items-center">
           <h3 className="text-6xl max-xl:text-3xl max-sm:text-lg">
             {t("project.tech")}:
@@ -37,6 +36,8 @@ const ProjectSingle = ({ project }: Props) => {
           </h3>
         </div>
         <Divider orientation="horizontal" />
+        <ProjectMosiac project={project} hideTitle={true} />
+        <Divider orientation="horizontal" />
         <div className="grid grid-cols-2 w-full justify-items-center max-sm:flex max-sm:flex-col items-center">
           <h3 className="text-6xl max-xl:text-3xl max-sm:text-lg">
             {t("project.features")}:
@@ -53,6 +54,7 @@ const ProjectSingle = ({ project }: Props) => {
           </ul>
         </div>
       </div>
+      <Divider orientation="horizontal" />
       <div className="flex items-center w-full justify-center py-6 gap-4">
         <h3 className="text-6xl max-xl:text-3xl max-sm:text-lg">
           {t("project.link")}
