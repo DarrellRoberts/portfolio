@@ -26,8 +26,7 @@ export const experienceEN: ExperienceData[] = [
       "Developed full-stack applications using a modern stack of React, Next, Vite and Tailwind CSS on the frontend, achieving a perfect Lighthouse performance score of 100.",
       "Contributed to significant open source projects, including the Internet Archive and Vue3 documentation",
       "Created a Node and Express backend to generate over 25 GET, POST, PUT and DELETE REST API endpoints for a Next frontend.",
-      "Redesigned user’s custom goals form completion to make it more intuitive for over 2000 users",
-      " Implemented interactive frontend dashboards and data visualizations (e.g., bar graphs, scatter plots, line charts) to provide clear, actionable insights from complex datasets ",
+      "Implemented interactive frontend dashboards and data visualizations (e.g., bar graphs, scatter plots, line charts) to provide clear, actionable insights from complex datasets ",
     ],
   },
   {
@@ -81,7 +80,6 @@ export const experienceDE: ExperienceData[] = [
       "Entwicklung von Full-Stack-Anwendungen mit einem modernen Stack aus React, Next, Vite und Tailwind CSS im Frontend, wodurch eine perfekte Lighthouse-Performance von 100 erreicht wurde.",
       "Beiträge zu bedeutenden Open-Source-Projekten, darunter das Internet Archive und die Vue3-Dokumentation.",
       "Erstellung eines Node- und Express-Backends, um über 25 GET-, POST-, PUT- und DELETE-REST-API-Endpunkte für ein Next-Frontend zu generieren.",
-      "Neugestaltung der benutzerdefinierten Formulare zur Zielerfassung, um diese für über 2000 Nutzer intuitiver zu gestalten.",
       "Implementierung interaktiver Frontend-Dashboards und Datenvisualisierungen (z. B. Balken-, Streu- und Liniendiagramme), um klare, verwertbare Erkenntnisse aus komplexen Datensätzen zu liefern.",
     ],
   },
@@ -102,7 +100,7 @@ export const experienceDE: ExperienceData[] = [
     title: "WBS Coding School",
     tech: "MongoDB, React, Express, Node.js",
     logo: [""],
-    position: "Auszubildender Full-Stack-Entwickler",
+    position: "Azubi Full-Stack-Entwickler",
     date: "Juli 23 - Nov 23",
     description: [
       "Beherrschung des MERN-Stacks und wöchentliche Arbeit an Full-Stack-Gruppenprojekten. Ich wurde ausgewählt, mein Abschlussprojekt vor einem Publikum von 150 Personen zu präsentieren.",

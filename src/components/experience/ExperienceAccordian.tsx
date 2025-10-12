@@ -18,7 +18,7 @@ const ExperienceAccordian = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="w-1/2 max-sm:w-full">
+      <div className="w-1/2 max-lg:w-full">
         <Accordion
           motionProps={{
             variants: {

@@ -13,7 +13,7 @@ type Props = {
 
 const SkillsCard = ({ skill, setSkillImage, setSkillLabel }: Props) => {
   return (
-    <Card className="py-4 h-75 max-xl:h-50 max-sm:h-75 aspect-[18/20] z-0 overflow-visible relative">
+    <Card className="py-4 h-75 max-xl:h-65 max-sm:h-75 aspect-[18/20] z-0 overflow-visible relative">
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
         <h2 className="font-bold text-large">{skill.title}</h2>
       </CardHeader>
@@ -31,7 +31,7 @@ const SkillsCard = ({ skill, setSkillImage, setSkillLabel }: Props) => {
               setSkillLabel(null)
             }}
           >
-            <div className="flex items-center justify-center w-50 max-xl:w-8 max-sm:w-auto">
+            <div className="flex items-center justify-center max-sm:w-auto">
               <Image
                 width={50}
                 height={50}
