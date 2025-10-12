@@ -64,8 +64,8 @@ export const projectsEN: ProjectData[] = [
     title: "Asteroid Tracker",
     tech: "Vue, TypeScript",
     hoverImage: [
-      "/portfolio-screenshots/asteroid/ast_maindashboard.webp",
-      "/portfolio-screenshots/asteroid/ast_maindashboard.webp",
+      "/portfolio-screenshots/asteroid/ast_maindashboard_hover.webp",
+      "/portfolio-screenshots/asteroid/ast_maindashboard_hover.webp",
     ],
     lightImages: [
       "/portfolio-screenshots/asteroid/ast_maindashboard.webp",
@@ -94,8 +94,8 @@ export const projectsEN: ProjectData[] = [
     title: "Stuttgart Train Timetable",
     tech: "Next, TypeScript",
     hoverImage: [
-      "/portfolio-screenshots/stuttgart/st_maindashboard_light.webp",
-      "/portfolio-screenshots/stuttgart/st_maindashboard_dark.webp",
+      "/portfolio-screenshots/stuttgart/st_maindashboard_light_hover.webp",
+      "/portfolio-screenshots/stuttgart/st_maindashboard_dark_hover.webp",
     ],
     lightImages: [
       "/portfolio-screenshots/stuttgart/st_maindashboard_light.webp",
@@ -124,8 +124,8 @@ export const projectsEN: ProjectData[] = [
     title: "Pirate Work Management Tool",
     tech: "React, TypeScript",
     hoverImage: [
-      "/portfolio-screenshots/pirate/pir-maindashboard.webp",
-      "/portfolio-screenshots/pirate/pir-maindashboard.webp",
+      "/portfolio-screenshots/pirate/pir-maindashboard_hover.webp",
+      "/portfolio-screenshots/pirate/pir-maindashboard_hover.webp",
     ],
     lightImages: [
       "/portfolio-screenshots/pirate/pir-maindashboard.webp",
@@ -214,8 +214,8 @@ export const projectsDE: ProjectData[] = [
     title: "Asteroid Tracker",
     tech: "Vue, TypeScript",
     hoverImage: [
-      "/portfolio-screenshots/asteroid/ast_maindashboard.webp",
-      "/portfolio-screenshots/asteroid/ast_maindashboard.webp",
+      "/portfolio-screenshots/asteroid/ast_maindashboard_hover.webp",
+      "/portfolio-screenshots/asteroid/ast_maindashboard_hover.webp",
     ],
     lightImages: [
       "/portfolio-screenshots/asteroid/ast_maindashboard.webp",
@@ -244,8 +244,8 @@ export const projectsDE: ProjectData[] = [
     title: "Stuttgart Train Timetable",
     tech: "Next, TypeScript",
     hoverImage: [
-      "/portfolio-screenshots/stuttgart/st_maindashboard_light.webp",
-      "/portfolio-screenshots/stuttgart/st_maindashboard_dark.webp",
+      "/portfolio-screenshots/stuttgart/st_maindashboard_light_hover.webp",
+      "/portfolio-screenshots/stuttgart/st_maindashboard_dark_hover.webp",
     ],
     lightImages: [
       "/portfolio-screenshots/stuttgart/st_maindashboard_light.webp",
@@ -274,8 +274,8 @@ export const projectsDE: ProjectData[] = [
     title: "Pirate Work Management Tool",
     tech: "React, TypeScript",
     hoverImage: [
-      "/portfolio-screenshots/pirate/pir-maindashboard.webp",
-      "/portfolio-screenshots/pirate/pir-maindashboard.webp",
+      "/portfolio-screenshots/pirate/pir-maindashboard_hover.webp",
+      "/portfolio-screenshots/pirate/pir-maindashboard_hover.webp",
     ],
     lightImages: [
       "/portfolio-screenshots/pirate/pir-maindashboard.webp",

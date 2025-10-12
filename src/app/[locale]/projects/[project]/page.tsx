@@ -19,6 +19,7 @@ const Project = () => {
       : undefined
 
   useEffect(() => {
+    window.scroll(0, 0)
     setLoading(true)
     const projects = locale === "en" ? projectsEN : projectsDE
     if (projectTitle) {
@@ -27,6 +28,7 @@ const Project = () => {
       setLoading(false)
     }
   }, [projectTitle])
+
   return loading ? (
     <div className="h-screen">Loading...</div>
   ) : (

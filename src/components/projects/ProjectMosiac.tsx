@@ -17,20 +17,18 @@ const ProjectMosiac = ({ project, hideTitle }: Props) => {
   const { isDark } = useContext(DarkContext)
 
   return (
-    <div className="flex flex-col items-center gap-2">
-      <div className="flex justify-around min-md:w-1/2 w-full">
-        {!hideTitle && (
-          <>
-            <h3 className="self-start min-sm:text-4xl max-sm:text-2xl font-bold text-primary">
-              {project?.title}
-            </h3>
-            <h3 className="self-end min-sm:text-3xl">{project?.tech}</h3>
-          </>
-        )}
-      </div>
+    <div className="flex flex-col items-center gap-2 w-full">
+      {!hideTitle && (
+        <div className="flex justify-around w-full max-sm:flex-col max-sm:items-center">
+          <h3 className="min-sm:text-4xl max-sm:text-2xl font-bold text-primary">
+            {project?.title}
+          </h3>
+          <h3 className="min-sm:text-3xl">{project?.tech}</h3>
+        </div>
+      )}
       <Link
         href={`/${locale}/projects/${project?.title}`}
-        className="grid grid-rows-2 grid-cols-4 gap-6 min-md:w-7/10 max-md:w-full"
+        className="min-sm:grid grid-rows-2 grid-cols-4 gap-6 min-md:w-7/10 max-md:flex max-md:flex-col max-md:w-full"
       >
         <div
           onMouseEnter={() => setIsHovered(true)}
@@ -68,7 +66,7 @@ const ProjectMosiac = ({ project, hideTitle }: Props) => {
         </div>
 
         <div
-          className="rounded-2xl hover:scale-115 transition-all transition-discrete hover:shadow-xl shadow-primary"
+          className="rounded-2xl hover:scale-115 transition-all transition-discrete hover:shadow-xl shadow-primary max-sm:hidden"
           style={{
             backgroundImage: isDark
               ? `url(${project?.lightImages[1]})`
@@ -79,7 +77,7 @@ const ProjectMosiac = ({ project, hideTitle }: Props) => {
           }}
         />
         <div
-          className=" col-span-2 rounded-2xl hover:scale-115 transition-all transition-discrete hover:shadow-xl shadow-primary"
+          className=" col-span-2 rounded-2xl hover:scale-115 transition-all transition-discrete hover:shadow-xl shadow-primary max-sm:aspect-16/9"
           style={{
             backgroundImage: isDark
               ? `url(${project?.lightImages[2]})`
@@ -90,7 +88,7 @@ const ProjectMosiac = ({ project, hideTitle }: Props) => {
           }}
         />
         <div
-          className="col-span-2 rounded-2xl hover:scale-115 transition-all transition-discrete hover:shadow-xl shadow-primary"
+          className="col-span-2 rounded-2xl hover:scale-115 transition-all transition-discrete hover:shadow-xl shadow-primary max-sm:aspect-16/9"
           style={{
             backgroundImage: isDark
               ? `url(${project?.lightImages[3]})`

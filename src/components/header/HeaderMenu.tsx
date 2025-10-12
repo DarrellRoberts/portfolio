@@ -16,6 +16,7 @@ import {
   CodeBracketIcon,
   EnvelopeIcon,
   LightBulbIcon,
+  UserGroupIcon,
   UserIcon,
 } from "@heroicons/react/16/solid"
 import React from "react"
@@ -65,14 +66,14 @@ const HeaderMenu = () => {
                 <div className="flex flex-col h-full justify-evenly">
                   <Link
                     href={params.project ? `/${locale}/#about` : "#about"}
-                    className="flex gap-4 text-2xl"
+                    className="flex text-2xl justify-between items-center"
                     onPress={onClose}
                   >
                     {t("navLinks.aboutMe")} <UserIcon className="size-8" />{" "}
                   </Link>
                   <Link
                     href={params.project ? `/${locale}/#skills` : "#skills"}
-                    className="flex gap-4 text-2xl"
+                    className="flex text-2xl justify-between items-center"
                     onPress={onClose}
                   >
                     {t("navLinks.skills")}
@@ -82,7 +83,7 @@ const HeaderMenu = () => {
                     href={
                       params.project ? `/${locale}/#experience` : "#experience"
                     }
-                    className="flex gap-4 text-2xl"
+                    className="flex text-2xl justify-between items-center"
                     onPress={onClose}
                   >
                     {t("navLinks.experience")}
@@ -90,7 +91,7 @@ const HeaderMenu = () => {
                   </Link>
                   <Link
                     href={params.project ? `/${locale}/#projects` : "#projects"}
-                    className="flex gap-4 text-2xl"
+                    className="flex text-2xl justify-between items-center"
                     onPress={onClose}
                   >
                     {t("navLinks.projects")}
@@ -100,15 +101,15 @@ const HeaderMenu = () => {
                     href={
                       params.project ? `/${locale}/#opensource` : "#opensource"
                     }
-                    className="flex gap-4 text-2xl"
+                    className="flex text-2xl justify-between items-center"
                     onPress={onClose}
                   >
                     Open Source
-                    <CodeBracketIcon className="size-8" />
+                    <UserGroupIcon className="size-8" />
                   </Link>
                   <Link
                     href={params.project ? `/${locale}/#contact` : "#contact"}
-                    className="flex gap-4 text-2xl"
+                    className="flex text-2xl justify-between items-center"
                     onPress={onClose}
                   >
                     {t("navLinks.contact")} <EnvelopeIcon className="size-8" />

@@ -14,11 +14,11 @@ const ProjectSingle = ({ project }: Props) => {
   const t = useI18n()
   return (
     <>
-      <div className="flex flex-col items-center gap-6 px-6">
+      <div className="flex flex-col items-center gap-6">
         <h1 className="text-8xl max-xl:text-7xl max-sm:text-3xl">
           {project?.title}
         </h1>
-        {/* <div className="flex items-center w-full justify-around py-6 max-md:flex-col"> */}
+        <ProjectMosiac project={project} hideTitle={true} />
         <div className="grid grid-cols-2 w-full justify-items-center h-full items-center">
           <h3 className="text-6xl max-xl:text-3xl max-sm:text-lg">
             {t("project.tech")}:
@@ -28,7 +28,6 @@ const ProjectSingle = ({ project }: Props) => {
           </h3>
         </div>
         <Divider orientation="horizontal" />
-        {/* <div className="flex items-center w-full justify-around py-6 max-md:flex-col max-md:text-center"> */}
         <div className="grid grid-cols-2 w-full justify-items-center h-full items-center">
           <h3 className="text-6xl max-xl:text-3xl max-sm:text-lg">
             {t("project.description")}:
@@ -38,15 +37,14 @@ const ProjectSingle = ({ project }: Props) => {
           </h3>
         </div>
         <Divider orientation="horizontal" />
-        {/* <div className="flex w-full justify-around max-md:items-center py-6 max-md:flex-col max-sm:text-center"> */}
-        <div className="grid grid-cols-2 w-full justify-items-center">
+        <div className="grid grid-cols-2 w-full justify-items-center max-sm:flex max-sm:flex-col items-center">
           <h3 className="text-6xl max-xl:text-3xl max-sm:text-lg">
             {t("project.features")}:
           </h3>
-          <ul className="max-md:w-4/5 ">
+          <ul className="max-md:w-4/5 max-sm:pl-6 max-sm:grid max-sm:grid-cols-2 max-sm:w-full max-sm:gap-10">
             {project?.features?.map((feature: string, index: number) => (
               <div key={index}>
-                <li className="list-disc text-lg text-primary max-sm:text-base">
+                <li className="list-disc text-4xl max-xl:text-2xl max-sm:text-base text-primary">
                   {feature}
                 </li>
                 <br />
@@ -55,17 +53,16 @@ const ProjectSingle = ({ project }: Props) => {
           </ul>
         </div>
       </div>
-      <ProjectMosiac project={project} hideTitle={true} />
       <div className="flex items-center w-full justify-center py-6 gap-4">
         <h3 className="text-6xl max-xl:text-3xl max-sm:text-lg">
-          {t("project.link")}:
+          {t("project.link")}
         </h3>
         <Link
           href={`${project?.link}`}
           className="text-4xl max-xl:text-2xl max-sm:text-lg text-primary"
           target="_blank"
         >
-          <LinkIcon className="size-10 max-sm:size-6" />
+          <LinkIcon className="size-13 max-sm:size-6" />
         </Link>
       </div>
     </>
