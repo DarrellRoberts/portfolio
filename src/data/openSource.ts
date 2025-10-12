@@ -2,6 +2,15 @@ import { OpenSource } from "../../types/OpenSource"
 
 export const openSourceEN: OpenSource[] = [
   {
+    project: "Developer-portfolios",
+    owner: "@emmabostian",
+    tech: "-",
+    feature: ["Added my website link to the list of developers' portfolios"],
+    githubLink: [
+      "https://github.com/emmabostian/developer-portfolios/pull/2794",
+    ],
+  },
+  {
     project: "Vue3 Translations",
     owner: "@vuejs",
     tech: "Vue",
@@ -57,6 +66,17 @@ export const openSourceEN: OpenSource[] = [
 ]
 
 export const openSourceDE: OpenSource[] = [
+  {
+    project: "Developer-portfolios",
+    owner: "@emmabostian",
+    tech: "-",
+    feature: [
+      "Habe meinen Website-Link zur Liste der Entwickler-Portfolios hinzugefügt",
+    ],
+    githubLink: [
+      "https://github.com/emmabostian/developer-portfolios/pull/2794",
+    ],
+  },
   {
     project: "Vue3 Translations",
     owner: "@vuejs",
