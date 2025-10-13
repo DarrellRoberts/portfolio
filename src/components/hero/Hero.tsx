@@ -28,6 +28,7 @@ const Hero = () => {
           width={1050}
           height={700}
           alt="darrell_roberts"
+          priority
         />
         <h1 className="text-3xl self-center">Frontend Engineer</h1>
       </div>

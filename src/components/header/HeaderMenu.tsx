@@ -39,6 +39,7 @@ const HeaderMenu = () => {
         onPress={onOpen}
         color="primary"
         className="bg-secondary"
+        aria-label="header-menu-button"
       >
         <Bars3Icon />
       </Button>

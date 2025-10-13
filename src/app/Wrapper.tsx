@@ -4,7 +4,6 @@ import "./globals.css"
 import { useContext } from "react"
 import { DarkContext } from "@/context/DarkContext"
 import localFont from "next/font/local"
-// import d from "../../public/"
 
 const sansation = localFont({
   src: [
@@ -35,6 +34,7 @@ export default function RootLayout({
       className={
         isDark ? `dark ${sansation.className}` : `light ${sansation.className}`
       }
+      lang="en"
     >
       <head>
         <link rel="icon" href="/dr_favicon.webp" type="image/webp" />
