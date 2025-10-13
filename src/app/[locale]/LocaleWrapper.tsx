@@ -15,7 +15,7 @@ export default function LocaleWrapper({
   return (
     <I18nProviderClient locale={locale}>
       <Header />
-      <main>{children}</main>
+      {children}
       <Footer />
     </I18nProviderClient>
   )
