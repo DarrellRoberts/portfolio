@@ -10,7 +10,7 @@ import { useEffect } from "react"
 
 const Home = () => {
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col gap-15">
       <Hero />
       <AboutHome />
       <SkillsHome />

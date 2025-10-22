@@ -6,10 +6,12 @@ import { DarkContext } from "@/context/DarkContext"
 import HeroWaves from "./HeroWaves"
 import "./hero.css"
 import HeroTumbleweed from "./HeroTumbleweed"
+import { useI18n } from "../../../locales/client"
 
 const Hero = () => {
   const [startAnimation, setStartAnimation] = useState<boolean>(false)
 
+  const t = useI18n()
   const { isDark } = useContext(DarkContext)
 
   const sinkShip = () => {
@@ -30,7 +32,7 @@ const Hero = () => {
           alt="darrell_roberts"
           priority
         />
-        <h1 className="text-3xl self-center">Frontend Engineer</h1>
+        <h1 className="text-3xl self-center">{t("hero.frontend")}</h1>
       </div>
       {isDark ? (
         <div className="flex justify-center items-baseline h-50 relative">

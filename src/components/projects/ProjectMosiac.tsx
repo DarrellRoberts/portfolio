@@ -20,7 +20,7 @@ const ProjectMosiac = ({ project, hideTitle }: Props) => {
     <div className="flex flex-col items-center gap-2 w-full">
       {!hideTitle && (
         <div className="flex justify-around w-full max-sm:flex-col max-sm:items-center">
-          <h3 className="min-sm:text-4xl max-sm:text-2xl font-bold text-primary">
+          <h3 className="min-sm:text-4xl max-sm:text-2xl font-bold text-primary min-sm:pb-5">
             {project?.title}
           </h3>
           <h3 className="min-sm:text-3xl">{project?.tech}</h3>

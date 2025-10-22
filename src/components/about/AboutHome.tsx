@@ -1,18 +1,26 @@
 "use client"
 
 import React, { useContext } from "react"
-import { useI18n } from "../../../locales/client"
+import { useCurrentLocale, useI18n } from "../../../locales/client"
 import Image from "next/image"
 import { DarkContext } from "@/context/DarkContext"
+import Link from "next/link"
+import { DocumentTextIcon, UserIcon } from "@heroicons/react/16/solid"
+import { Divider } from "@heroui/react"
 
 const AboutHome = () => {
   const t = useI18n()
   const { isDark } = useContext(DarkContext)
+  const locale = useCurrentLocale()
   return (
     <div id="about">
-      <h2 className="text-6xl font-bold max-sm:text-3xl pt-30">
-        {t("about.aboutMe")}
-      </h2>
+      <Divider className="mb-10" />
+      <div className="flex items-center gap-4 justify-center">
+        <h2 className="text-6xl font-bold max-sm:text-3xl">
+          {t("about.aboutMe")}
+        </h2>
+        <UserIcon className="size-12 max-sm:size-8" />
+      </div>
       <div className="flex w-full justify-around items-center max-lg:flex-col-reverse">
         <ul className="list-disc w-1/2 max-sm:w-4/5">
           <li className="list-disc text-primary text-lg max-sm:text-base">
@@ -36,9 +44,23 @@ const AboutHome = () => {
           alt="submarine"
         />
       </div>
-      <span className="text-xl flex w-full justify-center">
-        {t("about.lastSentence")}
-      </span>
+      <Link
+        className="flex w-full items-center hover:text-primary justify-around"
+        href={
+          locale === "en"
+            ? "https://drive.google.com/file/d/1uFf26DmdK9HNJ6rRrRS8k7Q70cq80RkA/view?usp=drive_link"
+            : "https://drive.google.com/file/d/1hTu2RwqPfNwIcu8whIL2HWExCRoKQOku/view?usp=drive_link"
+        }
+        target="_blank"
+      >
+        <div className="flex gap-2 justify-center flex-col">
+          <Divider />
+          <div className="flex gap-2">
+            <h3 className="text-xl">{t("experience.cv")}</h3>
+            <DocumentTextIcon className="size-8 hover:text-primary" />
+          </div>
+        </div>
+      </Link>
     </div>
   )
 }

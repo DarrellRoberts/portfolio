@@ -1,15 +1,14 @@
 "use client"
 
 import React, { useEffect, useState } from "react"
-import { projectsEN, projectsDE } from "@/data/projects"
 import { useParams } from "next/navigation"
 import { type ProjectData } from "../../../../../types/ProjectData"
 import ProjectSingle from "@/components/projects/ProjectSingle"
 import { useCurrentLocale } from "../../../../../locales/client"
+import { projectMapEN, projectMapDE } from "@/data/projects"
 
 const Project = () => {
-  const [loading, setLoading] = useState<boolean>(true)
-  const [project, setProject] = useState<ProjectData>()
+  const [project, setProject] = useState<ProjectData | undefined>(undefined)
   const params = useParams()
   const locale = useCurrentLocale()
 
@@ -20,14 +19,16 @@ const Project = () => {
 
   useEffect(() => {
     window.scroll(0, 0)
-    setLoading(true)
-    const projects = locale === "en" ? projectsEN : projectsDE
+    const projects = locale === "en" ? projectMapEN : projectMapDE
     if (projectTitle) {
-      const tempProject = projects.find((p) => p.title === projectTitle)
+      const tempProject = projects.get(projectTitle)
       setProject(tempProject)
-      setLoading(false)
+    } else {
+      setProject(undefined)
     }
   }, [projectTitle])
+
+  const loading = !project && projectTitle
 
   return loading ? (
     <div className="h-screen">Loading...</div>

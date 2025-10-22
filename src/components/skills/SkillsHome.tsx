@@ -7,6 +7,8 @@ import { SkillsData } from "../../../types/Skills"
 import { useCurrentLocale, useI18n } from "../../../locales/client"
 import Image from "next/image"
 import { DarkContext } from "@/context/DarkContext"
+import { LightBulbIcon } from "@heroicons/react/16/solid"
+import { Divider } from "@heroui/react"
 
 const SkillsHome = () => {
   const [skillImage, setSkillImage] = useState<string | null>(null)
@@ -16,9 +18,13 @@ const SkillsHome = () => {
   const { isDark } = useContext(DarkContext)
   return (
     <div className="relative" id="skills">
-      <h2 className="text-6xl font-bold max-sm:text-3xl pt-30">
-        {t("skills.skills")}
-      </h2>
+      <Divider className="mb-10" />
+      <div className="flex items-center gap-4 justify-center">
+        <h2 className="text-6xl font-bold max-sm:text-3xl">
+          {t("skills.skills")}
+        </h2>
+        <LightBulbIcon className="size-12 max-sm:size-8" />
+      </div>
       <div className="grid grid-cols-2 grid-rows-2 justify-items-center gap-4 m-4 max-sm:flex max-sm:flex-col max-sm:items-center mt-20">
         {locale === "en"
           ? skillsEN.map((skill: SkillsData, index: number) => (

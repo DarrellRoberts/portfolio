@@ -299,3 +299,13 @@ export const projectsDE: ProjectData[] = [
     link: "https://github.com/DarrellRoberts/pirate-work-management-tool",
   },
 ]
+
+const createProjectMap = (projects: ProjectData[]) => {
+  const projectMap = new Map();
+  projects.forEach(project => projectMap.set(project.title, project))
+  return projectMap
+}
+
+export const projectMapEN = createProjectMap(projectsEN)
+
+export const projectMapDE = createProjectMap(projectsDE)

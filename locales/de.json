@@ -8,6 +8,9 @@
     "projects": "Projekte",
     "contact": "Kontakt"
   },
+  "hero": {
+    "frontend": "Frontend Entwickler"
+  },
   "about": {
     "aboutMe": "Über mich",
     "firstPoint": "Frontend-Ingenieur mit Spezialisierung auf React, Next.js, Vue.js, Nuxt.js und TypeScript, mit einem starken Produktfokus bei der Entwicklung von performanten, zugänglichen und datenreichen Benutzeroberflächen.",
@@ -16,7 +19,8 @@
     "lastSentence": "Scrollen Sie nach unten, um meine Arbeit zu sehen!"
   },
   "experience": {
-    "experience": "Erfahrung"
+    "experience": "Erfahrung",
+    "cv": "Mein Lebenslauf"
   },
   "project": {
     "projects": "Projekte",
@@ -31,8 +35,8 @@
     "tools": "Werkzeuge",
     "database": "Datenbank",
     "frameworks": "Bibliotheken und Frameworks",
-    "skillHoverAdmiral": "Wähle deinen Admiral. Fahren Sie mit der Maus über eine Fähigkeit",
-    "skillHoverCowboy": "Wähle deinen Cowboy. Fahren Sie mit der Maus über eine Fähigkeit"
+    "skillHoverAdmiral": "Wählen Sie Ihren Admiral. Fahren Sie mit der Maus über eine Fähigkeit",
+    "skillHoverCowboy": "Wählen Sie Ihren Cowboy. Fahren Sie mit der Maus über eine Fähigkeit"
   },
   "openSource": {
     "openSource": "Open Source Beiträge"

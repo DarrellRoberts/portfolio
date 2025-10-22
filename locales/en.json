@@ -8,6 +8,9 @@
     "projects": "Projects",
     "contact": "Contact"
   },
+  "hero": {
+    "frontend": "Frontend Engineer"
+  },
   "about": {
     "aboutMe": "About me",
     "firstPoint": "Frontend Engineer specializing in React, Next.js, Vue.js, Nuxt.js and TypeScript, with a strong product-focused approach to developing performant, accessible, and data-rich user interfaces.",
@@ -16,7 +19,8 @@
     "lastSentence": "Scroll down to see my work!"
   },
   "experience": {
-    "experience": "Experience"
+    "experience": "Experience",
+    "cv": "My CV"
   },
   "project": {
     "projects": "Projects",
