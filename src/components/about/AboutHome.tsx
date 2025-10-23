@@ -42,8 +42,13 @@ const AboutHome = () => {
         className="flex w-full items-center hover:text-primary justify-around"
         href={
           locale === "en"
-            ? "https://drive.google.com/file/d/1uFf26DmdK9HNJ6rRrRS8k7Q70cq80RkA/view?usp=drive_link"
-            : "https://drive.google.com/file/d/1hTu2RwqPfNwIcu8whIL2HWExCRoKQOku/view?usp=drive_link"
+            ? "/DARRELL_ROBERTS_Frontend_Engineer_CV.pdf"
+            : "/Lebenslauf_Darrell_Roberts_Frontend_Entwickler.pdf"
+        }
+        download={
+          locale === "en"
+            ? "DARRELL ROBERTS - Frontend Engineer - CV.pdf"
+            : "Lebenslauf - Darrell Roberts - Frontend Entwickler.pdf"
         }
         target="_blank"
       >
