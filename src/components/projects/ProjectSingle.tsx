@@ -18,6 +18,18 @@ const ProjectSingle = ({ project }: Props) => {
         <h1 className="text-7xl max-sm:text-3xl max-sm:text-center">
           {project?.title}
         </h1>
+        <div className="flex items-center w-full justify-center gap-4">
+          <h3 className="text-4xl max-xl:text-3xl max-sm:text-lg">
+            {t("project.link")}
+          </h3>
+          <Link
+            href={`${project?.link}`}
+            className="text-3xl max-xl:text-2xl max-sm:text-lg text-primary"
+            target="_blank"
+          >
+            <LinkIcon className="size-10 max-sm:size-6" />
+          </Link>
+        </div>
         <div className="grid grid-cols-2 w-full justify-items-center h-full items-center">
           <h3 className="text-4xl max-xl:text-3xl max-sm:text-lg">
             {t("project.tech")}:
@@ -53,19 +65,6 @@ const ProjectSingle = ({ project }: Props) => {
             ))}
           </ul>
         </div>
-      </div>
-      <Divider orientation="horizontal" />
-      <div className="flex items-center w-full justify-center py-6 gap-4">
-        <h3 className="text-4xl max-xl:text-3xl max-sm:text-lg">
-          {t("project.link")}
-        </h3>
-        <Link
-          href={`${project?.link}`}
-          className="text-3xl max-xl:text-2xl max-sm:text-lg text-primary"
-          target="_blank"
-        >
-          <LinkIcon className="size-10 max-sm:size-6" />
-        </Link>
       </div>
     </>
   )

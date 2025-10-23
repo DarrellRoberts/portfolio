@@ -11,7 +11,7 @@ const ExperienceHome = () => {
   return (
     <div id="experience">
       <Divider className="mb-10" />
-      <div className="flex items-center gap-4 justify-center mb-10">
+      <div className="flex items-center gap-4 justify-center mb-10 ">
         <h2 className="text-6xl font-bold max-sm:text-3xl">
           {t("experience.experience")}
         </h2>

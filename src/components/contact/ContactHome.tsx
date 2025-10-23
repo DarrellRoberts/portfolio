@@ -16,7 +16,7 @@ const Contact = () => {
   return (
     <div className="pt-8" id="contact">
       <Divider className="mb-10" />
-      <div className="flex items-center gap-4 justify-center mb-10">
+      <div className="flex items-center gap-4 justify-center mb-10 ">
         <h2 className="text-6xl font-bold max-sm:text-3xl">
           {t("contact.contact")}
         </h2>

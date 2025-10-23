@@ -15,7 +15,7 @@ const AboutHome = () => {
   return (
     <div id="about">
       <Divider className="mb-10" />
-      <div className="flex items-center gap-4 justify-center">
+      <div className="flex items-center gap-4 justify-center ">
         <h2 className="text-6xl font-bold max-sm:text-3xl">
           {t("about.aboutMe")}
         </h2>
