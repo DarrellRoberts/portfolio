@@ -7,20 +7,14 @@ import { DarkContext } from "@/context/DarkContext"
 import Link from "next/link"
 import { DocumentTextIcon, UserIcon } from "@heroicons/react/16/solid"
 import { Divider } from "@heroui/react"
+import Section from "../ui/Section"
 
 const AboutHome = () => {
   const t = useI18n()
   const { isDark } = useContext(DarkContext)
   const locale = useCurrentLocale()
   return (
-    <div id="about">
-      <Divider className="mb-10" />
-      <div className="flex items-center gap-4 justify-center ">
-        <h2 className="text-6xl font-bold max-sm:text-3xl">
-          {t("about.aboutMe")}
-        </h2>
-        <UserIcon className="size-12 max-sm:size-8" />
-      </div>
+    <Section title={"about"} localeText={t("about.aboutMe")}>
       <div className="flex w-full justify-around items-center max-lg:flex-col-reverse">
         <ul className="list-disc w-1/2 max-sm:w-4/5">
           <li className="list-disc text-primary text-lg max-sm:text-base">
@@ -61,7 +55,7 @@ const AboutHome = () => {
           </div>
         </div>
       </Link>
-    </div>
+    </Section>
   )
 }
 
