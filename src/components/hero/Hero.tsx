@@ -34,6 +34,7 @@ const Hero = () => {
             fetchPriority="high"
             className="object-contain"
             sizes="(max-width: 850px) 100vw, 1600px"
+            loading="eager"
           />
         </div>
         <h1 className="text-3xl self-center">{t("hero.frontend")}</h1>
