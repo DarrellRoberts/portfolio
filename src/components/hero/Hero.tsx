@@ -25,6 +25,7 @@ const Hero = () => {
     <div className="flex flex-col w-full pt-15">
       <div className="flex w-full justify-center px-6 max-md:flex-col">
         <Image
+          data-testid="hero-image"
           className="w-175"
           src={isDark ? "/hero-light.webp" : "/hero-dark.webp"}
           width={1050}
