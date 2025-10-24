@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useContext, useRef, useState } from "react"
+import React, { useContext, useState } from "react"
 import Image from "next/image"
 import { DarkContext } from "@/context/DarkContext"
 import HeroWaves from "./HeroWaves"
@@ -21,23 +21,26 @@ const Hero = () => {
       setStartAnimation(false)
     }, 4000)
   }
+
   return (
-    <div className="flex flex-col w-full pt-15">
-      <div className="flex w-full justify-center px-6 max-md:flex-col">
-        <Image
-          data-testid="hero-image"
-          className="w-175"
-          src={isDark ? "/hero-light.webp" : "/hero-dark.webp"}
-          width={1050}
-          height={700}
-          alt="darrell_roberts"
-          priority
-        />
+    <div className="flex flex-col w-full">
+      <div className="flex w-full justify-center max-md:flex-col">
+        <div className="w-200 max-md:w-full aspect-[1/0.7] max-xl:aspect-[1/0.5] max-md:aspect-auto relative">
+          <Image
+            data-testid="hero-image"
+            src={isDark ? "/hero-light.webp" : "/hero-dark.webp"}
+            fill
+            alt="darrell_roberts"
+            fetchPriority="high"
+            objectFit="contain"
+            sizes="(max-width: 850px) 100vw, 1600px"
+          />
+        </div>
         <h1 className="text-3xl self-center">{t("hero.frontend")}</h1>
       </div>
       {isDark ? (
-        <div className="flex justify-center items-baseline h-50 relative">
-          <div className="flex flex-col justify-center w-50 absolute bottom-[-10%] max-md:bottom-auto">
+        <div className="flex justify-center items-center max-md:items-baseline max-md:h-50 relative">
+          <div className="flex flex-col justify-center w-50 absolute max-md:bottom-auto">
             <Image
               onClick={sinkShip}
               className={
@@ -56,8 +59,8 @@ const Hero = () => {
           </div>
         </div>
       ) : (
-        <div className="flex justify-center relative h-50">
-          <div className="flex flex-col min-md:justify-center w-50 cursor-pointer min-md:absolute min-md:bottom-1/2">
+        <div className="flex justify-center relative max-sm:h-50">
+          <div className="flex flex-col min-md:justify-start w-50 cursor-pointer min-md:absolute min-md:bottom-1/2">
             <Image
               onClick={sinkShip}
               className="w-50 h-50 z-1 min-md:absolute min-md:bottom-[37%] min-md:right-[5%]"
