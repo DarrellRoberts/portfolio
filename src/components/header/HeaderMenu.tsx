@@ -99,6 +99,7 @@ const HeaderMenu = () => {
                 <div className="flex flex-col h-full justify-evenly">
                   {linksJson.map((link) => (
                     <Link
+                      key={link.text}
                       href={link.href}
                       className="flex text-2xl justify-between items-center"
                       onPress={onClose}
