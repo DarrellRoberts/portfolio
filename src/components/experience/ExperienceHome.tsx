@@ -3,16 +3,16 @@
 import React from "react"
 import ExperienceAccordian from "./ExperienceAccordian"
 import { useI18n } from "../../../locales/client"
+import { ClipboardDocumentListIcon } from "@heroicons/react/16/solid"
+import { Divider } from "@heroui/react"
+import Section from "../ui/Section"
 
 const ExperienceHome = () => {
   const t = useI18n()
   return (
-    <div id="experience">
-      <h2 className="text-6xl font-bold max-sm:text-3xl pt-30">
-        {t("experience.experience")}
-      </h2>
+    <Section title={"experience"} localeText={t("experience.experience")}>
       <ExperienceAccordian />
-    </div>
+    </Section>
   )
 }
 

@@ -6,7 +6,11 @@
     "experience": "Erfahrung",
     "skills": "Fähigkeiten",
     "projects": "Projekte",
+    "openSource": "Open Source",
     "contact": "Kontakt"
+  },
+  "hero": {
+    "frontend": "Frontend Entwickler"
   },
   "about": {
     "aboutMe": "Über mich",
@@ -16,7 +20,8 @@
     "lastSentence": "Scrollen Sie nach unten, um meine Arbeit zu sehen!"
   },
   "experience": {
-    "experience": "Erfahrung"
+    "experience": "Erfahrung",
+    "cv": "Mein Lebenslauf"
   },
   "project": {
     "projects": "Projekte",
@@ -31,11 +36,11 @@
     "tools": "Werkzeuge",
     "database": "Datenbank",
     "frameworks": "Bibliotheken und Frameworks",
-    "skillHoverAdmiral": "Wähle deinen Admiral. Fahren Sie mit der Maus über eine Fähigkeit",
-    "skillHoverCowboy": "Wähle deinen Cowboy. Fahren Sie mit der Maus über eine Fähigkeit"
+    "skillHoverAdmiral": "Wählen Sie Ihren Admiral. Fahren Sie mit der Maus über eine Fähigkeit",
+    "skillHoverCowboy": "Wählen Sie Ihren Cowboy. Fahren Sie mit der Maus über eine Fähigkeit"
   },
   "openSource": {
-    "openSource": "Open Source Beiträge"
+    "openSource": "OS Beiträge"
   },
   "contact": {
     "contact": "Kontakt"

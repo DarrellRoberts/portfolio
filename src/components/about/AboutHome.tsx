@@ -1,18 +1,20 @@
 "use client"
 
 import React, { useContext } from "react"
-import { useI18n } from "../../../locales/client"
+import { useCurrentLocale, useI18n } from "../../../locales/client"
 import Image from "next/image"
 import { DarkContext } from "@/context/DarkContext"
+import Link from "next/link"
+import { DocumentTextIcon, UserIcon } from "@heroicons/react/16/solid"
+import { Divider } from "@heroui/react"
+import Section from "../ui/Section"
 
 const AboutHome = () => {
   const t = useI18n()
   const { isDark } = useContext(DarkContext)
+  const locale = useCurrentLocale()
   return (
-    <div id="about">
-      <h2 className="text-6xl font-bold max-sm:text-3xl pt-30">
-        {t("about.aboutMe")}
-      </h2>
+    <Section title={"about"} localeText={t("about.aboutMe")}>
       <div className="flex w-full justify-around items-center max-lg:flex-col-reverse">
         <ul className="list-disc w-1/2 max-sm:w-4/5">
           <li className="list-disc text-primary text-lg max-sm:text-base">
@@ -36,10 +38,29 @@ const AboutHome = () => {
           alt="submarine"
         />
       </div>
-      <span className="text-xl flex w-full justify-center">
-        {t("about.lastSentence")}
-      </span>
-    </div>
+      <Link
+        className="flex w-full items-center hover:text-primary justify-around"
+        href={
+          locale === "en"
+            ? "/DARRELL_ROBERTS_Frontend_Engineer_CV.pdf"
+            : "/Lebenslauf_Darrell_Roberts_Frontend_Entwickler.pdf"
+        }
+        download={
+          locale === "en"
+            ? "DARRELL ROBERTS - Frontend Engineer - CV.pdf"
+            : "Lebenslauf - Darrell Roberts - Frontend Entwickler.pdf"
+        }
+        target="_blank"
+      >
+        <div className="flex gap-2 justify-center flex-col">
+          <Divider />
+          <div className="flex gap-2">
+            <h3 className="text-xl">{t("experience.cv")}</h3>
+            <DocumentTextIcon className="size-8 hover:text-primary" />
+          </div>
+        </div>
+      </Link>
+    </Section>
   )
 }
 

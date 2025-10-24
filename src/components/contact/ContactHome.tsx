@@ -6,16 +6,16 @@ import ContactLinks from "./ContactLinks"
 import Image from "next/image"
 import { DarkContext } from "@/context/DarkContext"
 import { useI18n } from "../../../locales/client"
+import { EnvelopeIcon } from "@heroicons/react/16/solid"
+import { Divider } from "@heroui/react"
+import Section from "../ui/Section"
 
 const Contact = () => {
   const newDate = new Date()
   const { isDark } = useContext(DarkContext)
   const t = useI18n()
   return (
-    <div className="pt-8" id="contact">
-      <h2 className="text-6xl font-bold max-sm:text-3xl">
-        {t("contact.contact")}
-      </h2>
+    <Section title={"contact"} localeText={t("contact.contact")}>
       <ContactLinks />
       <div className="flex justify-between bottom-[0%] items-end mt-2 pb-1 max-sm:flex-col max-sm:items-center max-sm:gap-4">
         <div className="w-50 h-40">
@@ -32,7 +32,7 @@ const Contact = () => {
           </span>
         </Link>
       </div>
-    </div>
+    </Section>
   )
 }
 

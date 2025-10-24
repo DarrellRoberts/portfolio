@@ -3,16 +3,16 @@
 import React from "react"
 import { useI18n } from "../../../locales/client"
 import OpenSourceAccordian from "./OpenSourceAccordian"
+import { UserGroupIcon } from "@heroicons/react/16/solid"
+import { Divider } from "@heroui/react"
+import Section from "../ui/Section"
 
 const OpenSourceHome = () => {
   const t = useI18n()
   return (
-    <div id="opensource">
-      <h2 className="text-6xl font-bold max-sm:text-3xl pt-30">
-        {t("openSource.openSource")}
-      </h2>
+    <Section title={"opensource"} localeText={t("openSource.openSource")}>
       <OpenSourceAccordian />
-    </div>
+    </Section>
   )
 }
 

@@ -6,10 +6,12 @@ import { DarkContext } from "@/context/DarkContext"
 import HeroWaves from "./HeroWaves"
 import "./hero.css"
 import HeroTumbleweed from "./HeroTumbleweed"
+import { useI18n } from "../../../locales/client"
 
 const Hero = () => {
   const [startAnimation, setStartAnimation] = useState<boolean>(false)
 
+  const t = useI18n()
   const { isDark } = useContext(DarkContext)
 
   const sinkShip = () => {
@@ -21,8 +23,9 @@ const Hero = () => {
   }
   return (
     <div className="flex flex-col w-full pt-15">
-      <div className="flex w-full justify-center px-6 max-sm:flex-col">
+      <div className="flex w-full justify-center px-6 max-md:flex-col">
         <Image
+          data-testid="hero-image"
           className="w-175"
           src={isDark ? "/hero-light.webp" : "/hero-dark.webp"}
           width={1050}
@@ -30,11 +33,11 @@ const Hero = () => {
           alt="darrell_roberts"
           priority
         />
-        <h1 className="text-3xl self-center">Frontend Engineer</h1>
+        <h1 className="text-3xl self-center">{t("hero.frontend")}</h1>
       </div>
       {isDark ? (
         <div className="flex justify-center items-baseline h-50 relative">
-          <div className="flex flex-col justify-center w-50 absolute bottom-[-10%] max-sm:bottom-auto">
+          <div className="flex flex-col justify-center w-50 absolute bottom-[-10%] max-md:bottom-auto">
             <Image
               onClick={sinkShip}
               className={

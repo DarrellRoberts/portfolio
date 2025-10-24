@@ -6,7 +6,11 @@
     "experience": "Experience",
     "skills": "Skills",
     "projects": "Projects",
+    "openSource": "Open Source",
     "contact": "Contact"
+  },
+  "hero": {
+    "frontend": "Frontend Engineer"
   },
   "about": {
     "aboutMe": "About me",
@@ -16,7 +20,8 @@
     "lastSentence": "Scroll down to see my work!"
   },
   "experience": {
-    "experience": "Experience"
+    "experience": "Experience",
+    "cv": "My CV"
   },
   "project": {
     "projects": "Projects",
@@ -35,7 +40,7 @@
     "skillHoverCowboy": "Choose your cowboy. Hover over a skill"
   },
   "openSource": {
-    "openSource": "Open Source Contributions"
+    "openSource": "OS Contributions"
   },
   "contact": {
     "contact": "Contact"

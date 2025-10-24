@@ -32,6 +32,38 @@ const HeaderMenu = () => {
   const locale = useCurrentLocale()
   const params = useParams()
 
+  const linksJson = [
+    {
+      text: t("navLinks.aboutMe"),
+      href: params.project ? `/${locale}/#about` : "#about",
+      icon: <UserIcon className="size-8" />,
+    },
+    {
+      text: t("navLinks.skills"),
+      href: params.project ? `/${locale}/#skills` : "#skills",
+      icon: <LightBulbIcon className="size-8" />,
+    },
+    {
+      text: t("navLinks.experience"),
+      href: params.project ? `/${locale}/#experience` : "#experience",
+      icon: <ClipboardDocumentListIcon className="size-8" />,
+    },
+    {
+      text: t("navLinks.projects"),
+      href: params.project ? `/${locale}/#projects` : "#projects",
+      icon: <CodeBracketIcon className="size-8" />,
+    },
+    {
+      text: t("navLinks.openSource"),
+      href: params.project ? `/${locale}/#opensource` : "#opensource",
+      icon: <UserGroupIcon className="size-8" />,
+    },
+    {
+      text: t("navLinks.contact"),
+      href: "#contact",
+      icon: <EnvelopeIcon className="size-8" />,
+    },
+  ]
   return (
     <>
       <Button
@@ -65,56 +97,15 @@ const HeaderMenu = () => {
               </DrawerHeader>
               <DrawerBody>
                 <div className="flex flex-col h-full justify-evenly">
-                  <Link
-                    href={params.project ? `/${locale}/#about` : "#about"}
-                    className="flex text-2xl justify-between items-center"
-                    onPress={onClose}
-                  >
-                    {t("navLinks.aboutMe")} <UserIcon className="size-8" />{" "}
-                  </Link>
-                  <Link
-                    href={params.project ? `/${locale}/#skills` : "#skills"}
-                    className="flex text-2xl justify-between items-center"
-                    onPress={onClose}
-                  >
-                    {t("navLinks.skills")}
-                    <LightBulbIcon className="size-8" />
-                  </Link>
-                  <Link
-                    href={
-                      params.project ? `/${locale}/#experience` : "#experience"
-                    }
-                    className="flex text-2xl justify-between items-center"
-                    onPress={onClose}
-                  >
-                    {t("navLinks.experience")}
-                    <ClipboardDocumentListIcon className="size-8" />
-                  </Link>
-                  <Link
-                    href={params.project ? `/${locale}/#projects` : "#projects"}
-                    className="flex text-2xl justify-between items-center"
-                    onPress={onClose}
-                  >
-                    {t("navLinks.projects")}
-                    <CodeBracketIcon className="size-8" />
-                  </Link>
-                  <Link
-                    href={
-                      params.project ? `/${locale}/#opensource` : "#opensource"
-                    }
-                    className="flex text-2xl justify-between items-center"
-                    onPress={onClose}
-                  >
-                    Open Source
-                    <UserGroupIcon className="size-8" />
-                  </Link>
-                  <Link
-                    href={params.project ? `/${locale}/#contact` : "#contact"}
-                    className="flex text-2xl justify-between items-center"
-                    onPress={onClose}
-                  >
-                    {t("navLinks.contact")} <EnvelopeIcon className="size-8" />
-                  </Link>
+                  {linksJson.map((link) => (
+                    <Link
+                      href={link.href}
+                      className="flex text-2xl justify-between items-center"
+                      onPress={onClose}
+                    >
+                      {link.text} {link.icon}
+                    </Link>
+                  ))}
                 </div>
 
                 <DrawerFooter>
