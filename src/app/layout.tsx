@@ -1,9 +1,24 @@
-"use client"
-
-import DarkProvider from "@/context/DarkContext"
-import Wrapper from "./Wrapper"
 import "./globals.css"
-import { HeroUIProvider } from "@heroui/react"
+import localFont from "next/font/local"
+import Wrapper from "./Wrapper"
+
+const sansation = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Sansation_Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Sansation_Light.ttf",
+      style: "light",
+    },
+    {
+      path: "../../public/fonts/Sansation_Bold.ttf",
+      style: "bold",
+    },
+  ],
+})
 
 export default function RootLayout({
   children,
@@ -11,10 +26,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <HeroUIProvider>
-      <DarkProvider>
+    <html className={`${sansation.className} dark`} lang="en">
+      <head>
+        <link rel="icon" href="/dr_favicon.webp" type="image/webp" />
+      </head>
+      <body>
         <Wrapper>{children}</Wrapper>
-      </DarkProvider>
-    </HeroUIProvider>
+      </body>
+    </html>
   )
 }
