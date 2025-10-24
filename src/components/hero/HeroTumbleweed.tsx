@@ -4,7 +4,7 @@ import "./hero.css"
 
 const HeroTumbleweed = () => {
   return (
-    <div className="tumbleweed-class flex justify-center items-center w-25 absolute max-sm:bottom-[10%]">
+    <div className="tumbleweed-class flex justify-center w-25 absolute bottom-[40%] max-sm:bottom-[1%]">
       <Image
         src="/tumbleweed_light.svg"
         width={678.07}
