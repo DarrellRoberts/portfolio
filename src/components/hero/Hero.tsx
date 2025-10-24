@@ -23,8 +23,9 @@ const Hero = () => {
   }
   return (
     <div className="flex flex-col w-full pt-15">
-      <div className="flex w-full justify-center px-6 max-sm:flex-col">
+      <div className="flex w-full justify-center px-6 max-md:flex-col">
         <Image
+          data-testid="hero-image"
           className="w-175"
           src={isDark ? "/hero-light.webp" : "/hero-dark.webp"}
           width={1050}
@@ -36,7 +37,7 @@ const Hero = () => {
       </div>
       {isDark ? (
         <div className="flex justify-center items-baseline h-50 relative">
-          <div className="flex flex-col justify-center w-50 absolute bottom-[-10%] max-sm:bottom-auto">
+          <div className="flex flex-col justify-center w-50 absolute bottom-[-10%] max-md:bottom-auto">
             <Image
               onClick={sinkShip}
               className={

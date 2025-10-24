@@ -6,6 +6,7 @@
     "experience": "Erfahrung",
     "skills": "Fähigkeiten",
     "projects": "Projekte",
+    "openSource": "Open Source",
     "contact": "Kontakt"
   },
   "hero": {
@@ -39,7 +40,7 @@
     "skillHoverCowboy": "Wählen Sie Ihren Cowboy. Fahren Sie mit der Maus über eine Fähigkeit"
   },
   "openSource": {
-    "openSource": "Open Source Beiträge"
+    "openSource": "OS Beiträge"
   },
   "contact": {
     "contact": "Kontakt"

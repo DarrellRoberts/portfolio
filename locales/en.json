@@ -6,6 +6,7 @@
     "experience": "Experience",
     "skills": "Skills",
     "projects": "Projects",
+    "openSource": "Open Source",
     "contact": "Contact"
   },
   "hero": {
@@ -39,7 +40,7 @@
     "skillHoverCowboy": "Choose your cowboy. Hover over a skill"
   },
   "openSource": {
-    "openSource": "Open Source Contributions"
+    "openSource": "OS Contributions"
   },
   "contact": {
     "contact": "Contact"

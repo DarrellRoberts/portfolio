@@ -7,20 +7,14 @@ import { DarkContext } from "@/context/DarkContext"
 import Link from "next/link"
 import { DocumentTextIcon, UserIcon } from "@heroicons/react/16/solid"
 import { Divider } from "@heroui/react"
+import Section from "../ui/Section"
 
 const AboutHome = () => {
   const t = useI18n()
   const { isDark } = useContext(DarkContext)
   const locale = useCurrentLocale()
   return (
-    <div id="about">
-      <Divider className="mb-10" />
-      <div className="flex items-center gap-4 justify-center">
-        <h2 className="text-6xl font-bold max-sm:text-3xl">
-          {t("about.aboutMe")}
-        </h2>
-        <UserIcon className="size-12 max-sm:size-8" />
-      </div>
+    <Section title={"about"} localeText={t("about.aboutMe")}>
       <div className="flex w-full justify-around items-center max-lg:flex-col-reverse">
         <ul className="list-disc w-1/2 max-sm:w-4/5">
           <li className="list-disc text-primary text-lg max-sm:text-base">
@@ -48,8 +42,13 @@ const AboutHome = () => {
         className="flex w-full items-center hover:text-primary justify-around"
         href={
           locale === "en"
-            ? "https://drive.google.com/file/d/1uFf26DmdK9HNJ6rRrRS8k7Q70cq80RkA/view?usp=drive_link"
-            : "https://drive.google.com/file/d/1hTu2RwqPfNwIcu8whIL2HWExCRoKQOku/view?usp=drive_link"
+            ? "/DARRELL_ROBERTS_Frontend_Engineer_CV.pdf"
+            : "/Lebenslauf_Darrell_Roberts_Frontend_Entwickler.pdf"
+        }
+        download={
+          locale === "en"
+            ? "DARRELL ROBERTS - Frontend Engineer - CV.pdf"
+            : "Lebenslauf - Darrell Roberts - Frontend Entwickler.pdf"
         }
         target="_blank"
       >
@@ -61,7 +60,7 @@ const AboutHome = () => {
           </div>
         </div>
       </Link>
-    </div>
+    </Section>
   )
 }
 
