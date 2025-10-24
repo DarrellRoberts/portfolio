@@ -32,7 +32,7 @@ const Hero = () => {
             fill
             alt="darrell_roberts"
             fetchPriority="high"
-            objectFit="contain"
+            className="object-contain"
             sizes="(max-width: 850px) 100vw, 1600px"
           />
         </div>
