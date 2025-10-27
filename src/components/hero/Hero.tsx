@@ -7,6 +7,7 @@ import HeroWaves from "./HeroWaves"
 import "./hero.css"
 import HeroTumbleweed from "./HeroTumbleweed"
 import { useI18n } from "../../../locales/client"
+// test pipeline
 
 const Hero = () => {
   const [startAnimation, setStartAnimation] = useState<boolean>(false)
