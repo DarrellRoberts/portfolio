@@ -2,6 +2,13 @@ import { OpenSource } from "../../types/OpenSource"
 
 export const openSourceEN: OpenSource[] = [
   {
+    project: "Need4deed.org",
+    owner: "@need4deed",
+    tech: "Next",
+    feature: ["Restyled availability grid according to figma wireframe"],
+    githubLink: ["https://github.com/need4deed-org/fe/pull/105"],
+  },
+  {
     project: "Developer-portfolios",
     owner: "@emmabostian",
     tech: "-",
@@ -66,6 +73,13 @@ export const openSourceEN: OpenSource[] = [
 ]
 
 export const openSourceDE: OpenSource[] = [
+  {
+    project: "Need4deed.org",
+    owner: "@need4deed",
+    tech: "Next",
+    feature: ["Verfügbarkeitsraster gemäß Figma-Wireframe neugestaltet"],
+    githubLink: ["https://github.com/need4deed-org/fe/pull/105"],
+  },
   {
     project: "Developer-portfolios",
     owner: "@emmabostian",
