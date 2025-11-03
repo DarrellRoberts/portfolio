@@ -301,11 +301,17 @@ export const projectsDE: ProjectData[] = [
 ]
 
 const createProjectMap = (projects: ProjectData[]) => {
-  const projectMap = new Map();
-  projects.forEach(project => projectMap.set(project.title, project))
+  const projectMap = new Map()
+  projects.forEach((project) => projectMap.set(project.title, project))
   return projectMap
 }
 
 export const projectMapEN = createProjectMap(projectsEN)
 
 export const projectMapDE = createProjectMap(projectsDE)
+
+const createProjectSlugs = (projects: ProjectData[]) => {
+  return projects.map((project) => encodeURIComponent(project.title))
+}
+
+export const projectSlugs = createProjectSlugs(projectsEN)
