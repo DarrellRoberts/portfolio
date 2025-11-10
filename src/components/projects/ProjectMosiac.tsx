@@ -28,7 +28,7 @@ const ProjectMosiac = ({ project, hideTitle }: Props) => {
       )}
       <Link
         aria-label="Learn more about the project"
-        href={`/${locale}/projects/${project?.title}`}
+        href={`/${locale}/projects/${encodeURIComponent(project!.title)}`}
         className="min-sm:grid grid-rows-2 grid-cols-4 gap-6 min-md:w-7/10 max-md:flex max-md:flex-col max-md:w-full"
       >
         <div

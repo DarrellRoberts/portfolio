@@ -23,7 +23,7 @@ const ContactLinks = () => {
     },
   ]
   return (
-    <div className="w-full grid grid-cols-3 max-sm:flex max-sm:flex-col max-sm:justify-evenly max-sm:h-1/2">
+    <div className="w-full grid grid-cols-3 max-sm:flex max-sm:flex-col max-sm:justify-evenly max-sm:h-1/2 max-sm:gap-6">
       {socialJson.map((social) => (
         <Link
           key={social.text}
