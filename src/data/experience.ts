@@ -2,6 +2,18 @@ import { ExperienceData } from "../../types/ExperienceData"
 
 export const experienceEN: ExperienceData[] = [
   {
+    title: "Need4Deed",
+    tech: "Next, TypeScript",
+    logo: [""],
+    position: "Open Source Developer",
+    date: "October 25 - ",
+    description: [
+      "Spearheaded the implementation of a volunteer form and availability calendar redesign, directly enhancing service delivery for a refugee-support charity",
+      "Collaborated closely with UX/UI designers to translate complex Figma wireframes into high-quality, responsive Next.js components",
+      "Maintained the production Next.js PWA codebase, ensuring accessibility and performance for users based in Berlin",
+    ],
+  },
+  {
     title: "e-Mission GmbH",
     tech: "Vue, Nuxt, TypeScript, TailwindCSS",
     logo: [""],
@@ -55,6 +67,18 @@ export const experienceEN: ExperienceData[] = [
 ]
 
 export const experienceDE: ExperienceData[] = [
+  {
+    title: "Need4Deed",
+    tech: "Next, TypeScript",
+    logo: [""],
+    position: "Open Source Entwickler",
+    date: "Oktober 25 - ",
+    description: [
+      "Federführend bei der Implementierung eines neu gestalteten Formulars für Freiwillige und eines Verfügbarkeitskalenders, wodurch die Servicebereitstellung für eine Flüchtlingshilfe-Organisation direkt verbessert wurde",
+      "Eng mit UX/UI-Designern zusammengearbeitet, um komplexe Figma-Wireframes in qualitativ hochwertige, responsive Next.js-Komponenten zu übertragen",
+      "Die produktive Next.js PWA-Codebasis gewartet und dabei die Zugänglichkeit und Performance für Nutzer mit Sitz in Berlin sichergestellt",
+    ],
+  },
   {
     title: "e-Mission GmbH",
     tech: "Vue, Nuxt, TypeScript, TailwindCSS",
