@@ -43,7 +43,14 @@ const HeroWaves = () => {
       }
     }
   }, [wavesCanvas])
-  return <canvas ref={wavesCanvas} width="200" height="600"></canvas>
+  return (
+    <canvas
+      data-testid="hero-waves"
+      ref={wavesCanvas}
+      width="200"
+      height="600"
+    ></canvas>
+  )
 }
 
 export default HeroWaves
