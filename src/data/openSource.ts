@@ -5,8 +5,14 @@ export const openSourceEN: OpenSource[] = [
     project: "Need4deed.org",
     owner: "@need4deed",
     tech: "Next",
-    feature: ["Restyled availability grid according to figma wireframe"],
-    githubLink: ["https://github.com/need4deed-org/fe/pull/105"],
+    feature: [
+      "Restyled availability grid according to figma wireframe",
+      "Restyled and refactored language selector for volunteer form",
+    ],
+    githubLink: [
+      "https://github.com/need4deed-org/fe/pull/105",
+      "https://github.com/need4deed-org/fe/pull/143",
+    ],
   },
   {
     project: "Developer-portfolios",
@@ -77,8 +83,14 @@ export const openSourceDE: OpenSource[] = [
     project: "Need4deed.org",
     owner: "@need4deed",
     tech: "Next",
-    feature: ["Verfügbarkeitsraster gemäß Figma-Wireframe neugestaltet"],
-    githubLink: ["https://github.com/need4deed-org/fe/pull/105"],
+    feature: [
+      "Verfügbarkeitsraster gemäß Figma-Wireframe neugestaltet",
+      "Überarbeiteter und neu strukturierter Sprachwähler für das Freiwilligenformular",
+    ],
+    githubLink: [
+      "https://github.com/need4deed-org/fe/pull/105",
+      "https://github.com/need4deed-org/fe/pull/143",
+    ],
   },
   {
     project: "Developer-portfolios",

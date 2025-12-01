@@ -64,6 +64,7 @@ const Hero = () => {
         <div className="flex justify-center relative max-sm:h-50">
           <div className="flex flex-col min-md:justify-start w-50 cursor-pointer min-md:absolute min-md:bottom-1/2">
             <Image
+              data-testid="cactus"
               onClick={sinkShip}
               className="w-50 h-50 z-1 min-md:absolute min-md:bottom-[37%] min-md:right-[5%]"
               src={"/cactus_light.webp"}
