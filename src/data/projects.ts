@@ -185,17 +185,17 @@ export const projectsDE: ProjectData[] = [
     title: "Rosemary's Home Fitness",
     tech: "Vue, Nuxt, Sanity.io, TypeScript",
     hoverImage: [
-      "/portfolio-screenshots/rhf/rhf_homepage_hover.webp",
-      "/portfolio-screenshots/rhf/rhf_homepage_hover.webp",
+      "/portfolio-screenshots/rhf/rhf_homepage.webp",
+      "/portfolio-screenshots/rhf/rhf_homepage.webp",
     ],
     lightImages: [
-      "/portfolio-screenshots/rhf/rhf_rhf_homepage.webp",
+      "/portfolio-screenshots/rhf/rhf_homepage.webp",
       "/portfolio-screenshots/rhf/rhf_mobile.webp",
       "/portfolio-screenshots/rhf/rhf_postcode.webp",
       "/portfolio-screenshots/rhf/rhf_faq.webp",
     ],
     darkImages: [
-      "/portfolio-screenshots/rhf/rhf_rhf_homepage.webp",
+      "/portfolio-screenshots/rhf/rhf_homepage.webp",
       "/portfolio-screenshots/rhf/rhf_mobile.webp",
       "/portfolio-screenshots/rhf/rhf_postcode.webp",
       "/portfolio-screenshots/rhf/rhf_faq.webp",
