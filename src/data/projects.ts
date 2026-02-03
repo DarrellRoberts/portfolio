@@ -189,13 +189,13 @@ export const projectsDE: ProjectData[] = [
       "/portfolio-screenshots/rhf/rhf_homepage_hover.webp",
     ],
     lightImages: [
-      "/portfolio-screenshots/rhf/rhf_rhf_homepage.webp",
+      "/portfolio-screenshots/rhf/rhf_homepage.webp",
       "/portfolio-screenshots/rhf/rhf_mobile.webp",
       "/portfolio-screenshots/rhf/rhf_postcode.webp",
       "/portfolio-screenshots/rhf/rhf_faq.webp",
     ],
     darkImages: [
-      "/portfolio-screenshots/rhf/rhf_rhf_homepage.webp",
+      "/portfolio-screenshots/rhf/rhf_homepage.webp",
       "/portfolio-screenshots/rhf/rhf_mobile.webp",
       "/portfolio-screenshots/rhf/rhf_postcode.webp",
       "/portfolio-screenshots/rhf/rhf_faq.webp",
