@@ -2,6 +2,36 @@ import { type ProjectData } from "../../types/ProjectData"
 
 export const projectsEN: ProjectData[] = [
   {
+    title: "Rosemary's Home Fitness",
+    tech: "Vue, Nuxt, Sanity.io, TypeScript",
+    hoverImage: [
+      "/portfolio-screenshots/rhf/rhf_homepage.webp",
+      "/portfolio-screenshots/rhf/rhf_homepage.webp",
+    ],
+    lightImages: [
+      "/portfolio-screenshots/rhf/rhf_homepage.webp",
+      "/portfolio-screenshots/rhf/rhf_mobile.webp",
+      "/portfolio-screenshots/rhf/rhf_postcode.webp",
+      "/portfolio-screenshots/rhf/rhf_faq.webp",
+    ],
+    darkImages: [
+      "/portfolio-screenshots/rhf/rhf_homepage.webp",
+      "/portfolio-screenshots/rhf/rhf_mobile.webp",
+      "/portfolio-screenshots/rhf/rhf_postcode.webp",
+      "/portfolio-screenshots/rhf/rhf_faq.webp",
+    ],
+    description:
+      "A leads generating website for a personal trainer targeting the older demographic",
+    features: [
+      "Headless CMS integration with Sanity allowing real-time content editing for the client",
+      "Postcode validator for the leads generation form to filter out unreachable leads",
+      "Static Site Generation with Nuxt for fast page-loads",
+      "Optimised towards older users to fit with the client's target audience and pass accessibility standards",
+      "Three-stage stepper, leads form to make it intuitive and prevent user fatigue",
+    ],
+    link: "https://www.rosemaryshomefitness.co.uk/",
+  },
+  {
     title: "e-Mission GmbH",
     tech: "Vue, Nuxt, TypeScript",
     hoverImage: [
@@ -151,6 +181,36 @@ export const projectsEN: ProjectData[] = [
 ]
 
 export const projectsDE: ProjectData[] = [
+  {
+    title: "Rosemary's Home Fitness",
+    tech: "Vue, Nuxt, Sanity.io, TypeScript",
+    hoverImage: [
+      "/portfolio-screenshots/rhf/rhf_homepage.webp",
+      "/portfolio-screenshots/rhf/rhf_homepage.webp",
+    ],
+    lightImages: [
+      "/portfolio-screenshots/rhf/rhf_homepage.webp",
+      "/portfolio-screenshots/rhf/rhf_mobile.webp",
+      "/portfolio-screenshots/rhf/rhf_postcode.webp",
+      "/portfolio-screenshots/rhf/rhf_faq.webp",
+    ],
+    darkImages: [
+      "/portfolio-screenshots/rhf/rhf_homepage.webp",
+      "/portfolio-screenshots/rhf/rhf_mobile.webp",
+      "/portfolio-screenshots/rhf/rhf_postcode.webp",
+      "/portfolio-screenshots/rhf/rhf_faq.webp",
+    ],
+    description:
+      "Eine Website zur Lead-Generierung für einen Personal Trainer, die speziell auf eine ältere Zielgruppe ausgerichtet ist",
+    features: [
+      "Headless CMS-Integration mit Sanity, die dem Kunden Inhaltsbearbeitung in Echtzeit ermöglicht",
+      "Postleitzahlen-Validator für das Lead-Formular, um nicht erreichbare Anfragen herauszufiltern",
+      "Statische Website-Generierung (SSG) mit Nuxt für schnelle Ladezeiten",
+      "Optimiert für ältere Nutzer, um der Zielgruppe des Kunden zu entsprechen und Barrierefreiheitsstandards zu erfüllen",
+      "Intuitive Lead-Generierung durch ein dreistufiges Stepper-Formular zur Vermeidung von Nutzerermüdung",
+    ],
+    link: "https://www.rosemaryshomefitness.co.uk/",
+  },
   {
     title: "e-Mission GmbH",
     tech: "Vue, Nuxt, TypeScript",
