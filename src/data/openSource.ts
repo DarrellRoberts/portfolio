@@ -6,11 +6,13 @@ export const openSourceEN: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Created Agent contact details for Refugee Accommodation Centres",
       "Redirect users to their role-specific route after successful login",
       "Restyled availability grid according to figma wireframe",
       "Restyled and refactored language selector for volunteer form",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/228",
       "https://github.com/need4deed-org/fe/pull/191",
       "https://github.com/need4deed-org/fe/pull/105",
       "https://github.com/need4deed-org/fe/pull/143",
@@ -86,11 +88,13 @@ export const openSourceDE: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Kontaktdaten für Agenten in Unterkünften für Geflüchtete erstellt",
       "Weiterleitung der Benutzer zu ihrer rollenspezifischen Route nach erfolgreichem Login",
       "Verfügbarkeitsraster gemäß Figma-Wireframe neugestaltet",
       "Überarbeiteter und neu strukturierter Sprachwähler für das Freiwilligenformular",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/228",
       "https://github.com/need4deed-org/fe/pull/191",
       "https://github.com/need4deed-org/fe/pull/105",
       "https://github.com/need4deed-org/fe/pull/143",
