@@ -42,20 +42,20 @@ const Hero = () => {
       </div>
       {isDark ? (
         <div className="flex justify-center items-center max-md:items-baseline max-md:h-50 relative">
-          <div className="flex flex-col justify-center w-50 absolute max-md:bottom-auto">
+          <div className="flex flex-col max-sm:w-full w-50 absolute max-md:bottom-auto">
             <Image
               onClick={sinkShip}
               className={
                 startAnimation
-                  ? "sunken-ship-class w-50 h-50 z-1 absolute bottom-[37%] right-[5%]"
-                  : "ship-class w-50 h-50 z-1 absolute bottom-[37%] right-[5%] cursor-pointer"
+                  ? "sunken-ship-class w-50 h-50 z-1 absolute bottom-[37%] max-sm:right-1/4 right-[1%]"
+                  : "ship-class w-50 h-50 z-1 absolute bottom-[37%] max-sm:right-1/4 right-[1%] cursor-pointer"
               }
               src="/ship_dark.webp"
               alt="ship"
               width={500}
               height={500}
             />
-            <div className="flex w-full h-100 z-0">
+            <div className="flex w-full justify-center h-100 z-0">
               <HeroWaves />
             </div>
           </div>
