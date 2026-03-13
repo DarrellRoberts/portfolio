@@ -6,14 +6,16 @@ export const openSourceEN: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Created grid for Agent lists",
       "Created Agent card for Agent lists",
-      "Created Volunteer section for Refugee Accommodation Centres",
-      "Created Agent contact details for Refugee Accommodation Centres",
+      "Developed Volunteer section for Refugee Accommodation Centres",
+      "Implemented Agent contact details for Refugee Accommodation Centres",
       "Redirect users to their role-specific route after successful login",
       "Restyled availability grid according to figma wireframe",
       "Restyled and refactored language selector for volunteer form",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/258",
       "https://github.com/need4deed-org/fe/pull/257",
       "https://github.com/need4deed-org/fe/pull/242",
       "https://github.com/need4deed-org/fe/pull/228",
@@ -92,6 +94,7 @@ export const openSourceDE: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Grid für Agenten-Listen erstellt",
       "Agenten-Karte für Agenten-Listen erstellt",
       "Bereich für Freiwillige für Flüchtlingsunterkünfte erstellt",
       "Kontaktdaten für Agenten in Unterkünften für Geflüchtete erstellt",
@@ -100,6 +103,7 @@ export const openSourceDE: OpenSource[] = [
       "Überarbeiteter und neu strukturierter Sprachwähler für das Freiwilligenformular",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/258",
       "https://github.com/need4deed-org/fe/pull/257",
       "https://github.com/need4deed-org/fe/pull/242",
       "https://github.com/need4deed-org/fe/pull/228",
