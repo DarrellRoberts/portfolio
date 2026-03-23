@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="flex w-full justify-center max-md:flex-col">
         <div className="w-200 max-md:w-full aspect-[1/0.7] max-xl:aspect-[1/0.5] max-md:aspect-auto relative">
           <Image
-            data-testid="hero-image"
+            data-testid="hero-image-dark"
             src="/hero-light.webp"
             fill
             alt="darrell_roberts"
@@ -40,7 +40,7 @@ const Hero = () => {
             sizes="(max-width: 850px) 100vw, 1600px"
           />
           <Image
-            data-testid="hero-image"
+            data-testid="hero-image-light"
             src="/hero-dark.webp"
             fill
             alt="darrell_roberts"

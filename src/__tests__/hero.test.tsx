@@ -25,10 +25,10 @@ describe("Hero", () => {
     render(
       <MockDarkProvider isDark={false}>
         <Hero />
-      </MockDarkProvider>
+      </MockDarkProvider>,
     )
 
-    const heroImage = screen.getByTestId("hero-image")
+    const heroImage = screen.getByTestId("hero-image-dark")
 
     expect(heroImage).toBeInTheDocument()
   })
@@ -36,7 +36,7 @@ describe("Hero", () => {
     render(
       <MockDarkProvider isDark={true}>
         <Hero />
-      </MockDarkProvider>
+      </MockDarkProvider>,
     )
 
     const heroWaves = screen.getByTestId("hero-waves")
@@ -48,7 +48,7 @@ describe("Hero", () => {
     render(
       <MockDarkProvider isDark={false}>
         <Hero />
-      </MockDarkProvider>
+      </MockDarkProvider>,
     )
 
     const tumbleweedAnimation = screen.queryByTestId("hero-tumbleweed")
