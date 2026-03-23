@@ -15,7 +15,7 @@ export const UiSection = ({ title, localeText, children }: Props) => {
       <UiDivider />
       <div className="flex items-center gap-4 justify-center pb-5 pt-10">
         <h2 className="text-6xl font-bold max-sm:text-3xl">{localeText}</h2>
-        <IconController label={title} />
+        <IconController label={title} tsClass="size-12 max-sm:size-8" />
       </div>
       {children}
     </section>

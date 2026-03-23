@@ -22,12 +22,13 @@ const CONTROLLER_MAP: Record<
 
 type Props = {
   label: IconKeys
+  tsClass?: string
 }
 
-export const IconController = ({ label }: Props) => {
+export const IconController = ({ label, tsClass }: Props) => {
   const IconComponent = CONTROLLER_MAP[label]
   if (!IconComponent) {
     return null
   }
-  return <IconComponent className="size-12 max-sm:size-8" />
+  return <IconComponent className={tsClass} />
 }
