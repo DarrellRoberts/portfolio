@@ -3,17 +3,14 @@
 import React from "react"
 import ExperienceAccordian from "./ExperienceAccordian"
 import { useI18n } from "../../../locales/client"
-import { ClipboardDocumentListIcon } from "@heroicons/react/16/solid"
-import { Divider } from "@heroui/react"
-import Section from "../ui/Section"
+import { UiSection } from "../ui/UiSection"
+import { Icon } from "@/types/Icon"
 
-const ExperienceHome = () => {
+export const ExperienceHome = () => {
   const t = useI18n()
   return (
-    <Section title={"experience"} localeText={t("experience.experience")}>
+    <UiSection title={Icon.EXPERIENCE} localeText={t("experience.experience")}>
       <ExperienceAccordian />
-    </Section>
+    </UiSection>
   )
 }
-
-export default ExperienceHome

@@ -4,7 +4,7 @@ import React, { useContext, useState } from "react"
 import Link from "next/link"
 import { useCurrentLocale } from "../../../locales/client"
 import { DarkContext } from "@/context/DarkContext"
-import { type ProjectData } from "../../../types/ProjectData"
+import { type ProjectData } from "../../types/ProjectData"
 
 type Props = {
   project: ProjectData | undefined

@@ -1,4 +1,4 @@
-import { OpenSource } from "../../types/OpenSource"
+import { OpenSource } from "../types/OpenSource"
 
 export const openSourceEN: OpenSource[] = [
   {
