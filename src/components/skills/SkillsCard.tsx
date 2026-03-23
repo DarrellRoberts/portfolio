@@ -2,7 +2,7 @@
 
 import { Card, CardBody, CardHeader } from "@heroui/react"
 import React, { Dispatch } from "react"
-import { type SkillsData } from "../../../types/Skills"
+import { type SkillsData } from "../../types/Skills"
 import Image from "next/image"
 
 type Props = {

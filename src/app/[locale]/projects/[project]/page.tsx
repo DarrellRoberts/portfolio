@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react"
 import { useParams } from "next/navigation"
-import { type ProjectData } from "../../../../../types/ProjectData"
+import { type ProjectData } from "../../../../types/ProjectData"
 import ProjectSingle from "@/components/projects/ProjectSingle"
 import { useCurrentLocale } from "../../../../../locales/client"
 import { projectMapEN, projectMapDE } from "@/data/projects"
