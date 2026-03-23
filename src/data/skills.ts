@@ -1,4 +1,4 @@
-import { SkillsData } from "../../types/Skills"
+import { SkillsData } from "../types/Skills"
 
 export const skillsEN: SkillsData[] = [
   {

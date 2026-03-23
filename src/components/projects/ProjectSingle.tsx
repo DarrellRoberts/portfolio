@@ -1,6 +1,6 @@
 import React from "react"
-import { ProjectData } from "../../../types/ProjectData"
-import { Divider } from "@heroui/react"
+import { ProjectData } from "../../types/ProjectData"
+import { UiDivider } from "@/components/ui/UiDivider"
 import { LinkIcon } from "@heroicons/react/16/solid"
 import ProjectMosiac from "./ProjectMosiac"
 import Link from "next/link"
@@ -36,7 +36,7 @@ const ProjectSingle = ({ project }: Props) => {
             {project?.tech}
           </h3>
         </div>
-        <Divider orientation="horizontal" />
+        <UiDivider />
         <div className="grid grid-cols-2 w-full justify-items-center h-full items-center">
           <h3 className="text-4xl max-xl:text-3xl max-sm:text-lg">
             {t("project.description")}:
@@ -45,9 +45,9 @@ const ProjectSingle = ({ project }: Props) => {
             {project?.description}
           </h3>
         </div>
-        <Divider orientation="horizontal" />
+        <UiDivider />
         <ProjectMosiac project={project} hideTitle={true} />
-        <Divider orientation="horizontal" />
+        <UiDivider />
         <div className="grid grid-cols-2 w-full justify-items-center max-sm:flex max-sm:flex-col items-center">
           <h3 className="text-4xl max-xl:text-3xl max-sm:text-lg">
             {t("project.features")}:

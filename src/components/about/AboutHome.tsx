@@ -5,16 +5,17 @@ import { useCurrentLocale, useI18n } from "../../../locales/client"
 import Image from "next/image"
 import { DarkContext } from "@/context/DarkContext"
 import Link from "next/link"
-import { DocumentTextIcon, UserIcon } from "@heroicons/react/16/solid"
-import { Divider } from "@heroui/react"
-import Section from "../ui/Section"
+import { DocumentTextIcon } from "@heroicons/react/16/solid"
+import { UiSection } from "../ui/UiSection"
+import { Icon } from "@/types/Icon"
+import { UiDivider } from "../ui/UiDivider"
 
-const AboutHome = () => {
+export const AboutHome = () => {
   const t = useI18n()
   const { isDark } = useContext(DarkContext)
   const locale = useCurrentLocale()
   return (
-    <Section title={"about"} localeText={t("about.aboutMe")}>
+    <UiSection title={Icon.ABOUT} localeText={t("about.aboutMe")}>
       <div className="flex w-full justify-around items-center max-lg:flex-col-reverse">
         <ul className="list-disc w-1/2 max-sm:w-4/5">
           <li className="list-disc text-primary text-lg max-sm:text-base">
@@ -53,15 +54,13 @@ const AboutHome = () => {
         target="_blank"
       >
         <div className="flex gap-2 justify-center flex-col">
-          <Divider />
+          <UiDivider />
           <div className="flex gap-2">
             <h3 className="text-xl">{t("experience.cv")}</h3>
             <DocumentTextIcon className="size-8 hover:text-primary" />
           </div>
         </div>
       </Link>
-    </Section>
+    </UiSection>
   )
 }
-
-export default AboutHome

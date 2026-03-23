@@ -1,17 +1,22 @@
 import "@testing-library/jest-dom"
 import { render, screen, within } from "@testing-library/react"
-import Section from "@/components/ui/Section"
+import { UiSection } from "@/components/ui/UiSection"
+import { Icon } from "@/types/Icon"
 
 describe("Section", () => {
   it("renders a section tag", () => {
-    render(<Section title={""} localeText={""} children={undefined} />)
+    render(
+      <UiSection title={Icon.SKILLS} localeText={""} children={undefined} />,
+    )
 
     const section = screen.getByTestId("section-ui")
 
     expect(section).toBeInTheDocument()
   })
   it("renders s h2 tag", () => {
-    render(<Section title={"test"} localeText={""} children={undefined} />)
+    render(
+      <UiSection title={Icon.SKILLS} localeText={""} children={undefined} />,
+    )
 
     const section = screen.getByTestId("section-ui")
 

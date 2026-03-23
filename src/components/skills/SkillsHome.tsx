@@ -3,22 +3,21 @@
 import React, { useContext, useState } from "react"
 import SkillsCard from "./SkillsCard"
 import { skillsEN, skillsDE } from "@/data/skills"
-import { SkillsData } from "../../../types/Skills"
+import { SkillsData } from "../../types/Skills"
 import { useCurrentLocale, useI18n } from "../../../locales/client"
 import Image from "next/image"
 import { DarkContext } from "@/context/DarkContext"
-import { LightBulbIcon } from "@heroicons/react/16/solid"
-import { Divider } from "@heroui/react"
-import Section from "../ui/Section"
+import { UiSection } from "../ui/UiSection"
+import { Icon } from "@/types/Icon"
 
-const SkillsHome = () => {
+export const SkillsHome = () => {
   const [skillImage, setSkillImage] = useState<string | null>(null)
   const [skillLabel, setSkillLabel] = useState<string | null>(null)
   const locale = useCurrentLocale()
   const t = useI18n()
   const { isDark } = useContext(DarkContext)
   return (
-    <Section title={"skills"} localeText={t("skills.skills")}>
+    <UiSection title={Icon.SKILLS} localeText={t("skills.skills")}>
       <div className="grid grid-cols-2 grid-rows-2 justify-items-center gap-4 m-4 max-sm:flex max-sm:flex-col max-sm:items-center mt-20">
         {locale === "en"
           ? skillsEN.map((skill: SkillsData, index: number) => (
@@ -153,8 +152,6 @@ const SkillsHome = () => {
           )}
         </div>
       </div>
-    </Section>
+    </UiSection>
   )
 }
-
-export default SkillsHome

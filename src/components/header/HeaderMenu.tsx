@@ -10,21 +10,15 @@ import {
   Link,
   useDisclosure,
 } from "@heroui/react"
-import {
-  Bars3Icon,
-  ClipboardDocumentListIcon,
-  CodeBracketIcon,
-  EnvelopeIcon,
-  LightBulbIcon,
-  UserGroupIcon,
-  UserIcon,
-} from "@heroicons/react/16/solid"
+import { Bars3Icon } from "@heroicons/react/16/solid"
 import React from "react"
 import Logo from "../misc/Logo"
 import { useCurrentLocale, useI18n } from "../../../locales/client"
 import DarkMode from "../misc/DarkMode"
 import LanguageSelector from "../misc/LanguageSelector"
 import { useParams } from "next/navigation"
+import { Icon } from "@/types/Icon"
+import { IconController } from "../ui/IconController"
 
 const HeaderMenu = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure()
@@ -36,32 +30,32 @@ const HeaderMenu = () => {
     {
       text: t("navLinks.aboutMe"),
       href: params.project ? `/${locale}/#about` : "#about",
-      icon: <UserIcon className="size-8" />,
+      icon: Icon.ABOUT,
     },
     {
       text: t("navLinks.skills"),
       href: params.project ? `/${locale}/#skills` : "#skills",
-      icon: <LightBulbIcon className="size-8" />,
+      icon: Icon.SKILLS,
     },
     {
       text: t("navLinks.experience"),
       href: params.project ? `/${locale}/#experience` : "#experience",
-      icon: <ClipboardDocumentListIcon className="size-8" />,
+      icon: Icon.EXPERIENCE,
     },
     {
       text: t("navLinks.projects"),
       href: params.project ? `/${locale}/#projects` : "#projects",
-      icon: <CodeBracketIcon className="size-8" />,
+      icon: Icon.PROJECTS,
     },
     {
       text: t("navLinks.openSource"),
       href: params.project ? `/${locale}/#opensource` : "#opensource",
-      icon: <UserGroupIcon className="size-8" />,
+      icon: Icon.OPEN_SOURCE,
     },
     {
       text: t("navLinks.contact"),
       href: "#contact",
-      icon: <EnvelopeIcon className="size-8" />,
+      icon: Icon.CONTACT,
     },
   ]
   return (
@@ -104,7 +98,8 @@ const HeaderMenu = () => {
                       className="flex text-2xl justify-between items-center"
                       onPress={onClose}
                     >
-                      {link.text} {link.icon}
+                      {link.text}{" "}
+                      <IconController label={link.icon} tsClass="size-8" />
                     </Link>
                   ))}
                 </div>
