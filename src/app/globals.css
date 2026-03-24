@@ -8,6 +8,21 @@
   --breakpoint-md: 850px;
 }
 
+:root {
+  --app-bg: #e2d4bb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --app-bg: #081c3f;
+  }
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--app-bg) !important;
+  color: inherit;
 }
