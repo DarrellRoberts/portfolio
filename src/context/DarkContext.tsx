@@ -14,14 +14,22 @@ export const DarkContext = createContext({
 })
 
 const DarkProvider = ({ children }: PropsWithChildren) => {
-  const [isDark, setIsDark] = useState<boolean>(true)
+  const [isDark, setIsDark] = useState<boolean>(false)
 
   const toggleDark = useCallback(() => {
     setIsDark(!isDark)
   }, [isDark])
 
   useEffect(() => {
+    const darkQuery = window.matchMedia("(prefers-color-scheme: dark)")
+    if (darkQuery.matches) {
+      toggleDark()
+    }
+  }, [])
+
+  useEffect(() => {
     const htmlElement = document.documentElement
+
     if (isDark) {
       htmlElement.classList.add("dark")
     } else {

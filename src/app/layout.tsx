@@ -26,8 +26,26 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html className={`${sansation.className} dark`} lang="en">
+    <html
+      className={`${sansation.className}`}
+      lang="en"
+      suppressHydrationWarning
+    >
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (isDark) {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                }
+              })()
+            `,
+          }}
+        />
         <link rel="icon" href="/dr_favicon.webp" type="image/webp" />
       </head>
       <body>
