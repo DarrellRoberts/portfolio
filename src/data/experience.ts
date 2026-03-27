@@ -58,7 +58,7 @@ export const experienceEN: ExperienceData[] = [
     title: "WBS Coding School",
     tech: "MongoDB, React, Express, Node.js",
     logo: [""],
-    position: "Trainee Fullstack Developer",
+    position: "Trainee Developer",
     date: "July 23 - Nov 23",
     description: [
       "Mastered MERN stack and worked weekly on group Full-stack projects. I was selected to present my final project in front of audience of 150 people.",
@@ -124,7 +124,7 @@ export const experienceDE: ExperienceData[] = [
     title: "WBS Coding School",
     tech: "MongoDB, React, Express, Node.js",
     logo: [""],
-    position: "Azubi Full-Stack-Entwickler",
+    position: "Azubi Entwickler",
     date: "Juli 23 - Nov 23",
     description: [
       "Beherrschung des MERN-Stacks und wöchentliche Arbeit an Full-Stack-Gruppenprojekten. Ich wurde ausgewählt, mein Abschlussprojekt vor einem Publikum von 150 Personen zu präsentieren.",
