@@ -1,5 +1,5 @@
 import { ReactNode } from "react"
-import "./ui-accordion.css"
+import "./styles/ui-accordion.css"
 import Link from "next/link"
 import { LinkIcon } from "@heroicons/react/16/solid"
 

@@ -8,43 +8,27 @@
   --breakpoint-md: 850px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --app-bg: #e2d4bb;
-    --nav-bg: #e2d4bb77;
-    --app-bg-inverted: #081c3f;
-    --font-color: #000000;
-    --neutral-color: var(--color-neutral-500);
-  }
-
-  body:has(#dark-mode-checkbox:checked) {
-    --app-bg: #081c3f;
-    --nav-bg: #081c3f77;
-    --app-bg-inverted: #e2d4bb;
-    --font-color: #ffffff;
-    --neutral-color: var(--color-neutral-500);
-  }
+:root {
+  --app-bg: #e2d4bb;
+  --nav-bg: #e2d4bb77;
+  --app-bg-inverted: #081c3f;
+  --font-color: #000000;
+  --neutral-color: var(--color-neutral-500);
+  --neutral-bg: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --app-bg: #081c3f;
-    --nav-bg: #081c3f77;
-    --app-bg-inverted: #e2d4bb;
-    --font-color: #ffffff;
-    --neutral-color: var(--color-neutral-500);
-  }
-  body:has(#dark-mode-checkbox:not(:checked)) {
-    --app-bg: #e2d4bb;
-    --nav-bg: #e2d4bb77;
-    --app-bg-inverted: #081c3f;
-    --font-color: #000000;
-    --neutral-color: var(--color-neutral-500);
-  }
+:root.dark {
+  --app-bg: #081c3f;
+  --nav-bg: #081c3f77;
+  --app-bg-inverted: #e2d4bb;
+  --font-color: #ffffff;
+  --neutral-color: var(--color-neutral-500);
+  --neutral-bg: var(--color-neutral-700);
 }
 
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 .dark-mode-container {
