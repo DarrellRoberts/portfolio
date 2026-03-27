@@ -1,12 +1,9 @@
-// import React, { useContext } from "react"
-import LanguageSelector from "../misc/LanguageSelector"
-import Logo from "../misc/Logo"
+import { LanguageSelector } from "../misc/LanguageSelector"
+import { Logo } from "../misc/Logo"
 import HeaderMenu from "./HeaderMenu"
-import DarkMode from "../misc/DarkMode"
-// import { DarkContext } from "@/context/DarkContext"
+import { DarkMode } from "../misc/DarkMode"
 
 const Header = () => {
-  // const { isDark } = useContext(DarkContext)
   return (
     <>
       <div className="bg-[var(--nav-bg)] sticky top-0 z-50 flex justify-between px-2">

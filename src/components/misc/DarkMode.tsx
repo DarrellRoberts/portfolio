@@ -1,30 +1,26 @@
 "use client"
-
 import { DarkContext } from "@/context/DarkContext"
-import React, { useContext, useEffect, useRef } from "react"
+import React, { useContext, useEffect } from "react"
 
-const DarkMode = () => {
-  const { toggleDark } = useContext(DarkContext)
-  const dmCheckbox = useRef<HTMLInputElement>(null)
+export const DarkMode = () => {
+  const { isDark, toggleDark } = useContext(DarkContext)
 
   useEffect(() => {
-    const darkQuery = window.matchMedia("(prefers-color-scheme: dark)")
-    if (darkQuery.matches) {
-      if (dmCheckbox?.current) {
-        dmCheckbox.current.checked = true
-      }
+    if (isDark) {
+      document.documentElement.classList.add("dark")
+    } else {
+      document.documentElement.classList.remove("dark")
     }
-  }, [dmCheckbox])
+  }, [isDark])
+
   return (
     <div className="dark-mode-container">
       <input
         type="checkbox"
-        id="dark-mode-checkbox"
-        ref={dmCheckbox}
-        onClick={toggleDark}
+        checked={isDark}
+        onChange={toggleDark}
+        className="dark-mode-input"
       />
     </div>
   )
 }
-
-export default DarkMode

@@ -10,7 +10,7 @@ import HeroWaves from "../hero/HeroWaves"
 import HeroTumbleweed from "../hero/HeroTumbleweed"
 import { useParams } from "next/navigation"
 
-const Logo = () => {
+export const Logo = () => {
   const [isHover, setIsHover] = useState<boolean>(false)
   const { isDark } = useContext(DarkContext)
   const locale = useCurrentLocale()
@@ -44,5 +44,3 @@ const Logo = () => {
     </Link>
   )
 }
-
-export default Logo
