@@ -1,8 +1,11 @@
 import { ReactNode } from "react"
 import "./ui-accordion.css"
+import Link from "next/link"
+import { LinkIcon } from "@heroicons/react/16/solid"
 
 type Props = {
   dataArray: string[]
+  linkArray?: string[]
   title: string
   subtitle: string
   note: string
@@ -11,6 +14,7 @@ type Props = {
 
 export const UiAccordion = ({
   dataArray,
+  linkArray,
   title,
   subtitle,
   note,
@@ -22,6 +26,7 @@ export const UiAccordion = ({
     <Wrapper>
       <Item
         dataArray={dataArray}
+        linkArray={linkArray}
         title={title}
         subtitle={subtitle}
         note={note}
@@ -33,6 +38,7 @@ export const UiAccordion = ({
 
 type UiAccordionProps = {
   children: ReactNode
+  linkArray?: string[]
   dataArray: string[]
   title: string
   subtitle: string
@@ -46,17 +52,22 @@ UiAccordion.Wrapper = ({ children }: Pick<UiAccordionProps, "children">) => {
 
 UiAccordion.Item = ({
   dataArray,
+  linkArray,
   title,
   subtitle,
   note,
   id,
 }: Omit<UiAccordionProps, "children">) => {
   return (
-    <div className="tab">
-      <input type="checkbox" className="hidden-input" id={`cb${id}`} />
+    <div className="tab relative">
+      <input
+        type="checkbox"
+        className="absolute z-[-1] opacity-0"
+        id={`cb${id}`}
+      />
       <label
         htmlFor={`cb${id}`}
-        className="tab__label flex h-full w-full justify-between my-5"
+        className="tab__label cursor-pointer flex h-full w-full justify-between my-5"
       >
         <div className="flex flex-col">
           <span className="text-primary text-xl">{title}</span>
@@ -66,20 +77,26 @@ UiAccordion.Item = ({
       </label>
 
       <div className="tab__content">
-        <div className="tab__content-inner px-5">
-          <ul className="pb-4">
-            {dataArray.map((data, index) => (
-              <div
-                key={`${data}${index}`}
-                className="max-sm:flex max-sm:flex-col max-sm:items-center"
-              >
-                <li className="list-disc text-lg max-sm:text-base max-sm:w-3/4">
-                  {data}
+        <div className="tab__content-inner px-5 min-h-0">
+          <div className="pb-4">
+            <ul className="list-disc pl-5 space-y-4">
+              {dataArray.map((data, index) => (
+                <li
+                  className="text-lg max-sm:text-base max-sm:w-3/4 gap-3"
+                  key={`${data}${index}`}
+                >
+                  <div className="inline-flex items-center gap-3">
+                    {data}
+                    {linkArray?.length && (
+                      <Link href={linkArray[index]} target="_blank">
+                        <LinkIcon className="size-6 text-primary" />
+                      </Link>
+                    )}
+                  </div>
                 </li>
-                <br />
-              </div>
-            ))}
-          </ul>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
