@@ -70,10 +70,14 @@ UiAccordion.Item = ({
         className="tab__label cursor-pointer flex h-full w-full justify-between my-5"
       >
         <div className="flex flex-col">
-          <span className="text-primary text-xl">{title}</span>
-          <span className="text-[var(--neutral-color)] text-base">{note}</span>
+          <span className="text-primary text-xl max-sm:text-base">{title}</span>
+          <span className="text-[var(--neutral-color)] text-base max-sm:text-sm">
+            {note}
+          </span>
         </div>
-        <span className="text-xl text-[var(--font-color)]">{subtitle}</span>
+        <span className="text-xl text-[var(--font-color)] max-sm:text-base">
+          {subtitle}
+        </span>
       </label>
 
       <div className="tab__content">
