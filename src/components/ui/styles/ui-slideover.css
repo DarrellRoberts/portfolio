@@ -4,7 +4,7 @@
  */
 
 :root {
-  --drawer-width: min(400px, 80vw);
+  --drawer-width: min(400px, 100%);
   --transition-speed: 0.4s;
   --overlay-bg: color-mix(in srgb, transparent, #000 20%);
 }
@@ -83,15 +83,16 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   z-index: 995;
-  animation: fadeIn 0.3s ease-in-out;
+  animation: fadeIn 0.3s ease-in;
 }
 
 /* 6. Close Button (Remote Ctrl) */
 ._header-1_remote-ctrl {
   position: absolute;
-  right: 1px;
-  top: 1%;
+  right: 2px;
+  top: 2%;
   overflow: hidden;
+  cursor: pointer;
 }
 
 ._header-1_remote-ctrl label {
