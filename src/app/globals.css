@@ -23,7 +23,7 @@
   --app-bg-inverted: #e2d4bb;
   --font-color: #ffffff;
   --neutral-color: var(--color-neutral-500);
-  --neutral-bg: var(--color-neutral-700);
+  --neutral-bg: #18181b;
 }
 
 html {

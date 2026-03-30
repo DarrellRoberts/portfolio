@@ -94,7 +94,7 @@ UiSlideover.Body = ({
             key={link.text}
             href={link.href}
             onClick={closeMenu}
-            className="flex text-2xl justify-between items-center py-4 px-2"
+            className="flex text-2xl justify-between items-center py-4 px-2 text-primary hover:brightness-200 transition-all"
           >
             {link.text}
             <IconController label={link.icon as IconKeys} tsClass="size-8" />
@@ -109,7 +109,7 @@ UiSlideover.Footer = ({
   footerComponent: FooterComponent,
 }: Pick<UiSlideoverProps, "footerComponent">) => {
   return (
-    <div>
+    <div className="flex justify-end">
       <FooterComponent />
     </div>
   )
