@@ -86,7 +86,7 @@ UiAccordion.Item = ({
             <ul className="list-disc pl-5 space-y-4">
               {dataArray.map((data, index) => (
                 <li
-                  className="text-lg max-sm:text-base max-sm:w-3/4 gap-3"
+                  className="text-lg max-sm:text-base gap-3"
                   key={`${data}${index}`}
                 >
                   <div className="inline-flex items-center gap-3">
