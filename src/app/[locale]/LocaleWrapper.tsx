@@ -3,7 +3,7 @@
 import Header from "@/components/header/Header"
 import { I18nProviderClient } from "../../../locales/client"
 import { ReactNode } from "react"
-import Footer from "@/components/footer/Footer"
+import { Footer } from "@/components/footer/Footer"
 
 export default function LocaleWrapper({
   children,

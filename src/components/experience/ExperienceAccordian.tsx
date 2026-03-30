@@ -1,12 +1,12 @@
 "use client"
 
-import React, { useMemo } from "react"
+import { useMemo } from "react"
 import { experienceEN, experienceDE } from "@/data/experience"
 import { useCurrentLocale } from "../../../locales/client"
 import { UiAccordion } from "../ui/UiAccordian"
 import { UiDivider } from "../ui/UiDivider"
 
-const ExperienceAccordian = () => {
+export const ExperienceAccordian = () => {
   const locale = useCurrentLocale()
 
   const currentExp = useMemo(() => {
@@ -36,5 +36,3 @@ const ExperienceAccordian = () => {
     </div>
   )
 }
-
-export default ExperienceAccordian

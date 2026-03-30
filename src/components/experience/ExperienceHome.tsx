@@ -1,7 +1,6 @@
 "use client"
 
-import React from "react"
-import ExperienceAccordian from "./ExperienceAccordian"
+import { ExperienceAccordian } from "./ExperienceAccordian"
 import { useI18n } from "../../../locales/client"
 import { UiSection } from "../ui/UiSection"
 import { Icon } from "@/types/Icon"

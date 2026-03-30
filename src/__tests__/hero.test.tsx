@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom"
 import { render, screen } from "@testing-library/react"
-import Hero from "@/components/hero/Hero"
+import { Hero } from "@/components/hero/Hero"
 import { DarkContext } from "@/context/DarkContext"
 import userEvent from "@testing-library/user-event"
 import { ReactNode } from "react"
@@ -8,6 +8,8 @@ import { ReactNode } from "react"
 jest.mock("../../locales/client", () => ({
   useI18n: () => (key: string) => `Mocked Translation for ${key}`,
 }))
+
+HTMLCanvasElement.prototype.getContext = jest.fn() as jest.Mock
 
 type Props = {
   children: ReactNode

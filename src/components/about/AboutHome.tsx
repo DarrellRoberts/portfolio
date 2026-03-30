@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useContext } from "react"
+import { useContext } from "react"
 import { useCurrentLocale, useI18n } from "../../../locales/client"
 import Image from "next/image"
 import { DarkContext } from "@/context/DarkContext"

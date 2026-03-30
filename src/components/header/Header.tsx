@@ -1,6 +1,6 @@
 import { LanguageSelector } from "../misc/LanguageSelector"
 import { Logo } from "../misc/Logo"
-import HeaderMenu from "./HeaderMenu"
+import { HeaderMenu } from "./HeaderMenu"
 import { DarkMode } from "../misc/DarkMode"
 
 const Header = () => {

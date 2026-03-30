@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import React, { useContext } from "react"
-import ContactLinks from "./ContactLinks"
+import { ContactLinks } from "./ContactLinks"
 import Image from "next/image"
 import { DarkContext } from "@/context/DarkContext"
 import { useI18n } from "../../../locales/client"

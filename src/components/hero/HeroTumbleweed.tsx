@@ -1,8 +1,7 @@
-import React from "react"
 import Image from "next/image"
 import "./hero.css"
 
-const HeroTumbleweed = () => {
+export const HeroTumbleweed = () => {
   return (
     <div className="tumbleweed-class flex justify-center w-25 absolute bottom-[40%] max-sm:bottom-[1%]">
       <Image
@@ -15,5 +14,3 @@ const HeroTumbleweed = () => {
     </div>
   )
 }
-
-export default HeroTumbleweed

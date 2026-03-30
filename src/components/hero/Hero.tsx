@@ -1,14 +1,14 @@
 "use client"
 
-import React, { useContext, useState } from "react"
+import { useContext, useState } from "react"
 import Image from "next/image"
 import { DarkContext } from "@/context/DarkContext"
-import HeroWaves from "./HeroWaves"
+import { HeroWaves } from "./HeroWaves"
 import "./hero.css"
-import HeroTumbleweed from "./HeroTumbleweed"
+import { HeroTumbleweed } from "./HeroTumbleweed"
 import { useI18n } from "../../../locales/client"
 
-const Hero = () => {
+export const Hero = () => {
   const [startAnimation, setStartAnimation] = useState<boolean>(false)
 
   const t = useI18n()
@@ -94,5 +94,3 @@ const Hero = () => {
     </div>
   )
 }
-
-export default Hero

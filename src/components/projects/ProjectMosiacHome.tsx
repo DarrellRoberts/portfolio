@@ -1,6 +1,5 @@
 "use client"
 
-import React from "react"
 import { projectsEN } from "../../data/projects"
 import ProjectMosiac from "./ProjectMosiac"
 import { useI18n } from "../../../locales/client"
