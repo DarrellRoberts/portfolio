@@ -34,11 +34,29 @@ export const Logo = () => {
         onMouseEnter={() => setIsHover(true)}
         onClick={() => setIsHover(false)}
         onMouseLeave={() => setIsHover(false)}
-        src={isDark ? "/dr_logo_dark.webp" : "/dr_logo_light.webp"}
+        src={"/dr_logo_light.webp"}
         width={100}
         height={100}
         alt="dr-logo"
         className="z-2"
+        style={{
+          opacity: isDark ? "0" : "1",
+          display: isDark ? "none" : "block",
+        }}
+      />
+      <Image
+        onMouseEnter={() => setIsHover(true)}
+        onClick={() => setIsHover(false)}
+        onMouseLeave={() => setIsHover(false)}
+        src={"/dr_logo_dark.webp"}
+        width={100}
+        height={100}
+        alt="dr-logo"
+        className="z-2"
+        style={{
+          opacity: isDark ? "1" : "0",
+          display: isDark ? "block" : "none",
+        }}
       />
     </Link>
   )

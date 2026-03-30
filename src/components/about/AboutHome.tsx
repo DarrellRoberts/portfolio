@@ -33,10 +33,19 @@ export const AboutHome = () => {
         </ul>
         <Image
           className="w-100 max-sm:w-75"
-          src={isDark ? "/submarine_dark.webp" : "/saloon-doors-lights.webp"}
+          src="/saloon-doors-lights.webp"
+          width={500}
+          height={500}
+          alt="saloon-doors"
+          style={{ opacity: isDark ? "0" : "1" }}
+        />
+        <Image
+          className="w-100 max-sm:w-75"
+          src="/submarine_dark.webp"
           width={500}
           height={500}
           alt="submarine"
+          style={{ opacity: isDark ? "1" : "0" }}
         />
       </div>
       <Link
