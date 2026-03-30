@@ -1,6 +1,6 @@
 "use client"
 import { DarkContext } from "@/context/DarkContext"
-import React, { useContext, useEffect } from "react"
+import { useContext, useEffect } from "react"
 
 export const DarkMode = () => {
   const { isDark, toggleDark } = useContext(DarkContext)

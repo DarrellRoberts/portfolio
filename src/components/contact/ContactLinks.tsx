@@ -1,8 +1,8 @@
 import { DarkContext } from "@/context/DarkContext"
-import { Link } from "@heroui/react"
-import React, { useContext } from "react"
+import Link from "next/link"
+import { useContext } from "react"
 
-const ContactLinks = () => {
+export const ContactLinks = () => {
   const { isDark } = useContext(DarkContext)
 
   const socialJson = [
@@ -50,5 +50,3 @@ const ContactLinks = () => {
     </div>
   )
 }
-
-export default ContactLinks

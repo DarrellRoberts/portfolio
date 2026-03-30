@@ -1,6 +1,5 @@
 "use client"
 
-import React from "react"
 import { Logo } from "../misc/Logo"
 import { useCurrentLocale, useI18n } from "../../../locales/client"
 import { DarkMode } from "../misc/DarkMode"
@@ -9,7 +8,7 @@ import { useParams } from "next/navigation"
 import { Icon } from "@/types/Icon"
 import { UiSlideover } from "../ui/UiSlideover"
 
-const HeaderMenu = () => {
+export const HeaderMenu = () => {
   const t = useI18n()
   const locale = useCurrentLocale()
   const params = useParams()
@@ -68,5 +67,3 @@ const HeaderMenu = () => {
     />
   )
 }
-
-export default HeaderMenu

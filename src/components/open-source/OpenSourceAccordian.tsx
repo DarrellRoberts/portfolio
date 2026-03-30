@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useMemo } from "react"
+import { useMemo } from "react"
 import { openSourceEN, openSourceDE } from "@/data/openSource"
 import { useCurrentLocale } from "../../../locales/client"
 import { UiAccordion } from "../ui/UiAccordian"

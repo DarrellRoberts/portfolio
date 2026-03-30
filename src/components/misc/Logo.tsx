@@ -1,13 +1,12 @@
 "use client"
 
-import React, { useContext, useState } from "react"
-import { Image } from "@heroui/react"
+import { useContext, useState } from "react"
 import { DarkContext } from "@/context/DarkContext"
-import NextImage from "next/image"
+import Image from "next/image"
 import Link from "next/link"
 import { useCurrentLocale } from "../../../locales/client"
-import HeroWaves from "../hero/HeroWaves"
-import HeroTumbleweed from "../hero/HeroTumbleweed"
+import { HeroWaves } from "../hero/HeroWaves"
+import { HeroTumbleweed } from "../hero/HeroTumbleweed"
 import { useParams } from "next/navigation"
 
 export const Logo = () => {
@@ -32,7 +31,6 @@ export const Logo = () => {
         </div>
       )}
       <Image
-        as={NextImage}
         onMouseEnter={() => setIsHover(true)}
         onClick={() => setIsHover(false)}
         onMouseLeave={() => setIsHover(false)}
@@ -40,6 +38,7 @@ export const Logo = () => {
         width={100}
         height={100}
         alt="dr-logo"
+        className="z-2"
       />
     </Link>
   )
