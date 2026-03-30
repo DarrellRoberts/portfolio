@@ -32,20 +32,6 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                if (isDark) {
-                  document.documentElement.classList.add('dark');
-                } else {
-                  document.documentElement.classList.remove('dark');
-                }
-              })()
-            `,
-          }}
-        />
         <link rel="icon" href="/dr_favicon.webp" type="image/webp" />
       </head>
       <body>

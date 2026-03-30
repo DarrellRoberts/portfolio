@@ -82,23 +82,22 @@ export const SkillsHome = () => {
           </div>
         )}
         <div className="flex flex-col relative max-sm:hidden">
-          {isDark ? (
-            <Image
-              width={300}
-              height={300}
-              alt="admiral-hat"
-              src="/admiral-hat-dark.webp"
-              className="absolute bottom-[50%] z-1"
-            />
-          ) : (
-            <Image
-              width={300}
-              height={300}
-              alt="cowboy-hat"
-              src="/cowboy-hat-light.webp"
-              className="absolute bottom-[50%] z-1"
-            />
-          )}
+          <Image
+            width={300}
+            height={300}
+            alt="cowboy-hat"
+            src="/cowboy-hat-light.webp"
+            className="absolute bottom-[50%] z-1"
+            style={{ opacity: isDark ? "0" : "1" }}
+          />
+          <Image
+            width={300}
+            height={300}
+            alt="admiral-hat"
+            src="/admiral-hat-dark.webp"
+            className="absolute bottom-[50%] z-1"
+            style={{ opacity: isDark ? "1" : "0" }}
+          />
           {isDark ? (
             <>
               <span
