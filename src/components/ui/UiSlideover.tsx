@@ -61,7 +61,7 @@ UiSlideover.Container = ({
         <input
           type="checkbox"
           id="header-1_toggle"
-          aria-controls="header-1_menu"
+          aria-label="navigation_menu"
           ref={menu}
         />
         <label htmlFor="header-1_toggle">Display menu</label>

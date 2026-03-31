@@ -20,6 +20,7 @@ export const DarkMode = () => {
         checked={isDark}
         onChange={toggleDark}
         className="dark-mode-input"
+        aria-label="dark-mode-switch"
       />
     </div>
   )

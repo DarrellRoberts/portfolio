@@ -54,7 +54,11 @@ export const Hero = () => {
       </div>
       <div
         className="flex justify-center items-center max-md:items-baseline max-md:h-50 relative transition-opacity duration-300"
-        style={{ opacity: isDark ? "1" : "0", zIndex: isDark ? "10" : "0" }}
+        style={{
+          opacity: isDark ? "1" : "0",
+          zIndex: isDark ? "10" : "0",
+          display: isDark ? "flex" : "none",
+        }}
       >
         <div className="flex flex-col max-sm:w-full w-50 absolute max-md:bottom-auto">
           <Image
@@ -76,7 +80,11 @@ export const Hero = () => {
       </div>
       <div
         className="flex justify-center relative max-sm:h-50 transition-opacity duration-300"
-        style={{ opacity: isDark ? "0" : "1", zIndex: isDark ? "0" : "10" }}
+        style={{
+          opacity: isDark ? "0" : "1",
+          zIndex: isDark ? "0" : "10",
+          display: isDark ? "none" : "flex",
+        }}
       >
         <div className="flex flex-col min-md:justify-start w-50 cursor-pointer min-md:absolute min-md:bottom-1/2">
           <Image
