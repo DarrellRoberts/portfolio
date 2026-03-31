@@ -89,14 +89,18 @@ UiAccordion.Item = ({
                   className="text-lg max-sm:text-base gap-3"
                   key={`${data}${index}`}
                 >
-                  <div className="inline-flex items-center gap-3">
+                  <span className="inline-flex items-center gap-3">
                     {data}
                     {linkArray?.length && (
-                      <Link href={linkArray[index]} target="_blank">
+                      <Link
+                        href={linkArray[index]}
+                        target="_blank"
+                        aria-label="github-link"
+                      >
                         <LinkIcon className="size-6 text-primary" />
                       </Link>
                     )}
-                  </div>
+                  </span>
                 </li>
               ))}
             </ul>

@@ -13,7 +13,7 @@
   --nav-bg: #e2d4bb77;
   --app-bg-inverted: #081c3f;
   --font-color: #000000;
-  --neutral-color: var(--color-neutral-500);
+  --neutral-color: var(--color-neutral-600);
   --neutral-bg: #ffffff;
 }
 
@@ -24,7 +24,7 @@
   --nav-bg: #081c3f77;
   --app-bg-inverted: #e2d4bb;
   --font-color: #ffffff;
-  --neutral-color: var(--color-neutral-500);
+  --neutral-color: var(--color-neutral-400);
   --neutral-bg: #18181b;
 }
 
