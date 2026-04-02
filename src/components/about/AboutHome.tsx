@@ -21,15 +21,12 @@ export const AboutHome = () => {
           <li className="list-disc text-primary text-lg max-sm:text-base">
             {t("about.firstPoint")}
           </li>
-          {/* <br /> */}
           <li className="list-disc text-primary text-lg max-sm:text-base">
             {t("about.secondPoint")}
           </li>
-          {/* <br /> */}
           <li className="list-disc text-primary text-lg max-sm:text-base">
             {t("about.thirdPoint")}
           </li>
-          {/* <br /> */}
         </ul>
         <Image
           className="w-100 max-sm:w-75"
