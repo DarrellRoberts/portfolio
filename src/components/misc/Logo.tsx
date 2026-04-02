@@ -1,16 +1,15 @@
 "use client"
 
-import React, { useContext, useState } from "react"
-import { Image } from "@heroui/react"
+import { useContext, useState } from "react"
 import { DarkContext } from "@/context/DarkContext"
-import NextImage from "next/image"
+import Image from "next/image"
 import Link from "next/link"
 import { useCurrentLocale } from "../../../locales/client"
-import HeroWaves from "../hero/HeroWaves"
-import HeroTumbleweed from "../hero/HeroTumbleweed"
+import { HeroWaves } from "../hero/HeroWaves"
+import { HeroTumbleweed } from "../hero/HeroTumbleweed"
 import { useParams } from "next/navigation"
 
-const Logo = () => {
+export const Logo = () => {
   const [isHover, setIsHover] = useState<boolean>(false)
   const { isDark } = useContext(DarkContext)
   const locale = useCurrentLocale()
@@ -32,17 +31,33 @@ const Logo = () => {
         </div>
       )}
       <Image
-        as={NextImage}
         onMouseEnter={() => setIsHover(true)}
         onClick={() => setIsHover(false)}
         onMouseLeave={() => setIsHover(false)}
-        src={isDark ? "/dr_logo_dark.webp" : "/dr_logo_light.webp"}
+        src={"/dr_logo_light.webp"}
         width={100}
         height={100}
         alt="dr-logo"
+        className="z-2"
+        style={{
+          opacity: isDark ? "0" : "1",
+          display: isDark ? "none" : "block",
+        }}
+      />
+      <Image
+        onMouseEnter={() => setIsHover(true)}
+        onClick={() => setIsHover(false)}
+        onMouseLeave={() => setIsHover(false)}
+        src={"/dr_logo_dark.webp"}
+        width={100}
+        height={100}
+        alt="dr-logo"
+        className="z-2"
+        style={{
+          opacity: isDark ? "1" : "0",
+          display: isDark ? "block" : "none",
+        }}
       />
     </Link>
   )
 }
-
-export default Logo

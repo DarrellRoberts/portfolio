@@ -1,6 +1,4 @@
 import "@/app/globals.css"
-import Header from "@/components/header/Header"
-import Footer from "@/components/footer/Footer"
 import LocaleWrapper from "./LocaleWrapper"
 import { Metadata } from "next"
 

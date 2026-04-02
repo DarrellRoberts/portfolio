@@ -1,4 +1,3 @@
-import React from "react"
 import { ProjectData } from "../../types/ProjectData"
 import { UiDivider } from "@/components/ui/UiDivider"
 import { LinkIcon } from "@heroicons/react/16/solid"

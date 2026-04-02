@@ -1,11 +1,10 @@
 "use client"
 
-import React from "react"
 import { useChangeLocale, useCurrentLocale } from "../../../locales/client"
-import IconEN from "./icons/IconEN"
-import IconDE from "./icons/IconDE"
+import { IconEN } from "./icons/IconEN"
+import { IconDE } from "./icons/IconDE"
 
-const LanguageSelector = () => {
+export const LanguageSelector = () => {
   const locale = useCurrentLocale()
   const changeLocale = useChangeLocale()
 
@@ -27,5 +26,3 @@ const LanguageSelector = () => {
     </>
   )
 }
-
-export default LanguageSelector

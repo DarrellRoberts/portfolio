@@ -26,7 +26,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html className={`${sansation.className} dark`} lang="en">
+    <html
+      className={`${sansation.className}`}
+      lang="en"
+      suppressHydrationWarning
+    >
       <head>
         <link rel="icon" href="/dr_favicon.webp" type="image/webp" />
       </head>

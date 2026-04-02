@@ -30,11 +30,9 @@ const Project = () => {
 
   const loading = !project && projectTitle
 
-  return loading ? (
-    <div className="h-screen">Loading...</div>
-  ) : (
-    <ProjectSingle project={project} />
-  )
+  if (loading) return <div className="h-screen">Loading...</div>
+
+  return <ProjectSingle project={project} />
 }
 
 export default Project

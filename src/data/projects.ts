@@ -215,8 +215,8 @@ export const projectsDE: ProjectData[] = [
     title: "e-Mission GmbH",
     tech: "Vue, Nuxt, TypeScript",
     hoverImage: [
-      "/portfolio-screenshots/eMission/em_circle_dashboard_light_hover.webp",
       "/portfolio-screenshots/eMission/em_circle_dashboard_dark_hover.webp",
+      "/portfolio-screenshots/eMission/em_circle_dashboard_light_hover.webp",
     ],
     lightImages: [
       "/portfolio-screenshots/eMission/em_circle_dashboard_light_noHover.webp",

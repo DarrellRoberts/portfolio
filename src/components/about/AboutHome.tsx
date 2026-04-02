@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useContext } from "react"
+import { useContext } from "react"
 import { useCurrentLocale, useI18n } from "../../../locales/client"
 import Image from "next/image"
 import { DarkContext } from "@/context/DarkContext"
@@ -17,30 +17,42 @@ export const AboutHome = () => {
   return (
     <UiSection title={Icon.ABOUT} localeText={t("about.aboutMe")}>
       <div className="flex w-full justify-around items-center max-lg:flex-col-reverse">
-        <ul className="list-disc w-1/2 max-sm:w-4/5">
+        <ul className="list-disc w-1/2 max-sm:w-4/5 flex flex-col gap-5">
           <li className="list-disc text-primary text-lg max-sm:text-base">
             {t("about.firstPoint")}
           </li>
-          <br />
           <li className="list-disc text-primary text-lg max-sm:text-base">
             {t("about.secondPoint")}
           </li>
-          <br />
           <li className="list-disc text-primary text-lg max-sm:text-base">
             {t("about.thirdPoint")}
           </li>
-          <br />
         </ul>
         <Image
           className="w-100 max-sm:w-75"
-          src={isDark ? "/submarine_dark.webp" : "/saloon-doors-lights.webp"}
+          src="/saloon-doors-lights.webp"
+          width={500}
+          height={500}
+          alt="saloon-doors"
+          style={{
+            opacity: isDark ? "0" : "1",
+            display: isDark ? "none" : "block",
+          }}
+        />
+        <Image
+          className="w-100 max-sm:w-75"
+          src="/submarine_dark.webp"
           width={500}
           height={500}
           alt="submarine"
+          style={{
+            opacity: isDark ? "1" : "0",
+            display: isDark ? "block" : "none",
+          }}
         />
       </div>
       <Link
-        className="flex w-full items-center hover:text-primary justify-around"
+        className="flex w-full items-center hover:text-primary justify-around max-sm:mt-5"
         href={
           locale === "en"
             ? "/DARRELL_ROBERTS_Frontend_Engineer_CV.pdf"

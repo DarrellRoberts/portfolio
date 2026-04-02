@@ -1,8 +1,8 @@
 "use client"
 
-import React, { useRef, useEffect } from "react"
+import { useRef, useEffect } from "react"
 
-const HeroWaves = () => {
+export const HeroWaves = () => {
   const wavesCanvas = useRef<HTMLCanvasElement | null>(null)
   let time = useRef(0)
   let animationFrameId = useRef<number>()
@@ -17,7 +17,7 @@ const HeroWaves = () => {
           0,
           0,
           wavesCanvas.current.width,
-          wavesCanvas.current.height
+          wavesCanvas.current.height,
         )
         dataLine?.beginPath()
 
@@ -25,7 +25,7 @@ const HeroWaves = () => {
           dataLine?.lineTo(
             cnt,
             wavesCanvas.current.height * 0.47 -
-              Math.cos(time.current + cnt * 0.05) * 15
+              Math.cos(time.current + cnt * 0.05) * 15,
           )
         }
 
@@ -52,5 +52,3 @@ const HeroWaves = () => {
     ></canvas>
   )
 }
-
-export default HeroWaves

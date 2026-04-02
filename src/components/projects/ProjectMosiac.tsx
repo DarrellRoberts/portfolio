@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useContext, useState } from "react"
+import { useContext, useState } from "react"
 import Link from "next/link"
 import { useCurrentLocale } from "../../../locales/client"
 import { DarkContext } from "@/context/DarkContext"
@@ -43,8 +43,8 @@ const ProjectMosiac = ({ project, hideTitle }: Props) => {
             `}
             style={{
               backgroundImage: isDark
-                ? `url(${project?.lightImages[0]})`
-                : `url(${project?.darkImages[0]})`,
+                ? `url(${project?.darkImages[0]})`
+                : `url(${project?.lightImages[0]})`,
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
@@ -57,8 +57,8 @@ const ProjectMosiac = ({ project, hideTitle }: Props) => {
             `}
             style={{
               backgroundImage: isDark
-                ? `url(${project?.hoverImage[0]})`
-                : `url(${project?.hoverImage[1]})`,
+                ? `url(${project?.hoverImage[1]})`
+                : `url(${project?.hoverImage[0]})`,
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
@@ -70,8 +70,8 @@ const ProjectMosiac = ({ project, hideTitle }: Props) => {
           className="rounded-2xl hover:scale-115 transition-all transition-discrete hover:shadow-xl shadow-primary max-sm:hidden"
           style={{
             backgroundImage: isDark
-              ? `url(${project?.lightImages[1]})`
-              : `url(${project?.darkImages[1]})`,
+              ? `url(${project?.darkImages[1]})`
+              : `url(${project?.lightImages[1]})`,
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
@@ -81,8 +81,8 @@ const ProjectMosiac = ({ project, hideTitle }: Props) => {
           className=" col-span-2 rounded-2xl hover:scale-115 transition-all transition-discrete hover:shadow-xl shadow-primary max-sm:aspect-16/9"
           style={{
             backgroundImage: isDark
-              ? `url(${project?.lightImages[2]})`
-              : `url(${project?.darkImages[2]})`,
+              ? `url(${project?.darkImages[2]})`
+              : `url(${project?.lightImages[2]})`,
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
@@ -92,8 +92,8 @@ const ProjectMosiac = ({ project, hideTitle }: Props) => {
           className="col-span-2 rounded-2xl hover:scale-115 transition-all transition-discrete hover:shadow-xl shadow-primary max-sm:aspect-16/9"
           style={{
             backgroundImage: isDark
-              ? `url(${project?.lightImages[3]})`
-              : `url(${project?.darkImages[3]})`,
+              ? `url(${project?.darkImages[3]})`
+              : `url(${project?.lightImages[3]})`,
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",

@@ -1,16 +1,27 @@
 "use client"
-
 import { DarkContext } from "@/context/DarkContext"
-import React, { useContext } from "react"
+import { useContext, useEffect } from "react"
 
-const DarkMode = () => {
-  const { toggleDark } = useContext(DarkContext)
+export const DarkMode = () => {
+  const { isDark, toggleDark } = useContext(DarkContext)
+
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add("dark")
+    } else {
+      document.documentElement.classList.remove("dark")
+    }
+  }, [isDark])
+
   return (
-    <div
-      className="rounded-full bg-primary p-5 cursor-pointer hover:p-6 transition-all transition-discrete"
-      onClick={toggleDark}
-    />
+    <div className="dark-mode-container">
+      <input
+        type="checkbox"
+        checked={isDark}
+        onChange={toggleDark}
+        className="dark-mode-input"
+        aria-label="dark-mode-switch"
+      />
+    </div>
   )
 }
-
-export default DarkMode

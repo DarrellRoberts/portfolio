@@ -1,27 +1,14 @@
 "use client"
 
-import {
-  Button,
-  Drawer,
-  DrawerBody,
-  DrawerContent,
-  DrawerFooter,
-  DrawerHeader,
-  Link,
-  useDisclosure,
-} from "@heroui/react"
-import { Bars3Icon } from "@heroicons/react/16/solid"
-import React from "react"
-import Logo from "../misc/Logo"
+import { Logo } from "../misc/Logo"
 import { useCurrentLocale, useI18n } from "../../../locales/client"
-import DarkMode from "../misc/DarkMode"
-import LanguageSelector from "../misc/LanguageSelector"
+import { DarkMode } from "../misc/DarkMode"
+import { LanguageSelector } from "../misc/LanguageSelector"
 import { useParams } from "next/navigation"
 import { Icon } from "@/types/Icon"
-import { IconController } from "../ui/IconController"
+import { UiSlideover } from "../ui/UiSlideover"
 
-const HeaderMenu = () => {
-  const { isOpen, onOpen, onOpenChange } = useDisclosure()
+export const HeaderMenu = () => {
   const t = useI18n()
   const locale = useCurrentLocale()
   const params = useParams()
@@ -58,62 +45,25 @@ const HeaderMenu = () => {
       icon: Icon.CONTACT,
     },
   ]
-  return (
-    <>
-      <Button
-        variant="ghost"
-        onPress={onOpen}
-        color="primary"
-        className="bg-secondary"
-        aria-label="header-menu-button"
-      >
-        <Bars3Icon />
-      </Button>
-      <Drawer
-        isOpen={isOpen}
-        onOpenChange={onOpenChange}
-        backdrop="blur"
-        style={{ borderRadius: "0px" }}
-      >
-        <DrawerContent>
-          {(onClose) => (
-            <>
-              <DrawerHeader className="flex w-full items-center justify-between gap-1">
-                <div className="flex items-center">
-                  <Logo />
-                  <div>
-                    Darrell Roberts
-                    <br />
-                    Frontend Engineer
-                  </div>
-                </div>
-                <DarkMode />
-              </DrawerHeader>
-              <DrawerBody>
-                <div className="flex flex-col h-full justify-evenly">
-                  {linksJson.map((link) => (
-                    <Link
-                      key={link.text}
-                      href={link.href}
-                      className="flex text-2xl justify-between items-center"
-                      onPress={onClose}
-                    >
-                      {link.text}{" "}
-                      <IconController label={link.icon} tsClass="size-8" />
-                    </Link>
-                  ))}
-                </div>
 
-                <DrawerFooter>
-                  <LanguageSelector />
-                </DrawerFooter>
-              </DrawerBody>
-            </>
-          )}
-        </DrawerContent>
-      </Drawer>
-    </>
+  const headerComponent = () => (
+    <div className="flex w-full items-center justify-between gap-1">
+      <div className="flex items-center">
+        <Logo />
+        <h2 className="text-lg">
+          Darrell Roberts
+          <br />
+          Frontend Engineer
+        </h2>
+      </div>
+      <DarkMode />
+    </div>
+  )
+  return (
+    <UiSlideover
+      linksJson={linksJson}
+      footerComponent={LanguageSelector}
+      headerComponent={headerComponent}
+    />
   )
 }
-
-export default HeaderMenu
