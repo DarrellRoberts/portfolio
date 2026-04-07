@@ -10,7 +10,7 @@ type Props = {
   subtitle: string
   note: string
   id: string
-  contributionNote: string
+  contributionNote?: string
 }
 
 export const UiAccordion = ({
@@ -47,7 +47,7 @@ type UiAccordionProps = {
   subtitle: string
   note: string
   id: string
-  contributionNote: string
+  contributionNote?: string
 }
 
 UiAccordion.Wrapper = ({ children }: Pick<UiAccordionProps, "children">) => {
