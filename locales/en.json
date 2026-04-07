@@ -40,7 +40,8 @@
     "skillHoverCowboy": "Choose your cowboy. Hover over a skill"
   },
   "openSource": {
-    "openSource": "OS Contributions"
+    "openSource": "OS Contributions",
+    "contribution": "contribution(s)"
   },
   "contact": {
     "contact": "Contact"

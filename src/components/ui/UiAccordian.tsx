@@ -10,6 +10,7 @@ type Props = {
   subtitle: string
   note: string
   id: string
+  contributionNote: string
 }
 
 export const UiAccordion = ({
@@ -19,6 +20,7 @@ export const UiAccordion = ({
   subtitle,
   note,
   id,
+  contributionNote,
 }: Props) => {
   const Wrapper = UiAccordion.Wrapper
   const Item = UiAccordion.Item
@@ -31,6 +33,7 @@ export const UiAccordion = ({
         subtitle={subtitle}
         note={note}
         id={id}
+        contributionNote={contributionNote}
       />
     </Wrapper>
   )
@@ -44,6 +47,7 @@ type UiAccordionProps = {
   subtitle: string
   note: string
   id: string
+  contributionNote: string
 }
 
 UiAccordion.Wrapper = ({ children }: Pick<UiAccordionProps, "children">) => {
@@ -57,6 +61,7 @@ UiAccordion.Item = ({
   subtitle,
   note,
   id,
+  contributionNote,
 }: Omit<UiAccordionProps, "children">) => {
   return (
     <div className="tab relative">
@@ -69,8 +74,17 @@ UiAccordion.Item = ({
         htmlFor={`cb${id}`}
         className="tab__label cursor-pointer flex h-full w-full justify-between my-5"
       >
-        <div className="flex flex-col">
-          <span className="text-primary text-xl max-sm:text-base">{title}</span>
+        <div className="flex flex-col justify-center">
+          <div className="flex items-center gap-2 h-full">
+            <span className="text-primary text-xl max-sm:text-base">
+              {title}
+            </span>
+            {linkArray?.length && (
+              <span className="text-[var(--neutral-color)] text-base max-sm:text-sm">
+                {contributionNote}
+              </span>
+            )}
+          </div>
           <span className="text-[var(--neutral-color)] text-base max-sm:text-sm">
             {note}
           </span>
