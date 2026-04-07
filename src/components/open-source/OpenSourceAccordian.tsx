@@ -2,12 +2,13 @@
 
 import { useMemo } from "react"
 import { openSourceEN, openSourceDE } from "@/data/openSource"
-import { useCurrentLocale } from "../../../locales/client"
+import { useCurrentLocale, useI18n } from "../../../locales/client"
 import { UiAccordion } from "../ui/UiAccordian"
 import { UiDivider } from "../ui/UiDivider"
 
 const OpenSourceAccordian = () => {
   const locale = useCurrentLocale()
+  const t = useI18n()
 
   const currentOS = useMemo(() => {
     if (locale === "en") {
@@ -29,6 +30,7 @@ const OpenSourceAccordian = () => {
               title={project.project}
               subtitle={project.owner}
               note={project.tech}
+              contributionNote={`(${project.feature.length})`}
             />
             {index !== currentOS.length - 1 && <UiDivider isFull />}
           </div>
