@@ -6,6 +6,7 @@ export const openSourceEN: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Bug fix for language selector form",
       "Bug fix for search results filter",
       "Created grid for Agent lists",
       "Created Agent card for Agent lists",
@@ -16,6 +17,7 @@ export const openSourceEN: OpenSource[] = [
       "Restyled and refactored language selector for volunteer form",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/269",
       "https://github.com/need4deed-org/fe/pull/270",
       "https://github.com/need4deed-org/fe/pull/258",
       "https://github.com/need4deed-org/fe/pull/257",
@@ -96,6 +98,7 @@ export const openSourceDE: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Fehlerbehebung für das Sprachauswahl-Formular",
       "Fehlerbehebung für den Suchergebnis-Filter",
       "Grid für Agenten-Listen erstellt",
       "Agenten-Karte für Agenten-Listen erstellt",
@@ -106,6 +109,7 @@ export const openSourceDE: OpenSource[] = [
       "Überarbeiteter und neu strukturierter Sprachwähler für das Freiwilligenformular",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/269",
       "https://github.com/need4deed-org/fe/pull/270",
       "https://github.com/need4deed-org/fe/pull/258",
       "https://github.com/need4deed-org/fe/pull/257",
