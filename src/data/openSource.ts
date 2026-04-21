@@ -6,6 +6,7 @@ export const openSourceEN: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Bug fix for menu in volunteer form",
       "Bug fix for infinite testimonials fetch",
       "Bug fix for incorrect redirect to login page",
       "Implement custom Agent fetching hook",
@@ -22,6 +23,7 @@ export const openSourceEN: OpenSource[] = [
       "Restyled and refactored language selector for volunteer form",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/363",
       "https://github.com/need4deed-org/fe/pull/337",
       "https://github.com/need4deed-org/fe/pull/334",
       "https://github.com/need4deed-org/fe/pull/264",
@@ -108,6 +110,7 @@ export const openSourceDE: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Fehlerbehebung für das Menü im Freiwilligen-Formular",
       "Fehlerbehebung für das unendliche Laden von Testimonials",
       "Fehlerbehebung für die fehlerhafte Weiterleitung zur Login-Seite",
       "Benutzerdefinierten Hook zum Abrufen von Agenten implementieren",
@@ -124,6 +127,7 @@ export const openSourceDE: OpenSource[] = [
       "Überarbeiteter und neu strukturierter Sprachwähler für das Freiwilligenformular",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/363",
       "https://github.com/need4deed-org/fe/pull/337",
       "https://github.com/need4deed-org/fe/pull/334",
       "https://github.com/need4deed-org/fe/pull/264",
