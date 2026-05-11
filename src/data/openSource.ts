@@ -6,6 +6,7 @@ export const openSourceEN: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Fix: Change district select to single select",
       "Feature: Add newest opportunities and volunteers to dashboard homepage",
       "Logic: Add deserialize filter function for URL queries",
       "Logic: Add helper function to extract activities from ID",
@@ -26,6 +27,7 @@ export const openSourceEN: OpenSource[] = [
       "UI/Refactor: Restyle and refactor language selector for volunteer form",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/513",
       "https://github.com/need4deed-org/fe/pull/417",
       "https://github.com/need4deed-org/fe/pull/398",
       "https://github.com/need4deed-org/fe/pull/384",
@@ -118,6 +120,7 @@ export const openSourceDE: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Fix: Distriktauswahl auf Single-Select umgestellt",
       "Feature: Neueste Möglichkeiten und Freiwillige zur Dashboard-Startseite hinzufügen",
       "Logic: Deserialize-Filterfunktion für URL-Queries hinzugefügt",
       "Logic: Helper-Funktion zur Extraktion von Aktivitäten aus IDs hinzugefügt",
@@ -138,6 +141,7 @@ export const openSourceDE: OpenSource[] = [
       "UI/Refactor: Sprachauswahl für Freiwilligen-Formular neu gestaltet und refactored",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/513",
       "https://github.com/need4deed-org/fe/pull/417",
       "https://github.com/need4deed-org/fe/pull/398",
       "https://github.com/need4deed-org/fe/pull/384",
