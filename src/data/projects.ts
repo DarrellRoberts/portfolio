@@ -5,8 +5,8 @@ export const projectsEN: ProjectData[] = [
     title: "Need4Deed",
     tech: "React, Next, Fastify, TypeScript",
     hoverImage: [
-      "/portfolio-screenshots/need4deed/n4d-dashboard-home-tags-hover.webp",
-      "/portfolio-screenshots/need4deed/n4d-dashboard-home-tags-hover.webp",
+      "/portfolio-screenshots/need4deed/n4d-dashboard-home-tags-noHover.webp",
+      "/portfolio-screenshots/need4deed/n4d-dashboard-home-tags-noHover.webp",
     ],
     lightImages: [
       "/portfolio-screenshots/need4deed/n4d-dashboard-home-tags-noHover.webp",
@@ -215,8 +215,8 @@ export const projectsDE: ProjectData[] = [
     title: "Need4Deed",
     tech: "React, Next, Fastify, TypeScript",
     hoverImage: [
-      "/portfolio-screenshots/need4deed/n4d-dashboard-home-tags-hover.webp",
-      "/portfolio-screenshots/need4deed/n4d-dashboard-home-tags-hover.webp",
+      "/portfolio-screenshots/need4deed/n4d-dashboard-home-tags-noHover.webp",
+      "/portfolio-screenshots/need4deed/n4d-dashboard-home-tags-noHover.webp",
     ],
     lightImages: [
       "/portfolio-screenshots/need4deed/n4d-dashboard-home-tags-noHover.webp",
