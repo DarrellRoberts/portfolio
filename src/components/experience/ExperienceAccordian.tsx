@@ -27,6 +27,7 @@ export const ExperienceAccordian = () => {
               dataArray={job.description}
               title={job.title}
               subtitle={job.position}
+              subtitleMobile={job.positionMobileName}
               note={job.date}
             />
             {index !== currentExp.length - 1 && <UiDivider isFull />}
