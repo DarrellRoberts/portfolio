@@ -2,6 +2,36 @@ import { type ProjectData } from "../types/ProjectData"
 
 export const projectsEN: ProjectData[] = [
   {
+    title: "Need4Deed",
+    tech: "React, Next, Fastify, TypeScript",
+    hoverImage: [
+      "/portfolio-screenshots/need4deed/n4d-dashboard-home-tags-hover.webp",
+      "/portfolio-screenshots/need4deed/n4d-dashboard-home-tags-hover.webp",
+    ],
+    lightImages: [
+      "/portfolio-screenshots/need4deed/n4d-dashboard-home-tags-noHover.webp",
+      "/portfolio-screenshots/need4deed/n4d-home-mobile-view.webp",
+      "/portfolio-screenshots/need4deed/n4d-dashboard-ngo-view.webp",
+      "/portfolio-screenshots/need4deed/n4d-dashboard-tagging.webp",
+    ],
+    darkImages: [
+      "/portfolio-screenshots/need4deed/n4d-dashboard-home-tags-noHover.webp",
+      "/portfolio-screenshots/need4deed/n4d-home-mobile-view.webp",
+      "/portfolio-screenshots/need4deed/n4d-dashboard-ngo-view.webp",
+      "/portfolio-screenshots/need4deed/n4d-dashboard-tagging.webp",
+    ],
+    description:
+      "A platform for NGOs to post their volunteering opportunities and for volunteers to find and sign up for them",
+    features: [
+      "User-tagging system to allow coordinators to tag volunteers to match them with relevant opportunities",
+      "URL query parameters and serialized state to allow users to share specific pages and views with others",
+      "NGO, Opportunity and volunteer dashboards with various data-driven charts and details",
+      "Data-driven search and filtering system to allow volunteers to find relevant opportunities",
+      "User-role authentication and authorization system to allow different access levels for volunteers, coordinators and admins",
+    ],
+    link: "https://www.need4deed.org/",
+  },
+  {
     title: "Rosemary's Home Fitness",
     tech: "Vue, Nuxt, Sanity.io, TypeScript",
     hoverImage: [
@@ -181,6 +211,36 @@ export const projectsEN: ProjectData[] = [
 ]
 
 export const projectsDE: ProjectData[] = [
+  {
+    title: "Need4Deed",
+    tech: "React, Next, Fastify, TypeScript",
+    hoverImage: [
+      "/portfolio-screenshots/need4deed/n4d-dashboard-home-tags-hover.webp",
+      "/portfolio-screenshots/need4deed/n4d-dashboard-home-tags-hover.webp",
+    ],
+    lightImages: [
+      "/portfolio-screenshots/need4deed/n4d-dashboard-home-tags-noHover.webp",
+      "/portfolio-screenshots/need4deed/n4d-home-mobile-view.webp",
+      "/portfolio-screenshots/need4deed/n4d-dashboard-ngo-view.webp",
+      "/portfolio-screenshots/need4deed/n4d-dashboard-tagging.webp",
+    ],
+    darkImages: [
+      "/portfolio-screenshots/need4deed/n4d-dashboard-home-tags-noHover.webp",
+      "/portfolio-screenshots/need4deed/n4d-home-mobile-view.webp",
+      "/portfolio-screenshots/need4deed/n4d-dashboard-ngo-view.webp",
+      "/portfolio-screenshots/need4deed/n4d-dashboard-tagging.webp",
+    ],
+    description:
+      "Eine Plattform für NGOs, um ihre Freiwilligenmöglichkeiten zu veröffentlichen, und für Freiwillige, um diese zu finden und sich dafür anzumelden",
+    features: [
+      "Benutzer-Tagging-System, das Koordinatoren ermöglicht, Freiwillige zu taggen, um sie mit relevanten Möglichkeiten zu verbinden",
+      "URL-Abfrageparameter und serialisierter Zustand, damit Benutzer bestimmte Seiten und Ansichten mit anderen teilen können",
+      "NGO-, Opportunity- und Freiwilligendashboards mit verschiedenen datengesteuerten Diagrammen und Details",
+      "Datengesteuertes Such- und Filtersystem, damit Freiwillige relevante Möglichkeiten finden können",
+      "Benutzerrollen-Authentifizierungs- und Autorisierungssystem, um verschiedene Zugriffsebenen für Freiwillige, Koordinatoren und Administratoren zu ermöglichen",
+    ],
+    link: "https://www.need4deed.org/",
+  },
   {
     title: "Rosemary's Home Fitness",
     tech: "Vue, Nuxt, Sanity.io, TypeScript",
