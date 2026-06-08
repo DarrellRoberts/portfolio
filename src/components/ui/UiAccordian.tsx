@@ -8,6 +8,7 @@ type Props = {
   linkArray?: string[]
   title: string
   subtitle: string
+  subtitleMobile?: string
   note: string
   id: string
   contributionNote?: string
@@ -18,6 +19,7 @@ export const UiAccordion = ({
   linkArray,
   title,
   subtitle,
+  subtitleMobile,
   note,
   id,
   contributionNote,
@@ -31,6 +33,7 @@ export const UiAccordion = ({
         linkArray={linkArray}
         title={title}
         subtitle={subtitle}
+        subtitleMobile={subtitleMobile}
         note={note}
         id={id}
         contributionNote={contributionNote}
@@ -45,6 +48,7 @@ type UiAccordionProps = {
   dataArray: string[]
   title: string
   subtitle: string
+  subtitleMobile?: string
   note: string
   id: string
   contributionNote?: string
@@ -59,6 +63,7 @@ UiAccordion.Item = ({
   linkArray,
   title,
   subtitle,
+  subtitleMobile,
   note,
   id,
   contributionNote,
@@ -89,8 +94,11 @@ UiAccordion.Item = ({
             {note}
           </span>
         </div>
-        <span className="text-xl text-[var(--font-color)] max-sm:text-base">
+        <span className="text-xl text-[var(--font-color)] max-sm:hidden">
           {subtitle}
+        </span>
+        <span className="text-xl text-[var(--font-color)] max-sm:text-base sm:hidden mr-5">
+          {subtitleMobile}
         </span>
       </label>
 

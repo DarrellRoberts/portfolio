@@ -88,7 +88,7 @@ export const projectsEN: ProjectData[] = [
       "Customizable user profiles and achievement badges",
       "Randomiser feature for user-selected books complete with data filters",
     ],
-    link: "https://github.com/DarrellRoberts/BookClubBrothers_Frontend_NextMigration",
+    link: "https://bookclub-brothers.vercel.app/",
   },
   {
     title: "Asteroid Tracker",
