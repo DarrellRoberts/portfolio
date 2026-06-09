@@ -6,6 +6,7 @@ export const openSourceEN: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Feature: Adds taggedPersonIds to POST and PATCH comment hook",
       "Feature: Display most recent comments the user is tagged-in",
       "Feature: Create tagging feature with autocomplete",
       "Fix: Change district select to single select",
@@ -29,6 +30,7 @@ export const openSourceEN: OpenSource[] = [
       "UI/Refactor: Restyle and refactor language selector for volunteer form",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/593",
       "https://github.com/need4deed-org/fe/pull/600",
       "https://github.com/need4deed-org/fe/pull/537",
       "https://github.com/need4deed-org/fe/pull/513",
@@ -124,6 +126,7 @@ export const openSourceDE: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Feature: Fügt taggedPersonIds zu POST- und PATCH-Kommentar-Hooks hinzu",
       "Feature: Anzeige der neuesten Kommentare, in denen der Benutzer markiert ist",
       "Feature: Tagging-Funktion mit Autocomplete erstellt",
       "Fix: Distriktauswahl auf Single-Select umgestellt",
@@ -147,6 +150,7 @@ export const openSourceDE: OpenSource[] = [
       "UI/Refactor: Sprachauswahl für Freiwilligen-Formular neu gestaltet und refactored",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/593",
       "https://github.com/need4deed-org/fe/pull/600",
       "https://github.com/need4deed-org/fe/pull/537",
       "https://github.com/need4deed-org/fe/pull/513",
