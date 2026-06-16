@@ -6,6 +6,8 @@ export const openSourceEN: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Feature: Display tag notification on home icon",
+      "Auth: Add authorised views of Volunteer Profile",
       "Auth: Add authorised views of NGO and Opportunity lists",
       "Auth: Create an authorised views of opportunity profile",
       "Feature: Adds taggedPersonIds to POST and PATCH comment hook",
@@ -32,6 +34,8 @@ export const openSourceEN: OpenSource[] = [
       "UI/Refactor: Restyle and refactor language selector for volunteer form",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/616",
+      "https://github.com/need4deed-org/fe/pull/617",
       "https://github.com/need4deed-org/fe/pull/641",
       "https://github.com/need4deed-org/fe/pull/658",
       "https://github.com/need4deed-org/fe/pull/593",
@@ -130,6 +134,8 @@ export const openSourceDE: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Feature: Tag-Benachrichtigung auf dem Home-Icon anzeigen",
+      "Auth: Autorisierte Ansichten des Freiwilligenprofils hinzufügen",
       "Auth: Autorisierte Ansichten für NGO- und Opportunity-Listen hinzufügen",
       "Auth: Autorisierte Ansichten des Opportunity-Profils erstellen",
       "Feature: Fügt taggedPersonIds zu POST- und PATCH-Kommentar-Hooks hinzu",
@@ -156,6 +162,8 @@ export const openSourceDE: OpenSource[] = [
       "UI/Refactor: Sprachauswahl für Freiwilligen-Formular neu gestaltet und refactored",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/616",
+      "https://github.com/need4deed-org/fe/pull/617",
       "https://github.com/need4deed-org/fe/pull/641",
       "https://github.com/need4deed-org/fe/pull/658",
       "https://github.com/need4deed-org/fe/pull/593",
