@@ -6,6 +6,8 @@ export const openSourceEN: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Fix: Address 403 error when tagging users",
+      "Fix: Fix District filter so that dashboard filters correctly",
       "Feature: Display tag notification on home icon",
       "Auth: Add authorised views of Volunteer Profile",
       "Auth: Add authorised views of NGO and Opportunity lists",
@@ -34,6 +36,8 @@ export const openSourceEN: OpenSource[] = [
       "UI/Refactor: Restyle and refactor language selector for volunteer form",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/630",
+      "https://github.com/need4deed-org/fe/pull/709",
       "https://github.com/need4deed-org/fe/pull/616",
       "https://github.com/need4deed-org/fe/pull/617",
       "https://github.com/need4deed-org/fe/pull/641",
@@ -134,6 +138,8 @@ export const openSourceDE: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Fix: 403-Fehler beim Markieren von Benutzern behoben",
+      "Fix: Bezirksfilter korrigiert, damit das Dashboard korrekt filtert",
       "Feature: Tag-Benachrichtigung auf dem Home-Icon anzeigen",
       "Auth: Autorisierte Ansichten des Freiwilligenprofils hinzufügen",
       "Auth: Autorisierte Ansichten für NGO- und Opportunity-Listen hinzufügen",
@@ -162,6 +168,8 @@ export const openSourceDE: OpenSource[] = [
       "UI/Refactor: Sprachauswahl für Freiwilligen-Formular neu gestaltet und refactored",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/630",
+      "https://github.com/need4deed-org/fe/pull/709",
       "https://github.com/need4deed-org/fe/pull/616",
       "https://github.com/need4deed-org/fe/pull/617",
       "https://github.com/need4deed-org/fe/pull/641",
