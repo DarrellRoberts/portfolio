@@ -6,6 +6,10 @@ export const openSourceEN: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Auth: Remove coordinator comments from NGO view on their profile",
+      "Fix: Remove URL query parameters when filters are removed",
+      "Fix: Change event link to seperate URL",
+      "Feature: Adds Card-view with URL query parameter",
       "Fix: Fix redirect for NGOs viewing unauthorized profiles",
       "Auth: Add volunteer view with full editing rights",
       "Fix: Address 403 error when tagging users",
@@ -38,6 +42,10 @@ export const openSourceEN: OpenSource[] = [
       "UI/Refactor: Restyle and refactor language selector for volunteer form",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/702",
+      "https://github.com/need4deed-org/fe/pull/716",
+      "https://github.com/need4deed-org/fe/pull/745",
+      "https://github.com/need4deed-org/fe/pull/744",
       "https://github.com/need4deed-org/fe/pull/699",
       "https://github.com/need4deed-org/fe/pull/686",
       "https://github.com/need4deed-org/fe/pull/630",
@@ -142,6 +150,10 @@ export const openSourceDE: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Auth: Koordinator-Kommentare aus der NGO-Ansicht auf deren Profil entfernen",
+      "Fix: URL-Abfrageparameter entfernen, wenn Filter entfernt werden",
+      "Fix: Event-Link in separate URL ändern",
+      "Feature: Fügt Kartenansicht mit URL-Abfrageparameter hinzu",
       "Fix: Weiterleitung für NGOs beim Aufruf unautorisierter Profile beheben",
       "Auth: Freiwilligen-Ansicht mit vollen Bearbeitungsrechten hinzufügen",
       "Fix: 403-Fehler beim Markieren von Benutzern behoben",
@@ -174,6 +186,10 @@ export const openSourceDE: OpenSource[] = [
       "UI/Refactor: Sprachauswahl für Freiwilligen-Formular neu gestaltet und refactored",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/702",
+      "https://github.com/need4deed-org/fe/pull/716",
+      "https://github.com/need4deed-org/fe/pull/745",
+      "https://github.com/need4deed-org/fe/pull/744",
       "https://github.com/need4deed-org/fe/pull/699",
       "https://github.com/need4deed-org/fe/pull/686",
       "https://github.com/need4deed-org/fe/pull/630",
