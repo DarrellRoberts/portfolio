@@ -6,6 +6,8 @@ export const openSourceEN: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Auth: Redirect users when not logged-in",
+      "Feature: Adds activity filter for Volunteer lists",
       "Auth: Remove coordinator comments from NGO view on their profile",
       "Fix: Remove URL query parameters when filters are removed",
       "Fix: Change event link to seperate URL",
@@ -42,6 +44,8 @@ export const openSourceEN: OpenSource[] = [
       "UI/Refactor: Restyle and refactor language selector for volunteer form",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/751",
+      "https://github.com/need4deed-org/fe/pull/743",
       "https://github.com/need4deed-org/fe/pull/702",
       "https://github.com/need4deed-org/fe/pull/716",
       "https://github.com/need4deed-org/fe/pull/745",
@@ -150,6 +154,8 @@ export const openSourceDE: OpenSource[] = [
     owner: "@need4deed",
     tech: "Next",
     feature: [
+      "Auth: Benutzer umleiten, wenn nicht angemeldet",
+      "Feature: Fügt Aktivitätsfilter für Freiwilligenlisten hinzu",
       "Auth: Koordinator-Kommentare aus der NGO-Ansicht auf deren Profil entfernen",
       "Fix: URL-Abfrageparameter entfernen, wenn Filter entfernt werden",
       "Fix: Event-Link in separate URL ändern",
@@ -186,6 +192,8 @@ export const openSourceDE: OpenSource[] = [
       "UI/Refactor: Sprachauswahl für Freiwilligen-Formular neu gestaltet und refactored",
     ],
     githubLink: [
+      "https://github.com/need4deed-org/fe/pull/751",
+      "https://github.com/need4deed-org/fe/pull/743",
       "https://github.com/need4deed-org/fe/pull/702",
       "https://github.com/need4deed-org/fe/pull/716",
       "https://github.com/need4deed-org/fe/pull/745",
