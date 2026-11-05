@@ -53,7 +53,7 @@ export const HeaderMenu = () => {
         <h2 className="text-lg">
           Darrell Roberts
           <br />
-          Frontend Engineer
+          Fullstack Engineer
         </h2>
       </div>
       <DarkMode />
