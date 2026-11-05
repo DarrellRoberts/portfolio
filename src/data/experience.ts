@@ -9,7 +9,7 @@ export const experienceEN: ExperienceData[] = [
     position: "Fullstack Engineer (Pro bono Contract)",
     date: "October 25 - ",
     description: [
-      "Collaborative: Partnered directly with the Lead Engineer to maintain a live production Next.js PWA, contributing 5,000+ lines of code to rank as a top 5 developer on the platform.",
+      "Collaborative: Partnered directly with the Lead Engineer to maintain a live production Next.js PWA, contributing 20,000+ lines as a leading developer on the platform",
       "Architecture-focused: Created custom data-fetching hooks and implemented advanced URL filter deserialization",
       "Performance-optimized: Isolated and resolved critical technical debt, including fixing infinite API fetches and refactoring a core debounce filter component to enhance platform speed",
       "Quality-oriented: debugged authentication flows, resolving edge-case search result filtering bugs, and reviewing code prior to staging and production deployment.",
@@ -79,7 +79,7 @@ export const experienceDE: ExperienceData[] = [
     position: "Fullstack Engineer (Pro-bono-Vertrag)",
     date: "Oktober 25 - ",
     description: [
-      "Kollaborativ: Direkte Zusammenarbeit mit dem Lead Engineer zur Pflege einer Live-Produktions-Next.js-PWA; Beitrag von über 5.000 Codezeilen, um als Top-5-Entwickler auf der Plattform zu ranken.",
+      "Kollaborativ: Direkte Zusammenarbeit mit dem Lead Engineer zur Pflege einer Live-Produktions-Next.js-PWA; Beitrag von über 20.000 Codezeilen",
       "Architekturfokussiert: Erstellung benutzerdefinierter Data-Fetching-Hooks und Implementierung einer erweiterten URL-Filter-Deserialisierung.",
       "Performance-optimiert: Isolierung und Behebung kritischer technischer Schulden, einschließlich der Behebung von endlosen API-Abrufen und Refactoring einer zentralen Debounce-Filterkomponente zur Steigerung der Plattformgeschwindigkeit.",
       "Qualitätsorientiert: Fehlerbehebung bei Authentifizierungs-Flows, Behebung von Edge-Case-Bugs bei der Suchergebnis-Filterung sowie Code-Reviews vor dem Staging- und Produktions-Deployment.",
