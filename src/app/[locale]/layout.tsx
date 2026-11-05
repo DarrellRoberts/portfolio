@@ -3,9 +3,9 @@ import LocaleWrapper from "./LocaleWrapper"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Darrell Roberts - Frontend Engineer",
+  title: "Darrell Roberts - Fullstack Engineer",
   description:
-    "Portfolio website of Darrell Roberts. I'm a Frontend Engineer who lives in Berlin, Germany with a focus on Frontend. I work primarily with TypeScript on the following frameworks or libraries: React, Next, Vue and Nuxt. However, I also work with Node.js in the Backend and have experience with MongoDB and creating my own APIs.",
+    "Portfolio website of Darrell Roberts. I'm a Fullstack Engineer who lives in Berlin, Germany with a focus on Frontend. I work primarily with TypeScript on the following frameworks or libraries: React, Next, Vue and Nuxt. However, I also work with Node.js in the Backend and have experience with MongoDB, PostgreSQL and creating my own APIs.",
 }
 
 export default async function LocaleLayout({

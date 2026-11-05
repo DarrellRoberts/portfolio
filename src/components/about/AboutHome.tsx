@@ -56,12 +56,12 @@ export const AboutHome = () => {
         href={
           locale === "en"
             ? "/DARRELL_ROBERTS_Fullstack_Engineer_CV.pdf"
-            : "/Lebenslauf_Darrell_Roberts_Frontend_Entwickler.pdf"
+            : "/Lebenslauf_Darrell_Roberts_Fullstack_Entwickler.pdf"
         }
         download={
           locale === "en"
             ? "DARRELL ROBERTS - Fullstack Engineer CV.pdf"
-            : "Lebenslauf - Darrell Roberts - Frontend Entwickler.pdf"
+            : "Lebenslauf - Darrell Roberts - Fullstack Entwickler.pdf"
         }
         target="_blank"
       >
